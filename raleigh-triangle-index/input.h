@@ -23,6 +23,11 @@
 using namespace BloombergLP;
 using namespace blpapi;
 
+typedef struct {
+	double price;
+	double perc_shares_out;
+	double eq_shares_out;
+} t_securitydata;
 
 class input
 {
@@ -32,6 +37,7 @@ private:
 	int                      d_port;
 	std::vector<std::string> d_securities;
 	std::vector<std::string> d_fields;
+	std::vector<std::string> indexlist;
 
 	// private needed function
 	bool parseCommandLine(int argc, char **argv);
@@ -41,10 +47,11 @@ private:
 	void sendRefDataRequest(Session &session);
 	void processResponseEvent(Event event);
 	void eventLoop(Session &session);
-
 public:
 	input();
 	~input();
 	void run(int argc, char **argv);
+	size_t numSecurities;
+	std::vector<t_securitydata> data;
 };
 

@@ -1,9 +1,11 @@
 #include "stdafx.h"
 #include "input.h"
 
+// defining namespaces
 using namespace BloombergLP;
 using namespace blpapi;
 
+// definitiong of finance specific data
 namespace {
 	const Name SECURITY_DATA("securityData");
 	const Name SECURITY("security");
@@ -20,7 +22,10 @@ namespace {
 	const Name SESSION_STARTUP_FAILURE("SessionStartupFailure");
 };
 
+// fetching function from a DLL/external library
 extern "C" {
+	// this is a specific type of data 
+	// unsigned integers from Bloomberg
 	void loggingCallback(blpapi_UInt64_t    threadId,
 		int                severity,
 		blpapi_Datetime_t  timestamp,
@@ -74,6 +79,7 @@ void loggingCallback(blpapi_UInt64_t    threadId,
 	std::cout << sstream.str() << std::endl;;
 }
 
+// class initialization 
 input::input()
 {
 	d_host = "localhost";
@@ -114,41 +120,26 @@ bool input::parseCommandLine(int argc, char **argv)
 	}
 	// handle default arguments
 	if (d_securities.size() == 0) {
-		d_securities.push_back("PGEM US Equity");
-		d_securities.push_back("PTRY US Equity");
-		d_securities.push_back("SQI US Equity");
-		d_securities.push_back("CEMP US Equity");
-		d_securities.push_back("POZN US Equity");
-		d_securities.push_back("ARGS US Equity");
-		d_securities.push_back("BCRX US Equity");
-		d_securities.push_back("CMRX US Equity");
-		d_securities.push_back("CREE US Equity");
-		d_securities.push_back("Q US Equity");
-		d_securities.push_back("TRXC US Equity");
-		d_securities.push_back("AOI US Equity");
-		d_securities.push_back("CTHR US Equity");
-		d_securities.push_back("ECOM US Equity");
-		d_securities.push_back("FURX US Equity");
-		d_securities.push_back("MXPT US Equity");
-		d_securities.push_back("TENX US Equity");
-		d_securities.push_back("TKLC US Equity");
-		d_securities.push_back("BDSI US Equity");
-		d_securities.push_back("CBKN US Equity");
-		d_securities.push_back("FCNCA US Equity");
-		d_securities.push_back("HIW US Equity");
-		d_securities.push_back("INCR US Equity");
-		d_securities.push_back("LPDX US Equity");
-		d_securities.push_back("MLM US Equity");
-		d_securities.push_back("PRAH US Equity");
+		// 
 		d_securities.push_back("RHT US Equity");
-		d_securities.push_back("SLXP US Equity");
-		d_securities.push_back("STCK US Equity");
+		d_securities.push_back("MLM US Equity");
+		d_securities.push_back("Q US Equity");
+		d_securities.push_back("HIW US Equity");
+		d_securities.push_back("CREE US Equity");
+		d_securities.push_back("FCNCA US Equity");
+		d_securities.push_back("PRAH US Equity");
+		d_securities.push_back("INCR US Equity");
+		d_securities.push_back("PGEM US Equity");
 		d_securities.push_back("TCAP US Equity");
-		d_securities.push_back("VSB US Equity");
-		d_securities.push_back("XRM US Equity");
-		d_securities.push_back("NRX US Equity");
-		d_securities.push_back("TLCR US Equity");
+		d_securities.push_back("TRXC US Equity");
+		d_securities.push_back("SQI US Equity");
+		d_securities.push_back("ECOM US Equity");
 		d_securities.push_back("POWR US Equity");
+		d_securities.push_back("BDSI US Equity");
+		d_securities.push_back("CMRX US Equity");
+		d_securities.push_back("BCRX US Equity");
+		d_securities.push_back("UNB US Equity");
+		d_securities.push_back("XRM US Equity");
 	}
 
 	if (d_fields.size() == 0) {
@@ -160,6 +151,7 @@ bool input::parseCommandLine(int argc, char **argv)
 	return true;
 }
 
+// [romtomge errpr 
 void input::printErrorInfo(const char *leadingStr, const Element &errorInfo)
 {
 	std::cout << leadingStr
@@ -218,9 +210,11 @@ void input::sendRefDataRequest(Session &session)
 		fields.appendValue(d_fields[i].c_str());
 	}
 
-	std::cout << "Sending Request: " << request << std::endl;
+	//std::cout << "Sending Request: " << request << std::endl;
 	session.sendRequest(request);
 }
+
+
 // return true if processing is completed, false otherwise
 void input::processResponseEvent(Event event)
 {
@@ -234,33 +228,70 @@ void input::processResponseEvent(Event event)
 		}
 
 		Element securities = msg.getElement(SECURITY_DATA);
-		size_t numSecurities = securities.numValues();
-		std::cout << "Processing " << (unsigned int)numSecurities
-			<< " securities:" << std::endl;
+		numSecurities = securities.numValues();
+		/*
+		std::cout	<< "Processing " 
+					<< (unsigned int)numSecurities
+					<< " securities:" 
+					<< std::endl;*/
+
 		for (size_t i = 0; i < numSecurities; ++i) {
 			Element security = securities.getValueAsElement(i);
 			std::string ticker = security.getElementAsString(SECURITY);
-			std::cout << "\nTicker: " + ticker << std::endl;
+			//std::cout << "\nTicker: " + ticker << std::endl;
 			if (security.hasElement(SECURITY_ERROR)) {
 				printErrorInfo("\tSECURITY FAILED: ",
 					security.getElement(SECURITY_ERROR));
 				continue;
 			}
 
+			// outputing data here
+
 			if (security.hasElement(FIELD_DATA)) {
 				const Element fields = security.getElement(FIELD_DATA);
 				if (fields.numElements() > 0) {
-					std::cout << "FIELD\t\tVALUE" << std::endl;
-					std::cout << "-----\t\t-----" << std::endl;
+
+					//std::cout << "FIELD\t\tVALUE" << std::endl;
+					//std::cout << "-----\t\t-----" << std::endl;
+
 					size_t numElements = fields.numElements();
+					
+					t_securitydata temp;
+
 					for (size_t j = 0; j < numElements; ++j) {
 						Element field = fields.getElement(j);
-						std::cout << field.name() << "\t\t" <<
-							field.getValueAsString() << std::endl;
+						if (j == 0) {
+							//std::cout << field.name() << std::endl;
+							temp.price = field.getValueAsFloat64();
+							//std::cout << temp.price << std::endl;
+						}
+						else if (j == 1) {
+							//std::cout << field.name() << std::endl;
+							temp.perc_shares_out = field.getValueAsFloat64();
+							//std::cout << temp.perc_shares_out << std::endl;
+
+						}
+						else if (j == 2) {
+							//std::cout << field.name() << std::endl;
+							temp.eq_shares_out = field.getValueAsFloat64();
+							//std::cout << temp.eq_shares_out << std::endl;
+						}
+
+						//std::cout	<< field.name()
+						//			<< "\t\t" 
+						//			<< field.getValueAsString() 
+						//			<< std::endl;
+						// output values to another variable
+						//values.push_back(field.getValueAsFloat64());
 					}
+
+					data.push_back(temp);
 				}
 			}
-			std::cout << std::endl;
+
+			//std::cout << std::endl;
+
+
 			Element fieldExceptions = security.getElement(
 				FIELD_EXCEPTIONS);
 			if (fieldExceptions.numValues() > 0) {
@@ -291,11 +322,11 @@ void input::eventLoop(Session &session)
 	while (!done) {
 		Event event = session.nextEvent();
 		if (event.eventType() == Event::PARTIAL_RESPONSE) {
-			std::cout << "Processing Partial Response" << std::endl;
+			//std::cout << "Processing Partial Response" << std::endl;
 			processResponseEvent(event);
 		}
 		else if (event.eventType() == Event::RESPONSE) {
-			std::cout << "Processing Response" << std::endl;
+			//std::cout << "Processing Response" << std::endl;
 			processResponseEvent(event);
 			done = true;
 		}
@@ -326,7 +357,7 @@ void input::run(int argc, char **argv)
 	sessionOptions.setServerHost(d_host.c_str());
 	sessionOptions.setServerPort(d_port);
 
-	std::cout << "Connecting to " + d_host + ":" << d_port << std::endl;
+	//std::cout << "Connecting to " + d_host + ":" << d_port << std::endl;
 	Session session(sessionOptions);
 	if (!session.start()) {
 		std::cout << "Failed to start session." << std::endl;

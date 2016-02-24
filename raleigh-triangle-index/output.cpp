@@ -4,9 +4,11 @@
 
 output::output()
 {
+
 }
 
 
 output::~output()
 {
+
 }
