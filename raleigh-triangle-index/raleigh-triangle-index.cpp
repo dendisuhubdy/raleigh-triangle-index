@@ -6,47 +6,18 @@
 #include "processing.h"
 #include "output.h"
 
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <vector>
-#include <ctime>
-#include <Windows.h>
-
+/* This is the main function called to access the program
+// modify this part to modify the main functionality
+// of the program
+*/
 
 int main(int argc, char **argv)
 {
 	// fancy header of our project :)
 	std::cout << "Raleigh Triangle Index - Automated Index Calculation" << std::endl;
-	SYSTEMTIME time;
 	
-	while (true) {
-		// get current system time
-
-		GetSystemTime(&time);
-		// initialize our input class
-		input triangle;
-
-		try {
-			triangle.run(argc, argv);
-		}
-		catch (Exception &e) {
-			std::cerr << "Library Exception!!! " << e.description() << std::endl;
-		}
-
-		std::vector<t_securitydata> maindata;
-		maindata = triangle.data;
-
-		processing RTA(triangle.data);
-		std::cout	<< time.wHour << ":"
-					<< time.wMinute << ":"
-					<< time.wSecond << ":"
-					<< time.wMilliseconds << " the index value is "
-					<< RTA.calculateindex() 
-					<< std::endl;
-
-		Sleep(1000);
-	}
+	// run output
+	output test;
 
 	// wait for enter key to exit application
 	std::cout << "Press ENTER to quit" << std::endl;
