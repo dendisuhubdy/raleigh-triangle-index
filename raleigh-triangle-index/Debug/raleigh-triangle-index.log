@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 ﻿  output.cpp
   Generating Code...
   Skipping... (no relevant changes detected)
   raleigh-triangle-index.cpp
   processing.cpp
   raleigh-triangle-index.vcxproj -> C:\Users\Mathematics\Source\Repos\raleigh-triangle-index\Debug\raleigh-triangle-index.exe
+=======
+﻿  stdafx.cpp
+c:\users\dasuhubd\documents\code\raleigh-triangle-index\raleigh-triangle-index\stdafx.h(24): fatal error C1083: Cannot open include file: 'blpapi_defs.h': No such file or directory
+>>>>>>> 12fdc205a02f40e2729986a5a0c9eb2e61903621
