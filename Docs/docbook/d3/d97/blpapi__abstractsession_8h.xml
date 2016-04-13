@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d97/blpapi__abstractsession_8h">
+    <title>blpapi_abstractsession.h File Reference</title>
+    <programlisting>#include &lt;blpapi_correlationid.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_event.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_eventdispatcher.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_identity.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_request.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_service.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d3/d97/blpapi__abstractsession_8h_1ae74f318a123f9b88af02c9dd2296e785">blpapi_UserHandle_release</link> (
+blpapi_UserHandle_t * handle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d3/d97/blpapi__abstractsession_8h_1a6fed0ff7a8af94a26cc5c723c110cb51">blpapi_UserHandle_addRef</link> (
+blpapi_UserHandle_t * handle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d3/d97/blpapi__abstractsession_8h_1a24581bd9b18250fc2252db7c84586065">blpapi_UserHandle_hasEntitlements</link> (
+const blpapi_UserHandle_t * handle, const blpapi_Service_t * service, const blpapi_Element_t * eidElement, const int * entitlementIds, size_t numEntitlements, int * failedEntitlements, int * failedEntitlementsCount)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d3/d97/blpapi__abstractsession_8h_1a0d6f9b0ee6d255394c03d93905271c2a">blpapi_AbstractSession_cancel</link> (
+blpapi_AbstractSession_t * session, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationIds, size_t numCorrelationIds, const char * requestLabel, int requestLabelLen)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d3/d97/blpapi__abstractsession_8h_1a4ec85d5694f86297f95b3da1c0a6ac02">blpapi_AbstractSession_sendAuthorizationRequest</link> (
+blpapi_AbstractSession_t * session, const blpapi_Request_t * request, blpapi_Identity_t * identity, <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId, blpapi_EventQueue_t * eventQueue, const char * requestLabel, int requestLabelLen)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d3/d97/blpapi__abstractsession_8h_1af9cb9002130007fa542b276ba79fa31b">blpapi_AbstractSession_openService</link> (
+blpapi_AbstractSession_t * session, const char * serviceIdentifier)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d3/d97/blpapi__abstractsession_8h_1a42892fd558ffbc1c7a055edbdebe078e">blpapi_AbstractSession_openServiceAsync</link> (
+blpapi_AbstractSession_t * session, const char * serviceIdentifier, <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d3/d97/blpapi__abstractsession_8h_1ace41c41070264989b1e730f4975eaec4">blpapi_AbstractSession_generateToken</link> (
+blpapi_AbstractSession_t * session, <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId, blpapi_EventQueue_t * eventQueue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d3/d97/blpapi__abstractsession_8h_1ad154907dfdb0e30659eae2c1ecf39265">blpapi_AbstractSession_getService</link> (
+blpapi_AbstractSession_t * session, blpapi_Service_t ** service, const char * serviceIdentifier)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Identity_t * <link linkend="d3/d97/blpapi__abstractsession_8h_1a65d0c705cb78b66c49a719637d3d3253">blpapi_AbstractSession_createIdentity</link> (
+blpapi_AbstractSession_t * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_abstractsession.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d70/_simple_field_search_example_8cpp">
+    <title>SimpleFieldSearchExample.cpp File Reference</title>
+    <programlisting>#include &lt;blpapi_session.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_eventdispatcher.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_event.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_message.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_element.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_name.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_request.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_subscriptionlist.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_exception.h&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;stdlib.h&gt;</programlisting>
+    <programlisting>#include &lt;string.h&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d56/class_simple_field_search_example">SimpleFieldSearchExample</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+        </simplesect>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="d8/d70/_simple_field_search_example_8cpp_1aa569d61b3621f35c0c51a799b08d1ac6">APIFLDS_SVC</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::string <link linkend="d8/d70/_simple_field_search_example_8cpp_1ad041ec6d458adce937b02128934757a1">PADDING</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d8/d70/_simple_field_search_example_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/examples/SimpleFieldSearchExample.cpp</para>
+    </simplesect>
+</section>

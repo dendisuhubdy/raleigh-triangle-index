@@ -1,0 +1,65 @@
+\hypertarget{blpapi__identity_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+identity.h File Reference}
+\label{blpapi__identity_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+identity.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+identity.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+exception.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+service.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__identity_8h_a8e993c3fcddbc9719ed39829c32cda2b}{blpapi\+\_\+\+Identity\+\_\+release} (\hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$handle)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__identity_8h_ab59b45e5c69272d8919abbb573167f86}{blpapi\+\_\+\+Identity\+\_\+add\+Ref} (\hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$handle)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__identity_8h_a309894e98ec26a9e7d659311e2b7a79b}{blpapi\+\_\+\+Identity\+\_\+has\+Entitlements} (const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$handle, const \hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, const \hyperlink{blpapi__types_8h_abb8d9b21981346c8c927e878794299ca}{blpapi\+\_\+\+Element\+\_\+t} $\ast$eid\+Element, const int $\ast$entitlement\+Ids, size\+\_\+t num\+Entitlements, int $\ast$failed\+Entitlements, int $\ast$failed\+Entitlements\+Count)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__identity_8h_a618c8bb396307e65261c69c112bea8b9}{blpapi\+\_\+\+Identity\+\_\+is\+Authorized} (const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$handle, const \hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__identity_8h_a5e1bc0ec653e17f132836bfe2ea7c5dc}{blpapi\+\_\+\+Identity\+\_\+get\+Seat\+Type} (const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$handle, int $\ast$seat\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}!blpapi\+\_\+\+Identity\+\_\+add\+Ref@{blpapi\+\_\+\+Identity\+\_\+add\+Ref}}
+\index{blpapi\+\_\+\+Identity\+\_\+add\+Ref@{blpapi\+\_\+\+Identity\+\_\+add\+Ref}!blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Identity\+\_\+add\+Ref(blpapi\+\_\+\+Identity\+\_\+t $\ast$handle)}{blpapi_Identity_addRef(blpapi_Identity_t *handle)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Identity\+\_\+add\+Ref (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__identity_8h_ab59b45e5c69272d8919abbb573167f86}{}\label{blpapi__identity_8h_ab59b45e5c69272d8919abbb573167f86}
+\index{blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}!blpapi\+\_\+\+Identity\+\_\+get\+Seat\+Type@{blpapi\+\_\+\+Identity\+\_\+get\+Seat\+Type}}
+\index{blpapi\+\_\+\+Identity\+\_\+get\+Seat\+Type@{blpapi\+\_\+\+Identity\+\_\+get\+Seat\+Type}!blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Identity\+\_\+get\+Seat\+Type(const blpapi\+\_\+\+Identity\+\_\+t $\ast$handle, int $\ast$seat\+Type)}{blpapi_Identity_getSeatType(const blpapi_Identity_t *handle, int *seatType)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Identity\+\_\+get\+Seat\+Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{handle, }
+\item[{int $\ast$}]{seat\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__identity_8h_a5e1bc0ec653e17f132836bfe2ea7c5dc}{}\label{blpapi__identity_8h_a5e1bc0ec653e17f132836bfe2ea7c5dc}
+\index{blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}!blpapi\+\_\+\+Identity\+\_\+has\+Entitlements@{blpapi\+\_\+\+Identity\+\_\+has\+Entitlements}}
+\index{blpapi\+\_\+\+Identity\+\_\+has\+Entitlements@{blpapi\+\_\+\+Identity\+\_\+has\+Entitlements}!blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Identity\+\_\+has\+Entitlements(const blpapi\+\_\+\+Identity\+\_\+t $\ast$handle, const blpapi\+\_\+\+Service\+\_\+t $\ast$service, const blpapi\+\_\+\+Element\+\_\+t $\ast$eid\+Element, const int $\ast$entitlement\+Ids, size\+\_\+t num\+Entitlements, int $\ast$failed\+Entitlements, int $\ast$failed\+Entitlements\+Count)}{blpapi_Identity_hasEntitlements(const blpapi_Identity_t *handle, const blpapi_Service_t *service, const blpapi_Element_t *eidElement, const int *entitlementIds, size_t numEntitlements, int *failedEntitlements, int *failedEntitlementsCount)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Identity\+\_\+has\+Entitlements (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{handle, }
+\item[{const {\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{const {\bf blpapi\+\_\+\+Element\+\_\+t} $\ast$}]{eid\+Element, }
+\item[{const int $\ast$}]{entitlement\+Ids, }
+\item[{size\+\_\+t}]{num\+Entitlements, }
+\item[{int $\ast$}]{failed\+Entitlements, }
+\item[{int $\ast$}]{failed\+Entitlements\+Count}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__identity_8h_a309894e98ec26a9e7d659311e2b7a79b}{}\label{blpapi__identity_8h_a309894e98ec26a9e7d659311e2b7a79b}
+\index{blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}!blpapi\+\_\+\+Identity\+\_\+is\+Authorized@{blpapi\+\_\+\+Identity\+\_\+is\+Authorized}}
+\index{blpapi\+\_\+\+Identity\+\_\+is\+Authorized@{blpapi\+\_\+\+Identity\+\_\+is\+Authorized}!blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Identity\+\_\+is\+Authorized(const blpapi\+\_\+\+Identity\+\_\+t $\ast$handle, const blpapi\+\_\+\+Service\+\_\+t $\ast$service)}{blpapi_Identity_isAuthorized(const blpapi_Identity_t *handle, const blpapi_Service_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Identity\+\_\+is\+Authorized (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{handle, }
+\item[{const {\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__identity_8h_a618c8bb396307e65261c69c112bea8b9}{}\label{blpapi__identity_8h_a618c8bb396307e65261c69c112bea8b9}
+\index{blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}!blpapi\+\_\+\+Identity\+\_\+release@{blpapi\+\_\+\+Identity\+\_\+release}}
+\index{blpapi\+\_\+\+Identity\+\_\+release@{blpapi\+\_\+\+Identity\+\_\+release}!blpapi\+\_\+identity.\+h@{blpapi\+\_\+identity.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Identity\+\_\+release(blpapi\+\_\+\+Identity\+\_\+t $\ast$handle)}{blpapi_Identity_release(blpapi_Identity_t *handle)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Identity\+\_\+release (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__identity_8h_a8e993c3fcddbc9719ed39829c32cda2b}{}\label{blpapi__identity_8h_a8e993c3fcddbc9719ed39829c32cda2b}

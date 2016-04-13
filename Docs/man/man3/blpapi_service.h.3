@@ -1,0 +1,142 @@
+.TH "raleigh-triangle-index/include/blpapi_service.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_service.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <blpapi_schema\&.h>\fP
+.br
+\fC#include <blpapi_request\&.h>\fP
+.br
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_streamproxy\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Operation_name\fP (\fBblpapi_Operation_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Operation_description\fP (\fBblpapi_Operation_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Operation_requestDefinition\fP (\fBblpapi_Operation_t\fP *service, \fBblpapi_SchemaElementDefinition_t\fP **requestDefinition)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Operation_numResponseDefinitions\fP (\fBblpapi_Operation_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Operation_responseDefinition\fP (\fBblpapi_Operation_t\fP *service, \fBblpapi_SchemaElementDefinition_t\fP **responseDefinition, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Service_name\fP (\fBblpapi_Service_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Service_description\fP (\fBblpapi_Service_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_numOperations\fP (\fBblpapi_Service_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_numEventDefinitions\fP (\fBblpapi_Service_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_addRef\fP (\fBblpapi_Service_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Service_release\fP (\fBblpapi_Service_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Service_authorizationServiceName\fP (\fBblpapi_Service_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_getOperation\fP (\fBblpapi_Service_t\fP *service, \fBblpapi_Operation_t\fP **operation, const char *nameString, const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_getOperationAt\fP (\fBblpapi_Service_t\fP *service, \fBblpapi_Operation_t\fP **operation, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_getEventDefinition\fP (\fBblpapi_Service_t\fP *service, \fBblpapi_SchemaElementDefinition_t\fP **result, const char *nameString, const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_getEventDefinitionAt\fP (\fBblpapi_Service_t\fP *service, \fBblpapi_SchemaElementDefinition_t\fP **result, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_createRequest\fP (\fBblpapi_Service_t\fP *service, \fBblpapi_Request_t\fP **request, const char *operation)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_createAuthorizationRequest\fP (\fBblpapi_Service_t\fP *service, \fBblpapi_Request_t\fP **request, const char *operation)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_createPublishEvent\fP (\fBblpapi_Service_t\fP *service, \fBblpapi_Event_t\fP **event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_createAdminEvent\fP (\fBblpapi_Service_t\fP *service, \fBblpapi_Event_t\fP **event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_createResponseEvent\fP (\fBblpapi_Service_t\fP *service, const \fBblpapi_CorrelationId_t\fP *correlationId, \fBblpapi_Event_t\fP **event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Service_print\fP (const \fBblpapi_Service_t\fP *service, \fBblpapi_StreamWriter_t\fP streamWriter, void *stream, int level, int spacesPerLevel)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Operation_description (\fBblpapi_Operation_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Operation_name (\fBblpapi_Operation_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Operation_numResponseDefinitions (\fBblpapi_Operation_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Operation_requestDefinition (\fBblpapi_Operation_t\fP * service, \fBblpapi_SchemaElementDefinition_t\fP ** requestDefinition)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Operation_responseDefinition (\fBblpapi_Operation_t\fP * service, \fBblpapi_SchemaElementDefinition_t\fP ** responseDefinition, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_addRef (\fBblpapi_Service_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Service_authorizationServiceName (\fBblpapi_Service_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_createAdminEvent (\fBblpapi_Service_t\fP * service, \fBblpapi_Event_t\fP ** event)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_createAuthorizationRequest (\fBblpapi_Service_t\fP * service, \fBblpapi_Request_t\fP ** request, const char * operation)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_createPublishEvent (\fBblpapi_Service_t\fP * service, \fBblpapi_Event_t\fP ** event)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_createRequest (\fBblpapi_Service_t\fP * service, \fBblpapi_Request_t\fP ** request, const char * operation)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_createResponseEvent (\fBblpapi_Service_t\fP * service, const \fBblpapi_CorrelationId_t\fP * correlationId, \fBblpapi_Event_t\fP ** event)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Service_description (\fBblpapi_Service_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_getEventDefinition (\fBblpapi_Service_t\fP * service, \fBblpapi_SchemaElementDefinition_t\fP ** result, const char * nameString, const \fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_getEventDefinitionAt (\fBblpapi_Service_t\fP * service, \fBblpapi_SchemaElementDefinition_t\fP ** result, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_getOperation (\fBblpapi_Service_t\fP * service, \fBblpapi_Operation_t\fP ** operation, const char * nameString, const \fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_getOperationAt (\fBblpapi_Service_t\fP * service, \fBblpapi_Operation_t\fP ** operation, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Service_name (\fBblpapi_Service_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_numEventDefinitions (\fBblpapi_Service_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_numOperations (\fBblpapi_Service_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Service_print (const \fBblpapi_Service_t\fP * service, \fBblpapi_StreamWriter_t\fP streamWriter, void * stream, int level, int spacesPerLevel)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Service_release (\fBblpapi_Service_t\fP * service)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

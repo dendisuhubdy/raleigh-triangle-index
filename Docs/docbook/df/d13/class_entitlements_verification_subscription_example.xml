@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d13/class_entitlements_verification_subscription_example">
+<title>EntitlementsVerificationSubscriptionExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_field</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; int &gt; d_uuids</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Identity &gt; d_identities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_programAddresses</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SubscriptionList d_subscriptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d13/class_entitlements_verification_subscription_example_1aeec0aa901d767b53f7c6caa77da5ff94">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d13/class_entitlements_verification_subscription_example_1a49d95f7a83012e1881f89f6723de6409">openServices</link> (
+Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="df/d13/class_entitlements_verification_subscription_example_1ae6d574e7b02154ca8567949b6d4d43dc">authorizeUsers</link> (
+EventQueue * authQueue, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="df/d13/class_entitlements_verification_subscription_example_1a3d15be0270403664a06fc8b1ac3e4182">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d13/class_entitlements_verification_subscription_example_1af4f3eb394c6f1659f91c5562f8481a8a">EntitlementsVerificationSubscriptionExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d13/class_entitlements_verification_subscription_example_1ae10ab8aeadf5806d008282060b5027c7">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/d13/class_entitlements_verification_subscription_example_1aeec0aa901d767b53f7c6caa77da5ff94">
+                <title>void EntitlementsVerificationSubscriptionExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d13/class_entitlements_verification_subscription_example_1a49d95f7a83012e1881f89f6723de6409">
+                <title>void EntitlementsVerificationSubscriptionExample::openServices (Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d13/class_entitlements_verification_subscription_example_1ae6d574e7b02154ca8567949b6d4d43dc">
+                <title>bool EntitlementsVerificationSubscriptionExample::authorizeUsers (EventQueue *authQueue, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d13/class_entitlements_verification_subscription_example_1a3d15be0270403664a06fc8b1ac3e4182">
+                <title>bool EntitlementsVerificationSubscriptionExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d13/class_entitlements_verification_subscription_example_1af4f3eb394c6f1659f91c5562f8481a8a">
+                <title>EntitlementsVerificationSubscriptionExample::EntitlementsVerificationSubscriptionExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d13/class_entitlements_verification_subscription_example_1ae10ab8aeadf5806d008282060b5027c7">
+                <title>void EntitlementsVerificationSubscriptionExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

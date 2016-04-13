@@ -1,0 +1,224 @@
+\hypertarget{blpapi__constant_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+constant.h File Reference}
+\label{blpapi__constant_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+constant.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+constant.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+name.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+datetime.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+exception.\+h$>$}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__constant_8h_a11475688726db20384e61697beafe9bd}{blpapi\+\_\+\+Constant\+\_\+set\+User\+Data} (\hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant, void $\ast$userdata)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$ \hyperlink{blpapi__constant_8h_adf8478b2ff3e9d8f8680ccbb19c95d37}{blpapi\+\_\+\+Constant\+\_\+name} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__constant_8h_a9c213ace5bdb6fc5a46689330961998a}{blpapi\+\_\+\+Constant\+\_\+description} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_a7aa287537650a9b75c9bf24e89596cb7}{blpapi\+\_\+\+Constant\+\_\+status} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_a65cf1986bda3682341a30c958b6baa5f}{blpapi\+\_\+\+Constant\+\_\+datatype} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_a6fe54e760247e4b7e008f6f1cbb3c6bb}{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Char} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant, \hyperlink{blpapi__types_8h_a75c2f34ebeceb597c158a4e76da76d5e}{blpapi\+\_\+\+Char\+\_\+t} $\ast$buffer)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_a4ec5b3bf43166cecba450beb2e24ad6e}{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int32} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant, \hyperlink{blpapi__types_8h_ad00bf4bc4f78c3271dadf8cc25516173}{blpapi\+\_\+\+Int32\+\_\+t} $\ast$buffer)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_a7ec6d0f073115efb4a02ed58693b77be}{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int64} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant, \hyperlink{blpapi__types_8h_a90013f2ddf364572e1618e388e3fa3c4}{blpapi\+\_\+\+Int64\+\_\+t} $\ast$buffer)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_a0c09b4c26aadcd28e5a8e2370cd2defd}{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float32} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant, \hyperlink{blpapi__types_8h_a78bbb0eb8f6ff5b44ebcaf295380c3f5}{blpapi\+\_\+\+Float32\+\_\+t} $\ast$buffer)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_aad22550baae304fe5b734f2307782585}{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float64} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant, \hyperlink{blpapi__types_8h_ae935ef577789845825190f3c848b51dc}{blpapi\+\_\+\+Float64\+\_\+t} $\ast$buffer)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_a5a1abd3d0a65d4b86b0de1f8430ea235}{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Datetime} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant, \hyperlink{blpapi__datetime_8h_aa182a01a276451f8c8aa7c425c9f1552}{blpapi\+\_\+\+Datetime\+\_\+t} $\ast$buffer)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_a8f6d423677bb227c757cb058be8fe955}{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+String} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant, const char $\ast$$\ast$buffer)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void $\ast$ \hyperlink{blpapi__constant_8h_a5ea178c3e2a910523ded3b513da8c495}{blpapi\+\_\+\+Constant\+\_\+user\+Data} (const \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$constant)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__constant_8h_a14bd529cf271945894453342585aa6b2}{blpapi\+\_\+\+Constant\+List\+\_\+set\+User\+Data} (\hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$constant, void $\ast$userdata)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$ \hyperlink{blpapi__constant_8h_a6bd177ec11fcf772522035e9a9aa0157}{blpapi\+\_\+\+Constant\+List\+\_\+name} (const \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$list)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__constant_8h_a73bc8cca69f4a928a56b4067228ce76f}{blpapi\+\_\+\+Constant\+List\+\_\+description} (const \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$list)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_aaa2489fcd8b16a746c5149f90a792481}{blpapi\+\_\+\+Constant\+List\+\_\+num\+Constants} (const \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$list)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_af5c50b866544020bd6052670213bef20}{blpapi\+\_\+\+Constant\+List\+\_\+datatype} (const \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$constant)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__constant_8h_aec743e91253b04edffc715dad4d79fd7}{blpapi\+\_\+\+Constant\+List\+\_\+status} (const \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$list)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$ \hyperlink{blpapi__constant_8h_aaec9dc88d03b0c21b7b8a17abf00567a}{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant} (const \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$constant, const char $\ast$name\+String, const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a2bf86142f73df264003f2ff55b42b047}{blpapi\+\_\+\+Constant\+\_\+t} $\ast$ \hyperlink{blpapi__constant_8h_a9b1aa59ceea1c57a80f7c1ab07d99158}{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant\+At} (const \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$constant, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void $\ast$ \hyperlink{blpapi__constant_8h_ab46bd73038fa0499509f2e091bee2a16}{blpapi\+\_\+\+Constant\+List\+\_\+user\+Data} (const \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$constant)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+datatype@{blpapi\+\_\+\+Constant\+\_\+datatype}}
+\index{blpapi\+\_\+\+Constant\+\_\+datatype@{blpapi\+\_\+\+Constant\+\_\+datatype}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+datatype(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant)}{blpapi_Constant_datatype(const blpapi_Constant_t *constant)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+datatype (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a65cf1986bda3682341a30c958b6baa5f}{}\label{blpapi__constant_8h_a65cf1986bda3682341a30c958b6baa5f}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+description@{blpapi\+\_\+\+Constant\+\_\+description}}
+\index{blpapi\+\_\+\+Constant\+\_\+description@{blpapi\+\_\+\+Constant\+\_\+description}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+description(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant)}{blpapi_Constant_description(const blpapi_Constant_t *constant)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Constant\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a9c213ace5bdb6fc5a46689330961998a}{}\label{blpapi__constant_8h_a9c213ace5bdb6fc5a46689330961998a}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Char@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Char}}
+\index{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Char@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Char}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Char(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant, blpapi\+\_\+\+Char\+\_\+t $\ast$buffer)}{blpapi_Constant_getValueAsChar(const blpapi_Constant_t *constant, blpapi_Char_t *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Char (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant, }
+\item[{{\bf blpapi\+\_\+\+Char\+\_\+t} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a6fe54e760247e4b7e008f6f1cbb3c6bb}{}\label{blpapi__constant_8h_a6fe54e760247e4b7e008f6f1cbb3c6bb}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Datetime@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Datetime}}
+\index{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Datetime@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Datetime}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Datetime(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant, blpapi\+\_\+\+Datetime\+\_\+t $\ast$buffer)}{blpapi_Constant_getValueAsDatetime(const blpapi_Constant_t *constant, blpapi_Datetime_t *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Datetime (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant, }
+\item[{{\bf blpapi\+\_\+\+Datetime\+\_\+t} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a5a1abd3d0a65d4b86b0de1f8430ea235}{}\label{blpapi__constant_8h_a5a1abd3d0a65d4b86b0de1f8430ea235}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float32@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float32}}
+\index{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float32@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float32}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float32(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant, blpapi\+\_\+\+Float32\+\_\+t $\ast$buffer)}{blpapi_Constant_getValueAsFloat32(const blpapi_Constant_t *constant, blpapi_Float32_t *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float32 (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant, }
+\item[{{\bf blpapi\+\_\+\+Float32\+\_\+t} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a0c09b4c26aadcd28e5a8e2370cd2defd}{}\label{blpapi__constant_8h_a0c09b4c26aadcd28e5a8e2370cd2defd}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float64@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float64}}
+\index{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float64@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float64}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float64(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant, blpapi\+\_\+\+Float64\+\_\+t $\ast$buffer)}{blpapi_Constant_getValueAsFloat64(const blpapi_Constant_t *constant, blpapi_Float64_t *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Float64 (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant, }
+\item[{{\bf blpapi\+\_\+\+Float64\+\_\+t} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_aad22550baae304fe5b734f2307782585}{}\label{blpapi__constant_8h_aad22550baae304fe5b734f2307782585}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int32@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int32}}
+\index{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int32@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int32}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int32(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant, blpapi\+\_\+\+Int32\+\_\+t $\ast$buffer)}{blpapi_Constant_getValueAsInt32(const blpapi_Constant_t *constant, blpapi_Int32_t *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int32 (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant, }
+\item[{{\bf blpapi\+\_\+\+Int32\+\_\+t} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a4ec5b3bf43166cecba450beb2e24ad6e}{}\label{blpapi__constant_8h_a4ec5b3bf43166cecba450beb2e24ad6e}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int64@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int64}}
+\index{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int64@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int64}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int64(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant, blpapi\+\_\+\+Int64\+\_\+t $\ast$buffer)}{blpapi_Constant_getValueAsInt64(const blpapi_Constant_t *constant, blpapi_Int64_t *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+Int64 (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant, }
+\item[{{\bf blpapi\+\_\+\+Int64\+\_\+t} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a7ec6d0f073115efb4a02ed58693b77be}{}\label{blpapi__constant_8h_a7ec6d0f073115efb4a02ed58693b77be}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+String@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+String}}
+\index{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+String@{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+String}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+String(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant, const char $\ast$$\ast$buffer)}{blpapi_Constant_getValueAsString(const blpapi_Constant_t *constant, const char **buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+get\+Value\+As\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant, }
+\item[{const char $\ast$$\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a8f6d423677bb227c757cb058be8fe955}{}\label{blpapi__constant_8h_a8f6d423677bb227c757cb058be8fe955}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+name@{blpapi\+\_\+\+Constant\+\_\+name}}
+\index{blpapi\+\_\+\+Constant\+\_\+name@{blpapi\+\_\+\+Constant\+\_\+name}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+name(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant)}{blpapi_Constant_name(const blpapi_Constant_t *constant)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Name\+\_\+t}$\ast$ blpapi\+\_\+\+Constant\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_adf8478b2ff3e9d8f8680ccbb19c95d37}{}\label{blpapi__constant_8h_adf8478b2ff3e9d8f8680ccbb19c95d37}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+set\+User\+Data@{blpapi\+\_\+\+Constant\+\_\+set\+User\+Data}}
+\index{blpapi\+\_\+\+Constant\+\_\+set\+User\+Data@{blpapi\+\_\+\+Constant\+\_\+set\+User\+Data}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+set\+User\+Data(blpapi\+\_\+\+Constant\+\_\+t $\ast$constant, void $\ast$userdata)}{blpapi_Constant_setUserData(blpapi_Constant_t *constant, void *userdata)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Constant\+\_\+set\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant, }
+\item[{void $\ast$}]{userdata}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a11475688726db20384e61697beafe9bd}{}\label{blpapi__constant_8h_a11475688726db20384e61697beafe9bd}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+status@{blpapi\+\_\+\+Constant\+\_\+status}}
+\index{blpapi\+\_\+\+Constant\+\_\+status@{blpapi\+\_\+\+Constant\+\_\+status}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+status(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant)}{blpapi_Constant_status(const blpapi_Constant_t *constant)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a7aa287537650a9b75c9bf24e89596cb7}{}\label{blpapi__constant_8h_a7aa287537650a9b75c9bf24e89596cb7}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+\_\+user\+Data@{blpapi\+\_\+\+Constant\+\_\+user\+Data}}
+\index{blpapi\+\_\+\+Constant\+\_\+user\+Data@{blpapi\+\_\+\+Constant\+\_\+user\+Data}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+\_\+user\+Data(const blpapi\+\_\+\+Constant\+\_\+t $\ast$constant)}{blpapi_Constant_userData(const blpapi_Constant_t *constant)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void$\ast$ blpapi\+\_\+\+Constant\+\_\+user\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+\_\+t} $\ast$}]{constant}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a5ea178c3e2a910523ded3b513da8c495}{}\label{blpapi__constant_8h_a5ea178c3e2a910523ded3b513da8c495}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+datatype@{blpapi\+\_\+\+Constant\+List\+\_\+datatype}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+datatype@{blpapi\+\_\+\+Constant\+List\+\_\+datatype}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+datatype(const blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$constant)}{blpapi_ConstantList_datatype(const blpapi_ConstantList_t *constant)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+List\+\_\+datatype (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{constant}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_af5c50b866544020bd6052670213bef20}{}\label{blpapi__constant_8h_af5c50b866544020bd6052670213bef20}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+description@{blpapi\+\_\+\+Constant\+List\+\_\+description}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+description@{blpapi\+\_\+\+Constant\+List\+\_\+description}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+description(const blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$list)}{blpapi_ConstantList_description(const blpapi_ConstantList_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Constant\+List\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a73bc8cca69f4a928a56b4067228ce76f}{}\label{blpapi__constant_8h_a73bc8cca69f4a928a56b4067228ce76f}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant@{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant@{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant(const blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$constant, const char $\ast$name\+String, const blpapi\+\_\+\+Name\+\_\+t $\ast$name)}{blpapi_ConstantList_getConstant(const blpapi_ConstantList_t *constant, const char *nameString, const blpapi_Name_t *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Constant\+\_\+t}$\ast$ blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{constant, }
+\item[{const char $\ast$}]{name\+String, }
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_aaec9dc88d03b0c21b7b8a17abf00567a}{}\label{blpapi__constant_8h_aaec9dc88d03b0c21b7b8a17abf00567a}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant\+At@{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant\+At}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant\+At@{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant\+At}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant\+At(const blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$constant, size\+\_\+t index)}{blpapi_ConstantList_getConstantAt(const blpapi_ConstantList_t *constant, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Constant\+\_\+t}$\ast$ blpapi\+\_\+\+Constant\+List\+\_\+get\+Constant\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{constant, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a9b1aa59ceea1c57a80f7c1ab07d99158}{}\label{blpapi__constant_8h_a9b1aa59ceea1c57a80f7c1ab07d99158}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+name@{blpapi\+\_\+\+Constant\+List\+\_\+name}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+name@{blpapi\+\_\+\+Constant\+List\+\_\+name}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+name(const blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$list)}{blpapi_ConstantList_name(const blpapi_ConstantList_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Name\+\_\+t}$\ast$ blpapi\+\_\+\+Constant\+List\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a6bd177ec11fcf772522035e9a9aa0157}{}\label{blpapi__constant_8h_a6bd177ec11fcf772522035e9a9aa0157}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+num\+Constants@{blpapi\+\_\+\+Constant\+List\+\_\+num\+Constants}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+num\+Constants@{blpapi\+\_\+\+Constant\+List\+\_\+num\+Constants}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+num\+Constants(const blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$list)}{blpapi_ConstantList_numConstants(const blpapi_ConstantList_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+List\+\_\+num\+Constants (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_aaa2489fcd8b16a746c5149f90a792481}{}\label{blpapi__constant_8h_aaa2489fcd8b16a746c5149f90a792481}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+set\+User\+Data@{blpapi\+\_\+\+Constant\+List\+\_\+set\+User\+Data}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+set\+User\+Data@{blpapi\+\_\+\+Constant\+List\+\_\+set\+User\+Data}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+set\+User\+Data(blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$constant, void $\ast$userdata)}{blpapi_ConstantList_setUserData(blpapi_ConstantList_t *constant, void *userdata)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Constant\+List\+\_\+set\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{constant, }
+\item[{void $\ast$}]{userdata}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_a14bd529cf271945894453342585aa6b2}{}\label{blpapi__constant_8h_a14bd529cf271945894453342585aa6b2}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+status@{blpapi\+\_\+\+Constant\+List\+\_\+status}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+status@{blpapi\+\_\+\+Constant\+List\+\_\+status}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+status(const blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$list)}{blpapi_ConstantList_status(const blpapi_ConstantList_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Constant\+List\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_aec743e91253b04edffc715dad4d79fd7}{}\label{blpapi__constant_8h_aec743e91253b04edffc715dad4d79fd7}
+\index{blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}!blpapi\+\_\+\+Constant\+List\+\_\+user\+Data@{blpapi\+\_\+\+Constant\+List\+\_\+user\+Data}}
+\index{blpapi\+\_\+\+Constant\+List\+\_\+user\+Data@{blpapi\+\_\+\+Constant\+List\+\_\+user\+Data}!blpapi\+\_\+constant.\+h@{blpapi\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Constant\+List\+\_\+user\+Data(const blpapi\+\_\+\+Constant\+List\+\_\+t $\ast$constant)}{blpapi_ConstantList_userData(const blpapi_ConstantList_t *constant)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void$\ast$ blpapi\+\_\+\+Constant\+List\+\_\+user\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$}]{constant}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__constant_8h_ab46bd73038fa0499509f2e091bee2a16}{}\label{blpapi__constant_8h_ab46bd73038fa0499509f2e091bee2a16}

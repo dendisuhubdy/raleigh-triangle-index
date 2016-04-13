@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d93/class_simple_subscription_example">
+<title>SimpleSubscriptionExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_maxEvents</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_eventCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d93/class_simple_subscription_example_1a725f8998659886c07a3ccfb6b5f7d730">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/d93/class_simple_subscription_example_1a71e07fa95f86be664ffc89b4f99bd910">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d93/class_simple_subscription_example_1ad6cd71499b652f8395b4b323899cc460">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/d93/class_simple_subscription_example_1a725f8998659886c07a3ccfb6b5f7d730">
+                <title>void SimpleSubscriptionExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d93/class_simple_subscription_example_1a71e07fa95f86be664ffc89b4f99bd910">
+                <title>bool SimpleSubscriptionExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/d93/class_simple_subscription_example_1ad6cd71499b652f8395b4b323899cc460">
+                <title>void SimpleSubscriptionExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

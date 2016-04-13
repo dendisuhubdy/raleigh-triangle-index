@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d42/class_generate_token_example">
+<title>GenerateTokenExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_DSProperty</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool d_useDS</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Session * d_session</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Identity d_identity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d42/class_generate_token_example_1a1fe7c12fb4c4c2b1f766aa698295bb92">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d42/class_generate_token_example_1aa203059ee607eb7e7850a3de12feec09">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d42/class_generate_token_example_1a487bc57fa3fc3ca97a913034422fdde2">sendRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d42/class_generate_token_example_1a574ac2414b9a37c63e5519e888eb98ee">processTokenStatus</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d42/class_generate_token_example_1a532f91a9b41e84d7dbfa594550281347">processEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d42/class_generate_token_example_1ab19361ae234681fd8e5e693cb1d2a2ca">GenerateTokenExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d42/class_generate_token_example_1a2f5b0e50388b7d32a5f38cba73d3cdf9">~GenerateTokenExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d42/class_generate_token_example_1a7e549b9482984dceed99a7b70b85342f">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d42/class_generate_token_example_1a1fe7c12fb4c4c2b1f766aa698295bb92">
+                <title>void GenerateTokenExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d42/class_generate_token_example_1aa203059ee607eb7e7850a3de12feec09">
+                <title>bool GenerateTokenExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d42/class_generate_token_example_1a487bc57fa3fc3ca97a913034422fdde2">
+                <title>void GenerateTokenExample::sendRequest ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d42/class_generate_token_example_1a574ac2414b9a37c63e5519e888eb98ee">
+                <title>bool GenerateTokenExample::processTokenStatus (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d42/class_generate_token_example_1a532f91a9b41e84d7dbfa594550281347">
+                <title>bool GenerateTokenExample::processEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d42/class_generate_token_example_1ab19361ae234681fd8e5e693cb1d2a2ca">
+                <title>GenerateTokenExample::GenerateTokenExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d42/class_generate_token_example_1a2f5b0e50388b7d32a5f38cba73d3cdf9">
+                <title>GenerateTokenExample::~GenerateTokenExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d42/class_generate_token_example_1a7e549b9482984dceed99a7b70b85342f">
+                <title>void GenerateTokenExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

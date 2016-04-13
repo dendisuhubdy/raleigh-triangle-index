@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d4f/class_ref_data_example">
+<title>RefDataExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/d4f/class_ref_data_example_1a5eaec3ac9eee85852eb0304431759cd4">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_ref_data_example_1a79ffb7739cd8fd718239464dd6b3417a">printErrorInfo</link> (
+const char * leadingStr, const Element &amp; errorInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_ref_data_example_1a343ecc24c93a8885e6ecce572d89d35b">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_ref_data_example_1af165c5b94f9394e67fa936c043657037">registerCallback</link> (
+int verbosityCount)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_ref_data_example_1a54dbabba34f175339b7b29e7922c087e">sendRefDataRequest</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_ref_data_example_1ad568222cc17b4ce1d4d1e50d4d81764a">processResponseEvent</link> (
+Event event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_ref_data_example_1af3436fe5784bfb59107071d4e17ec802">eventLoop</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d4f/class_ref_data_example_1a14ebe742058f3757c662274190fe6ec7">RefDataExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d4f/class_ref_data_example_1aaafb8c46be454f637d5d005404d29c92">~RefDataExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_ref_data_example_1a3e6d7e862fa4b486502345bd63a29175">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1a5eaec3ac9eee85852eb0304431759cd4">
+                <title>bool RefDataExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1a79ffb7739cd8fd718239464dd6b3417a">
+                <title>void RefDataExample::printErrorInfo (const char *leadingStr, const Element &amp;errorInfo)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1a343ecc24c93a8885e6ecce572d89d35b">
+                <title>void RefDataExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1af165c5b94f9394e67fa936c043657037">
+                <title>void RefDataExample::registerCallback (int verbosityCount)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1a54dbabba34f175339b7b29e7922c087e">
+                <title>void RefDataExample::sendRefDataRequest (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1ad568222cc17b4ce1d4d1e50d4d81764a">
+                <title>void RefDataExample::processResponseEvent (Event event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1af3436fe5784bfb59107071d4e17ec802">
+                <title>void RefDataExample::eventLoop (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1a14ebe742058f3757c662274190fe6ec7">
+                <title>RefDataExample::RefDataExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1aaafb8c46be454f637d5d005404d29c92">
+                <title>RefDataExample::~RefDataExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_ref_data_example_1a3e6d7e862fa4b486502345bd63a29175">
+                <title>void RefDataExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,57 @@
+\hypertarget{blpapi__eventdispatcher_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+eventdispatcher.h File Reference}
+\label{blpapi__eventdispatcher_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+eventdispatcher.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+eventdispatcher.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a5df95934a09713c9ed50e56f2625bc04}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$ \hyperlink{blpapi__eventdispatcher_8h_a94cd3c3e1943efc3c1d3c40121fd8ec9}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+create} (size\+\_\+t num\+Dispatcher\+Threads)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__eventdispatcher_8h_aab90ddc3267b423ccfa1573896d35726}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+destroy} (\hyperlink{blpapi__types_8h_a5df95934a09713c9ed50e56f2625bc04}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$handle)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__eventdispatcher_8h_a2e7d5f044a0270db14b6b37284f78067}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+start} (\hyperlink{blpapi__types_8h_a5df95934a09713c9ed50e56f2625bc04}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$handle)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__eventdispatcher_8h_a13da833eca75aa174ca96eb9b6efb12f}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+stop} (\hyperlink{blpapi__types_8h_a5df95934a09713c9ed50e56f2625bc04}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$handle, int async)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__eventdispatcher_8h_ab66da19a1b0a60fab4488fa14244bb0e}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+dispatch\+Events} (\hyperlink{blpapi__types_8h_a5df95934a09713c9ed50e56f2625bc04}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$handle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}!blpapi\+\_\+\+Event\+Dispatcher\+\_\+create@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+create}}
+\index{blpapi\+\_\+\+Event\+Dispatcher\+\_\+create@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+create}!blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Event\+Dispatcher\+\_\+create(size\+\_\+t num\+Dispatcher\+Threads)}{blpapi_EventDispatcher_create(size_t numDispatcherThreads)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Event\+Dispatcher\+\_\+t}$\ast$ blpapi\+\_\+\+Event\+Dispatcher\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num\+Dispatcher\+Threads}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__eventdispatcher_8h_a94cd3c3e1943efc3c1d3c40121fd8ec9}{}\label{blpapi__eventdispatcher_8h_a94cd3c3e1943efc3c1d3c40121fd8ec9}
+\index{blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}!blpapi\+\_\+\+Event\+Dispatcher\+\_\+destroy@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+destroy}}
+\index{blpapi\+\_\+\+Event\+Dispatcher\+\_\+destroy@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+destroy}!blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Event\+Dispatcher\+\_\+destroy(blpapi\+\_\+\+Event\+Dispatcher\+\_\+t $\ast$handle)}{blpapi_EventDispatcher_destroy(blpapi_EventDispatcher_t *handle)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Event\+Dispatcher\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__eventdispatcher_8h_aab90ddc3267b423ccfa1573896d35726}{}\label{blpapi__eventdispatcher_8h_aab90ddc3267b423ccfa1573896d35726}
+\index{blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}!blpapi\+\_\+\+Event\+Dispatcher\+\_\+dispatch\+Events@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+dispatch\+Events}}
+\index{blpapi\+\_\+\+Event\+Dispatcher\+\_\+dispatch\+Events@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+dispatch\+Events}!blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Event\+Dispatcher\+\_\+dispatch\+Events(blpapi\+\_\+\+Event\+Dispatcher\+\_\+t $\ast$handle)}{blpapi_EventDispatcher_dispatchEvents(blpapi_EventDispatcher_t *handle)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Event\+Dispatcher\+\_\+dispatch\+Events (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__eventdispatcher_8h_ab66da19a1b0a60fab4488fa14244bb0e}{}\label{blpapi__eventdispatcher_8h_ab66da19a1b0a60fab4488fa14244bb0e}
+\index{blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}!blpapi\+\_\+\+Event\+Dispatcher\+\_\+start@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+start}}
+\index{blpapi\+\_\+\+Event\+Dispatcher\+\_\+start@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+start}!blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Event\+Dispatcher\+\_\+start(blpapi\+\_\+\+Event\+Dispatcher\+\_\+t $\ast$handle)}{blpapi_EventDispatcher_start(blpapi_EventDispatcher_t *handle)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Event\+Dispatcher\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__eventdispatcher_8h_a2e7d5f044a0270db14b6b37284f78067}{}\label{blpapi__eventdispatcher_8h_a2e7d5f044a0270db14b6b37284f78067}
+\index{blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}!blpapi\+\_\+\+Event\+Dispatcher\+\_\+stop@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+stop}}
+\index{blpapi\+\_\+\+Event\+Dispatcher\+\_\+stop@{blpapi\+\_\+\+Event\+Dispatcher\+\_\+stop}!blpapi\+\_\+eventdispatcher.\+h@{blpapi\+\_\+eventdispatcher.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Event\+Dispatcher\+\_\+stop(blpapi\+\_\+\+Event\+Dispatcher\+\_\+t $\ast$handle, int async)}{blpapi_EventDispatcher_stop(blpapi_EventDispatcher_t *handle, int async)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Event\+Dispatcher\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$}]{handle, }
+\item[{int}]{async}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__eventdispatcher_8h_a13da833eca75aa174ca96eb9b6efb12f}{}\label{blpapi__eventdispatcher_8h_a13da833eca75aa174ca96eb9b6efb12f}

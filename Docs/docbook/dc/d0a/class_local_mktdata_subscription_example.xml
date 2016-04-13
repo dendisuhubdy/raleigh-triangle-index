@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d0a/class_local_mktdata_subscription_example">
+<title>LocalMktdataSubscriptionExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_hosts</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_maxEvents</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_eventCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_service</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_topics</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_options</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_authOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d0a/class_local_mktdata_subscription_example_1a249a9961fcba1fd93774ef1c55011583">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/d0a/class_local_mktdata_subscription_example_1ad6be659dc28b90ff8a583d70a0241a34">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/d0a/class_local_mktdata_subscription_example_1a3219308558289c38d3c2c83530fac30f">authorize</link> (
+const Service &amp; authService, Identity * subscriptionIdentity, Session * session, const CorrelationId &amp; cid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d0a/class_local_mktdata_subscription_example_1a96c1cf7bd3819a7a9216c5cdfb602058">LocalMktdataSubscriptionExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d0a/class_local_mktdata_subscription_example_1aafa79a4bf143bfebbbcec977c10235cc">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d0a/class_local_mktdata_subscription_example_1a249a9961fcba1fd93774ef1c55011583">
+                <title>void LocalMktdataSubscriptionExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d0a/class_local_mktdata_subscription_example_1ad6be659dc28b90ff8a583d70a0241a34">
+                <title>bool LocalMktdataSubscriptionExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d0a/class_local_mktdata_subscription_example_1a3219308558289c38d3c2c83530fac30f">
+                <title>bool LocalMktdataSubscriptionExample::authorize (const Service &amp;authService, Identity *subscriptionIdentity, Session *session, const CorrelationId &amp;cid)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d0a/class_local_mktdata_subscription_example_1a96c1cf7bd3819a7a9216c5cdfb602058">
+                <title>LocalMktdataSubscriptionExample::LocalMktdataSubscriptionExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d0a/class_local_mktdata_subscription_example_1aafa79a4bf143bfebbbcec977c10235cc">
+                <title>void LocalMktdataSubscriptionExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

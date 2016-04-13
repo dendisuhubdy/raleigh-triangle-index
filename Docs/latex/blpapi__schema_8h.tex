@@ -1,0 +1,304 @@
+\hypertarget{blpapi__schema_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+schema.h File Reference}
+\label{blpapi__schema_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+schema.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+schema.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+constant.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+exception.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+name.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+streamproxy.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t}
+\item 
+typedef void $\ast$ \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$ \hyperlink{blpapi__schema_8h_a799fe50d92e3ef5558240023b3702f92}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+name} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__schema_8h_a7c3052004ccbf47e616bfa5b2b9b28a8}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+description} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_a25ca1e67125ce6216eff031b12bbd337}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+status} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$ \hyperlink{blpapi__schema_8h_abdef743d0abc1b0a06a47e4e6d337496}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+type} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{blpapi__schema_8h_a39dd54bf8d0cff665e2fc714db4e2a09}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+num\+Alternate\+Names} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$ \hyperlink{blpapi__schema_8h_a81d2e5350264f86a801d8e8c7af29531}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+get\+Alternate\+Name} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{blpapi__schema_8h_a6f3ceca432decf88cf90611336008333}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+min\+Values} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{blpapi__schema_8h_aa6978fed3a3456eaf6857960388a8aff}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+max\+Values} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_aaf57769db502bfa9b5a0b1814de879e9}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+print} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$element, \hyperlink{blpapi__streamproxy_8h_a41f11193f44e5d7b5f5f5238ceba9cfa}{blpapi\+\_\+\+Stream\+Writer\+\_\+t} stream\+Writer, void $\ast$user\+Stream, int level, int spaces\+Per\+Level)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__schema_8h_a889dbe9a6fde3f4b18abd2a9f28e9b03}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+set\+User\+Data} (\hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field, void $\ast$userdata)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void $\ast$ \hyperlink{blpapi__schema_8h_a7bb076251f4a92a34d77fe4cf4462be0}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+user\+Data} (const \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$field)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$ \hyperlink{blpapi__schema_8h_a2e3da5bbc0c395d3c154fca5a3f52291}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+name} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__schema_8h_a2faff90a87fe33ff73ffa5dfcbf1772d}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+description} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_a5ad4b2a418c326f402d8bd37aadf4662}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+status} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_a1504f678905b9d7a94c85f613d401459}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+datatype} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_a8f6d16fa1bfc7ec21664a5b7b752c92a}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex\+Type} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_a47958b0cd7aa6a6948bc2ba961656a2b}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple\+Type} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_ac9f5f6f548529e0047c7c5e5ce5e8b4c}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration\+Type} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_a8fce4979ddc5f03238ec533938a5a23b}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_a0fe8f35db82ccbf91417a62648242ed2}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_ad63d04b16b541afefad4aa189fb49ce8}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{blpapi__schema_8h_acdeea84d8d4a6c1b125701a34fbd254e}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+num\+Element\+Definitions} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$ \hyperlink{blpapi__schema_8h_aa7b5db9772731bd6dee8931221f56ff6}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type, const char $\ast$name\+String, const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$ \hyperlink{blpapi__schema_8h_abd0720af0fd96fb91a069b195a9694a9}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition\+At} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$type, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__schema_8h_a6b6f99afc032b74b20caea9070e462ee}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+print} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$element, \hyperlink{blpapi__streamproxy_8h_a41f11193f44e5d7b5f5f5238ceba9cfa}{blpapi\+\_\+\+Stream\+Writer\+\_\+t} stream\+Writer, void $\ast$user\+Stream, int level, int spaces\+Per\+Level)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__schema_8h_a0de840f36d170f0f6847814beb553dbc}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+set\+User\+Data} (\hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$element, void $\ast$userdata)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void $\ast$ \hyperlink{blpapi__schema_8h_a771dad18a4229df571947034fce3b434}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+user\+Data} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$element)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7a8d479eb2437dcbd51ff695456a1d48}{blpapi\+\_\+\+Constant\+List\+\_\+t} $\ast$ \hyperlink{blpapi__schema_8h_a8ea685e6315dba469140edcf749fcf2b}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+enumeration} (const \hyperlink{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t}{blpapi_SchemaElementDefinition_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t}}\hypertarget{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{}\label{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}
+
+
+Definition at line 63 of file blpapi\+\_\+schema.\+h.
+
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t}{blpapi_SchemaTypeDefinition_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t}}\hypertarget{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}{}\label{blpapi__schema_8h_a443d9d9e7acbd72af164243c59ef8374}
+
+
+Definition at line 64 of file blpapi\+\_\+schema.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+description@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+description}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+description@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+description}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+description(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field)}{blpapi_SchemaElementDefinition_description(const blpapi_SchemaElementDefinition_t *field)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a7c3052004ccbf47e616bfa5b2b9b28a8}{}\label{blpapi__schema_8h_a7c3052004ccbf47e616bfa5b2b9b28a8}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+get\+Alternate\+Name@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+get\+Alternate\+Name}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+get\+Alternate\+Name@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+get\+Alternate\+Name}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+get\+Alternate\+Name(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field, size\+\_\+t index)}{blpapi_SchemaElementDefinition_getAlternateName(const blpapi_SchemaElementDefinition_t *field, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Name\+\_\+t}$\ast$ blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+get\+Alternate\+Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a81d2e5350264f86a801d8e8c7af29531}{}\label{blpapi__schema_8h_a81d2e5350264f86a801d8e8c7af29531}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+max\+Values@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+max\+Values}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+max\+Values@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+max\+Values}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+max\+Values(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field)}{blpapi_SchemaElementDefinition_maxValues(const blpapi_SchemaElementDefinition_t *field)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+max\+Values (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_aa6978fed3a3456eaf6857960388a8aff}{}\label{blpapi__schema_8h_aa6978fed3a3456eaf6857960388a8aff}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+min\+Values@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+min\+Values}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+min\+Values@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+min\+Values}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+min\+Values(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field)}{blpapi_SchemaElementDefinition_minValues(const blpapi_SchemaElementDefinition_t *field)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+min\+Values (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a6f3ceca432decf88cf90611336008333}{}\label{blpapi__schema_8h_a6f3ceca432decf88cf90611336008333}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+name@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+name}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+name@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+name}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+name(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field)}{blpapi_SchemaElementDefinition_name(const blpapi_SchemaElementDefinition_t *field)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Name\+\_\+t}$\ast$ blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a799fe50d92e3ef5558240023b3702f92}{}\label{blpapi__schema_8h_a799fe50d92e3ef5558240023b3702f92}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+num\+Alternate\+Names@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+num\+Alternate\+Names}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+num\+Alternate\+Names@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+num\+Alternate\+Names}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+num\+Alternate\+Names(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field)}{blpapi_SchemaElementDefinition_numAlternateNames(const blpapi_SchemaElementDefinition_t *field)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+num\+Alternate\+Names (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a39dd54bf8d0cff665e2fc714db4e2a09}{}\label{blpapi__schema_8h_a39dd54bf8d0cff665e2fc714db4e2a09}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+print@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+print}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+print@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+print}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+print(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$element, blpapi\+\_\+\+Stream\+Writer\+\_\+t stream\+Writer, void $\ast$user\+Stream, int level, int spaces\+Per\+Level)}{blpapi_SchemaElementDefinition_print(const blpapi_SchemaElementDefinition_t *element, blpapi_StreamWriter_t streamWriter, void *userStream, int level, int spacesPerLevel)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{element, }
+\item[{{\bf blpapi\+\_\+\+Stream\+Writer\+\_\+t}}]{stream\+Writer, }
+\item[{void $\ast$}]{user\+Stream, }
+\item[{int}]{level, }
+\item[{int}]{spaces\+Per\+Level}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_aaf57769db502bfa9b5a0b1814de879e9}{}\label{blpapi__schema_8h_aaf57769db502bfa9b5a0b1814de879e9}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+set\+User\+Data@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+set\+User\+Data}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+set\+User\+Data@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+set\+User\+Data}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+set\+User\+Data(blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field, void $\ast$userdata)}{blpapi_SchemaElementDefinition_setUserData(blpapi_SchemaElementDefinition_t *field, void *userdata)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+set\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field, }
+\item[{void $\ast$}]{userdata}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a889dbe9a6fde3f4b18abd2a9f28e9b03}{}\label{blpapi__schema_8h_a889dbe9a6fde3f4b18abd2a9f28e9b03}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+status@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+status}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+status@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+status}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+status(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field)}{blpapi_SchemaElementDefinition_status(const blpapi_SchemaElementDefinition_t *field)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a25ca1e67125ce6216eff031b12bbd337}{}\label{blpapi__schema_8h_a25ca1e67125ce6216eff031b12bbd337}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+type@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+type}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+type@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+type}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+type(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field)}{blpapi_SchemaElementDefinition_type(const blpapi_SchemaElementDefinition_t *field)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t}$\ast$ blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_abdef743d0abc1b0a06a47e4e6d337496}{}\label{blpapi__schema_8h_abdef743d0abc1b0a06a47e4e6d337496}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+user\+Data@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+user\+Data}}
+\index{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+user\+Data@{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+user\+Data}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+user\+Data(const blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$field)}{blpapi_SchemaElementDefinition_userData(const blpapi_SchemaElementDefinition_t *field)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void$\ast$ blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+user\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$}]{field}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a7bb076251f4a92a34d77fe4cf4462be0}{}\label{blpapi__schema_8h_a7bb076251f4a92a34d77fe4cf4462be0}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+datatype@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+datatype}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+datatype@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+datatype}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+datatype(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_datatype(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+datatype (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a1504f678905b9d7a94c85f613d401459}{}\label{blpapi__schema_8h_a1504f678905b9d7a94c85f613d401459}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+description@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+description}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+description@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+description}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+description(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_description(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a2faff90a87fe33ff73ffa5dfcbf1772d}{}\label{blpapi__schema_8h_a2faff90a87fe33ff73ffa5dfcbf1772d}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+enumeration@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+enumeration}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+enumeration@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+enumeration}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+enumeration(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$element)}{blpapi_SchemaTypeDefinition_enumeration(const blpapi_SchemaTypeDefinition_t *element)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Constant\+List\+\_\+t}$\ast$ blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+enumeration (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a8ea685e6315dba469140edcf749fcf2b}{}\label{blpapi__schema_8h_a8ea685e6315dba469140edcf749fcf2b}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type, const char $\ast$name\+String, const blpapi\+\_\+\+Name\+\_\+t $\ast$name)}{blpapi_SchemaTypeDefinition_getElementDefinition(const blpapi_SchemaTypeDefinition_t *type, const char *nameString, const blpapi_Name_t *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t}$\ast$ blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type, }
+\item[{const char $\ast$}]{name\+String, }
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_aa7b5db9772731bd6dee8931221f56ff6}{}\label{blpapi__schema_8h_aa7b5db9772731bd6dee8931221f56ff6}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition\+At@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition\+At}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition\+At@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition\+At}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition\+At(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type, size\+\_\+t index)}{blpapi_SchemaTypeDefinition_getElementDefinitionAt(const blpapi_SchemaTypeDefinition_t *type, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t}$\ast$ blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+get\+Element\+Definition\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_abd0720af0fd96fb91a069b195a9694a9}{}\label{blpapi__schema_8h_abd0720af0fd96fb91a069b195a9694a9}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_isComplex(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a8fce4979ddc5f03238ec533938a5a23b}{}\label{blpapi__schema_8h_a8fce4979ddc5f03238ec533938a5a23b}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex\+Type@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex\+Type}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex\+Type@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex\+Type}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex\+Type(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_isComplexType(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Complex\+Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a8f6d16fa1bfc7ec21664a5b7b752c92a}{}\label{blpapi__schema_8h_a8f6d16fa1bfc7ec21664a5b7b752c92a}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_isEnumeration(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_ad63d04b16b541afefad4aa189fb49ce8}{}\label{blpapi__schema_8h_ad63d04b16b541afefad4aa189fb49ce8}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration\+Type@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration\+Type}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration\+Type@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration\+Type}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration\+Type(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_isEnumerationType(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Enumeration\+Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_ac9f5f6f548529e0047c7c5e5ce5e8b4c}{}\label{blpapi__schema_8h_ac9f5f6f548529e0047c7c5e5ce5e8b4c}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_isSimple(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a0fe8f35db82ccbf91417a62648242ed2}{}\label{blpapi__schema_8h_a0fe8f35db82ccbf91417a62648242ed2}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple\+Type@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple\+Type}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple\+Type@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple\+Type}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple\+Type(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_isSimpleType(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+is\+Simple\+Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a47958b0cd7aa6a6948bc2ba961656a2b}{}\label{blpapi__schema_8h_a47958b0cd7aa6a6948bc2ba961656a2b}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+name@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+name}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+name@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+name}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+name(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_name(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Name\+\_\+t}$\ast$ blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a2e3da5bbc0c395d3c154fca5a3f52291}{}\label{blpapi__schema_8h_a2e3da5bbc0c395d3c154fca5a3f52291}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+num\+Element\+Definitions@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+num\+Element\+Definitions}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+num\+Element\+Definitions@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+num\+Element\+Definitions}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+num\+Element\+Definitions(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_numElementDefinitions(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+num\+Element\+Definitions (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_acdeea84d8d4a6c1b125701a34fbd254e}{}\label{blpapi__schema_8h_acdeea84d8d4a6c1b125701a34fbd254e}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+print@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+print}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+print@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+print}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+print(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$element, blpapi\+\_\+\+Stream\+Writer\+\_\+t stream\+Writer, void $\ast$user\+Stream, int level, int spaces\+Per\+Level)}{blpapi_SchemaTypeDefinition_print(const blpapi_SchemaTypeDefinition_t *element, blpapi_StreamWriter_t streamWriter, void *userStream, int level, int spacesPerLevel)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{element, }
+\item[{{\bf blpapi\+\_\+\+Stream\+Writer\+\_\+t}}]{stream\+Writer, }
+\item[{void $\ast$}]{user\+Stream, }
+\item[{int}]{level, }
+\item[{int}]{spaces\+Per\+Level}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a6b6f99afc032b74b20caea9070e462ee}{}\label{blpapi__schema_8h_a6b6f99afc032b74b20caea9070e462ee}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+set\+User\+Data@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+set\+User\+Data}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+set\+User\+Data@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+set\+User\+Data}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+set\+User\+Data(blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$element, void $\ast$userdata)}{blpapi_SchemaTypeDefinition_setUserData(blpapi_SchemaTypeDefinition_t *element, void *userdata)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+set\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{element, }
+\item[{void $\ast$}]{userdata}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a0de840f36d170f0f6847814beb553dbc}{}\label{blpapi__schema_8h_a0de840f36d170f0f6847814beb553dbc}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+status@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+status}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+status@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+status}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+status(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$type)}{blpapi_SchemaTypeDefinition_status(const blpapi_SchemaTypeDefinition_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a5ad4b2a418c326f402d8bd37aadf4662}{}\label{blpapi__schema_8h_a5ad4b2a418c326f402d8bd37aadf4662}
+\index{blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}!blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+user\+Data@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+user\+Data}}
+\index{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+user\+Data@{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+user\+Data}!blpapi\+\_\+schema.\+h@{blpapi\+\_\+schema.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+user\+Data(const blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t $\ast$element)}{blpapi_SchemaTypeDefinition_userData(const blpapi_SchemaTypeDefinition_t *element)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void$\ast$ blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+user\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Schema\+Type\+Definition\+\_\+t} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__schema_8h_a771dad18a4229df571947034fce3b434}{}\label{blpapi__schema_8h_a771dad18a4229df571947034fce3b434}

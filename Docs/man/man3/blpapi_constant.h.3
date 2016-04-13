@@ -1,0 +1,140 @@
+.TH "raleigh-triangle-index/include/blpapi_constant.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_constant.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <blpapi_name\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_datetime\&.h>\fP
+.br
+\fC#include <blpapi_exception\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Constant_setUserData\fP (\fBblpapi_Constant_t\fP *constant, void *userdata)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_Constant_name\fP (const \fBblpapi_Constant_t\fP *constant)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Constant_description\fP (const \fBblpapi_Constant_t\fP *constant)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_status\fP (const \fBblpapi_Constant_t\fP *constant)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_datatype\fP (const \fBblpapi_Constant_t\fP *constant)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_getValueAsChar\fP (const \fBblpapi_Constant_t\fP *constant, \fBblpapi_Char_t\fP *buffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_getValueAsInt32\fP (const \fBblpapi_Constant_t\fP *constant, \fBblpapi_Int32_t\fP *buffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_getValueAsInt64\fP (const \fBblpapi_Constant_t\fP *constant, \fBblpapi_Int64_t\fP *buffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_getValueAsFloat32\fP (const \fBblpapi_Constant_t\fP *constant, \fBblpapi_Float32_t\fP *buffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_getValueAsFloat64\fP (const \fBblpapi_Constant_t\fP *constant, \fBblpapi_Float64_t\fP *buffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_getValueAsDatetime\fP (const \fBblpapi_Constant_t\fP *constant, \fBblpapi_Datetime_t\fP *buffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Constant_getValueAsString\fP (const \fBblpapi_Constant_t\fP *constant, const char **buffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void * \fBblpapi_Constant_userData\fP (const \fBblpapi_Constant_t\fP *constant)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_ConstantList_setUserData\fP (\fBblpapi_ConstantList_t\fP *constant, void *userdata)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_ConstantList_name\fP (const \fBblpapi_ConstantList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_ConstantList_description\fP (const \fBblpapi_ConstantList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ConstantList_numConstants\fP (const \fBblpapi_ConstantList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ConstantList_datatype\fP (const \fBblpapi_ConstantList_t\fP *constant)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ConstantList_status\fP (const \fBblpapi_ConstantList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Constant_t\fP * \fBblpapi_ConstantList_getConstant\fP (const \fBblpapi_ConstantList_t\fP *constant, const char *nameString, const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Constant_t\fP * \fBblpapi_ConstantList_getConstantAt\fP (const \fBblpapi_ConstantList_t\fP *constant, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void * \fBblpapi_ConstantList_userData\fP (const \fBblpapi_ConstantList_t\fP *constant)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_datatype (const \fBblpapi_Constant_t\fP * constant)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Constant_description (const \fBblpapi_Constant_t\fP * constant)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_getValueAsChar (const \fBblpapi_Constant_t\fP * constant, \fBblpapi_Char_t\fP * buffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_getValueAsDatetime (const \fBblpapi_Constant_t\fP * constant, \fBblpapi_Datetime_t\fP * buffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_getValueAsFloat32 (const \fBblpapi_Constant_t\fP * constant, \fBblpapi_Float32_t\fP * buffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_getValueAsFloat64 (const \fBblpapi_Constant_t\fP * constant, \fBblpapi_Float64_t\fP * buffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_getValueAsInt32 (const \fBblpapi_Constant_t\fP * constant, \fBblpapi_Int32_t\fP * buffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_getValueAsInt64 (const \fBblpapi_Constant_t\fP * constant, \fBblpapi_Int64_t\fP * buffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_getValueAsString (const \fBblpapi_Constant_t\fP * constant, const char ** buffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_Constant_name (const \fBblpapi_Constant_t\fP * constant)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Constant_setUserData (\fBblpapi_Constant_t\fP * constant, void * userdata)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Constant_status (const \fBblpapi_Constant_t\fP * constant)"
+
+.SS "\fBBLPAPI_EXPORT\fP void* blpapi_Constant_userData (const \fBblpapi_Constant_t\fP * constant)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ConstantList_datatype (const \fBblpapi_ConstantList_t\fP * constant)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_ConstantList_description (const \fBblpapi_ConstantList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Constant_t\fP* blpapi_ConstantList_getConstant (const \fBblpapi_ConstantList_t\fP * constant, const char * nameString, const \fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Constant_t\fP* blpapi_ConstantList_getConstantAt (const \fBblpapi_ConstantList_t\fP * constant, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_ConstantList_name (const \fBblpapi_ConstantList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ConstantList_numConstants (const \fBblpapi_ConstantList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_ConstantList_setUserData (\fBblpapi_ConstantList_t\fP * constant, void * userdata)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ConstantList_status (const \fBblpapi_ConstantList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP void* blpapi_ConstantList_userData (const \fBblpapi_ConstantList_t\fP * constant)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

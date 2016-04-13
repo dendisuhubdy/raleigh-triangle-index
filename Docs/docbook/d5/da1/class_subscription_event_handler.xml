@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/da1/class_subscription_event_handler">
+<title>SubscriptionEventHandler class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool d_isSlow</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SubscriptionList d_pendingSubscriptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::set&lt; CorrelationId &gt; d_pendingUnsubscribe</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SessionContext * d_context_p</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Mutex * d_consoleLock_p</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/da1/class_subscription_event_handler_1a22fb9183bfccd6d7181a7f4c41ccb39c">processSubscriptionStatus</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/da1/class_subscription_event_handler_1a5912f23b2d5d85eb2a46cdf76f9da6aa">processSubscriptionDataEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/da1/class_subscription_event_handler_1a8501f2801d57a8958764d3c0aa9c9eb9">processAdminEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/da1/class_subscription_event_handler_1a199e4d5dd2b4d5a0b49ff7596ee45cef">processMiscEvents</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/da1/class_subscription_event_handler_1ae74e5a97de0e63a093beb83ff9450539">SubscriptionEventHandler</link> (
+<link linkend="df/d6f/struct_session_context">SessionContext</link> * context)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/da1/class_subscription_event_handler_1a19742b1b87ab56db17bd60a523414899">processEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/da1/class_subscription_event_handler_1a22fb9183bfccd6d7181a7f4c41ccb39c">
+                <title>bool SubscriptionEventHandler::processSubscriptionStatus (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da1/class_subscription_event_handler_1a5912f23b2d5d85eb2a46cdf76f9da6aa">
+                <title>bool SubscriptionEventHandler::processSubscriptionDataEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da1/class_subscription_event_handler_1a8501f2801d57a8958764d3c0aa9c9eb9">
+                <title>bool SubscriptionEventHandler::processAdminEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da1/class_subscription_event_handler_1a199e4d5dd2b4d5a0b49ff7596ee45cef">
+                <title>bool SubscriptionEventHandler::processMiscEvents (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da1/class_subscription_event_handler_1ae74e5a97de0e63a093beb83ff9450539">
+                <title>SubscriptionEventHandler::SubscriptionEventHandler (SessionContext *context)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/da1/class_subscription_event_handler_1a19742b1b87ab56db17bd60a523414899">
+                <title>bool SubscriptionEventHandler::processEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

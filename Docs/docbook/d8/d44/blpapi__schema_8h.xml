@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d44/blpapi__schema_8h">
+    <title>blpapi_schema.h File Reference</title>
+    <programlisting>#include &lt;blpapi_constant.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_exception.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_name.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_streamproxy.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef void *  <link linkend="d8/d44/blpapi__schema_8h_1a5b459ec650a5fa600e769dec7e695164">blpapi_SchemaElementDefinition_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef void *  <link linkend="d8/d44/blpapi__schema_8h_1a443d9d9e7acbd72af164243c59ef8374">blpapi_SchemaTypeDefinition_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="d8/d44/blpapi__schema_8h_1a799fe50d92e3ef5558240023b3702f92">blpapi_SchemaElementDefinition_name</link> (
+const blpapi_SchemaElementDefinition_t * field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="d8/d44/blpapi__schema_8h_1a7c3052004ccbf47e616bfa5b2b9b28a8">blpapi_SchemaElementDefinition_description</link> (
+const blpapi_SchemaElementDefinition_t * field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1a25ca1e67125ce6216eff031b12bbd337">blpapi_SchemaElementDefinition_status</link> (
+const blpapi_SchemaElementDefinition_t * field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_SchemaTypeDefinition_t * <link linkend="d8/d44/blpapi__schema_8h_1abdef743d0abc1b0a06a47e4e6d337496">blpapi_SchemaElementDefinition_type</link> (
+const blpapi_SchemaElementDefinition_t * field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT size_t <link linkend="d8/d44/blpapi__schema_8h_1a39dd54bf8d0cff665e2fc714db4e2a09">blpapi_SchemaElementDefinition_numAlternateNames</link> (
+const blpapi_SchemaElementDefinition_t * field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="d8/d44/blpapi__schema_8h_1a81d2e5350264f86a801d8e8c7af29531">blpapi_SchemaElementDefinition_getAlternateName</link> (
+const blpapi_SchemaElementDefinition_t * field, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT size_t <link linkend="d8/d44/blpapi__schema_8h_1a6f3ceca432decf88cf90611336008333">blpapi_SchemaElementDefinition_minValues</link> (
+const blpapi_SchemaElementDefinition_t * field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT size_t <link linkend="d8/d44/blpapi__schema_8h_1aa6978fed3a3456eaf6857960388a8aff">blpapi_SchemaElementDefinition_maxValues</link> (
+const blpapi_SchemaElementDefinition_t * field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1aaf57769db502bfa9b5a0b1814de879e9">blpapi_SchemaElementDefinition_print</link> (
+const blpapi_SchemaElementDefinition_t * element, blpapi_StreamWriter_t streamWriter, void * userStream, int level, int spacesPerLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d8/d44/blpapi__schema_8h_1a889dbe9a6fde3f4b18abd2a9f28e9b03">blpapi_SchemaElementDefinition_setUserData</link> (
+blpapi_SchemaElementDefinition_t * field, void * userdata)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void * <link linkend="d8/d44/blpapi__schema_8h_1a7bb076251f4a92a34d77fe4cf4462be0">blpapi_SchemaElementDefinition_userData</link> (
+const blpapi_SchemaElementDefinition_t * field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="d8/d44/blpapi__schema_8h_1a2e3da5bbc0c395d3c154fca5a3f52291">blpapi_SchemaTypeDefinition_name</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="d8/d44/blpapi__schema_8h_1a2faff90a87fe33ff73ffa5dfcbf1772d">blpapi_SchemaTypeDefinition_description</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1a5ad4b2a418c326f402d8bd37aadf4662">blpapi_SchemaTypeDefinition_status</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1a1504f678905b9d7a94c85f613d401459">blpapi_SchemaTypeDefinition_datatype</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1a8f6d16fa1bfc7ec21664a5b7b752c92a">blpapi_SchemaTypeDefinition_isComplexType</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1a47958b0cd7aa6a6948bc2ba961656a2b">blpapi_SchemaTypeDefinition_isSimpleType</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1ac9f5f6f548529e0047c7c5e5ce5e8b4c">blpapi_SchemaTypeDefinition_isEnumerationType</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1a8fce4979ddc5f03238ec533938a5a23b">blpapi_SchemaTypeDefinition_isComplex</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1a0fe8f35db82ccbf91417a62648242ed2">blpapi_SchemaTypeDefinition_isSimple</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1ad63d04b16b541afefad4aa189fb49ce8">blpapi_SchemaTypeDefinition_isEnumeration</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT size_t <link linkend="d8/d44/blpapi__schema_8h_1acdeea84d8d4a6c1b125701a34fbd254e">blpapi_SchemaTypeDefinition_numElementDefinitions</link> (
+const blpapi_SchemaTypeDefinition_t * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_SchemaElementDefinition_t * <link linkend="d8/d44/blpapi__schema_8h_1aa7b5db9772731bd6dee8931221f56ff6">blpapi_SchemaTypeDefinition_getElementDefinition</link> (
+const blpapi_SchemaTypeDefinition_t * type, const char * nameString, const blpapi_Name_t * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_SchemaElementDefinition_t * <link linkend="d8/d44/blpapi__schema_8h_1abd0720af0fd96fb91a069b195a9694a9">blpapi_SchemaTypeDefinition_getElementDefinitionAt</link> (
+const blpapi_SchemaTypeDefinition_t * type, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/d44/blpapi__schema_8h_1a6b6f99afc032b74b20caea9070e462ee">blpapi_SchemaTypeDefinition_print</link> (
+const blpapi_SchemaTypeDefinition_t * element, blpapi_StreamWriter_t streamWriter, void * userStream, int level, int spacesPerLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d8/d44/blpapi__schema_8h_1a0de840f36d170f0f6847814beb553dbc">blpapi_SchemaTypeDefinition_setUserData</link> (
+blpapi_SchemaTypeDefinition_t * element, void * userdata)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void * <link linkend="d8/d44/blpapi__schema_8h_1a771dad18a4229df571947034fce3b434">blpapi_SchemaTypeDefinition_userData</link> (
+const blpapi_SchemaTypeDefinition_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_ConstantList_t * <link linkend="d8/d44/blpapi__schema_8h_1a8ea685e6315dba469140edcf749fcf2b">blpapi_SchemaTypeDefinition_enumeration</link> (
+const blpapi_SchemaTypeDefinition_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_schema.h</para>
+    </simplesect>
+</section>

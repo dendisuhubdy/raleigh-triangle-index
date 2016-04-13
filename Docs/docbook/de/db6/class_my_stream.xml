@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/db6/class_my_stream">
+<title>MyStream class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_id</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Topic d_topic</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/db6/class_my_stream_1aadbb14388e06768529e8e3af54f96f3e">MyStream</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/db6/class_my_stream_1a0cb8c5084d6122efb669757eb3dc51df">MyStream</link> (
+std::string const &amp; id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db6/class_my_stream_1a7b043c20b59a3350d2b110fe513d27f9">setTopic</link> (
+Topic const &amp; topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string const &amp; <link linkend="de/db6/class_my_stream_1a08446154f53d9d882d2c24eee4187fca">getId</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Topic const &amp; <link linkend="de/db6/class_my_stream_1a46fec149b460ceffffdd82b2a8f2e38c">getTopic</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/db6/class_my_stream_1aadbb14388e06768529e8e3af54f96f3e">MyStream</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/db6/class_my_stream_1a0cb8c5084d6122efb669757eb3dc51df">MyStream</link> (
+std::string const &amp; id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db6/class_my_stream_1a7b043c20b59a3350d2b110fe513d27f9">setTopic</link> (
+Topic const &amp; topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string const &amp; <link linkend="de/db6/class_my_stream_1a08446154f53d9d882d2c24eee4187fca">getId</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Topic const &amp; <link linkend="de/db6/class_my_stream_1a46fec149b460ceffffdd82b2a8f2e38c">getTopic</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/db6/class_my_stream_1aadbb14388e06768529e8e3af54f96f3e">MyStream</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/db6/class_my_stream_1a0cb8c5084d6122efb669757eb3dc51df">MyStream</link> (
+std::string const &amp; id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db6/class_my_stream_1a7b043c20b59a3350d2b110fe513d27f9">setTopic</link> (
+Topic const &amp; topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string const &amp; <link linkend="de/db6/class_my_stream_1a08446154f53d9d882d2c24eee4187fca">getId</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Topic const &amp; <link linkend="de/db6/class_my_stream_1a46fec149b460ceffffdd82b2a8f2e38c">getTopic</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/db6/class_my_stream_1aadbb14388e06768529e8e3af54f96f3e">
+                <title>MyStream::MyStream ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a0cb8c5084d6122efb669757eb3dc51df">
+                <title>MyStream::MyStream (std::string const &amp;id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a7b043c20b59a3350d2b110fe513d27f9">
+                <title>void MyStream::setTopic (Topic const &amp;topic)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a08446154f53d9d882d2c24eee4187fca">
+                <title>std::string const&amp; MyStream::getId ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a46fec149b460ceffffdd82b2a8f2e38c">
+                <title>Topic const&amp; MyStream::getTopic ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1aadbb14388e06768529e8e3af54f96f3e">
+                <title>MyStream::MyStream ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a0cb8c5084d6122efb669757eb3dc51df">
+                <title>MyStream::MyStream (std::string const &amp;id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a7b043c20b59a3350d2b110fe513d27f9">
+                <title>void MyStream::setTopic (Topic const &amp;topic)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a08446154f53d9d882d2c24eee4187fca">
+                <title>std::string const&amp; MyStream::getId ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a46fec149b460ceffffdd82b2a8f2e38c">
+                <title>Topic const&amp; MyStream::getTopic ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1aadbb14388e06768529e8e3af54f96f3e">
+                <title>MyStream::MyStream ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a0cb8c5084d6122efb669757eb3dc51df">
+                <title>MyStream::MyStream (std::string const &amp;id)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a7b043c20b59a3350d2b110fe513d27f9">
+                <title>void MyStream::setTopic (Topic const &amp;topic)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a08446154f53d9d882d2c24eee4187fca">
+                <title>std::string const&amp; MyStream::getId ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db6/class_my_stream_1a46fec149b460ceffffdd82b2a8f2e38c">
+                <title>Topic const&amp; MyStream::getTopic ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

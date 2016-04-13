@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d63/blpapi__topic_8h">
+    <title>blpapi_topic.h File Reference</title>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_service.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Topic  <link linkend="d2/d63/blpapi__topic_8h_1a7624962c107827bc0de204aeacbd6da9">blpapi_Topic_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Topic_t * <link linkend="d2/d63/blpapi__topic_8h_1aa751b31b24f4d4e25f4968639ba45a55">blpapi_Topic_create</link> (
+blpapi_Topic_t * from)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d2/d63/blpapi__topic_8h_1aa403341b7510ef782383d72e2129851a">blpapi_Topic_destroy</link> (
+blpapi_Topic_t * victim)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d2/d63/blpapi__topic_8h_1a86c061f5b2638aa6c54052c0962baa6d">blpapi_Topic_compare</link> (
+const blpapi_Topic_t * lhs, const blpapi_Topic_t * rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Service_t * <link linkend="d2/d63/blpapi__topic_8h_1ade313a826ac7ad9d799f5b2b92fa69ce">blpapi_Topic_service</link> (
+const blpapi_Topic_t * topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d2/d63/blpapi__topic_8h_1aee39ef3dbcf0d6952de802bc041e06bd">blpapi_Topic_isActive</link> (
+const blpapi_Topic_t * topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_topic.h</para>
+    </simplesect>
+</section>

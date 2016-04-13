@@ -1,0 +1,49 @@
+.TH "raleigh-triangle-index/include/blpapi_eventdispatcher.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_eventdispatcher.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_EventDispatcher_t\fP * \fBblpapi_EventDispatcher_create\fP (size_t numDispatcherThreads)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_EventDispatcher_destroy\fP (\fBblpapi_EventDispatcher_t\fP *handle)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventDispatcher_start\fP (\fBblpapi_EventDispatcher_t\fP *handle)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventDispatcher_stop\fP (\fBblpapi_EventDispatcher_t\fP *handle, int async)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventDispatcher_dispatchEvents\fP (\fBblpapi_EventDispatcher_t\fP *handle)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_EventDispatcher_t\fP* blpapi_EventDispatcher_create (size_t numDispatcherThreads)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_EventDispatcher_destroy (\fBblpapi_EventDispatcher_t\fP * handle)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventDispatcher_dispatchEvents (\fBblpapi_EventDispatcher_t\fP * handle)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventDispatcher_start (\fBblpapi_EventDispatcher_t\fP * handle)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventDispatcher_stop (\fBblpapi_EventDispatcher_t\fP * handle, int async)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

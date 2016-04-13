@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d78/blpapi__providersession_8h">
+    <title>blpapi_providersession.h File Reference</title>
+    <programlisting>#include &lt;blpapi_abstractsession.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_correlationid.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_event.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_eventdispatcher.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_identity.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_request.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_resolutionlist.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_service.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_sessionoptions.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_subscriptionlist.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_topic.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_topiclist.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_ServiceRegistrationOptions  <link linkend="dc/d78/blpapi__providersession_8h_1a91619005e934b1c1a565219fa8cfaf15">blpapi_ServiceRegistrationOptions_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef void(*  <link linkend="dc/d78/blpapi__providersession_8h_1a7195385e247e2d34726290d46b2b62c2">blpapi_ProviderEventHandler_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_ProviderSession_t * <link linkend="dc/d78/blpapi__providersession_8h_1a49322eed258d540a6d8046eeed73b0f7">blpapi_ProviderSession_create</link> (
+blpapi_SessionOptions_t * parameters, blpapi_ProviderEventHandler_t handler, blpapi_EventDispatcher_t * dispatcher, void * userData)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dc/d78/blpapi__providersession_8h_1a9088cc94c10e3faf2d3606df1f075392">blpapi_ProviderSession_destroy</link> (
+blpapi_ProviderSession_t * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a0f86ce6551a93d32ca565c693251e5d7">blpapi_ProviderSession_start</link> (
+blpapi_ProviderSession_t * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a40cca9d0474eec20bc3e39d4a9637105">blpapi_ProviderSession_startAsync</link> (
+blpapi_ProviderSession_t * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1adb2aaf4d837504eac265e1b3669a51e0">blpapi_ProviderSession_stop</link> (
+blpapi_ProviderSession_t * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1ae0fec0c8d2d9bb3cf090bd0a144be263">blpapi_ProviderSession_stopAsync</link> (
+blpapi_ProviderSession_t * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1aedd11f1bd657fd8f6ecb76535af18bc9">blpapi_ProviderSession_nextEvent</link> (
+blpapi_ProviderSession_t * session, blpapi_Event_t ** eventPointer, unsigned int timeoutInMilliseconds)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a3db27af423e0a5ca9a11e6dd22d36894">blpapi_ProviderSession_tryNextEvent</link> (
+blpapi_ProviderSession_t * session, blpapi_Event_t ** eventPointer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1ad302f8e41fa2db12d3a95169097598d4">blpapi_ProviderSession_registerService</link> (
+blpapi_ProviderSession_t * session, const char * serviceName, const blpapi_Identity_t * identity, blpapi_ServiceRegistrationOptions_t * registrationOptions)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a6e8f098de0fddf91b78ed644483a2ee2">blpapi_ProviderSession_activateSubServiceCodeRange</link> (
+blpapi_ProviderSession_t * session, const char * serviceName, int begin, int end, int priority)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a771eaf68f3feb151bc1369ada6d85a4b">blpapi_ProviderSession_deactivateSubServiceCodeRange</link> (
+blpapi_ProviderSession_t * session, const char * serviceName, int begin, int end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a26c26289aa838915fd1ffe526549c438">blpapi_ProviderSession_registerServiceAsync</link> (
+blpapi_ProviderSession_t * session, const char * serviceName, const blpapi_Identity_t * identity, <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId, blpapi_ServiceRegistrationOptions_t * registrationOptions)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a51ec11c712d5052a931647b7dc03d723">blpapi_ProviderSession_deregisterService</link> (
+blpapi_ProviderSession_t * session, const char * serviceName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a5c8dafd92008390380ffe434bff3a824">blpapi_ProviderSession_resolve</link> (
+blpapi_ProviderSession_t * session, blpapi_ResolutionList_t * resolutionList, int resolveMode, const blpapi_Identity_t * identity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1acdadaa16d33ad6e3b92cb73da8aecaab">blpapi_ProviderSession_resolveAsync</link> (
+blpapi_ProviderSession_t * session, const blpapi_ResolutionList_t * resolutionList, int resolveMode, const blpapi_Identity_t * identity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a049b92351b279456098e07494549db01">blpapi_ProviderSession_createTopics</link> (
+blpapi_ProviderSession_t * session, blpapi_TopicList_t * topicList, int resolveMode, const blpapi_Identity_t * identity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a6096a2edcd01b2c6af381f881e865b81">blpapi_ProviderSession_createTopicsAsync</link> (
+blpapi_ProviderSession_t * session, const blpapi_TopicList_t * topicList, int resolveMode, const blpapi_Identity_t * identity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a4d0171d5d03a95fe9ff6acab8b56e27f">blpapi_ProviderSession_getTopic</link> (
+blpapi_ProviderSession_t * session, const blpapi_Message_t * message, blpapi_Topic_t ** topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a2532deadcffa36d3158b50a924bf3dc6">blpapi_ProviderSession_createTopic</link> (
+blpapi_ProviderSession_t * session, const blpapi_Message_t * message, blpapi_Topic_t ** topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a6c1353e741eb519602ec2a53d33f76aa">blpapi_ProviderSession_createServiceStatusTopic</link> (
+blpapi_ProviderSession_t * session, const blpapi_Service_t * service, blpapi_Topic_t ** topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1acae48df9bb1472969c1c41976a1e1909">blpapi_ProviderSession_deleteTopics</link> (
+blpapi_ProviderSession_t * session, const blpapi_Topic_t ** topics, size_t numTopics)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a72016ee3064bdef2e981d0d43c800db0">blpapi_ProviderSession_publish</link> (
+blpapi_ProviderSession_t * session, blpapi_Event_t * event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1aa066d286f8c6c865c4d00a045b6de8ff">blpapi_ProviderSession_sendResponse</link> (
+blpapi_ProviderSession_t * session, blpapi_Event_t * event, int isPartialResponse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_AbstractSession_t * <link linkend="dc/d78/blpapi__providersession_8h_1af9c9573fd43732a5c64613a8c2516449">blpapi_ProviderSession_getAbstractSession</link> (
+blpapi_ProviderSession_t * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_ServiceRegistrationOptions_t * <link linkend="dc/d78/blpapi__providersession_8h_1a383f5aaff9c5435b1ef2ffe0499d11fa">blpapi_ServiceRegistrationOptions_create</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_ServiceRegistrationOptions_t * <link linkend="dc/d78/blpapi__providersession_8h_1abc017fe0341ace0db78137b284241006">blpapi_ServiceRegistrationOptions_duplicate</link> (
+const blpapi_ServiceRegistrationOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dc/d78/blpapi__providersession_8h_1a1be4545325c623dbca895a91542576ff">blpapi_ServiceRegistrationOptions_destroy</link> (
+blpapi_ServiceRegistrationOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dc/d78/blpapi__providersession_8h_1a92b4ccb9e91b8a8d4379b0dfa0e6428b">blpapi_ServiceRegistrationOptions_copy</link> (
+blpapi_ServiceRegistrationOptions_t * lhs, const blpapi_ServiceRegistrationOptions_t * rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a7e35631d4a8a9f2276f94d5d28af8182">blpapi_ServiceRegistrationOptions_addActiveSubServiceCodeRange</link> (
+blpapi_ServiceRegistrationOptions_t * parameters, int start, int end, int priority)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dc/d78/blpapi__providersession_8h_1ab1ab9f77cd165f1058dd08f72038cd58">blpapi_ServiceRegistrationOptions_removeAllActiveSubServiceCodeRanges</link> (
+blpapi_ServiceRegistrationOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dc/d78/blpapi__providersession_8h_1af781acb368c9f066560701d45eeaba79">blpapi_ServiceRegistrationOptions_setGroupId</link> (
+blpapi_ServiceRegistrationOptions_t * parameters, const char * groupId, unsigned int groupIdLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1aafd9391eae956f3057892eb6e4ac2d64">blpapi_ServiceRegistrationOptions_setServicePriority</link> (
+blpapi_ServiceRegistrationOptions_t * parameters, int priority)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dc/d78/blpapi__providersession_8h_1a7c1a340cc7657c9df3d08408231073d2">blpapi_ServiceRegistrationOptions_setPartsToRegister</link> (
+blpapi_ServiceRegistrationOptions_t * parameters, int parts)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a6e52168fcfbe009e2d63120684034545">blpapi_ServiceRegistrationOptions_getGroupId</link> (
+blpapi_ServiceRegistrationOptions_t * parameters, char * groupdIdBuffer, int * groupIdLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1a9e8e5cf5cfe849447ffd872d165f0532">blpapi_ServiceRegistrationOptions_getServicePriority</link> (
+blpapi_ServiceRegistrationOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d78/blpapi__providersession_8h_1ad0005468212b08d0f5ebffcab1503b6c">blpapi_ServiceRegistrationOptions_getPartsToRegister</link> (
+blpapi_ServiceRegistrationOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_providersession.h</para>
+    </simplesect>
+</section>

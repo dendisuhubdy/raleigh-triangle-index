@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d94/classinput">
+<title>input class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; indexlist</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>size_t numSecurities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; t_securitydata &gt; data</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="df/d94/classinput_1a93292e26687fe5884c693bfa1a0565de">parseCommandLine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d94/classinput_1ad4c30bffee203763639d27fd9838fe53">printErrorInfo</link> (
+const char * leadingStr, const Element &amp; errorInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d94/classinput_1adf317ae9e21583e767423d2d7c99d5db">registerCallback</link> (
+int verbosityCount)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d94/classinput_1af957aa38b7cf0365beae45c96f0d0c7a">sendRefDataRequest</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d94/classinput_1ad55bf2092a054e0d78ecbb7afd27e40a">processResponseEvent</link> (
+Event event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d94/classinput_1ac92da50548000c458a6d3484c4dde60c">eventLoop</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d94/classinput_1adac0ea346c43d7762baef3e3f387eebd">input</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d94/classinput_1a42c3af557d6d247deb8648550c490840">~input</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d94/classinput_1a66b4f8871ed69b7b19e74158332cd10c">run</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/d94/classinput_1a93292e26687fe5884c693bfa1a0565de">
+                <title>bool input::parseCommandLine ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d94/classinput_1ad4c30bffee203763639d27fd9838fe53">
+                <title>void input::printErrorInfo (const char *leadingStr, const Element &amp;errorInfo)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d94/classinput_1adf317ae9e21583e767423d2d7c99d5db">
+                <title>void input::registerCallback (int verbosityCount)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d94/classinput_1af957aa38b7cf0365beae45c96f0d0c7a">
+                <title>void input::sendRefDataRequest (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d94/classinput_1ad55bf2092a054e0d78ecbb7afd27e40a">
+                <title>void input::processResponseEvent (Event event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d94/classinput_1ac92da50548000c458a6d3484c4dde60c">
+                <title>void input::eventLoop (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d94/classinput_1adac0ea346c43d7762baef3e3f387eebd">
+                <title>input::input ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d94/classinput_1a42c3af557d6d247deb8648550c490840">
+                <title>input::~input ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d94/classinput_1a66b4f8871ed69b7b19e74158332cd10c">
+                <title>void input::run ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

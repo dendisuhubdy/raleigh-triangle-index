@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d2c/class_simple_ref_data_example">
+<title>SimpleRefDataExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d2c/class_simple_ref_data_example_1a81969dafaaeb7e1eb9aaad1148006b12">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d2c/class_simple_ref_data_example_1aeaff3d735c91901852dfda6d70ac137f">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d2c/class_simple_ref_data_example_1a88d1186714fa9da635d2a3d0b6298afb">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d2c/class_simple_ref_data_example_1a81969dafaaeb7e1eb9aaad1148006b12">
+                <title>void SimpleRefDataExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d2c/class_simple_ref_data_example_1aeaff3d735c91901852dfda6d70ac137f">
+                <title>bool SimpleRefDataExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d2c/class_simple_ref_data_example_1a88d1186714fa9da635d2a3d0b6298afb">
+                <title>void SimpleRefDataExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

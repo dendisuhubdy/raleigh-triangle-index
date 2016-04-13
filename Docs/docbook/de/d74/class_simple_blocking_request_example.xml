@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d74/class_simple_blocking_request_example">
+<title>SimpleBlockingRequestExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CorrelationId d_cid</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>EventQueue d_eventQueue</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d74/class_simple_blocking_request_example_1a671619455e13af8fd3431843667aef42">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d74/class_simple_blocking_request_example_1ab9c5125a39efc33414d1dfa0ea86ee23">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d74/class_simple_blocking_request_example_1a6087341432bc12bb433b9078fa085984">SimpleBlockingRequestExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d74/class_simple_blocking_request_example_1a9e18a83c876b4c0d0890e8883220a8ee">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/d74/class_simple_blocking_request_example_1a671619455e13af8fd3431843667aef42">
+                <title>void SimpleBlockingRequestExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d74/class_simple_blocking_request_example_1ab9c5125a39efc33414d1dfa0ea86ee23">
+                <title>bool SimpleBlockingRequestExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d74/class_simple_blocking_request_example_1a6087341432bc12bb433b9078fa085984">
+                <title>SimpleBlockingRequestExample::SimpleBlockingRequestExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d74/class_simple_blocking_request_example_1a9e18a83c876b4c0d0890e8883220a8ee">
+                <title>void SimpleBlockingRequestExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

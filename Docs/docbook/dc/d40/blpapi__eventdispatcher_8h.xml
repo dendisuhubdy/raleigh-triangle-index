@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d40/blpapi__eventdispatcher_8h">
+    <title>blpapi_eventdispatcher.h File Reference</title>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;stddef.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_EventDispatcher_t * <link linkend="dc/d40/blpapi__eventdispatcher_8h_1a94cd3c3e1943efc3c1d3c40121fd8ec9">blpapi_EventDispatcher_create</link> (
+size_t numDispatcherThreads)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dc/d40/blpapi__eventdispatcher_8h_1aab90ddc3267b423ccfa1573896d35726">blpapi_EventDispatcher_destroy</link> (
+blpapi_EventDispatcher_t * handle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d40/blpapi__eventdispatcher_8h_1a2e7d5f044a0270db14b6b37284f78067">blpapi_EventDispatcher_start</link> (
+blpapi_EventDispatcher_t * handle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d40/blpapi__eventdispatcher_8h_1a13da833eca75aa174ca96eb9b6efb12f">blpapi_EventDispatcher_stop</link> (
+blpapi_EventDispatcher_t * handle, int async)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/d40/blpapi__eventdispatcher_8h_1ab66da19a1b0a60fab4488fa14244bb0e">blpapi_EventDispatcher_dispatchEvents</link> (
+blpapi_EventDispatcher_t * handle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_eventdispatcher.h</para>
+    </simplesect>
+</section>

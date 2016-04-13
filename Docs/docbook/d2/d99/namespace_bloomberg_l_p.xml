@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d99/namespace_bloomberg_l_p">
+<title>BloombergLP</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex">BloombergLP::Mutex</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard">BloombergLP::MutexGuard</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

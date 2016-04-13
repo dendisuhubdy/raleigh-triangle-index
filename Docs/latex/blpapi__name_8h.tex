@@ -1,0 +1,75 @@
+\hypertarget{blpapi__name_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+name.h File Reference}
+\label{blpapi__name_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+name.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+name.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$ \hyperlink{blpapi__name_8h_a1ba816e3fd877b9e198ed76d953983d3}{blpapi\+\_\+\+Name\+\_\+create} (const char $\ast$name\+String)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__name_8h_ac83e8b37f6033cdd895fda0e5d41b7c9}{blpapi\+\_\+\+Name\+\_\+destroy} (\hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$ \hyperlink{blpapi__name_8h_aff201902c431378aee6098c4892d6837}{blpapi\+\_\+\+Name\+\_\+duplicate} (const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$src)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__name_8h_a49a411fde17b819aef34b67723fcae58}{blpapi\+\_\+\+Name\+\_\+equals\+Str} (const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name, const char $\ast$string)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__name_8h_a3caee5bda61559369c27297e93260e13}{blpapi\+\_\+\+Name\+\_\+string} (const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{blpapi__name_8h_ab4a5c9f3830e28a818b52784e6a013ea}{blpapi\+\_\+\+Name\+\_\+length} (const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$ \hyperlink{blpapi__name_8h_ad119557a533925b5ef3dd04d6075d4c0}{blpapi\+\_\+\+Name\+\_\+find\+Name} (const char $\ast$name\+String)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}!blpapi\+\_\+\+Name\+\_\+create@{blpapi\+\_\+\+Name\+\_\+create}}
+\index{blpapi\+\_\+\+Name\+\_\+create@{blpapi\+\_\+\+Name\+\_\+create}!blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Name\+\_\+create(const char $\ast$name\+String)}{blpapi_Name_create(const char *nameString)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Name\+\_\+t}$\ast$ blpapi\+\_\+\+Name\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name\+String}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__name_8h_a1ba816e3fd877b9e198ed76d953983d3}{}\label{blpapi__name_8h_a1ba816e3fd877b9e198ed76d953983d3}
+\index{blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}!blpapi\+\_\+\+Name\+\_\+destroy@{blpapi\+\_\+\+Name\+\_\+destroy}}
+\index{blpapi\+\_\+\+Name\+\_\+destroy@{blpapi\+\_\+\+Name\+\_\+destroy}!blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Name\+\_\+destroy(blpapi\+\_\+\+Name\+\_\+t $\ast$name)}{blpapi_Name_destroy(blpapi_Name_t *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Name\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__name_8h_ac83e8b37f6033cdd895fda0e5d41b7c9}{}\label{blpapi__name_8h_ac83e8b37f6033cdd895fda0e5d41b7c9}
+\index{blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}!blpapi\+\_\+\+Name\+\_\+duplicate@{blpapi\+\_\+\+Name\+\_\+duplicate}}
+\index{blpapi\+\_\+\+Name\+\_\+duplicate@{blpapi\+\_\+\+Name\+\_\+duplicate}!blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Name\+\_\+duplicate(const blpapi\+\_\+\+Name\+\_\+t $\ast$src)}{blpapi_Name_duplicate(const blpapi_Name_t *src)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Name\+\_\+t}$\ast$ blpapi\+\_\+\+Name\+\_\+duplicate (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__name_8h_aff201902c431378aee6098c4892d6837}{}\label{blpapi__name_8h_aff201902c431378aee6098c4892d6837}
+\index{blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}!blpapi\+\_\+\+Name\+\_\+equals\+Str@{blpapi\+\_\+\+Name\+\_\+equals\+Str}}
+\index{blpapi\+\_\+\+Name\+\_\+equals\+Str@{blpapi\+\_\+\+Name\+\_\+equals\+Str}!blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Name\+\_\+equals\+Str(const blpapi\+\_\+\+Name\+\_\+t $\ast$name, const char $\ast$string)}{blpapi_Name_equalsStr(const blpapi_Name_t *name, const char *string)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Name\+\_\+equals\+Str (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name, }
+\item[{const char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__name_8h_a49a411fde17b819aef34b67723fcae58}{}\label{blpapi__name_8h_a49a411fde17b819aef34b67723fcae58}
+\index{blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}!blpapi\+\_\+\+Name\+\_\+find\+Name@{blpapi\+\_\+\+Name\+\_\+find\+Name}}
+\index{blpapi\+\_\+\+Name\+\_\+find\+Name@{blpapi\+\_\+\+Name\+\_\+find\+Name}!blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Name\+\_\+find\+Name(const char $\ast$name\+String)}{blpapi_Name_findName(const char *nameString)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Name\+\_\+t}$\ast$ blpapi\+\_\+\+Name\+\_\+find\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name\+String}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__name_8h_ad119557a533925b5ef3dd04d6075d4c0}{}\label{blpapi__name_8h_ad119557a533925b5ef3dd04d6075d4c0}
+\index{blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}!blpapi\+\_\+\+Name\+\_\+length@{blpapi\+\_\+\+Name\+\_\+length}}
+\index{blpapi\+\_\+\+Name\+\_\+length@{blpapi\+\_\+\+Name\+\_\+length}!blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Name\+\_\+length(const blpapi\+\_\+\+Name\+\_\+t $\ast$name)}{blpapi_Name_length(const blpapi_Name_t *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t blpapi\+\_\+\+Name\+\_\+length (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__name_8h_ab4a5c9f3830e28a818b52784e6a013ea}{}\label{blpapi__name_8h_ab4a5c9f3830e28a818b52784e6a013ea}
+\index{blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}!blpapi\+\_\+\+Name\+\_\+string@{blpapi\+\_\+\+Name\+\_\+string}}
+\index{blpapi\+\_\+\+Name\+\_\+string@{blpapi\+\_\+\+Name\+\_\+string}!blpapi\+\_\+name.\+h@{blpapi\+\_\+name.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Name\+\_\+string(const blpapi\+\_\+\+Name\+\_\+t $\ast$name)}{blpapi_Name_string(const blpapi_Name_t *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Name\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__name_8h_a3caee5bda61559369c27297e93260e13}{}\label{blpapi__name_8h_a3caee5bda61559369c27297e93260e13}

@@ -1,0 +1,56 @@
+.TH "raleigh-triangle-index/include/blpapi_request.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_request.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_element\&.h>\fP
+.br
+\fC#include <blpapi_exception\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct blpapi_Request \fBblpapi_Request_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Request_destroy\fP (\fBblpapi_Request_t\fP *request)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Element_t\fP * \fBblpapi_Request_elements\fP (\fBblpapi_Request_t\fP *request)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Request_setPreferredRoute\fP (\fBblpapi_Request_t\fP *request, \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct blpapi_Request \fBblpapi_Request_t\fP"
+
+.PP
+Definition at line 54 of file blpapi_request\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Request_destroy (\fBblpapi_Request_t\fP * request)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Element_t\fP* blpapi_Request_elements (\fBblpapi_Request_t\fP * request)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Request_setPreferredRoute (\fBblpapi_Request_t\fP * request, \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

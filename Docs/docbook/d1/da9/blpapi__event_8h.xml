@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/da9/blpapi__event_8h">
+    <title>blpapi_event.h File Reference</title>
+    <programlisting>#include &lt;blpapi_message.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d1/da9/blpapi__event_8h_1ac92fa0746e5b67b8f5035d76067c1d2f">blpapi_Event_eventType</link> (
+const blpapi_Event_t * event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d1/da9/blpapi__event_8h_1ac1c61f057a2058df5196dc985003b9f7">blpapi_Event_addRef</link> (
+const blpapi_Event_t * event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d1/da9/blpapi__event_8h_1a93064a58ecda5cefd84f70a2354f0d44">blpapi_Event_release</link> (
+const blpapi_Event_t * event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_EventQueue_t * <link linkend="d1/da9/blpapi__event_8h_1a64430e8245395188d465af7b52e2b148">blpapi_EventQueue_create</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d1/da9/blpapi__event_8h_1af4e70309688b621216e2def3f112cc4f">blpapi_EventQueue_destroy</link> (
+blpapi_EventQueue_t * eventQueue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Event_t * <link linkend="d1/da9/blpapi__event_8h_1a661d2cff1d4a6727598e274ef88a2051">blpapi_EventQueue_nextEvent</link> (
+blpapi_EventQueue_t * eventQueue, int timeout)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d1/da9/blpapi__event_8h_1af9b18558fa448bc80d500bb2be38a463">blpapi_EventQueue_purge</link> (
+blpapi_EventQueue_t * eventQueue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d1/da9/blpapi__event_8h_1a9dca48f490d47d0000d21f852b360e3c">blpapi_EventQueue_tryNextEvent</link> (
+blpapi_EventQueue_t * eventQueue, blpapi_Event_t ** eventPointer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_MessageIterator_t * <link linkend="d1/da9/blpapi__event_8h_1aed06c3f4037f40c467d8a7dd235e1039">blpapi_MessageIterator_create</link> (
+const blpapi_Event_t * event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d1/da9/blpapi__event_8h_1a1da46dea40ca2f53d5261f51e7e63c29">blpapi_MessageIterator_destroy</link> (
+blpapi_MessageIterator_t * iterator)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d1/da9/blpapi__event_8h_1ab243acc0a90b01ff6ea5ad7b6d947df8">blpapi_MessageIterator_next</link> (
+blpapi_MessageIterator_t * iterator, blpapi_Message_t ** result)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_event.h</para>
+    </simplesect>
+</section>

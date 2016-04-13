@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d45/blpapi__timepoint_8h">
+    <title>blpapi_timepoint.h File Reference</title>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/de5/structblpapi___time_point">blpapi_TimePoint</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="d4/de5/structblpapi___time_point">blpapi_TimePoint</link>  <link linkend="d6/d45/blpapi__timepoint_8h_1abfe1faff415681a748ec1e448117913a">blpapi_TimePoint_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT long long <link linkend="d6/d45/blpapi__timepoint_8h_1a79818c898226d6c4ca4c3ab87b513a52">blpapi_TimePointUtil_nanosecondsBetween</link> (
+const <link linkend="d4/de5/structblpapi___time_point">blpapi_TimePoint_t</link> * start, const <link linkend="d4/de5/structblpapi___time_point">blpapi_TimePoint_t</link> * end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_timepoint.h</para>
+    </simplesect>
+</section>

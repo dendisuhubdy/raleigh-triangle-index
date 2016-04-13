@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d6a/class_mktdata_broadcast_publisher_example">
+<title>MktdataBroadcastPublisherExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_hosts</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_service</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Name &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_messageType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_topic</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_groupId</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_authOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d6a/class_mktdata_broadcast_publisher_example_1a97b22405b44b38009e7175e70a24e3e6">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d1/d6a/class_mktdata_broadcast_publisher_example_1a9f3864762c6699ef516353bf33dc4502">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d6a/class_mktdata_broadcast_publisher_example_1a23c41a87d5dfb7d1af8941d4f07361c3">MktdataBroadcastPublisherExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d1/d6a/class_mktdata_broadcast_publisher_example_1ab975f7fbb326a9a5e2fce38728f4ad8a">authorize</link> (
+const Service &amp; authService, Identity * providerIdentity, ProviderSession * session, const CorrelationId &amp; cid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d6a/class_mktdata_broadcast_publisher_example_1a316639fba6790697f93c3e0bbe8ae7e4">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/d6a/class_mktdata_broadcast_publisher_example_1a97b22405b44b38009e7175e70a24e3e6">
+                <title>void MktdataBroadcastPublisherExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d6a/class_mktdata_broadcast_publisher_example_1a9f3864762c6699ef516353bf33dc4502">
+                <title>bool MktdataBroadcastPublisherExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d6a/class_mktdata_broadcast_publisher_example_1a23c41a87d5dfb7d1af8941d4f07361c3">
+                <title>MktdataBroadcastPublisherExample::MktdataBroadcastPublisherExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d6a/class_mktdata_broadcast_publisher_example_1ab975f7fbb326a9a5e2fce38728f4ad8a">
+                <title>bool MktdataBroadcastPublisherExample::authorize (const Service &amp;authService, Identity *providerIdentity, ProviderSession *session, const CorrelationId &amp;cid)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d6a/class_mktdata_broadcast_publisher_example_1a316639fba6790697f93c3e0bbe8ae7e4">
+                <title>void MktdataBroadcastPublisherExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

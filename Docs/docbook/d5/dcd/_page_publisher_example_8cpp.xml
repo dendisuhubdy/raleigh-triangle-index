@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/dcd/_page_publisher_example_8cpp">
+    <title>PagePublisherExample.cpp File Reference</title>
+    <programlisting>#include &quot;BlpThreadUtil.h&quot;</programlisting>
+    <programlisting>#include &lt;blpapi_element.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_event.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_eventformatter.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_message.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_name.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_providersession.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_topiclist.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_topic.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_identity.h&gt;</programlisting>
+    <programlisting>#include &lt;cassert&gt;</programlisting>
+    <programlisting>#include &lt;cstdlib&gt;</programlisting>
+    <programlisting>#include &lt;ctime&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;iterator&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;sstream&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d85/class_my_event_handler">MyEventHandler</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d87/class_page_publisher_example">PagePublisherExample</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+        </simplesect>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="d5/dcd/_page_publisher_example_8cpp_1ad72ddd2e6f9813e9b5b75b9c3057365e">AuthorizationStatus</link></literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d5/dcd/_page_publisher_example_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/examples/PagePublisherExample.cpp</para>
+    </simplesect>
+</section>

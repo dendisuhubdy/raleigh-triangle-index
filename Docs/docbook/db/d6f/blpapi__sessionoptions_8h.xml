@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d6f/blpapi__sessionoptions_8h">
+    <title>blpapi_sessionoptions.h File Reference</title>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_exception.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;stddef.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_SessionOptions_t * <link linkend="db/d6f/blpapi__sessionoptions_8h_1ac3b947b116b894f6e923d95f770fc2b2">blpapi_SessionOptions_create</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_SessionOptions_t * <link linkend="db/d6f/blpapi__sessionoptions_8h_1a23fa90c6b61a1452da13141c9e209651">blpapi_SessionOptions_duplicate</link> (
+const blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1a140f67b887ea4719c79e53e07e88d1f1">blpapi_SessionOptions_copy</link> (
+blpapi_SessionOptions_t * lhs, const blpapi_SessionOptions_t * rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1a7bc8aba9bca427055e5d5364ef3313a5">blpapi_SessionOptions_destroy</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1ab5079d22232f11f0add7e04ab977367e">blpapi_SessionOptions_setServerHost</link> (
+blpapi_SessionOptions_t * parameters, const char * serverHost)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a6136fda321bf35696b51189f71ed9382">blpapi_SessionOptions_setServerPort</link> (
+blpapi_SessionOptions_t * parameters, unsigned short serverPort)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a661bb13306ecb4049244fccbbbdd539a">blpapi_SessionOptions_setServerAddress</link> (
+blpapi_SessionOptions_t * parameters, const char * serverHost, unsigned short serverPort, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a2dcccd9944de3a315d8075967964dddb">blpapi_SessionOptions_removeServerAddress</link> (
+blpapi_SessionOptions_t * parameters, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1acb7dc89bf300f87166c4d9a195e9f5ec">blpapi_SessionOptions_setConnectTimeout</link> (
+blpapi_SessionOptions_t * parameters, unsigned int timeoutInMilliseconds)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a44c19df402ff36c93549b023cdbe2956">blpapi_SessionOptions_setDefaultServices</link> (
+blpapi_SessionOptions_t * parameters, const char * defaultServices)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1acfde49a0da316da43eca99668d96821a">blpapi_SessionOptions_setDefaultSubscriptionService</link> (
+blpapi_SessionOptions_t * parameters, const char * serviceIdentifier)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1a3ed281bffea193236b22b934837fd353">blpapi_SessionOptions_setDefaultTopicPrefix</link> (
+blpapi_SessionOptions_t * parameters, const char * prefix)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1a24e922abc2282b4bb53b360cd3ebaa50">blpapi_SessionOptions_setAllowMultipleCorrelatorsPerMsg</link> (
+blpapi_SessionOptions_t * parameters, int allowMultipleCorrelatorsPerMsg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1a4e68a2b5f973e0aa4bc837eacf592b0a">blpapi_SessionOptions_setClientMode</link> (
+blpapi_SessionOptions_t * parameters, int clientMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1ae081cdb87febd1d35d0477636513144c">blpapi_SessionOptions_setMaxPendingRequests</link> (
+blpapi_SessionOptions_t * parameters, int maxPendingRequests)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1ac95a49935181406fc593f776eda0bf07">blpapi_SessionOptions_setAutoRestartOnDisconnection</link> (
+blpapi_SessionOptions_t * parameters, int autoRestart)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1a657537f936eee6a40c3d13cb219a5080">blpapi_SessionOptions_setAutoRestart</link> (
+blpapi_SessionOptions_t * parameters, int autoRestart)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1ac0a234ced9c9eed404b926d0862afefb">blpapi_SessionOptions_setAuthenticationOptions</link> (
+blpapi_SessionOptions_t * parameters, const char * authOptions)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1a30dad86192283351d182c59bd6848846">blpapi_SessionOptions_setNumStartAttempts</link> (
+blpapi_SessionOptions_t * parameters, int numStartAttempts)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1ab94718cbb505638f7108db8642fa9dd7">blpapi_SessionOptions_setMaxEventQueueSize</link> (
+blpapi_SessionOptions_t * parameters, size_t maxEventQueueSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1af6b680f8ef6c96a2b0f93f887c27aa37">blpapi_SessionOptions_setSlowConsumerWarningHiWaterMark</link> (
+blpapi_SessionOptions_t * parameters, float hiWaterMark)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a8e9ebbd5cc1209ab9b478ebd53b9d92a">blpapi_SessionOptions_setSlowConsumerWarningLoWaterMark</link> (
+blpapi_SessionOptions_t * parameters, float loWaterMark)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a3c38371299ed0e3e681bdedd4e0be097">blpapi_SessionOptions_setDefaultKeepAliveInactivityTime</link> (
+blpapi_SessionOptions_t * parameters, int inactivityMsecs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a1fdb4f9a00b9dff01bb859e346459d18">blpapi_SessionOptions_setDefaultKeepAliveResponseTimeout</link> (
+blpapi_SessionOptions_t * parameters, int timeoutMsecs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1ad697380e475b981cf29a7119503799e1">blpapi_SessionOptions_setKeepAliveEnabled</link> (
+blpapi_SessionOptions_t * parameters, int isEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="db/d6f/blpapi__sessionoptions_8h_1a8475dac4788ae6b3fdc94bd2682299fb">blpapi_SessionOptions_setRecordSubscriptionDataReceiveTimes</link> (
+blpapi_SessionOptions_t * parameters, int shouldRecord)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="db/d6f/blpapi__sessionoptions_8h_1a2ebba827401041da60e83fe91e1b35db">blpapi_SessionOptions_serverHost</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT unsigned int <link linkend="db/d6f/blpapi__sessionoptions_8h_1aba7de5aeb4334dec9479ba83a72f4137">blpapi_SessionOptions_serverPort</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1ab58f22d33771d797bea2aefc8ba6cca4">blpapi_SessionOptions_numServerAddresses</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a52cbce5ba8e1b49920b543ed7fb67607">blpapi_SessionOptions_getServerAddress</link> (
+blpapi_SessionOptions_t * parameters, const char ** serverHost, unsigned short * serverPort, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT unsigned int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a5720cf32b36404f0786675734e55b41c">blpapi_SessionOptions_connectTimeout</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="db/d6f/blpapi__sessionoptions_8h_1aab130de24f48d47400eb08942318f8af">blpapi_SessionOptions_defaultServices</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="db/d6f/blpapi__sessionoptions_8h_1a9718dca9a2bca481bac11104aa28f7d9">blpapi_SessionOptions_defaultSubscriptionService</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="db/d6f/blpapi__sessionoptions_8h_1a7bd56942e78007849e37865227f91efa">blpapi_SessionOptions_defaultTopicPrefix</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a7c8491e3a1e2b9d63814592f39d41857">blpapi_SessionOptions_allowMultipleCorrelatorsPerMsg</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a3dc495a8e4015b021b46723328b2025e">blpapi_SessionOptions_clientMode</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1acb8f77647af22e3b2ecc416a0acc3d50">blpapi_SessionOptions_maxPendingRequests</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a61a4b18d53fbc8406b1429b46a239545">blpapi_SessionOptions_autoRestartOnDisconnection</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1aff04ddd7233b47af9270d5f59aaf6729">blpapi_SessionOptions_autoRestart</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="db/d6f/blpapi__sessionoptions_8h_1a0e378596fb38fae170bb3f9d8734b2ac">blpapi_SessionOptions_authenticationOptions</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1ae86d56ce513cdf7334657a4e7ccf3c1c">blpapi_SessionOptions_numStartAttempts</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT size_t <link linkend="db/d6f/blpapi__sessionoptions_8h_1a12bcf4565bbd655c2293457cc842bab7">blpapi_SessionOptions_maxEventQueueSize</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT float <link linkend="db/d6f/blpapi__sessionoptions_8h_1a88b5d480789a5e5bd5123ebf25e6ccf9">blpapi_SessionOptions_slowConsumerWarningHiWaterMark</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT float <link linkend="db/d6f/blpapi__sessionoptions_8h_1a3e666fe204115c133331f1b9a47d34d3">blpapi_SessionOptions_slowConsumerWarningLoWaterMark</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a1721528bf94a545fb83b504f2aaa1125">blpapi_SessionOptions_defaultKeepAliveInactivityTime</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a1fe6e1184d33f82149a85967cd244d74">blpapi_SessionOptions_defaultKeepAliveResponseTimeout</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a0158f9fa90e0d0313e1d3adc6e6585db">blpapi_SessionOptions_keepAliveEnabled</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="db/d6f/blpapi__sessionoptions_8h_1a006a7a82630c4b738ab4c317f94565c4">blpapi_SessionOptions_recordSubscriptionDataReceiveTimes</link> (
+blpapi_SessionOptions_t * parameters)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_sessionoptions.h</para>
+    </simplesect>
+</section>

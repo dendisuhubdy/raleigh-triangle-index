@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d30/output_8h">
+    <title>output.h File Reference</title>
+    <programlisting>#include &quot;stdafx.h&quot;</programlisting>
+    <programlisting>#include &quot;processing.h&quot;</programlisting>
+    <programlisting>#include &quot;input.h&quot;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d1f/classoutput">output</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/output.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d02/class_subscription_correlation_example">
+<title>SubscriptionCorrelationExample class Reference</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d7d/class_subscription_correlation_example_1_1_grid_window">SubscriptionCorrelationExample::GridWindow</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_maxEvents</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_eventCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GridWindow d_gridWindow</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d02/class_subscription_correlation_example_1abce91ecc2eca554694023a4cee287840">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d3/d02/class_subscription_correlation_example_1a2164204955b642a326c01d858272095d">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d02/class_subscription_correlation_example_1ad476571bd545abf13a3eeeafe873aa13">SubscriptionCorrelationExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d02/class_subscription_correlation_example_1a3ad0b2a4899eb5e6c16cc6fc12511ef7">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d02/class_subscription_correlation_example_1abce91ecc2eca554694023a4cee287840">
+                <title>void SubscriptionCorrelationExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d02/class_subscription_correlation_example_1a2164204955b642a326c01d858272095d">
+                <title>bool SubscriptionCorrelationExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d02/class_subscription_correlation_example_1ad476571bd545abf13a3eeeafe873aa13">
+                <title>SubscriptionCorrelationExample::SubscriptionCorrelationExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d02/class_subscription_correlation_example_1a3ad0b2a4899eb5e6c16cc6fc12511ef7">
+                <title>void SubscriptionCorrelationExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

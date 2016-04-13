@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d47/blpapi__exception_8h">
+    <title>blpapi_exception.h File Reference</title>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_error.h&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/df8/structblpapi___error_info">blpapi_ErrorInfo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="d6/df8/structblpapi___error_info">blpapi_ErrorInfo</link>  <link linkend="d1/d47/blpapi__exception_8h_1a4f428ff543bda44dff385e2fd595a053">blpapi_ErrorInfo_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d1/d47/blpapi__exception_8h_1a0e4752fc5ba6f742fe22c18b4374627c">blpapi_getErrorInfo</link> (
+<link linkend="d6/df8/structblpapi___error_info">blpapi_ErrorInfo_t</link> * buffer, int errorCode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_exception.h</para>
+    </simplesect>
+</section>

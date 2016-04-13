@@ -1,0 +1,79 @@
+.TH "raleigh-triangle-index/include/blpapi_event.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_event.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_message\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Event_eventType\fP (const \fBblpapi_Event_t\fP *event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Event_addRef\fP (const \fBblpapi_Event_t\fP *event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Event_release\fP (const \fBblpapi_Event_t\fP *event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_EventQueue_t\fP * \fBblpapi_EventQueue_create\fP (void)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventQueue_destroy\fP (\fBblpapi_EventQueue_t\fP *eventQueue)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Event_t\fP * \fBblpapi_EventQueue_nextEvent\fP (\fBblpapi_EventQueue_t\fP *eventQueue, int timeout)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventQueue_purge\fP (\fBblpapi_EventQueue_t\fP *eventQueue)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventQueue_tryNextEvent\fP (\fBblpapi_EventQueue_t\fP *eventQueue, \fBblpapi_Event_t\fP **eventPointer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_MessageIterator_t\fP * \fBblpapi_MessageIterator_create\fP (const \fBblpapi_Event_t\fP *event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_MessageIterator_destroy\fP (\fBblpapi_MessageIterator_t\fP *iterator)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_MessageIterator_next\fP (\fBblpapi_MessageIterator_t\fP *iterator, \fBblpapi_Message_t\fP **result)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Event_addRef (const \fBblpapi_Event_t\fP * event)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Event_eventType (const \fBblpapi_Event_t\fP * event)"
+
+.SS "Usage "
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Event_release (const \fBblpapi_Event_t\fP * event)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_EventQueue_t\fP* blpapi_EventQueue_create (void)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventQueue_destroy (\fBblpapi_EventQueue_t\fP * eventQueue)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Event_t\fP* blpapi_EventQueue_nextEvent (\fBblpapi_EventQueue_t\fP * eventQueue, int timeout)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventQueue_purge (\fBblpapi_EventQueue_t\fP * eventQueue)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventQueue_tryNextEvent (\fBblpapi_EventQueue_t\fP * eventQueue, \fBblpapi_Event_t\fP ** eventPointer)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_MessageIterator_t\fP* blpapi_MessageIterator_create (const \fBblpapi_Event_t\fP * event)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_MessageIterator_destroy (\fBblpapi_MessageIterator_t\fP * iterator)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_MessageIterator_next (\fBblpapi_MessageIterator_t\fP * iterator, \fBblpapi_Message_t\fP ** result)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

@@ -1,0 +1,60 @@
+.TH "raleigh-triangle-index/include/blpapi_topic.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_topic.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_service\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct blpapi_Topic \fBblpapi_Topic_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Topic_t\fP * \fBblpapi_Topic_create\fP (\fBblpapi_Topic_t\fP *from)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Topic_destroy\fP (\fBblpapi_Topic_t\fP *victim)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Topic_compare\fP (const \fBblpapi_Topic_t\fP *lhs, const \fBblpapi_Topic_t\fP *rhs)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Service_t\fP * \fBblpapi_Topic_service\fP (const \fBblpapi_Topic_t\fP *topic)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Topic_isActive\fP (const \fBblpapi_Topic_t\fP *topic)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct blpapi_Topic \fBblpapi_Topic_t\fP"
+
+.PP
+Definition at line 41 of file blpapi_topic\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Topic_compare (const \fBblpapi_Topic_t\fP * lhs, const \fBblpapi_Topic_t\fP * rhs)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Topic_t\fP* blpapi_Topic_create (\fBblpapi_Topic_t\fP * from)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Topic_destroy (\fBblpapi_Topic_t\fP * victim)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Topic_isActive (const \fBblpapi_Topic_t\fP * topic)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Service_t\fP* blpapi_Topic_service (const \fBblpapi_Topic_t\fP * topic)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

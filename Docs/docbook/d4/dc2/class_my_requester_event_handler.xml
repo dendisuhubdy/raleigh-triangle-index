@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dc2/class_my_requester_event_handler">
+<title>MyRequesterEventHandler class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/dc2/class_my_requester_event_handler_1a4f1f71e31de9d413fc684ab9b4097569">MyRequesterEventHandler</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/dc2/class_my_requester_event_handler_1a4d8e2d3492121773019c95ad68e38372">processEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d4/dc2/class_my_requester_event_handler_1a4f1f71e31de9d413fc684ab9b4097569">
+                <title>MyRequesterEventHandler::MyRequesterEventHandler ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dc2/class_my_requester_event_handler_1a4d8e2d3492121773019c95ad68e38372">
+                <title>bool MyRequesterEventHandler::processEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

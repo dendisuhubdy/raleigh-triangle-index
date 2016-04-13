@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d22/blpapi__types_8h">
+    <title>blpapi_types.h File Reference</title>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531">blpapi_DataType_t</link> {
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a9bb7f23b90ba0e43a54502b63687f208">BLPAPI_DATATYPE_BOOL</link>= 1,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a29b7516adf108a6d508a56fa3b2e527d">BLPAPI_DATATYPE_CHAR</link>= 2,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a6d6f3ee2b33ae661fc620b7a42dde89d">BLPAPI_DATATYPE_BYTE</link>= 3,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531aa56d68633942a96450dd664d91593603">BLPAPI_DATATYPE_INT32</link>= 4,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a33974a197fcc6505e9aaad701c7859c8">BLPAPI_DATATYPE_INT64</link>= 5,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531af329bd4a1382757fdc2a44e1141e342b">BLPAPI_DATATYPE_FLOAT32</link>= 6,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531aec1e937834054096d3c2210494d9020d">BLPAPI_DATATYPE_FLOAT64</link>= 7,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a12ab8066310d9eb562b8b386a74b0197">BLPAPI_DATATYPE_STRING</link>= 8,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a5a9bd6c8fc4f7775b16de25b84cbc1b6">BLPAPI_DATATYPE_BYTEARRAY</link>= 9,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a663d5117dad92b7499c8954e311e95b5">BLPAPI_DATATYPE_DATE</link>= 10,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531ab7fdbd9844259c5dfb253776c9b92198">BLPAPI_DATATYPE_TIME</link>= 11,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531ad7b448825139444aaf1f94d1a01029bd">BLPAPI_DATATYPE_DECIMAL</link>= 12,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531afa2587118f9933efe72d76a725bb6181">BLPAPI_DATATYPE_DATETIME</link>= 13,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531ad7c161d6a307bc26ce16238cea7c6120">BLPAPI_DATATYPE_ENUMERATION</link>= 14,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531ae9f695d669ce8fe26016820028df727b">BLPAPI_DATATYPE_SEQUENCE</link>= 15,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a84e66fafd1d6d5ffa834b8175d79f4ec">BLPAPI_DATATYPE_CHOICE</link>= 16,
+<link linkend="df/d22/blpapi__types_8h_1ae51aef6b8fe12b4657827355e5a99531a4ef5ffd73ffbc2035505b651574a0fb1">BLPAPI_DATATYPE_CORRELATION_ID</link>= 17
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="df/d22/blpapi__types_8h_1a21857c3e93a96a514181197cf7e70929">blpapi_Logging_Severity_t</link> {
+<link linkend="df/d22/blpapi__types_8h_1a21857c3e93a96a514181197cf7e70929ae342a66f69bcb4bf475becec052b0d21">blpapi_Logging_SEVERITY_OFF</link>= 0,
+<link linkend="df/d22/blpapi__types_8h_1a21857c3e93a96a514181197cf7e70929a6aff4deebd7af99c4dfa4c3e10a9dbc1">blpapi_Logging_SEVERITY_FATAL</link>= 1,
+<link linkend="df/d22/blpapi__types_8h_1a21857c3e93a96a514181197cf7e70929a97d3aea1b442aa62a982a73c9f2857d6">blpapi_Logging_SEVERITY_ERROR</link>= 2,
+<link linkend="df/d22/blpapi__types_8h_1a21857c3e93a96a514181197cf7e70929a0329986a89feedf35b02b90acc9c4471">blpapi_Logging_SEVERITY_WARN</link>= 3,
+<link linkend="df/d22/blpapi__types_8h_1a21857c3e93a96a514181197cf7e70929ae90788d2d7cb0a1470f2c27ffc1a4412">blpapi_Logging_SEVERITY_INFO</link>= 4,
+<link linkend="df/d22/blpapi__types_8h_1a21857c3e93a96a514181197cf7e70929a7f079b014f65aa5f46c1393309a7d3a8">blpapi_Logging_SEVERITY_DEBUG</link>= 5,
+<link linkend="df/d22/blpapi__types_8h_1a21857c3e93a96a514181197cf7e70929a30859f03a136c9ab531d895314902f52">blpapi_Logging_SEVERITY_TRACE</link>= 6
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef int  <link linkend="df/d22/blpapi__types_8h_1a65b0e627c8b9afc8523bc0fb938fd8e0">blpapi_Bool_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef char  <link linkend="df/d22/blpapi__types_8h_1a75c2f34ebeceb597c158a4e76da76d5e">blpapi_Char_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned char  <link linkend="df/d22/blpapi__types_8h_1afeb012c2037260254833cc5c4a893908">blpapi_UChar_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef short  <link linkend="df/d22/blpapi__types_8h_1ab7f2666fa28a7f68427d22cc86f43625">blpapi_Int16_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned short  <link linkend="df/d22/blpapi__types_8h_1abac1f8140b56f2486e2c45e9ad305f55">blpapi_UInt16_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef int  <link linkend="df/d22/blpapi__types_8h_1ad00bf4bc4f78c3271dadf8cc25516173">blpapi_Int32_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned int  <link linkend="df/d22/blpapi__types_8h_1ac521650ce22d9079f3d0da5e0acdf650">blpapi_UInt32_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef long long  <link linkend="df/d22/blpapi__types_8h_1a90013f2ddf364572e1618e388e3fa3c4">blpapi_Int64_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned long long  <link linkend="df/d22/blpapi__types_8h_1a224c1e419031c7f875bbbc77fd73a3ab">blpapi_UInt64_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef float  <link linkend="df/d22/blpapi__types_8h_1a78bbb0eb8f6ff5b44ebcaf295380c3f5">blpapi_Float32_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef double  <link linkend="df/d22/blpapi__types_8h_1ae935ef577789845825190f3c848b51dc">blpapi_Float64_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef enum blpapi_Logging_Severity_t  <link linkend="df/d22/blpapi__types_8h_1acec0c721ea211ac6ceb3629c1b6b5e91">blpapi_Logging_Severity_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_AbstractSession  <link linkend="df/d22/blpapi__types_8h_1a96f76b8c88d6cdc6689fcd59ccf11cf2">blpapi_AbstractSession_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Constant  <link linkend="df/d22/blpapi__types_8h_1a2bf86142f73df264003f2ff55b42b047">blpapi_Constant_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_ConstantList  <link linkend="df/d22/blpapi__types_8h_1a7a8d479eb2437dcbd51ff695456a1d48">blpapi_ConstantList_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Element  <link linkend="df/d22/blpapi__types_8h_1abb8d9b21981346c8c927e878794299ca">blpapi_Element_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Event  <link linkend="df/d22/blpapi__types_8h_1a30bfd6b43ae20d0c8b1baf6f700450c6">blpapi_Event_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_EventDispatcher  <link linkend="df/d22/blpapi__types_8h_1a5df95934a09713c9ed50e56f2625bc04">blpapi_EventDispatcher_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_EventFormatter  <link linkend="df/d22/blpapi__types_8h_1a38f77df4992150f2393a5229c2432786">blpapi_EventFormatter_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_EventQueue  <link linkend="df/d22/blpapi__types_8h_1a1517aa2b3bf5dc91b0776b873173748a">blpapi_EventQueue_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_MessageIterator  <link linkend="df/d22/blpapi__types_8h_1a41cc6e1426fb28ff659467bb79cf4f43">blpapi_MessageIterator_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Name  <link linkend="df/d22/blpapi__types_8h_1a7284c243e151a47e396cfefb1168347f">blpapi_Name_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Operation  <link linkend="df/d22/blpapi__types_8h_1a37231adac31d57137633022173b82e61">blpapi_Operation_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_ProviderSession  <link linkend="df/d22/blpapi__types_8h_1ae2a6a79b2353d26f116cc4067eef6372">blpapi_ProviderSession_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Service  <link linkend="df/d22/blpapi__types_8h_1a042e6011945369dd408169b541888113">blpapi_Service_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Session  <link linkend="df/d22/blpapi__types_8h_1a54d3f4653b8ff12bc4f9e2a15f1e60d2">blpapi_Session_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_SessionOptions  <link linkend="df/d22/blpapi__types_8h_1a7bfdd0153e2eebf1062f854fb6dc44ca">blpapi_SessionOptions_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_SubscriptionItrerator  <link linkend="df/d22/blpapi__types_8h_1a9dd887ca0390430b3e7888b555622b47">blpapi_SubscriptionIterator_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Identity  <link linkend="df/d22/blpapi__types_8h_1addfe8544784af63ac06c2e2223f86528">blpapi_UserHandle</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Identity  <link linkend="df/d22/blpapi__types_8h_1a8a5be767efc756a9b44df03632185655">blpapi_UserHandle_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Identity  <link linkend="df/d22/blpapi__types_8h_1a2e4986e33040b10d34ef66419a20c609">blpapi_Identity_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_types.h</para>
+    </simplesect>
+</section>

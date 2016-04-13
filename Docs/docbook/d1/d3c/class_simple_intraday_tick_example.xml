@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d3c/class_simple_intraday_tick_example">
+<title>SimpleIntradayTickExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3c/class_simple_intraday_tick_example_1ac3360b9f9f3e13f0b8612fbdbd3fb253">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d1/d3c/class_simple_intraday_tick_example_1af8a00d9c865d70ddbd66295a4befc3f2">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d3c/class_simple_intraday_tick_example_1a9ca0adb0e178b1620c349999213d8271">getPreviousTradingDate</link> (
+int * year_p, int * month_p, int * day_p)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3c/class_simple_intraday_tick_example_1a16b7d6b4c418008a507726bb6c66b1b6">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/d3c/class_simple_intraday_tick_example_1ac3360b9f9f3e13f0b8612fbdbd3fb253">
+                <title>void SimpleIntradayTickExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d3c/class_simple_intraday_tick_example_1af8a00d9c865d70ddbd66295a4befc3f2">
+                <title>bool SimpleIntradayTickExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d3c/class_simple_intraday_tick_example_1a9ca0adb0e178b1620c349999213d8271">
+                <title>int SimpleIntradayTickExample::getPreviousTradingDate (int *year_p, int *month_p, int *day_p)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d3c/class_simple_intraday_tick_example_1a16b7d6b4c418008a507726bb6c66b1b6">
+                <title>void SimpleIntradayTickExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

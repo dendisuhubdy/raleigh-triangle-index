@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d23/class_intraday_tick_example">
+<title>IntradayTickExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_security</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_events</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool d_conditionCodes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_startDateTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_endDateTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d23/class_intraday_tick_example_1afeb1f001eb36f79702198402522a21a6">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d23/class_intraday_tick_example_1a39722ef3382fc5a2ead1ea86d78f2b24">printErrorInfo</link> (
+const char * leadingStr, const Element &amp; errorInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/d23/class_intraday_tick_example_1a7047ca967c4427484f4633ff20c47ecc">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d23/class_intraday_tick_example_1a06ebfdecaf032c4381081b974160264a">processMessage</link> (
+Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d23/class_intraday_tick_example_1a55e1b9cbde2d68670ac8972478dc3a4f">processResponseEvent</link> (
+Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d23/class_intraday_tick_example_1a0e08af4fde2adcbbe7fc6ea78a9ce887">sendIntradayTickRequest</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d23/class_intraday_tick_example_1a0d53fc929f29a9cc4afa74e3e433d0ef">eventLoop</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d9/d23/class_intraday_tick_example_1ac36ea9f495f1b7fa091e3a6b12c6c80e">getTradingDateRange</link> (
+Datetime * startDate_p, Datetime * endDate_p)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d23/class_intraday_tick_example_1aa2dc6319b8ad96ead95dab21bbaec760">IntradayTickExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d23/class_intraday_tick_example_1aea14a2f824da0d71d7b2afd323e1f93c">~IntradayTickExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d23/class_intraday_tick_example_1a89b36b5fa8881a7ef9b78f8dd4e8089a">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1afeb1f001eb36f79702198402522a21a6">
+                <title>void IntradayTickExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1a39722ef3382fc5a2ead1ea86d78f2b24">
+                <title>void IntradayTickExample::printErrorInfo (const char *leadingStr, const Element &amp;errorInfo)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1a7047ca967c4427484f4633ff20c47ecc">
+                <title>bool IntradayTickExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1a06ebfdecaf032c4381081b974160264a">
+                <title>void IntradayTickExample::processMessage (Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1a55e1b9cbde2d68670ac8972478dc3a4f">
+                <title>void IntradayTickExample::processResponseEvent (Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1a0e08af4fde2adcbbe7fc6ea78a9ce887">
+                <title>void IntradayTickExample::sendIntradayTickRequest (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1a0d53fc929f29a9cc4afa74e3e433d0ef">
+                <title>void IntradayTickExample::eventLoop (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1ac36ea9f495f1b7fa091e3a6b12c6c80e">
+                <title>int IntradayTickExample::getTradingDateRange (Datetime *startDate_p, Datetime *endDate_p)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1aa2dc6319b8ad96ead95dab21bbaec760">
+                <title>IntradayTickExample::IntradayTickExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1aea14a2f824da0d71d7b2afd323e1f93c">
+                <title>IntradayTickExample::~IntradayTickExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d23/class_intraday_tick_example_1a89b36b5fa8881a7ef9b78f8dd4e8089a">
+                <title>void IntradayTickExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

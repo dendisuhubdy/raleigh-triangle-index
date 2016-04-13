@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/db5/_subscription_with_event_handler_example_8cpp">
+    <title>SubscriptionWithEventHandlerExample.cpp File Reference</title>
+    <programlisting>#include &quot;BlpThreadUtil.h&quot;</programlisting>
+    <programlisting>#include &lt;blpapi_correlationid.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_element.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_event.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_message.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_name.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_session.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_subscriptionlist.h&gt;</programlisting>
+    <programlisting>#include &lt;cassert&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;set&gt;</programlisting>
+    <programlisting>#include &lt;sstream&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;time.h&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d06/class_console_out">ConsoleOut</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d6f/struct_session_context">SessionContext</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/da1/class_subscription_event_handler">SubscriptionEventHandler</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dbe/class_subscription_with_event_handler_example">SubscriptionWithEventHandlerExample</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+        </simplesect>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d3/db5/_subscription_with_event_handler_example_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/examples/SubscriptionWithEventHandlerExample.cpp</para>
+    </simplesect>
+</section>

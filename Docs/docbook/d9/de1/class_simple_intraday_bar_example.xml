@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/de1/class_simple_intraday_bar_example">
+<title>SimpleIntradayBarExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/de1/class_simple_intraday_bar_example_1a7e413d66400f492253d9959f46b9fc0b">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/de1/class_simple_intraday_bar_example_1ac0796d4b816221e1a54a4a879c75834c">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d9/de1/class_simple_intraday_bar_example_1a0fd8dcf3a983db8c22530cc5efebb5af">getPreviousTradingDate</link> (
+int * year_p, int * month_p, int * day_p)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/de1/class_simple_intraday_bar_example_1a945959c100559f102ffea528672777a9">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/de1/class_simple_intraday_bar_example_1a7e413d66400f492253d9959f46b9fc0b">
+                <title>void SimpleIntradayBarExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/de1/class_simple_intraday_bar_example_1ac0796d4b816221e1a54a4a879c75834c">
+                <title>bool SimpleIntradayBarExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/de1/class_simple_intraday_bar_example_1a0fd8dcf3a983db8c22530cc5efebb5af">
+                <title>int SimpleIntradayBarExample::getPreviousTradingDate (int *year_p, int *month_p, int *day_p)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/de1/class_simple_intraday_bar_example_1a945959c100559f102ffea528672777a9">
+                <title>void SimpleIntradayBarExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

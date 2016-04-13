@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d9a/blpapi__topiclist_8h">
+    <title>blpapi_topiclist.h File Reference</title>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_correlationid.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_element.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_name.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_message.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_resolutionlist.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_TopicList  <link linkend="de/d9a/blpapi__topiclist_8h_1aee69f5aec7148eab99efaeb13ae74df0">blpapi_TopicList_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_TopicList_t * <link linkend="de/d9a/blpapi__topiclist_8h_1a31eb51b229c9331ffdbf5cd79b4a4c39">blpapi_TopicList_create</link> (
+blpapi_TopicList_t * from)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="de/d9a/blpapi__topiclist_8h_1aead19ffccc547597b73da2daa9448f96">blpapi_TopicList_destroy</link> (
+blpapi_TopicList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1af72b9246a656928a3895e79e66987d96">blpapi_TopicList_add</link> (
+blpapi_TopicList_t * list, const char * topic, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1a1d28f429448654c5fa0911e867da6f22">blpapi_TopicList_addFromMessage</link> (
+blpapi_TopicList_t * list, const blpapi_Message_t * topic, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1acc4215cccb4c299e247d966b4cfe5acf">blpapi_TopicList_correlationIdAt</link> (
+const blpapi_TopicList_t * list, <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * result, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1a7578f989a362fac7746a7b784f869118">blpapi_TopicList_topicString</link> (
+const blpapi_TopicList_t * list, const char ** topic, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1a9330eb7d3cc95fa6808e8a43be30ab13">blpapi_TopicList_topicStringAt</link> (
+const blpapi_TopicList_t * list, const char ** topic, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1a87f5c9cd71cc903a62f3c6e5f52ecda5">blpapi_TopicList_status</link> (
+const blpapi_TopicList_t * list, int * status, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1a81a66656ce69aa61da89c8309b11d8a2">blpapi_TopicList_statusAt</link> (
+const blpapi_TopicList_t * list, int * status, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1acf898f4e8924a5a2504071c7c67e7fd7">blpapi_TopicList_message</link> (
+const blpapi_TopicList_t * list, blpapi_Message_t ** element, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1a53ba78830f3aec7885700c58573cfa59">blpapi_TopicList_messageAt</link> (
+const blpapi_TopicList_t * list, blpapi_Message_t ** element, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d9a/blpapi__topiclist_8h_1a206d46d5e6f59bb20ec4dbec5966603b">blpapi_TopicList_size</link> (
+const blpapi_TopicList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_topiclist.h</para>
+    </simplesect>
+</section>

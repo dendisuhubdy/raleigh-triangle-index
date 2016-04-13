@@ -1,0 +1,51 @@
+.TH "raleigh-triangle-index/include/blpapi_identity.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_identity.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_exception\&.h>\fP
+.br
+\fC#include <blpapi_service\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Identity_release\fP (\fBblpapi_Identity_t\fP *handle)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Identity_addRef\fP (\fBblpapi_Identity_t\fP *handle)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Identity_hasEntitlements\fP (const \fBblpapi_Identity_t\fP *handle, const \fBblpapi_Service_t\fP *service, const \fBblpapi_Element_t\fP *eidElement, const int *entitlementIds, size_t numEntitlements, int *failedEntitlements, int *failedEntitlementsCount)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Identity_isAuthorized\fP (const \fBblpapi_Identity_t\fP *handle, const \fBblpapi_Service_t\fP *service)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Identity_getSeatType\fP (const \fBblpapi_Identity_t\fP *handle, int *seatType)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Identity_addRef (\fBblpapi_Identity_t\fP * handle)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Identity_getSeatType (const \fBblpapi_Identity_t\fP * handle, int * seatType)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Identity_hasEntitlements (const \fBblpapi_Identity_t\fP * handle, const \fBblpapi_Service_t\fP * service, const \fBblpapi_Element_t\fP * eidElement, const int * entitlementIds, size_t numEntitlements, int * failedEntitlements, int * failedEntitlementsCount)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Identity_isAuthorized (const \fBblpapi_Identity_t\fP * handle, const \fBblpapi_Service_t\fP * service)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Identity_release (\fBblpapi_Identity_t\fP * handle)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

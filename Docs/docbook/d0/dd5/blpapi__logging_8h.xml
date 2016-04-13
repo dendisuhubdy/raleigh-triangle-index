@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/dd5/blpapi__logging_8h">
+    <title>blpapi_logging.h File Reference</title>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_datetime.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef void(*  <link linkend="d0/dd5/blpapi__logging_8h_1afd241aaef739d851bda1f38bd4570bca">blpapi_Logging_Func_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/dd5/blpapi__logging_8h_1a9dc39f5c65bcfb6fa8cada15b92862d0">blpapi_Logging_registerCallback</link> (
+blpapi_Logging_Func_t callback, blpapi_Logging_Severity_t thresholdSeverity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d0/dd5/blpapi__logging_8h_1a7649d0b41c94ebc8af1b000e49fb0cd6">blpapi_Logging_logTestMessage</link> (
+blpapi_Logging_Severity_t severity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_logging.h</para>
+    </simplesect>
+</section>

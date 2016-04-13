@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d77/class_simple_field_info_example">
+<title>SimpleFieldInfoExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int ID_LEN</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int MNEMONIC_LEN</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int DESC_LEN</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string PADDING</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string APIFLDS_SVC</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d77/class_simple_field_info_example_1ad5419d77cdec74f6e5b949f20d40907e">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d77/class_simple_field_info_example_1a5fe29e7e290e48b06b154146f3647f6a">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d4/d77/class_simple_field_info_example_1ac5cf0fe5e313f223921e5d545ec27e86">padString</link> (
+std::string str, unsigned int width)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d77/class_simple_field_info_example_1a2073349ea365d5baa081384697f3d7b7">printField</link> (
+const Element &amp; field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d77/class_simple_field_info_example_1a555eb564faee2bb782a2c317ac16d656">printHeader</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d77/class_simple_field_info_example_1a1ca14a8f34106c0bc1ee04426a6d7ca8">SimpleFieldInfoExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d77/class_simple_field_info_example_1a41eaf525c1b922623a53fdf9a46e7d5b">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d77/class_simple_field_info_example_1ad5419d77cdec74f6e5b949f20d40907e">
+                <title>void SimpleFieldInfoExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d77/class_simple_field_info_example_1a5fe29e7e290e48b06b154146f3647f6a">
+                <title>bool SimpleFieldInfoExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d77/class_simple_field_info_example_1ac5cf0fe5e313f223921e5d545ec27e86">
+                <title>std::string SimpleFieldInfoExample::padString (std::string str, unsigned int width)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d77/class_simple_field_info_example_1a2073349ea365d5baa081384697f3d7b7">
+                <title>void SimpleFieldInfoExample::printField (const Element &amp;field)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d77/class_simple_field_info_example_1a555eb564faee2bb782a2c317ac16d656">
+                <title>void SimpleFieldInfoExample::printHeader ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d77/class_simple_field_info_example_1a1ca14a8f34106c0bc1ee04426a6d7ca8">
+                <title>SimpleFieldInfoExample::SimpleFieldInfoExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d77/class_simple_field_info_example_1a41eaf525c1b922623a53fdf9a46e7d5b">
+                <title>void SimpleFieldInfoExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

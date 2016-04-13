@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d4f/class_simple_ref_data_override_example">
+<title>SimpleRefDataOverrideExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_simple_ref_data_override_example_1ab9f2b8adf57c23ed789f6cbf77094f87">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/d4f/class_simple_ref_data_override_example_1aee2d5d17a02ae29e73e40beef992f87c">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_simple_ref_data_override_example_1ae029c0b341046e87108fcb9b5f613800">processMessage</link> (
+Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d4f/class_simple_ref_data_override_example_1a9b2abff00ebbf1181d1e0958cb0a34e1">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/d4f/class_simple_ref_data_override_example_1ab9f2b8adf57c23ed789f6cbf77094f87">
+                <title>void SimpleRefDataOverrideExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_simple_ref_data_override_example_1aee2d5d17a02ae29e73e40beef992f87c">
+                <title>bool SimpleRefDataOverrideExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_simple_ref_data_override_example_1ae029c0b341046e87108fcb9b5f613800">
+                <title>void SimpleRefDataOverrideExample::processMessage (Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d4f/class_simple_ref_data_override_example_1a9b2abff00ebbf1181d1e0958cb0a34e1">
+                <title>void SimpleRefDataOverrideExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

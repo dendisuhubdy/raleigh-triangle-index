@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d56/class_simple_field_search_example">
+<title>SimpleFieldSearchExample class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="d5/d56/class_simple_field_search_example_1ac554f78bf9857169a292691f50fa3b92">@0</link> {
+<link linkend="d5/d56/class_simple_field_search_example_1ac554f78bf9857169a292691f50fa3b92a2e6eb7bdd6d53bf0b3bfa10ec3148dd7">ID_LEN</link>= 13,
+<link linkend="d5/d56/class_simple_field_search_example_1ac554f78bf9857169a292691f50fa3b92a70d92b9597443cb03cadfc37a1c5fcf8">MNEMONIC_LEN</link>= 36,
+<link linkend="d5/d56/class_simple_field_search_example_1ac554f78bf9857169a292691f50fa3b92a3b0b7ab0c0c64c73fb28c4c4c4457456">DESC_LEN</link>= 40
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d56/class_simple_field_search_example_1a50ecd73e6063cbb35cef8376c2f6b4a8">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d56/class_simple_field_search_example_1af5f87a5b48ae25159cd0c7812a22e492">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="d5/d56/class_simple_field_search_example_1ab47a0739572a0f2fd55f74514216247c">padString</link> (
+const std::string &amp; str, unsigned int width)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d56/class_simple_field_search_example_1af6899e7de166671136fe71dc8e1557dd">printField</link> (
+const Element &amp; field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d56/class_simple_field_search_example_1a61246c02d173a80fe9ed6fa6f027ca04">printHeader</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d56/class_simple_field_search_example_1a600b4db2d2384f78433833ba654b80ef">SimpleFieldSearchExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d56/class_simple_field_search_example_1a60c34c82e1840e463eb8191de5524dba">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d5/d56/class_simple_field_search_example_1ac554f78bf9857169a292691f50fa3b92">
+               <title>enum @0 </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="d5/d56/class_simple_field_search_example_1ac554f78bf9857169a292691f50fa3b92a2e6eb7bdd6d53bf0b3bfa10ec3148dd7">
+                            <term>ID_LEN</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="d5/d56/class_simple_field_search_example_1ac554f78bf9857169a292691f50fa3b92a70d92b9597443cb03cadfc37a1c5fcf8">
+                            <term>MNEMONIC_LEN</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="d5/d56/class_simple_field_search_example_1ac554f78bf9857169a292691f50fa3b92a3b0b7ab0c0c64c73fb28c4c4c4457456">
+                            <term>DESC_LEN</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 56 of file SimpleFieldSearchExample.cpp
+                    <computeroutput><literallayout>
+{
+ID_LEN= 13, 
+MNEMONIC_LEN= 36, 
+DESC_LEN= 40, 
+}@0;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/d56/class_simple_field_search_example_1a50ecd73e6063cbb35cef8376c2f6b4a8">
+                <title>void SimpleFieldSearchExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d56/class_simple_field_search_example_1af5f87a5b48ae25159cd0c7812a22e492">
+                <title>bool SimpleFieldSearchExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d56/class_simple_field_search_example_1ab47a0739572a0f2fd55f74514216247c">
+                <title>std::string SimpleFieldSearchExample::padString (const std::string &amp;str, unsigned int width)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d56/class_simple_field_search_example_1af6899e7de166671136fe71dc8e1557dd">
+                <title>void SimpleFieldSearchExample::printField (const Element &amp;field)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d56/class_simple_field_search_example_1a61246c02d173a80fe9ed6fa6f027ca04">
+                <title>void SimpleFieldSearchExample::printHeader ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d56/class_simple_field_search_example_1a600b4db2d2384f78433833ba654b80ef">
+                <title>SimpleFieldSearchExample::SimpleFieldSearchExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d56/class_simple_field_search_example_1a60c34c82e1840e463eb8191de5524dba">
+                <title>void SimpleFieldSearchExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

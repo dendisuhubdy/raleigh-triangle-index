@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d00/blpapi__defs_8h">
+    <title>blpapi_defs.h File Reference</title>
+    <programlisting>#include &lt;limits.h&gt;</programlisting>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a8de86e76bdb6fd04af1c328ca7edec4d">BLPAPI_CORRELATION_TYPE_UNSET</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ae05ed492be8643ef4abec6f4b296a385">BLPAPI_CORRELATION_TYPE_INT</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a743414a62e565dd7d41bea0516abd10b">BLPAPI_CORRELATION_TYPE_POINTER</link> 2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a1ff824bf7a546c5e908ac5fce2040145">BLPAPI_CORRELATION_TYPE_AUTOGEN</link> 3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a9cb325b5375c12b0cb8303adfcd21741">BLPAPI_CORRELATION_MAX_CLASS_ID</link> ((1 &lt;&lt; 16)-1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1af57e7285b0ae3c7539a58e47fba3553f">BLPAPI_MANAGEDPTR_COPY</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ad7d691355fc6191c8f6ca785300f8a16">BLPAPI_MANAGEDPTR_DESTROY</link> (-1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ad4238f379369e3c8fb1acc9054afa9bd">BLPAPI_DATETIME_YEAR_PART</link> 0x1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a4d37a281d8ae37977cddd97a0cf37f51">BLPAPI_DATETIME_MONTH_PART</link> 0x2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a8b5846199ca25d46898c8a3522d65df3">BLPAPI_DATETIME_DAY_PART</link> 0x4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1acc10dac992b1b7c6fb7969b7fd66460a">BLPAPI_DATETIME_OFFSET_PART</link> 0x8</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ac116844108436262b1f5e23967da5ce4">BLPAPI_DATETIME_HOURS_PART</link> 0x10</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a826a125582b03dcc5f25c58e78b8609b">BLPAPI_DATETIME_MINUTES_PART</link> 0x20</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a1e79ac72b2bf73ccaa644bcc7e096829">BLPAPI_DATETIME_SECONDS_PART</link> 0x40</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a18edc44b141f15ed879ccf16e1fb2fc4">BLPAPI_DATETIME_MILLISECONDS_PART</link> 0x80</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a60863e931c524af93c478697ff0557b5">BLPAPI_DATETIME_FRACSECONDS_PART</link> 0x80</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a150c598bc8dd175a659ffb14e8f35bed">BLPAPI_DATETIME_DATE_PART</link> (BLPAPI_DATETIME_YEAR_PART|   \
+                                          BLPAPI_DATETIME_MONTH_PART|  \
+                                          BLPAPI_DATETIME_DAY_PART)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aca6d2736517da9f6bce0da7b6e4a7f87">BLPAPI_DATETIME_TIME_PART</link> (BLPAPI_DATETIME_HOURS_PART|   \
+                                          BLPAPI_DATETIME_MINUTES_PART| \
+                                          BLPAPI_DATETIME_SECONDS_PART)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ab59e353aba86657d65736271d9fa22eb">BLPAPI_DATETIME_TIMEMILLI_PART</link> (BLPAPI_DATETIME_TIME_PART|   \
+                                          BLPAPI_DATETIME_MILLISECONDS_PART)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aa3aa99eb718484e2b0b7de82b4db7537">BLPAPI_DATETIME_TIMEFRACSECONDS_PART</link> (BLPAPI_DATETIME_TIME_PART|   \
+                                          BLPAPI_DATETIME_FRACSECONDS_PART)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a4ea3c9200e9b6b5bf184f5cbd3628d5c">BLPAPI_EVENTTYPE_ADMIN</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a1f90e1c4add7d5aa4f339d40f2e7c3f9">BLPAPI_EVENTTYPE_SESSION_STATUS</link> 2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ac5d1f2d30b47b01834fba01d51ca7c68">BLPAPI_EVENTTYPE_SUBSCRIPTION_STATUS</link> 3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a936e7db8b294f1f602687e0c42f6118a">BLPAPI_EVENTTYPE_REQUEST_STATUS</link> 4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ab1b52441649feea6c88f41fce7e4b276">BLPAPI_EVENTTYPE_RESPONSE</link> 5</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a55f2ac952029fc96c4651328f57ef26e">BLPAPI_EVENTTYPE_PARTIAL_RESPONSE</link> 6</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a560f86c101523276648f91b6ffde0db9">BLPAPI_EVENTTYPE_SUBSCRIPTION_DATA</link> 8</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aef5bce0a8aeeb938b6a2e02c9e0bd1b5">BLPAPI_EVENTTYPE_SERVICE_STATUS</link> 9</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1afc12ce9bf74d7ffab68be6021341326a">BLPAPI_EVENTTYPE_TIMEOUT</link> 10</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a03f2f7703cf20e7bd0e638c94a2e27cb">BLPAPI_EVENTTYPE_AUTHORIZATION_STATUS</link> 11</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a701a5ea219c5aeaae13690e1ecdf8768">BLPAPI_EVENTTYPE_RESOLUTION_STATUS</link> 12</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ad70e3cce35c8541cbe586ccea2f60de0">BLPAPI_EVENTTYPE_TOPIC_STATUS</link> 13</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ac39199942e24ff41a064e09951a674df">BLPAPI_EVENTTYPE_TOKEN_STATUS</link> 14</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a6679192980f1e3348bf810c2921db382">BLPAPI_EVENTTYPE_REQUEST</link> 15</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ad05fe31112caab72f544d3080cd5f909">BLPAPI_ELEMENT_INDEX_END</link> 0xffffffff</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aa62a6a3d3fd666c05327f3081fcb4ff9">BLPAPI_STATUS_ACTIVE</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1abfadd81989cecb0f22a0073651397f41">BLPAPI_STATUS_DEPRECATED</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1abbffd9d1de0cc30d3cfbd1190e955dc1">BLPAPI_STATUS_INACTIVE</link> 2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ac464655f4551111367f11b9c0b68216a">BLPAPI_STATUS_PENDING_DEPRECATION</link> 3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aa488901a55346d6f545ba341965bff89">BLPAPI_SUBSCRIPTIONSTATUS_UNSUBSCRIBED</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aa321a921244b7703efe540674a2eb279">BLPAPI_SUBSCRIPTIONSTATUS_SUBSCRIBING</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a07148442f43dbf2bf645b00ad1f947c1">BLPAPI_SUBSCRIPTIONSTATUS_SUBSCRIBED</link> 2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aa1172c54d061584312fa720084bce075">BLPAPI_SUBSCRIPTIONSTATUS_CANCELLED</link> 3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a2a06f4862577d001697f853d910a4ec3">BLPAPI_SUBSCRIPTIONSTATUS_PENDING_CANCELLATION</link> 4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a993f072d12e4133e2c650a7d9bc61825">BLPAPI_CLIENTMODE_AUTO</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a272fcd3d417955c0d6ebbfa55747e9d9">BLPAPI_CLIENTMODE_DAPI</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a67eef2110d9f4e76916fb3aa69a7a944">BLPAPI_CLIENTMODE_SAPI</link> 2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a1c0a57e62311a9f74591cefd62a501b7">BLPAPI_CLIENTMODE_COMPAT_33X</link> 16</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1abbc1611b8d8a812e6727e520710a1cba">BLPAPI_ELEMENTDEFINITION_UNBOUNDED</link> -1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aac800273cd4443ae58f4f8f719224624">BLPAPI_RESOLVEMODE_DONT_REGISTER_SERVICES</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a53aff4338fb20c6d53c8391227429faf">BLPAPI_RESOLVEMODE_AUTO_REGISTER_SERVICES</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a75981ce053bcd32584ce65da5da3e656">BLPAPI_SEATTYPE_INVALID_SEAT</link> -1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ac17434b87320788338a9a3d8f2a322df">BLPAPI_SEATTYPE_BPS</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1aabff58ce960dcd3b224507b5b3659ee6">BLPAPI_SEATTYPE_NONBPS</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a7ae3c3f41c98016d7dfa210eaf5fca53">BLPAPI_SERVICEREGISTRATIONOPTIONS_PRIORITY_LOW</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ad266a2619096ffd55be4ed0bbce20e75">BLPAPI_SERVICEREGISTRATIONOPTIONS_PRIORITY_MEDIUM</link> INT_MAX/2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a294151535247762a6ea484953c62676b">BLPAPI_SERVICEREGISTRATIONOPTIONS_PRIORITY_HIGH</link> INT_MAX</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a88694b7334c5b24051f2a55fb3b9960a">BLPAPI_REGISTRATIONPARTS_DEFAULT</link> 0x1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a301e8f2d5fce2c1794ac7a710bf281b9">BLPAPI_REGISTRATIONPARTS_PUBLISHING</link> 0x2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a7722ca289b4c98baf4558ec9bac9941e">BLPAPI_REGISTRATIONPARTS_OPERATIONS</link> 0x4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ac0999aa13d785e8e0807b1f7778a6aaa">BLPAPI_REGISTRATIONPARTS_SUBSCRIBER_RESOLUTION</link> 0x8</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1a5e697c81a20b0ac6bc8e988407d03473">BLPAPI_REGISTRATIONPARTS_PUBLISHER_RESOLUTION</link> 0x10</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d00/blpapi__defs_8h_1ab1eb8803dbc875b6b02e341daf8772ec">BLPAPI_EXPORT</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_defs.h</para>
+    </simplesect>
+</section>

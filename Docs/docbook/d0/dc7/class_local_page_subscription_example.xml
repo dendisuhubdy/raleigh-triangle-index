@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/dc7/class_local_page_subscription_example">
+<title>LocalPageSubscriptionExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_hosts</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_service</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_maxEvents</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_eventCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_authOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/dc7/class_local_page_subscription_example_1a5fd9ba137dd9f17443ddd516bd334056">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d0/dc7/class_local_page_subscription_example_1a5b5d9e261c09ac188c345a3371d40649">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d0/dc7/class_local_page_subscription_example_1a6b1b4eed6008e042bc9cb8c75b187270">authorize</link> (
+const Service &amp; authService, Identity * subscriptionIdentity, Session * session, const CorrelationId &amp; cid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/dc7/class_local_page_subscription_example_1a904d7e4202997585911ce5bf700702fe">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/dc7/class_local_page_subscription_example_1a5fd9ba137dd9f17443ddd516bd334056">
+                <title>void LocalPageSubscriptionExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dc7/class_local_page_subscription_example_1a5b5d9e261c09ac188c345a3371d40649">
+                <title>bool LocalPageSubscriptionExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dc7/class_local_page_subscription_example_1a6b1b4eed6008e042bc9cb8c75b187270">
+                <title>bool LocalPageSubscriptionExample::authorize (const Service &amp;authService, Identity *subscriptionIdentity, Session *session, const CorrelationId &amp;cid)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/dc7/class_local_page_subscription_example_1a904d7e4202997585911ce5bf700702fe">
+                <title>void LocalPageSubscriptionExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

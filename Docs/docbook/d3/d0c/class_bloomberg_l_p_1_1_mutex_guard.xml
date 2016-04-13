@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard">
+<title>BloombergLP::MutexGuard class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Mutex * d_mutex_p</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1aacbd38abc767ecf856d75938a6328d2e">MutexGuard</link> (
+const <link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard">MutexGuard</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard">MutexGuard</link> &amp; <link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1a806a4130bd7594bd654820078f0d282e">operator=</link> (
+const <link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard">MutexGuard</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1a820c69be46df988f5594027171158a88">MutexGuard</link> (
+<link linkend="d5/def/class_bloomberg_l_p_1_1_mutex">Mutex</link> * mutex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1a749777b2112fef19a8abbdf53b0a8f86">~MutexGuard</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/def/class_bloomberg_l_p_1_1_mutex">Mutex</link> * <link linkend="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1a12d09354299adec6866cced20b26a860">release</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1aacbd38abc767ecf856d75938a6328d2e">
+                <title>BloombergLP::MutexGuard::MutexGuard (const MutexGuard &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1a806a4130bd7594bd654820078f0d282e">
+                <title>MutexGuard&amp; BloombergLP::MutexGuard::operator= (const MutexGuard &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1a820c69be46df988f5594027171158a88">
+                <title>BloombergLP::MutexGuard::MutexGuard (Mutex *mutex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1a749777b2112fef19a8abbdf53b0a8f86">
+                <title>BloombergLP::MutexGuard::~MutexGuard ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d3/d0c/class_bloomberg_l_p_1_1_mutex_guard_1a12d09354299adec6866cced20b26a860">
+                <title>Mutex * BloombergLP::MutexGuard::release ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

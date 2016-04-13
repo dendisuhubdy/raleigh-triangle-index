@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d7f/blpapi__eventformatter_8h">
+    <title>blpapi_eventformatter.h File Reference</title>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_event.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_topic.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_EventFormatter_t * <link linkend="de/d7f/blpapi__eventformatter_8h_1ade12d398455d12635c70e157027c04b7">blpapi_EventFormatter_create</link> (
+blpapi_Event_t * event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="de/d7f/blpapi__eventformatter_8h_1abdd20d5e2fd9b43f2857e571beaf66fa">blpapi_EventFormatter_destroy</link> (
+blpapi_EventFormatter_t * victim)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1ad1384f9bbfa20351a7065bb7e0520ddf">blpapi_EventFormatter_appendMessage</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, blpapi_Name_t * typeName, const blpapi_Topic_t * topic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a635cac539c0445bbbb2c145074e4334a">blpapi_EventFormatter_appendMessageSeq</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, blpapi_Name_t * typeName, const blpapi_Topic_t * topic, unsigned int sequenceNumber, unsigned int)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1abf796cded60eea03ed33aa442998f017">blpapi_EventFormatter_appendResponse</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, blpapi_Name_t * typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a787b699bc7c68e793db1c367bc62951e">blpapi_EventFormatter_appendRecapMessage</link> (
+blpapi_EventFormatter_t * formatter, const blpapi_Topic_t * topic, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * cid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a2361050d9e5ac1b90b459949a405f38f">blpapi_EventFormatter_appendRecapMessageSeq</link> (
+blpapi_EventFormatter_t * formatter, const blpapi_Topic_t * topic, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * cid, unsigned int sequenceNumber, unsigned int)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1ae6aab1cb2c47c2e18a07bcc40f77bba1">blpapi_EventFormatter_setValueBool</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, blpapi_Bool_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a74eb083f66ea4a2449e9786fc37ec609">blpapi_EventFormatter_setValueChar</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, char value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a46a0e0270c01362bd824cedc42ee6691">blpapi_EventFormatter_setValueInt32</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, blpapi_Int32_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a12ee8da3ea68f448ee698d79a242b467">blpapi_EventFormatter_setValueInt64</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, blpapi_Int64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a240eae88974eb76883ee920bbb0727fd">blpapi_EventFormatter_setValueFloat32</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, blpapi_Float32_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a47a574b3a5eae662cac9f7ff983e3e86">blpapi_EventFormatter_setValueFloat64</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, blpapi_Float64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a9535c502eef8c5b7b03ae9098f7a2e2d">blpapi_EventFormatter_setValueDatetime</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, const <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a536121a3694a4404d6bf26a951ccae4f">blpapi_EventFormatter_setValueString</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, const char * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1acf9c9ab1b63c373be996393693bd7a36">blpapi_EventFormatter_setValueFromName</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName, const blpapi_Name_t * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a77f9895ea0b288f771ceb9e61e1d1ab8">blpapi_EventFormatter_setValueNull</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a0186b0b0c2978622f8df98745a91d0eb">blpapi_EventFormatter_pushElement</link> (
+blpapi_EventFormatter_t * formatter, const char * typeString, const blpapi_Name_t * typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a1a8bf7068f6df9e15f642129ca7c3a24">blpapi_EventFormatter_popElement</link> (
+blpapi_EventFormatter_t * formatter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a1f263de26cdb5dbdde5f1c97bddbe8f6">blpapi_EventFormatter_appendValueBool</link> (
+blpapi_EventFormatter_t * formatter, blpapi_Bool_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a8d0e9fd3466d8543ef9f82e4b357698d">blpapi_EventFormatter_appendValueChar</link> (
+blpapi_EventFormatter_t * formatter, char value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1aa00365b3984962ec9af4cda008777dc6">blpapi_EventFormatter_appendValueInt32</link> (
+blpapi_EventFormatter_t * formatter, blpapi_Int32_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1aca17e51ae72e137141700edcc81ea669">blpapi_EventFormatter_appendValueInt64</link> (
+blpapi_EventFormatter_t * formatter, blpapi_Int64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1ae28f54dab309a9567f56bdf2527602ff">blpapi_EventFormatter_appendValueFloat32</link> (
+blpapi_EventFormatter_t * formatter, blpapi_Float32_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a76a8ba9ff554e11902ba4bf973ac676f">blpapi_EventFormatter_appendValueFloat64</link> (
+blpapi_EventFormatter_t * formatter, blpapi_Float64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1ad89a85e123e78c62c9164784d1bf54c2">blpapi_EventFormatter_appendValueDatetime</link> (
+blpapi_EventFormatter_t * formatter, const <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1aea64b62ecc5bfe89a756105add2fe54e">blpapi_EventFormatter_appendValueString</link> (
+blpapi_EventFormatter_t * formatter, const char * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a682274066d6fda244af0c1f25b0b32a7">blpapi_EventFormatter_appendValueFromName</link> (
+blpapi_EventFormatter_t * formatter, const blpapi_Name_t * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="de/d7f/blpapi__eventformatter_8h_1a6d26a43624af24e45eaaaafaca5b66a8">blpapi_EventFormatter_appendElement</link> (
+blpapi_EventFormatter_t * formatter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_eventformatter.h</para>
+    </simplesect>
+</section>

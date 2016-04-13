@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/de8/blpapi__subscriptionlist_8h">
+    <title>blpapi_subscriptionlist.h File Reference</title>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_correlationid.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_exception.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;stddef.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_SubscriptionList  <link linkend="dc/de8/blpapi__subscriptionlist_8h_1af38b8c4628d948929cf7b18f8545142b">blpapi_SubscriptionList_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_SubscriptionList_t * <link linkend="dc/de8/blpapi__subscriptionlist_8h_1af50bf33aaa760be54dcd522205e3e582">blpapi_SubscriptionList_create</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dc/de8/blpapi__subscriptionlist_8h_1ad161ca540a03d49dc6b1a9a90bf20e5d">blpapi_SubscriptionList_destroy</link> (
+blpapi_SubscriptionList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/de8/blpapi__subscriptionlist_8h_1a770b18c99399cd490f20460b54830b01">blpapi_SubscriptionList_add</link> (
+blpapi_SubscriptionList_t * list, const char * subscriptionString, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId, const char ** fields, const char ** options, size_t numfields, size_t numOptions)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/de8/blpapi__subscriptionlist_8h_1a4cbc3650cf8c9ae62f65e77743667de9">blpapi_SubscriptionList_addResolved</link> (
+blpapi_SubscriptionList_t * list, const char * subscriptionString, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/de8/blpapi__subscriptionlist_8h_1aceefdc7b09bf665f27d283f1066dce73">blpapi_SubscriptionList_clear</link> (
+blpapi_SubscriptionList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/de8/blpapi__subscriptionlist_8h_1a0f28ab268f6ff058c6697403697d5736">blpapi_SubscriptionList_append</link> (
+blpapi_SubscriptionList_t * dest, const blpapi_SubscriptionList_t * src)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/de8/blpapi__subscriptionlist_8h_1a275136b95038a3310f752f64e779f17e">blpapi_SubscriptionList_size</link> (
+const blpapi_SubscriptionList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/de8/blpapi__subscriptionlist_8h_1ad560d6c5bb764963ea5be2086341785c">blpapi_SubscriptionList_correlationIdAt</link> (
+const blpapi_SubscriptionList_t * list, <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * result, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/de8/blpapi__subscriptionlist_8h_1a7ee881d1916373f021a06a6f74b9e19c">blpapi_SubscriptionList_topicStringAt</link> (
+blpapi_SubscriptionList_t * list, const char ** result, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dc/de8/blpapi__subscriptionlist_8h_1a0c024913d552369764d8cf8d96542c0a">blpapi_SubscriptionList_isResolvedAt</link> (
+blpapi_SubscriptionList_t * list, int * result, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_subscriptionlist.h</para>
+    </simplesect>
+</section>

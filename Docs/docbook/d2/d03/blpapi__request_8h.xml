@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d03/blpapi__request_8h">
+    <title>blpapi_request.h File Reference</title>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_correlationid.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_element.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_exception.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Request  <link linkend="d2/d03/blpapi__request_8h_1ac57a51635403fb6a46d0edd375735ef4">blpapi_Request_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d2/d03/blpapi__request_8h_1a5bae29a64af53d8d0df434bd5a878171">blpapi_Request_destroy</link> (
+blpapi_Request_t * request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Element_t * <link linkend="d2/d03/blpapi__request_8h_1a644b3d67e6a41d6c1ae6a88c28aa701f">blpapi_Request_elements</link> (
+blpapi_Request_t * request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d2/d03/blpapi__request_8h_1a34313c4dbb7372cec046a4727725094a">blpapi_Request_setPreferredRoute</link> (
+blpapi_Request_t * request, <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_request.h</para>
+    </simplesect>
+</section>

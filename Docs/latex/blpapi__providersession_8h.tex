@@ -1,0 +1,425 @@
+\hypertarget{blpapi__providersession_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+providersession.h File Reference}
+\label{blpapi__providersession_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+providersession.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+providersession.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+abstractsession.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+call.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+correlationid.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+event.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+eventdispatcher.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+identity.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+request.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+resolutionlist.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+service.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+sessionoptions.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+subscriptionlist.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+topic.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+topiclist.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct blpapi\+\_\+\+Service\+Registration\+Options \hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t}
+\item 
+typedef void($\ast$ \hyperlink{blpapi__providersession_8h_a7195385e247e2d34726290d46b2b62c2}{blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t}) (\hyperlink{blpapi__types_8h_a30bfd6b43ae20d0c8b1baf6f700450c6}{blpapi\+\_\+\+Event\+\_\+t} $\ast$event, \hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, void $\ast$user\+Data)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$ \hyperlink{blpapi__providersession_8h_a49322eed258d540a6d8046eeed73b0f7}{blpapi\+\_\+\+Provider\+Session\+\_\+create} (\hyperlink{blpapi__types_8h_a7bfdd0153e2eebf1062f854fb6dc44ca}{blpapi\+\_\+\+Session\+Options\+\_\+t} $\ast$parameters, \hyperlink{blpapi__providersession_8h_a7195385e247e2d34726290d46b2b62c2}{blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t} handler, \hyperlink{blpapi__types_8h_a5df95934a09713c9ed50e56f2625bc04}{blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$dispatcher, void $\ast$user\+Data)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__providersession_8h_a9088cc94c10e3faf2d3606df1f075392}{blpapi\+\_\+\+Provider\+Session\+\_\+destroy} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a0f86ce6551a93d32ca565c693251e5d7}{blpapi\+\_\+\+Provider\+Session\+\_\+start} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a40cca9d0474eec20bc3e39d4a9637105}{blpapi\+\_\+\+Provider\+Session\+\_\+start\+Async} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_adb2aaf4d837504eac265e1b3669a51e0}{blpapi\+\_\+\+Provider\+Session\+\_\+stop} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_ae0fec0c8d2d9bb3cf090bd0a144be263}{blpapi\+\_\+\+Provider\+Session\+\_\+stop\+Async} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_aedd11f1bd657fd8f6ecb76535af18bc9}{blpapi\+\_\+\+Provider\+Session\+\_\+next\+Event} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, \hyperlink{blpapi__types_8h_a30bfd6b43ae20d0c8b1baf6f700450c6}{blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$event\+Pointer, unsigned int timeout\+In\+Milliseconds)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a3db27af423e0a5ca9a11e6dd22d36894}{blpapi\+\_\+\+Provider\+Session\+\_\+try\+Next\+Event} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, \hyperlink{blpapi__types_8h_a30bfd6b43ae20d0c8b1baf6f700450c6}{blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$event\+Pointer)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_ad302f8e41fa2db12d3a95169097598d4}{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const char $\ast$service\+Name, const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$identity, \hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$registration\+Options)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a6e8f098de0fddf91b78ed644483a2ee2}{blpapi\+\_\+\+Provider\+Session\+\_\+activate\+Sub\+Service\+Code\+Range} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const char $\ast$service\+Name, int begin, int end, int priority)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a771eaf68f3feb151bc1369ada6d85a4b}{blpapi\+\_\+\+Provider\+Session\+\_\+deactivate\+Sub\+Service\+Code\+Range} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const char $\ast$service\+Name, int begin, int end)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a26c26289aa838915fd1ffe526549c438}{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service\+Async} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const char $\ast$service\+Name, const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$identity, \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$correlation\+Id, \hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$registration\+Options)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a51ec11c712d5052a931647b7dc03d723}{blpapi\+\_\+\+Provider\+Session\+\_\+deregister\+Service} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const char $\ast$service\+Name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a5c8dafd92008390380ffe434bff3a824}{blpapi\+\_\+\+Provider\+Session\+\_\+resolve} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$resolution\+List, int resolve\+Mode, const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$identity)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_acdadaa16d33ad6e3b92cb73da8aecaab}{blpapi\+\_\+\+Provider\+Session\+\_\+resolve\+Async} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$resolution\+List, int resolve\+Mode, const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$identity)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a049b92351b279456098e07494549db01}{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, \hyperlink{blpapi__topiclist_8h_aee69f5aec7148eab99efaeb13ae74df0}{blpapi\+\_\+\+Topic\+List\+\_\+t} $\ast$topic\+List, int resolve\+Mode, const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$identity)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a6096a2edcd01b2c6af381f881e865b81}{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics\+Async} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const \hyperlink{blpapi__topiclist_8h_aee69f5aec7148eab99efaeb13ae74df0}{blpapi\+\_\+\+Topic\+List\+\_\+t} $\ast$topic\+List, int resolve\+Mode, const \hyperlink{blpapi__types_8h_a2e4986e33040b10d34ef66419a20c609}{blpapi\+\_\+\+Identity\+\_\+t} $\ast$identity)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a4d0171d5d03a95fe9ff6acab8b56e27f}{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Topic} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const \hyperlink{blpapi__message_8h_a98691b7f64ed66628256601660a711eb}{blpapi\+\_\+\+Message\+\_\+t} $\ast$message, \hyperlink{blpapi__topic_8h_a7624962c107827bc0de204aeacbd6da9}{blpapi\+\_\+\+Topic\+\_\+t} $\ast$$\ast$topic)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a2532deadcffa36d3158b50a924bf3dc6}{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topic} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const \hyperlink{blpapi__message_8h_a98691b7f64ed66628256601660a711eb}{blpapi\+\_\+\+Message\+\_\+t} $\ast$message, \hyperlink{blpapi__topic_8h_a7624962c107827bc0de204aeacbd6da9}{blpapi\+\_\+\+Topic\+\_\+t} $\ast$$\ast$topic)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a6c1353e741eb519602ec2a53d33f76aa}{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Service\+Status\+Topic} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const \hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__topic_8h_a7624962c107827bc0de204aeacbd6da9}{blpapi\+\_\+\+Topic\+\_\+t} $\ast$$\ast$topic)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_acae48df9bb1472969c1c41976a1e1909}{blpapi\+\_\+\+Provider\+Session\+\_\+delete\+Topics} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, const \hyperlink{blpapi__topic_8h_a7624962c107827bc0de204aeacbd6da9}{blpapi\+\_\+\+Topic\+\_\+t} $\ast$$\ast$topics, size\+\_\+t num\+Topics)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a72016ee3064bdef2e981d0d43c800db0}{blpapi\+\_\+\+Provider\+Session\+\_\+publish} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, \hyperlink{blpapi__types_8h_a30bfd6b43ae20d0c8b1baf6f700450c6}{blpapi\+\_\+\+Event\+\_\+t} $\ast$event)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_aa066d286f8c6c865c4d00a045b6de8ff}{blpapi\+\_\+\+Provider\+Session\+\_\+send\+Response} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, \hyperlink{blpapi__types_8h_a30bfd6b43ae20d0c8b1baf6f700450c6}{blpapi\+\_\+\+Event\+\_\+t} $\ast$event, int is\+Partial\+Response)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_a96f76b8c88d6cdc6689fcd59ccf11cf2}{blpapi\+\_\+\+Abstract\+Session\+\_\+t} $\ast$ \hyperlink{blpapi__providersession_8h_af9c9573fd43732a5c64613a8c2516449}{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Abstract\+Session} (\hyperlink{blpapi__types_8h_ae2a6a79b2353d26f116cc4067eef6372}{blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$ \hyperlink{blpapi__providersession_8h_a383f5aaff9c5435b1ef2ffe0499d11fa}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+create} (void)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$ \hyperlink{blpapi__providersession_8h_abc017fe0341ace0db78137b284241006}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+duplicate} (const \hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__providersession_8h_a1be4545325c623dbca895a91542576ff}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+destroy} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__providersession_8h_a92b4ccb9e91b8a8d4379b0dfa0e6428b}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+copy} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$lhs, const \hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$rhs)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a7e35631d4a8a9f2276f94d5d28af8182}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+add\+Active\+Sub\+Service\+Code\+Range} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters, int start, int end, int priority)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__providersession_8h_ab1ab9f77cd165f1058dd08f72038cd58}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+remove\+All\+Active\+Sub\+Service\+Code\+Ranges} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__providersession_8h_af781acb368c9f066560701d45eeaba79}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Group\+Id} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters, const char $\ast$group\+Id, unsigned int group\+Id\+Length)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_aafd9391eae956f3057892eb6e4ac2d64}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Service\+Priority} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters, int priority)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__providersession_8h_a7c1a340cc7657c9df3d08408231073d2}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Parts\+To\+Register} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters, int parts)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a6e52168fcfbe009e2d63120684034545}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Group\+Id} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters, char $\ast$groupd\+Id\+Buffer, int $\ast$group\+Id\+Length)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_a9e8e5cf5cfe849447ffd872d165f0532}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Service\+Priority} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__providersession_8h_ad0005468212b08d0f5ebffcab1503b6c}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Parts\+To\+Register} (\hyperlink{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$parameters)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t@{blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t}}
+\index{blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t@{blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t}{blpapi_ProviderEventHandler_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t) ({\bf blpapi\+\_\+\+Event\+\_\+t} $\ast$event, {\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$session, void $\ast$user\+Data)}\hypertarget{blpapi__providersession_8h_a7195385e247e2d34726290d46b2b62c2}{}\label{blpapi__providersession_8h_a7195385e247e2d34726290d46b2b62c2}
+
+
+Definition at line 156 of file blpapi\+\_\+providersession.\+h.
+
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t}{blpapi_ServiceRegistrationOptions_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct blpapi\+\_\+\+Service\+Registration\+Options {\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t}}\hypertarget{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}{}\label{blpapi__providersession_8h_a91619005e934b1c1a565219fa8cfaf15}
+
+
+Definition at line 153 of file blpapi\+\_\+providersession.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+activate\+Sub\+Service\+Code\+Range@{blpapi\+\_\+\+Provider\+Session\+\_\+activate\+Sub\+Service\+Code\+Range}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+activate\+Sub\+Service\+Code\+Range@{blpapi\+\_\+\+Provider\+Session\+\_\+activate\+Sub\+Service\+Code\+Range}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+activate\+Sub\+Service\+Code\+Range(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const char $\ast$service\+Name, int begin, int end, int priority)}{blpapi_ProviderSession_activateSubServiceCodeRange(blpapi_ProviderSession_t *session, const char *serviceName, int begin, int end, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+activate\+Sub\+Service\+Code\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const char $\ast$}]{service\+Name, }
+\item[{int}]{begin, }
+\item[{int}]{end, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a6e8f098de0fddf91b78ed644483a2ee2}{}\label{blpapi__providersession_8h_a6e8f098de0fddf91b78ed644483a2ee2}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+create@{blpapi\+\_\+\+Provider\+Session\+\_\+create}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+create@{blpapi\+\_\+\+Provider\+Session\+\_\+create}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+create(blpapi\+\_\+\+Session\+Options\+\_\+t $\ast$parameters, blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t handler, blpapi\+\_\+\+Event\+Dispatcher\+\_\+t $\ast$dispatcher, void $\ast$user\+Data)}{blpapi_ProviderSession_create(blpapi_SessionOptions_t *parameters, blpapi_ProviderEventHandler_t handler, blpapi_EventDispatcher_t *dispatcher, void *userData)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Provider\+Session\+\_\+t}$\ast$ blpapi\+\_\+\+Provider\+Session\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Session\+Options\+\_\+t} $\ast$}]{parameters, }
+\item[{{\bf blpapi\+\_\+\+Provider\+Event\+Handler\+\_\+t}}]{handler, }
+\item[{{\bf blpapi\+\_\+\+Event\+Dispatcher\+\_\+t} $\ast$}]{dispatcher, }
+\item[{void $\ast$}]{user\+Data}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a49322eed258d540a6d8046eeed73b0f7}{}\label{blpapi__providersession_8h_a49322eed258d540a6d8046eeed73b0f7}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+create\+Service\+Status\+Topic@{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Service\+Status\+Topic}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Service\+Status\+Topic@{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Service\+Status\+Topic}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Service\+Status\+Topic(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Topic\+\_\+t $\ast$$\ast$topic)}{blpapi_ProviderSession_createServiceStatusTopic(blpapi_ProviderSession_t *session, const blpapi_Service_t *service, blpapi_Topic_t **topic)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+create\+Service\+Status\+Topic (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const {\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Topic\+\_\+t} $\ast$$\ast$}]{topic}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a6c1353e741eb519602ec2a53d33f76aa}{}\label{blpapi__providersession_8h_a6c1353e741eb519602ec2a53d33f76aa}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topic@{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topic}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topic@{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topic}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topic(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const blpapi\+\_\+\+Message\+\_\+t $\ast$message, blpapi\+\_\+\+Topic\+\_\+t $\ast$$\ast$topic)}{blpapi_ProviderSession_createTopic(blpapi_ProviderSession_t *session, const blpapi_Message_t *message, blpapi_Topic_t **topic)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topic (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const {\bf blpapi\+\_\+\+Message\+\_\+t} $\ast$}]{message, }
+\item[{{\bf blpapi\+\_\+\+Topic\+\_\+t} $\ast$$\ast$}]{topic}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a2532deadcffa36d3158b50a924bf3dc6}{}\label{blpapi__providersession_8h_a2532deadcffa36d3158b50a924bf3dc6}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics@{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics@{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, blpapi\+\_\+\+Topic\+List\+\_\+t $\ast$topic\+List, int resolve\+Mode, const blpapi\+\_\+\+Identity\+\_\+t $\ast$identity)}{blpapi_ProviderSession_createTopics(blpapi_ProviderSession_t *session, blpapi_TopicList_t *topicList, int resolveMode, const blpapi_Identity_t *identity)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{{\bf blpapi\+\_\+\+Topic\+List\+\_\+t} $\ast$}]{topic\+List, }
+\item[{int}]{resolve\+Mode, }
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{identity}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a049b92351b279456098e07494549db01}{}\label{blpapi__providersession_8h_a049b92351b279456098e07494549db01}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics\+Async}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics\+Async}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics\+Async(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const blpapi\+\_\+\+Topic\+List\+\_\+t $\ast$topic\+List, int resolve\+Mode, const blpapi\+\_\+\+Identity\+\_\+t $\ast$identity)}{blpapi_ProviderSession_createTopicsAsync(blpapi_ProviderSession_t *session, const blpapi_TopicList_t *topicList, int resolveMode, const blpapi_Identity_t *identity)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+create\+Topics\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const {\bf blpapi\+\_\+\+Topic\+List\+\_\+t} $\ast$}]{topic\+List, }
+\item[{int}]{resolve\+Mode, }
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{identity}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a6096a2edcd01b2c6af381f881e865b81}{}\label{blpapi__providersession_8h_a6096a2edcd01b2c6af381f881e865b81}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+deactivate\+Sub\+Service\+Code\+Range@{blpapi\+\_\+\+Provider\+Session\+\_\+deactivate\+Sub\+Service\+Code\+Range}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+deactivate\+Sub\+Service\+Code\+Range@{blpapi\+\_\+\+Provider\+Session\+\_\+deactivate\+Sub\+Service\+Code\+Range}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+deactivate\+Sub\+Service\+Code\+Range(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const char $\ast$service\+Name, int begin, int end)}{blpapi_ProviderSession_deactivateSubServiceCodeRange(blpapi_ProviderSession_t *session, const char *serviceName, int begin, int end)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+deactivate\+Sub\+Service\+Code\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const char $\ast$}]{service\+Name, }
+\item[{int}]{begin, }
+\item[{int}]{end}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a771eaf68f3feb151bc1369ada6d85a4b}{}\label{blpapi__providersession_8h_a771eaf68f3feb151bc1369ada6d85a4b}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+delete\+Topics@{blpapi\+\_\+\+Provider\+Session\+\_\+delete\+Topics}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+delete\+Topics@{blpapi\+\_\+\+Provider\+Session\+\_\+delete\+Topics}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+delete\+Topics(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const blpapi\+\_\+\+Topic\+\_\+t $\ast$$\ast$topics, size\+\_\+t num\+Topics)}{blpapi_ProviderSession_deleteTopics(blpapi_ProviderSession_t *session, const blpapi_Topic_t **topics, size_t numTopics)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+delete\+Topics (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const {\bf blpapi\+\_\+\+Topic\+\_\+t} $\ast$$\ast$}]{topics, }
+\item[{size\+\_\+t}]{num\+Topics}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_acae48df9bb1472969c1c41976a1e1909}{}\label{blpapi__providersession_8h_acae48df9bb1472969c1c41976a1e1909}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+deregister\+Service@{blpapi\+\_\+\+Provider\+Session\+\_\+deregister\+Service}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+deregister\+Service@{blpapi\+\_\+\+Provider\+Session\+\_\+deregister\+Service}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+deregister\+Service(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const char $\ast$service\+Name)}{blpapi_ProviderSession_deregisterService(blpapi_ProviderSession_t *session, const char *serviceName)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+deregister\+Service (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const char $\ast$}]{service\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a51ec11c712d5052a931647b7dc03d723}{}\label{blpapi__providersession_8h_a51ec11c712d5052a931647b7dc03d723}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+destroy@{blpapi\+\_\+\+Provider\+Session\+\_\+destroy}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+destroy@{blpapi\+\_\+\+Provider\+Session\+\_\+destroy}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+destroy(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session)}{blpapi_ProviderSession_destroy(blpapi_ProviderSession_t *session)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Provider\+Session\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a9088cc94c10e3faf2d3606df1f075392}{}\label{blpapi__providersession_8h_a9088cc94c10e3faf2d3606df1f075392}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+get\+Abstract\+Session@{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Abstract\+Session}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Abstract\+Session@{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Abstract\+Session}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Abstract\+Session(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session)}{blpapi_ProviderSession_getAbstractSession(blpapi_ProviderSession_t *session)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Abstract\+Session\+\_\+t}$\ast$ blpapi\+\_\+\+Provider\+Session\+\_\+get\+Abstract\+Session (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_af9c9573fd43732a5c64613a8c2516449}{}\label{blpapi__providersession_8h_af9c9573fd43732a5c64613a8c2516449}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+get\+Topic@{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Topic}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Topic@{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Topic}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+get\+Topic(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const blpapi\+\_\+\+Message\+\_\+t $\ast$message, blpapi\+\_\+\+Topic\+\_\+t $\ast$$\ast$topic)}{blpapi_ProviderSession_getTopic(blpapi_ProviderSession_t *session, const blpapi_Message_t *message, blpapi_Topic_t **topic)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+get\+Topic (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const {\bf blpapi\+\_\+\+Message\+\_\+t} $\ast$}]{message, }
+\item[{{\bf blpapi\+\_\+\+Topic\+\_\+t} $\ast$$\ast$}]{topic}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a4d0171d5d03a95fe9ff6acab8b56e27f}{}\label{blpapi__providersession_8h_a4d0171d5d03a95fe9ff6acab8b56e27f}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+next\+Event@{blpapi\+\_\+\+Provider\+Session\+\_\+next\+Event}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+next\+Event@{blpapi\+\_\+\+Provider\+Session\+\_\+next\+Event}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+next\+Event(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, blpapi\+\_\+\+Event\+\_\+t $\ast$$\ast$event\+Pointer, unsigned int timeout\+In\+Milliseconds)}{blpapi_ProviderSession_nextEvent(blpapi_ProviderSession_t *session, blpapi_Event_t **eventPointer, unsigned int timeoutInMilliseconds)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+next\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{{\bf blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$}]{event\+Pointer, }
+\item[{unsigned int}]{timeout\+In\+Milliseconds}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_aedd11f1bd657fd8f6ecb76535af18bc9}{}\label{blpapi__providersession_8h_aedd11f1bd657fd8f6ecb76535af18bc9}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+publish@{blpapi\+\_\+\+Provider\+Session\+\_\+publish}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+publish@{blpapi\+\_\+\+Provider\+Session\+\_\+publish}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+publish(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, blpapi\+\_\+\+Event\+\_\+t $\ast$event)}{blpapi_ProviderSession_publish(blpapi_ProviderSession_t *session, blpapi_Event_t *event)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+publish (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{{\bf blpapi\+\_\+\+Event\+\_\+t} $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a72016ee3064bdef2e981d0d43c800db0}{}\label{blpapi__providersession_8h_a72016ee3064bdef2e981d0d43c800db0}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service@{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service@{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const char $\ast$service\+Name, const blpapi\+\_\+\+Identity\+\_\+t $\ast$identity, blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$registration\+Options)}{blpapi_ProviderSession_registerService(blpapi_ProviderSession_t *session, const char *serviceName, const blpapi_Identity_t *identity, blpapi_ServiceRegistrationOptions_t *registrationOptions)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const char $\ast$}]{service\+Name, }
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{identity, }
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{registration\+Options}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_ad302f8e41fa2db12d3a95169097598d4}{}\label{blpapi__providersession_8h_ad302f8e41fa2db12d3a95169097598d4}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service\+Async}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service\+Async}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service\+Async(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const char $\ast$service\+Name, const blpapi\+\_\+\+Identity\+\_\+t $\ast$identity, blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$correlation\+Id, blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$registration\+Options)}{blpapi_ProviderSession_registerServiceAsync(blpapi_ProviderSession_t *session, const char *serviceName, const blpapi_Identity_t *identity, blpapi_CorrelationId_t *correlationId, blpapi_ServiceRegistrationOptions_t *registrationOptions)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+register\+Service\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const char $\ast$}]{service\+Name, }
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{identity, }
+\item[{{\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{correlation\+Id, }
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{registration\+Options}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a26c26289aa838915fd1ffe526549c438}{}\label{blpapi__providersession_8h_a26c26289aa838915fd1ffe526549c438}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+resolve@{blpapi\+\_\+\+Provider\+Session\+\_\+resolve}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+resolve@{blpapi\+\_\+\+Provider\+Session\+\_\+resolve}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+resolve(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$resolution\+List, int resolve\+Mode, const blpapi\+\_\+\+Identity\+\_\+t $\ast$identity)}{blpapi_ProviderSession_resolve(blpapi_ProviderSession_t *session, blpapi_ResolutionList_t *resolutionList, int resolveMode, const blpapi_Identity_t *identity)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+resolve (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{{\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{resolution\+List, }
+\item[{int}]{resolve\+Mode, }
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{identity}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a5c8dafd92008390380ffe434bff3a824}{}\label{blpapi__providersession_8h_a5c8dafd92008390380ffe434bff3a824}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+resolve\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+resolve\+Async}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+resolve\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+resolve\+Async}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+resolve\+Async(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$resolution\+List, int resolve\+Mode, const blpapi\+\_\+\+Identity\+\_\+t $\ast$identity)}{blpapi_ProviderSession_resolveAsync(blpapi_ProviderSession_t *session, const blpapi_ResolutionList_t *resolutionList, int resolveMode, const blpapi_Identity_t *identity)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+resolve\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{resolution\+List, }
+\item[{int}]{resolve\+Mode, }
+\item[{const {\bf blpapi\+\_\+\+Identity\+\_\+t} $\ast$}]{identity}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_acdadaa16d33ad6e3b92cb73da8aecaab}{}\label{blpapi__providersession_8h_acdadaa16d33ad6e3b92cb73da8aecaab}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+send\+Response@{blpapi\+\_\+\+Provider\+Session\+\_\+send\+Response}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+send\+Response@{blpapi\+\_\+\+Provider\+Session\+\_\+send\+Response}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+send\+Response(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, blpapi\+\_\+\+Event\+\_\+t $\ast$event, int is\+Partial\+Response)}{blpapi_ProviderSession_sendResponse(blpapi_ProviderSession_t *session, blpapi_Event_t *event, int isPartialResponse)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+send\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{{\bf blpapi\+\_\+\+Event\+\_\+t} $\ast$}]{event, }
+\item[{int}]{is\+Partial\+Response}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_aa066d286f8c6c865c4d00a045b6de8ff}{}\label{blpapi__providersession_8h_aa066d286f8c6c865c4d00a045b6de8ff}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+start@{blpapi\+\_\+\+Provider\+Session\+\_\+start}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+start@{blpapi\+\_\+\+Provider\+Session\+\_\+start}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+start(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session)}{blpapi_ProviderSession_start(blpapi_ProviderSession_t *session)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a0f86ce6551a93d32ca565c693251e5d7}{}\label{blpapi__providersession_8h_a0f86ce6551a93d32ca565c693251e5d7}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+start\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+start\+Async}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+start\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+start\+Async}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+start\+Async(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session)}{blpapi_ProviderSession_startAsync(blpapi_ProviderSession_t *session)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+start\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a40cca9d0474eec20bc3e39d4a9637105}{}\label{blpapi__providersession_8h_a40cca9d0474eec20bc3e39d4a9637105}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+stop@{blpapi\+\_\+\+Provider\+Session\+\_\+stop}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+stop@{blpapi\+\_\+\+Provider\+Session\+\_\+stop}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+stop(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session)}{blpapi_ProviderSession_stop(blpapi_ProviderSession_t *session)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_adb2aaf4d837504eac265e1b3669a51e0}{}\label{blpapi__providersession_8h_adb2aaf4d837504eac265e1b3669a51e0}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+stop\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+stop\+Async}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+stop\+Async@{blpapi\+\_\+\+Provider\+Session\+\_\+stop\+Async}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+stop\+Async(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session)}{blpapi_ProviderSession_stopAsync(blpapi_ProviderSession_t *session)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+stop\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_ae0fec0c8d2d9bb3cf090bd0a144be263}{}\label{blpapi__providersession_8h_ae0fec0c8d2d9bb3cf090bd0a144be263}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Provider\+Session\+\_\+try\+Next\+Event@{blpapi\+\_\+\+Provider\+Session\+\_\+try\+Next\+Event}}
+\index{blpapi\+\_\+\+Provider\+Session\+\_\+try\+Next\+Event@{blpapi\+\_\+\+Provider\+Session\+\_\+try\+Next\+Event}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Provider\+Session\+\_\+try\+Next\+Event(blpapi\+\_\+\+Provider\+Session\+\_\+t $\ast$session, blpapi\+\_\+\+Event\+\_\+t $\ast$$\ast$event\+Pointer)}{blpapi_ProviderSession_tryNextEvent(blpapi_ProviderSession_t *session, blpapi_Event_t **eventPointer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Provider\+Session\+\_\+try\+Next\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Provider\+Session\+\_\+t} $\ast$}]{session, }
+\item[{{\bf blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$}]{event\+Pointer}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a3db27af423e0a5ca9a11e6dd22d36894}{}\label{blpapi__providersession_8h_a3db27af423e0a5ca9a11e6dd22d36894}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+add\+Active\+Sub\+Service\+Code\+Range@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+add\+Active\+Sub\+Service\+Code\+Range}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+add\+Active\+Sub\+Service\+Code\+Range@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+add\+Active\+Sub\+Service\+Code\+Range}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+add\+Active\+Sub\+Service\+Code\+Range(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters, int start, int end, int priority)}{blpapi_ServiceRegistrationOptions_addActiveSubServiceCodeRange(blpapi_ServiceRegistrationOptions_t *parameters, int start, int end, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+Registration\+Options\+\_\+add\+Active\+Sub\+Service\+Code\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters, }
+\item[{int}]{start, }
+\item[{int}]{end, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a7e35631d4a8a9f2276f94d5d28af8182}{}\label{blpapi__providersession_8h_a7e35631d4a8a9f2276f94d5d28af8182}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+copy@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+copy}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+copy@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+copy}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+copy(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$lhs, const blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$rhs)}{blpapi_ServiceRegistrationOptions_copy(blpapi_ServiceRegistrationOptions_t *lhs, const blpapi_ServiceRegistrationOptions_t *rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Service\+Registration\+Options\+\_\+copy (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{lhs, }
+\item[{const {\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{rhs}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a92b4ccb9e91b8a8d4379b0dfa0e6428b}{}\label{blpapi__providersession_8h_a92b4ccb9e91b8a8d4379b0dfa0e6428b}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+create@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+create}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+create@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+create}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+create(void)}{blpapi_ServiceRegistrationOptions_create(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t}$\ast$ blpapi\+\_\+\+Service\+Registration\+Options\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a383f5aaff9c5435b1ef2ffe0499d11fa}{}\label{blpapi__providersession_8h_a383f5aaff9c5435b1ef2ffe0499d11fa}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+destroy@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+destroy}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+destroy@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+destroy}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+destroy(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters)}{blpapi_ServiceRegistrationOptions_destroy(blpapi_ServiceRegistrationOptions_t *parameters)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Service\+Registration\+Options\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a1be4545325c623dbca895a91542576ff}{}\label{blpapi__providersession_8h_a1be4545325c623dbca895a91542576ff}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+duplicate@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+duplicate}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+duplicate@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+duplicate}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+duplicate(const blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters)}{blpapi_ServiceRegistrationOptions_duplicate(const blpapi_ServiceRegistrationOptions_t *parameters)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t}$\ast$ blpapi\+\_\+\+Service\+Registration\+Options\+\_\+duplicate (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_abc017fe0341ace0db78137b284241006}{}\label{blpapi__providersession_8h_abc017fe0341ace0db78137b284241006}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Group\+Id@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Group\+Id}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Group\+Id@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Group\+Id}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Group\+Id(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters, char $\ast$groupd\+Id\+Buffer, int $\ast$group\+Id\+Length)}{blpapi_ServiceRegistrationOptions_getGroupId(blpapi_ServiceRegistrationOptions_t *parameters, char *groupdIdBuffer, int *groupIdLength)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Group\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters, }
+\item[{char $\ast$}]{groupd\+Id\+Buffer, }
+\item[{int $\ast$}]{group\+Id\+Length}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a6e52168fcfbe009e2d63120684034545}{}\label{blpapi__providersession_8h_a6e52168fcfbe009e2d63120684034545}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Parts\+To\+Register@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Parts\+To\+Register}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Parts\+To\+Register@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Parts\+To\+Register}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Parts\+To\+Register(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters)}{blpapi_ServiceRegistrationOptions_getPartsToRegister(blpapi_ServiceRegistrationOptions_t *parameters)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Parts\+To\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_ad0005468212b08d0f5ebffcab1503b6c}{}\label{blpapi__providersession_8h_ad0005468212b08d0f5ebffcab1503b6c}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Service\+Priority@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Service\+Priority}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Service\+Priority@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Service\+Priority}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Service\+Priority(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters)}{blpapi_ServiceRegistrationOptions_getServicePriority(blpapi_ServiceRegistrationOptions_t *parameters)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+Registration\+Options\+\_\+get\+Service\+Priority (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a9e8e5cf5cfe849447ffd872d165f0532}{}\label{blpapi__providersession_8h_a9e8e5cf5cfe849447ffd872d165f0532}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+remove\+All\+Active\+Sub\+Service\+Code\+Ranges@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+remove\+All\+Active\+Sub\+Service\+Code\+Ranges}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+remove\+All\+Active\+Sub\+Service\+Code\+Ranges@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+remove\+All\+Active\+Sub\+Service\+Code\+Ranges}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+remove\+All\+Active\+Sub\+Service\+Code\+Ranges(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters)}{blpapi_ServiceRegistrationOptions_removeAllActiveSubServiceCodeRanges(blpapi_ServiceRegistrationOptions_t *parameters)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Service\+Registration\+Options\+\_\+remove\+All\+Active\+Sub\+Service\+Code\+Ranges (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_ab1ab9f77cd165f1058dd08f72038cd58}{}\label{blpapi__providersession_8h_ab1ab9f77cd165f1058dd08f72038cd58}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Group\+Id@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Group\+Id}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Group\+Id@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Group\+Id}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Group\+Id(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters, const char $\ast$group\+Id, unsigned int group\+Id\+Length)}{blpapi_ServiceRegistrationOptions_setGroupId(blpapi_ServiceRegistrationOptions_t *parameters, const char *groupId, unsigned int groupIdLength)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Group\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters, }
+\item[{const char $\ast$}]{group\+Id, }
+\item[{unsigned int}]{group\+Id\+Length}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_af781acb368c9f066560701d45eeaba79}{}\label{blpapi__providersession_8h_af781acb368c9f066560701d45eeaba79}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Parts\+To\+Register@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Parts\+To\+Register}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Parts\+To\+Register@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Parts\+To\+Register}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Parts\+To\+Register(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters, int parts)}{blpapi_ServiceRegistrationOptions_setPartsToRegister(blpapi_ServiceRegistrationOptions_t *parameters, int parts)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Parts\+To\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters, }
+\item[{int}]{parts}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_a7c1a340cc7657c9df3d08408231073d2}{}\label{blpapi__providersession_8h_a7c1a340cc7657c9df3d08408231073d2}
+\index{blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}!blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Service\+Priority@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Service\+Priority}}
+\index{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Service\+Priority@{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Service\+Priority}!blpapi\+\_\+providersession.\+h@{blpapi\+\_\+providersession.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Service\+Priority(blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t $\ast$parameters, int priority)}{blpapi_ServiceRegistrationOptions_setServicePriority(blpapi_ServiceRegistrationOptions_t *parameters, int priority)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+Registration\+Options\+\_\+set\+Service\+Priority (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+Registration\+Options\+\_\+t} $\ast$}]{parameters, }
+\item[{int}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__providersession_8h_aafd9391eae956f3057892eb6e4ac2d64}{}\label{blpapi__providersession_8h_aafd9391eae956f3057892eb6e4ac2d64}

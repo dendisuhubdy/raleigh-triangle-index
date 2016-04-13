@@ -1,0 +1,248 @@
+.TH "raleigh-triangle-index/include/blpapi_error.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_error.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_defs\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBLPAPI_RESULTCODE\fP(res)   ((res) & 0xffff)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_RESULTCLASS\fP(res)   ((res) & 0xff0000)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_UNKNOWN_CLASS\fP   0x00000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_INVALIDSTATE_CLASS\fP   0x10000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_INVALIDARG_CLASS\fP   0x20000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_IOERROR_CLASS\fP   0x30000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_CNVERROR_CLASS\fP   0x40000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_BOUNDSERROR_CLASS\fP   0x50000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_NOTFOUND_CLASS\fP   0x60000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_FLDNOTFOUND_CLASS\fP   0x70000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_UNSUPPORTED_CLASS\fP   0x80000"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_UNKNOWN\fP   (\fBBLPAPI_UNKNOWN_CLASS\fP | 1)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_ILLEGAL_ARG\fP   (\fBBLPAPI_INVALIDARG_CLASS\fP | 2)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_ILLEGAL_ACCESS\fP   (\fBBLPAPI_UNKNOWN_CLASS\fP | 3)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_INVALID_SESSION\fP   (\fBBLPAPI_INVALIDARG_CLASS\fP | 4)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_DUPLICATE_CORRELATIONID\fP   (\fBBLPAPI_INVALIDARG_CLASS\fP | 5)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_INTERNAL_ERROR\fP   (\fBBLPAPI_UNKNOWN_CLASS\fP | 6)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_RESOLVE_FAILED\fP   (\fBBLPAPI_IOERROR_CLASS\fP | 7)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_CONNECT_FAILED\fP   (\fBBLPAPI_IOERROR_CLASS\fP | 8)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_ILLEGAL_STATE\fP   (\fBBLPAPI_INVALIDSTATE_CLASS\fP| 9)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_CODEC_FAILURE\fP   (\fBBLPAPI_UNKNOWN_CLASS\fP | 10)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_INDEX_OUT_OF_RANGE\fP   (\fBBLPAPI_BOUNDSERROR_CLASS\fP | 11)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_INVALID_CONVERSION\fP   (\fBBLPAPI_CNVERROR_CLASS\fP | 12)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_ITEM_NOT_FOUND\fP   (\fBBLPAPI_NOTFOUND_CLASS\fP | 13)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_IO_ERROR\fP   (\fBBLPAPI_IOERROR_CLASS\fP | 14)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_CORRELATION_NOT_FOUND\fP   (\fBBLPAPI_NOTFOUND_CLASS\fP | 15)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_SERVICE_NOT_FOUND\fP   (\fBBLPAPI_NOTFOUND_CLASS\fP | 16)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_LOGON_LOOKUP_FAILED\fP   (\fBBLPAPI_UNKNOWN_CLASS\fP | 17)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_DS_LOOKUP_FAILED\fP   (\fBBLPAPI_UNKNOWN_CLASS\fP | 18)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_UNSUPPORTED_OPERATION\fP   (\fBBLPAPI_UNSUPPORTED_CLASS\fP | 19)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_ERROR_DS_PROPERTY_NOT_FOUND\fP   (\fBBLPAPI_NOTFOUND_CLASS\fP | 20)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_getLastErrorDescription\fP (int resultCode)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BLPAPI_BOUNDSERROR_CLASS   0x50000"
+
+.PP
+Definition at line 41 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_CNVERROR_CLASS   0x40000"
+
+.PP
+Definition at line 40 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_CODEC_FAILURE   (\fBBLPAPI_UNKNOWN_CLASS\fP | 10)"
+
+.PP
+Definition at line 55 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_CONNECT_FAILED   (\fBBLPAPI_IOERROR_CLASS\fP | 8)"
+
+.PP
+Definition at line 53 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_CORRELATION_NOT_FOUND   (\fBBLPAPI_NOTFOUND_CLASS\fP | 15)"
+
+.PP
+Definition at line 60 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_DS_LOOKUP_FAILED   (\fBBLPAPI_UNKNOWN_CLASS\fP | 18)"
+
+.PP
+Definition at line 63 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_DS_PROPERTY_NOT_FOUND   (\fBBLPAPI_NOTFOUND_CLASS\fP | 20)"
+
+.PP
+Definition at line 65 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_DUPLICATE_CORRELATIONID   (\fBBLPAPI_INVALIDARG_CLASS\fP | 5)"
+
+.PP
+Definition at line 50 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_ILLEGAL_ACCESS   (\fBBLPAPI_UNKNOWN_CLASS\fP | 3)"
+
+.PP
+Definition at line 48 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_ILLEGAL_ARG   (\fBBLPAPI_INVALIDARG_CLASS\fP | 2)"
+
+.PP
+Definition at line 47 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_ILLEGAL_STATE   (\fBBLPAPI_INVALIDSTATE_CLASS\fP| 9)"
+
+.PP
+Definition at line 54 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_INDEX_OUT_OF_RANGE   (\fBBLPAPI_BOUNDSERROR_CLASS\fP | 11)"
+
+.PP
+Definition at line 56 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_INTERNAL_ERROR   (\fBBLPAPI_UNKNOWN_CLASS\fP | 6)"
+
+.PP
+Definition at line 51 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_INVALID_CONVERSION   (\fBBLPAPI_CNVERROR_CLASS\fP | 12)"
+
+.PP
+Definition at line 57 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_INVALID_SESSION   (\fBBLPAPI_INVALIDARG_CLASS\fP | 4)"
+
+.PP
+Definition at line 49 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_IO_ERROR   (\fBBLPAPI_IOERROR_CLASS\fP | 14)"
+
+.PP
+Definition at line 59 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_ITEM_NOT_FOUND   (\fBBLPAPI_NOTFOUND_CLASS\fP | 13)"
+
+.PP
+Definition at line 58 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_LOGON_LOOKUP_FAILED   (\fBBLPAPI_UNKNOWN_CLASS\fP | 17)"
+
+.PP
+Definition at line 62 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_RESOLVE_FAILED   (\fBBLPAPI_IOERROR_CLASS\fP | 7)"
+
+.PP
+Definition at line 52 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_SERVICE_NOT_FOUND   (\fBBLPAPI_NOTFOUND_CLASS\fP | 16)"
+
+.PP
+Definition at line 61 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_UNKNOWN   (\fBBLPAPI_UNKNOWN_CLASS\fP | 1)"
+
+.PP
+Definition at line 46 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_ERROR_UNSUPPORTED_OPERATION   (\fBBLPAPI_UNSUPPORTED_CLASS\fP | 19)"
+
+.PP
+Definition at line 64 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_FLDNOTFOUND_CLASS   0x70000"
+
+.PP
+Definition at line 43 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_INVALIDARG_CLASS   0x20000"
+
+.PP
+Definition at line 38 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_INVALIDSTATE_CLASS   0x10000"
+
+.PP
+Definition at line 37 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_IOERROR_CLASS   0x30000"
+
+.PP
+Definition at line 39 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_NOTFOUND_CLASS   0x60000"
+
+.PP
+Definition at line 42 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_RESULTCLASS(res)   ((res) & 0xff0000)"
+
+.PP
+Definition at line 34 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_RESULTCODE(res)   ((res) & 0xffff)"
+
+.PP
+Definition at line 33 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_UNKNOWN_CLASS   0x00000"
+
+.PP
+Definition at line 36 of file blpapi_error\&.h\&.
+.SS "#define BLPAPI_UNSUPPORTED_CLASS   0x80000"
+
+.PP
+Definition at line 44 of file blpapi_error\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_getLastErrorDescription (int resultCode)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

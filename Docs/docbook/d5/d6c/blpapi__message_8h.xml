@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d6c/blpapi__message_8h">
+    <title>blpapi_message.h File Reference</title>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_correlationid.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_element.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_service.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_timepoint.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_Message  <link linkend="d5/d6c/blpapi__message_8h_1a98691b7f64ed66628256601660a711eb">blpapi_Message_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="d5/d6c/blpapi__message_8h_1ae91d230b12eed5fb51f0b9cf0a1565e3">blpapi_Message_messageType</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="d5/d6c/blpapi__message_8h_1a8519c3d4f83f4846fc906e6decd99390">blpapi_Message_typeString</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="d5/d6c/blpapi__message_8h_1a99e4808421e79745495191e3258a32eb">blpapi_Message_topicName</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Service_t * <link linkend="d5/d6c/blpapi__message_8h_1a610498f42f2a255e12938988c3f3ea59">blpapi_Message_service</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d5/d6c/blpapi__message_8h_1a938516af193705b659c0a19546e0eec6">blpapi_Message_numCorrelationIds</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> <link linkend="d5/d6c/blpapi__message_8h_1a7ca83f057bb3f1b9d62b6221acafa326">blpapi_Message_correlationId</link> (
+const blpapi_Message_t * message, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Element_t * <link linkend="d5/d6c/blpapi__message_8h_1a1f93d0b087fcc03398bc670f6e15105d">blpapi_Message_elements</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="d5/d6c/blpapi__message_8h_1a829c6b672ed5e7c550690a755e2a9e44">blpapi_Message_privateData</link> (
+const blpapi_Message_t * message, size_t * size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d5/d6c/blpapi__message_8h_1a341cd19bed68ce5db4e854fcf3d63342">blpapi_Message_fragmentType</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d5/d6c/blpapi__message_8h_1a6e9f602537a16a9168fc879a5fc9cdcb">blpapi_Message_addRef</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d5/d6c/blpapi__message_8h_1a2a2549acfa892055162629d3a3f62920">blpapi_Message_release</link> (
+const blpapi_Message_t * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d5/d6c/blpapi__message_8h_1a3a29924b9e5026e5f73f1047756e5d32">blpapi_Message_timeReceived</link> (
+const blpapi_Message_t * message, <link linkend="d4/de5/structblpapi___time_point">blpapi_TimePoint_t</link> * timeReceived)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_message.h</para>
+    </simplesect>
+</section>

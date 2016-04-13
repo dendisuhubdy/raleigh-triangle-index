@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d4f/blpapi__correlationid_8h">
+    <title>blpapi_correlationid.h File Reference</title>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d7e/unionblpapi___managed_ptr__t__data__">blpapi_ManagedPtr_t_data_</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/da3/structblpapi___managed_ptr__t__">blpapi_ManagedPtr_t_</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t_</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="d4/da3/structblpapi___managed_ptr__t__">blpapi_ManagedPtr_t_</link>  <link linkend="de/d4f/blpapi__correlationid_8h_1aebaf4a6d88e59a288902e24314981168">blpapi_ManagedPtr_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef int(*  <link linkend="de/d4f/blpapi__correlationid_8h_1ae1d7fd8d61a6846ac85b552b72687770">blpapi_ManagedPtr_ManagerFunction_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t_</link>  <link linkend="de/d4f/blpapi__correlationid_8h_1a85756ad39e154c9380d184bc3151fcaa">blpapi_CorrelationId_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_correlationid.h</para>
+    </simplesect>
+</section>

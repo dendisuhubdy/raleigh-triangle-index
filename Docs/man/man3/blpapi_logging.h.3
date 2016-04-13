@@ -1,0 +1,49 @@
+.TH "raleigh-triangle-index/include/blpapi_logging.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_logging.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_call\&.h>\fP
+.br
+\fC#include <blpapi_datetime\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef void(* \fBblpapi_Logging_Func_t\fP) (\fBblpapi_UInt64_t\fP threadId, int severity, \fBblpapi_Datetime_t\fP timestamp, const char *category, const char *message)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Logging_registerCallback\fP (\fBblpapi_Logging_Func_t\fP callback, \fBblpapi_Logging_Severity_t\fP thresholdSeverity)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Logging_logTestMessage\fP (\fBblpapi_Logging_Severity_t\fP severity)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef void(* blpapi_Logging_Func_t) (\fBblpapi_UInt64_t\fP threadId, int severity, \fBblpapi_Datetime_t\fP timestamp, const char *category, const char *message)"
+
+.SS "Usage "
+
+.PP
+Definition at line 78 of file blpapi_logging\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Logging_logTestMessage (\fBblpapi_Logging_Severity_t\fP severity)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Logging_registerCallback (\fBblpapi_Logging_Func_t\fP callback, \fBblpapi_Logging_Severity_t\fP thresholdSeverity)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

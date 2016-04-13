@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d7d/class_subscription_correlation_example_1_1_grid_window">
+<title>SubscriptionCorrelationExample::GridWindow class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; &amp; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d7d/class_subscription_correlation_example_1_1_grid_window_1a5321c60db2343121cc35e003655242d4">GridWindow</link> (
+const char * name, std::vector&lt; std::string &gt; &amp; securities)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d7d/class_subscription_correlation_example_1_1_grid_window_1ac32ad300bc7c984dc1add6b9c4e10810">processSecurityUpdate</link> (
+Message &amp; msg, int row)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/d7d/class_subscription_correlation_example_1_1_grid_window_1a5321c60db2343121cc35e003655242d4">
+                <title>SubscriptionCorrelationExample::GridWindow::GridWindow (const char *name, std::vector&lt; std::string &gt; &amp;securities)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d7d/class_subscription_correlation_example_1_1_grid_window_1ac32ad300bc7c984dc1add6b9c4e10810">
+                <title>void SubscriptionCorrelationExample::GridWindow::processSecurityUpdate (Message &amp;msg, int row)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

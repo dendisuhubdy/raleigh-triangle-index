@@ -1,0 +1,45 @@
+\hypertarget{blpapi__logging_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+logging.h File Reference}
+\label{blpapi__logging_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+logging.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+logging.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+call.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+datetime.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{blpapi__logging_8h_afd241aaef739d851bda1f38bd4570bca}{blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t}) (\hyperlink{blpapi__types_8h_a224c1e419031c7f875bbbc77fd73a3ab}{blpapi\+\_\+\+U\+Int64\+\_\+t} thread\+Id, int severity, \hyperlink{blpapi__datetime_8h_aa182a01a276451f8c8aa7c425c9f1552}{blpapi\+\_\+\+Datetime\+\_\+t} timestamp, const char $\ast$category, const char $\ast$message)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__logging_8h_a9dc39f5c65bcfb6fa8cada15b92862d0}{blpapi\+\_\+\+Logging\+\_\+register\+Callback} (\hyperlink{blpapi__logging_8h_afd241aaef739d851bda1f38bd4570bca}{blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t} callback, \hyperlink{blpapi__types_8h_a21857c3e93a96a514181197cf7e70929}{blpapi\+\_\+\+Logging\+\_\+\+Severity\+\_\+t} threshold\+Severity)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__logging_8h_a7649d0b41c94ebc8af1b000e49fb0cd6}{blpapi\+\_\+\+Logging\+\_\+log\+Test\+Message} (\hyperlink{blpapi__types_8h_a21857c3e93a96a514181197cf7e70929}{blpapi\+\_\+\+Logging\+\_\+\+Severity\+\_\+t} severity)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{blpapi\+\_\+logging.\+h@{blpapi\+\_\+logging.\+h}!blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t@{blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t}}
+\index{blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t@{blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t}!blpapi\+\_\+logging.\+h@{blpapi\+\_\+logging.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t}{blpapi_Logging_Func_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t) ({\bf blpapi\+\_\+\+U\+Int64\+\_\+t} thread\+Id, int severity, {\bf blpapi\+\_\+\+Datetime\+\_\+t} timestamp, const char $\ast$category, const char $\ast$message)}\hypertarget{blpapi__logging_8h_afd241aaef739d851bda1f38bd4570bca}{}\label{blpapi__logging_8h_afd241aaef739d851bda1f38bd4570bca}
+\subsubsection*{Usage }
+
+Definition at line 78 of file blpapi\+\_\+logging.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+logging.\+h@{blpapi\+\_\+logging.\+h}!blpapi\+\_\+\+Logging\+\_\+log\+Test\+Message@{blpapi\+\_\+\+Logging\+\_\+log\+Test\+Message}}
+\index{blpapi\+\_\+\+Logging\+\_\+log\+Test\+Message@{blpapi\+\_\+\+Logging\+\_\+log\+Test\+Message}!blpapi\+\_\+logging.\+h@{blpapi\+\_\+logging.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Logging\+\_\+log\+Test\+Message(blpapi\+\_\+\+Logging\+\_\+\+Severity\+\_\+t severity)}{blpapi_Logging_logTestMessage(blpapi_Logging_Severity_t severity)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Logging\+\_\+log\+Test\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Logging\+\_\+\+Severity\+\_\+t}}]{severity}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__logging_8h_a7649d0b41c94ebc8af1b000e49fb0cd6}{}\label{blpapi__logging_8h_a7649d0b41c94ebc8af1b000e49fb0cd6}
+\index{blpapi\+\_\+logging.\+h@{blpapi\+\_\+logging.\+h}!blpapi\+\_\+\+Logging\+\_\+register\+Callback@{blpapi\+\_\+\+Logging\+\_\+register\+Callback}}
+\index{blpapi\+\_\+\+Logging\+\_\+register\+Callback@{blpapi\+\_\+\+Logging\+\_\+register\+Callback}!blpapi\+\_\+logging.\+h@{blpapi\+\_\+logging.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Logging\+\_\+register\+Callback(blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t callback, blpapi\+\_\+\+Logging\+\_\+\+Severity\+\_\+t threshold\+Severity)}{blpapi_Logging_registerCallback(blpapi_Logging_Func_t callback, blpapi_Logging_Severity_t thresholdSeverity)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Logging\+\_\+register\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Logging\+\_\+\+Func\+\_\+t}}]{callback, }
+\item[{{\bf blpapi\+\_\+\+Logging\+\_\+\+Severity\+\_\+t}}]{threshold\+Severity}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__logging_8h_a9dc39f5c65bcfb6fa8cada15b92862d0}{}\label{blpapi__logging_8h_a9dc39f5c65bcfb6fa8cada15b92862d0}

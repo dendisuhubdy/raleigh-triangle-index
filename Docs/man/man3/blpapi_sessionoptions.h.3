@@ -1,0 +1,270 @@
+.TH "raleigh-triangle-index/include/blpapi_sessionoptions.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_sessionoptions.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_call\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_exception\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_SessionOptions_t\fP * \fBblpapi_SessionOptions_create\fP (void)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_SessionOptions_t\fP * \fBblpapi_SessionOptions_duplicate\fP (const \fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_copy\fP (\fBblpapi_SessionOptions_t\fP *lhs, const \fBblpapi_SessionOptions_t\fP *rhs)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_destroy\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setServerHost\fP (\fBblpapi_SessionOptions_t\fP *parameters, const char *serverHost)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setServerPort\fP (\fBblpapi_SessionOptions_t\fP *parameters, unsigned short serverPort)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setServerAddress\fP (\fBblpapi_SessionOptions_t\fP *parameters, const char *serverHost, unsigned short serverPort, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_removeServerAddress\fP (\fBblpapi_SessionOptions_t\fP *parameters, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setConnectTimeout\fP (\fBblpapi_SessionOptions_t\fP *parameters, unsigned int timeoutInMilliseconds)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setDefaultServices\fP (\fBblpapi_SessionOptions_t\fP *parameters, const char *defaultServices)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setDefaultSubscriptionService\fP (\fBblpapi_SessionOptions_t\fP *parameters, const char *serviceIdentifier)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setDefaultTopicPrefix\fP (\fBblpapi_SessionOptions_t\fP *parameters, const char *prefix)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setAllowMultipleCorrelatorsPerMsg\fP (\fBblpapi_SessionOptions_t\fP *parameters, int allowMultipleCorrelatorsPerMsg)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setClientMode\fP (\fBblpapi_SessionOptions_t\fP *parameters, int clientMode)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setMaxPendingRequests\fP (\fBblpapi_SessionOptions_t\fP *parameters, int maxPendingRequests)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setAutoRestartOnDisconnection\fP (\fBblpapi_SessionOptions_t\fP *parameters, int autoRestart)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setAutoRestart\fP (\fBblpapi_SessionOptions_t\fP *parameters, int autoRestart)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setAuthenticationOptions\fP (\fBblpapi_SessionOptions_t\fP *parameters, const char *authOptions)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setNumStartAttempts\fP (\fBblpapi_SessionOptions_t\fP *parameters, int numStartAttempts)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setMaxEventQueueSize\fP (\fBblpapi_SessionOptions_t\fP *parameters, size_t maxEventQueueSize)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setSlowConsumerWarningHiWaterMark\fP (\fBblpapi_SessionOptions_t\fP *parameters, float hiWaterMark)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setSlowConsumerWarningLoWaterMark\fP (\fBblpapi_SessionOptions_t\fP *parameters, float loWaterMark)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setDefaultKeepAliveInactivityTime\fP (\fBblpapi_SessionOptions_t\fP *parameters, int inactivityMsecs)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setDefaultKeepAliveResponseTimeout\fP (\fBblpapi_SessionOptions_t\fP *parameters, int timeoutMsecs)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_setKeepAliveEnabled\fP (\fBblpapi_SessionOptions_t\fP *parameters, int isEnabled)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SessionOptions_setRecordSubscriptionDataReceiveTimes\fP (\fBblpapi_SessionOptions_t\fP *parameters, int shouldRecord)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_SessionOptions_serverHost\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP unsigned int \fBblpapi_SessionOptions_serverPort\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_numServerAddresses\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_getServerAddress\fP (\fBblpapi_SessionOptions_t\fP *parameters, const char **serverHost, unsigned short *serverPort, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP unsigned int \fBblpapi_SessionOptions_connectTimeout\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_SessionOptions_defaultServices\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_SessionOptions_defaultSubscriptionService\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_SessionOptions_defaultTopicPrefix\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_allowMultipleCorrelatorsPerMsg\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_clientMode\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_maxPendingRequests\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_autoRestartOnDisconnection\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_autoRestart\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_SessionOptions_authenticationOptions\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_numStartAttempts\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP size_t \fBblpapi_SessionOptions_maxEventQueueSize\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP float \fBblpapi_SessionOptions_slowConsumerWarningHiWaterMark\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP float \fBblpapi_SessionOptions_slowConsumerWarningLoWaterMark\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_defaultKeepAliveInactivityTime\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_defaultKeepAliveResponseTimeout\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_keepAliveEnabled\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SessionOptions_recordSubscriptionDataReceiveTimes\fP (\fBblpapi_SessionOptions_t\fP *parameters)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_allowMultipleCorrelatorsPerMsg (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_SessionOptions_authenticationOptions (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_autoRestart (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_autoRestartOnDisconnection (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_clientMode (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP unsigned int blpapi_SessionOptions_connectTimeout (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_copy (\fBblpapi_SessionOptions_t\fP * lhs, const \fBblpapi_SessionOptions_t\fP * rhs)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_SessionOptions_t\fP* blpapi_SessionOptions_create (void)"
+
+.SS "Usage "
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_defaultKeepAliveInactivityTime (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_defaultKeepAliveResponseTimeout (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_SessionOptions_defaultServices (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_SessionOptions_defaultSubscriptionService (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_SessionOptions_defaultTopicPrefix (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_destroy (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_SessionOptions_t\fP* blpapi_SessionOptions_duplicate (const \fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_getServerAddress (\fBblpapi_SessionOptions_t\fP * parameters, const char ** serverHost, unsigned short * serverPort, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_keepAliveEnabled (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP size_t blpapi_SessionOptions_maxEventQueueSize (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_maxPendingRequests (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_numServerAddresses (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_numStartAttempts (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_recordSubscriptionDataReceiveTimes (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_removeServerAddress (\fBblpapi_SessionOptions_t\fP * parameters, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_SessionOptions_serverHost (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP unsigned int blpapi_SessionOptions_serverPort (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setAllowMultipleCorrelatorsPerMsg (\fBblpapi_SessionOptions_t\fP * parameters, int allowMultipleCorrelatorsPerMsg)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setAuthenticationOptions (\fBblpapi_SessionOptions_t\fP * parameters, const char * authOptions)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setAutoRestart (\fBblpapi_SessionOptions_t\fP * parameters, int autoRestart)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setAutoRestartOnDisconnection (\fBblpapi_SessionOptions_t\fP * parameters, int autoRestart)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setClientMode (\fBblpapi_SessionOptions_t\fP * parameters, int clientMode)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setConnectTimeout (\fBblpapi_SessionOptions_t\fP * parameters, unsigned int timeoutInMilliseconds)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setDefaultKeepAliveInactivityTime (\fBblpapi_SessionOptions_t\fP * parameters, int inactivityMsecs)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setDefaultKeepAliveResponseTimeout (\fBblpapi_SessionOptions_t\fP * parameters, int timeoutMsecs)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setDefaultServices (\fBblpapi_SessionOptions_t\fP * parameters, const char * defaultServices)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setDefaultSubscriptionService (\fBblpapi_SessionOptions_t\fP * parameters, const char * serviceIdentifier)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setDefaultTopicPrefix (\fBblpapi_SessionOptions_t\fP * parameters, const char * prefix)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setKeepAliveEnabled (\fBblpapi_SessionOptions_t\fP * parameters, int isEnabled)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setMaxEventQueueSize (\fBblpapi_SessionOptions_t\fP * parameters, size_t maxEventQueueSize)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setMaxPendingRequests (\fBblpapi_SessionOptions_t\fP * parameters, int maxPendingRequests)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setNumStartAttempts (\fBblpapi_SessionOptions_t\fP * parameters, int numStartAttempts)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SessionOptions_setRecordSubscriptionDataReceiveTimes (\fBblpapi_SessionOptions_t\fP * parameters, int shouldRecord)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setServerAddress (\fBblpapi_SessionOptions_t\fP * parameters, const char * serverHost, unsigned short serverPort, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setServerHost (\fBblpapi_SessionOptions_t\fP * parameters, const char * serverHost)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setServerPort (\fBblpapi_SessionOptions_t\fP * parameters, unsigned short serverPort)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setSlowConsumerWarningHiWaterMark (\fBblpapi_SessionOptions_t\fP * parameters, float hiWaterMark)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SessionOptions_setSlowConsumerWarningLoWaterMark (\fBblpapi_SessionOptions_t\fP * parameters, float loWaterMark)"
+
+.SS "\fBBLPAPI_EXPORT\fP float blpapi_SessionOptions_slowConsumerWarningHiWaterMark (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP float blpapi_SessionOptions_slowConsumerWarningLoWaterMark (\fBblpapi_SessionOptions_t\fP * parameters)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

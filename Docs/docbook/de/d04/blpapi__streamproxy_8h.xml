@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d04/blpapi__streamproxy_8h">
+    <title>blpapi_streamproxy.h File Reference</title>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef int(*  <link linkend="de/d04/blpapi__streamproxy_8h_1a41f11193f44e5d7b5f5f5238ceba9cfa">blpapi_StreamWriter_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_streamproxy.h</para>
+    </simplesect>
+</section>

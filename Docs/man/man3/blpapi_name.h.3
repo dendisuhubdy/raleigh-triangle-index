@@ -1,0 +1,59 @@
+.TH "raleigh-triangle-index/include/blpapi_name.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_name.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_Name_create\fP (const char *nameString)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Name_destroy\fP (\fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_Name_duplicate\fP (const \fBblpapi_Name_t\fP *src)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Name_equalsStr\fP (const \fBblpapi_Name_t\fP *name, const char *string)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Name_string\fP (const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP size_t \fBblpapi_Name_length\fP (const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_Name_findName\fP (const char *nameString)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_Name_create (const char * nameString)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Name_destroy (\fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_Name_duplicate (const \fBblpapi_Name_t\fP * src)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Name_equalsStr (const \fBblpapi_Name_t\fP * name, const char * string)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_Name_findName (const char * nameString)"
+
+.SS "\fBBLPAPI_EXPORT\fP size_t blpapi_Name_length (const \fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Name_string (const \fBblpapi_Name_t\fP * name)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d1f/classoutput">
+<title>output class Reference</title>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; t_securitydata &gt; maindata</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SYSTEMTIME time</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d1f/classoutput_1ad7e70fae10c1e8f527c0863ad69cab76">output</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d1f/classoutput_1a521a9799a4d0bc73b860ca8c3694ef7c">~output</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1f/classoutput_1a04412f41e2d21d92ef70dfe430746c95">printoutput</link> (
+SYSTEMTIME localtime, double price)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>double <link linkend="dd/d1f/classoutput_1a03121b39a882a4cc142125130c34e5b5">index</link> (
+<link linkend="d9/d3c/classprocessing">processing</link> process)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/d1f/classoutput_1ad7e70fae10c1e8f527c0863ad69cab76">
+                <title>output::output ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d1f/classoutput_1a521a9799a4d0bc73b860ca8c3694ef7c">
+                <title>output::~output ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d1f/classoutput_1a04412f41e2d21d92ef70dfe430746c95">
+                <title>void output::printoutput (SYSTEMTIME localtime, double price)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d1f/classoutput_1a03121b39a882a4cc142125130c34e5b5">
+                <title>double output::index (processing process)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

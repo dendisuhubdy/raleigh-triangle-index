@@ -1,0 +1,71 @@
+.TH "raleigh-triangle-index/include/blpapi_versionmacros.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_versionmacros.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBLPAPI_VERSION_MAJOR\fP   3"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_VERSION_MINOR\fP   8"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_VERSION_PATCH\fP   18"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_VERSION_BUILD\fP   1"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_MAKE_VERSION\fP(MAJOR,  MINOR,  PATCH)"
+.br
+.ti -1c
+.RI "#define \fBBLPAPI_SDK_VERSION\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BLPAPI_MAKE_VERSION(MAJOR, MINOR, PATCH)"
+\fBValue:\fP
+.PP
+.nf
+((MAJOR) * 65536 + \
+                                                  (MINOR) * 256 + \
+                                                  (PATCH))
+.fi
+.PP
+Definition at line 34 of file blpapi_versionmacros\&.h\&.
+.SS "#define BLPAPI_SDK_VERSION"
+\fBValue:\fP
+.PP
+.nf
+BLPAPI_MAKE_VERSION(BLPAPI_VERSION_MAJOR, \
+                                               BLPAPI_VERSION_MINOR, \
+                                               BLPAPI_VERSION_PATCH)
+.fi
+.PP
+Definition at line 40 of file blpapi_versionmacros\&.h\&.
+.SS "#define BLPAPI_VERSION_BUILD   1"
+
+.PP
+Definition at line 32 of file blpapi_versionmacros\&.h\&.
+.SS "#define BLPAPI_VERSION_MAJOR   3"
+
+.PP
+Definition at line 29 of file blpapi_versionmacros\&.h\&.
+.SS "#define BLPAPI_VERSION_MINOR   8"
+
+.PP
+Definition at line 30 of file blpapi_versionmacros\&.h\&.
+.SS "#define BLPAPI_VERSION_PATCH   18"
+
+.PP
+Definition at line 31 of file blpapi_versionmacros\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

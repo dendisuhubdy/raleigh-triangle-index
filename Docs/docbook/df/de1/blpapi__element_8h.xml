@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/de1/blpapi__element_8h">
+    <title>blpapi_element.h File Reference</title>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_schema.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_datetime.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_name.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_streamproxy.h&gt;</programlisting>
+    <programlisting>#include &lt;stddef.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="df/de1/blpapi__element_8h_1ad89281c9d9ade23a8ffd0b2e79565c2c">blpapi_Element_name</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="df/de1/blpapi__element_8h_1a28f1503c026861bed43d8014b37d9cf5">blpapi_Element_nameString</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_SchemaElementDefinition_t * <link linkend="df/de1/blpapi__element_8h_1a91d9ef7c7277bf8571c0652ea3abb3fa">blpapi_Element_definition</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a17dda77ba32f601309474fb1ed22e63b">blpapi_Element_datatype</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a613d510275df784718d6861e73de8492">blpapi_Element_isComplexType</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1aa388d91192307926145348eccfac2ba1">blpapi_Element_isArray</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a3a82efbf1cc74aab2628b6f3bc71c491">blpapi_Element_isReadOnly</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT size_t <link linkend="df/de1/blpapi__element_8h_1a30d6c15793d070ea1009cdf55f817f43">blpapi_Element_numValues</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT size_t <link linkend="df/de1/blpapi__element_8h_1a3e5db9ef53545d9c9264dcecfb6a150e">blpapi_Element_numElements</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1af8482bacea1c787473f07577fc4c73ea">blpapi_Element_isNullValue</link> (
+const blpapi_Element_t * element, size_t position)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a5a62379167daa732fdbfd006974fe7dd">blpapi_Element_isNull</link> (
+const blpapi_Element_t * element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1aae290d839ed8430954e3c241069b6bc8">blpapi_Element_print</link> (
+const blpapi_Element_t * element, blpapi_StreamWriter_t streamWriter, void * stream, int level, int spacesPerLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a80b5a69e01425285d2cf286628ba23ac">blpapi_Element_getElementAt</link> (
+const blpapi_Element_t * element, blpapi_Element_t ** result, size_t position)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a553689caa22133ab41e1aa4ed3c157c1">blpapi_Element_getElement</link> (
+const blpapi_Element_t * element, blpapi_Element_t ** result, const char * nameString, const blpapi_Name_t * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1ac18de0f770d62801b57201f5168d1e82">blpapi_Element_hasElement</link> (
+const blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a92d7a3123a21f8313ddbfeec505b8faf">blpapi_Element_hasElementEx</link> (
+const blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, int excludeNullElements, int reserved)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a845da2e606d92d0ae0a781505da946ab">blpapi_Element_getValueAsBool</link> (
+const blpapi_Element_t * element, blpapi_Bool_t * buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a7a885761f43d78945265d42521fed556">blpapi_Element_getValueAsChar</link> (
+const blpapi_Element_t * element, blpapi_Char_t * buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a0f56614fe538f29e3feefdd009ea4e1b">blpapi_Element_getValueAsInt32</link> (
+const blpapi_Element_t * element, blpapi_Int32_t * buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1add4b0af8193c4247cb199fd2618208db">blpapi_Element_getValueAsInt64</link> (
+const blpapi_Element_t * element, blpapi_Int64_t * buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a9039110969ad75c19df235d70c85077b">blpapi_Element_getValueAsFloat32</link> (
+const blpapi_Element_t * element, blpapi_Float32_t * buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a33dfd9b51e18ac9887b97d8602bb31b8">blpapi_Element_getValueAsFloat64</link> (
+const blpapi_Element_t * element, blpapi_Float64_t * buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a6a015d703401d27072093876d1dc53c8">blpapi_Element_getValueAsString</link> (
+const blpapi_Element_t * element, const char ** buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a793d1c01782517ef5457d01af8719da3">blpapi_Element_getValueAsDatetime</link> (
+const blpapi_Element_t * element, <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> * buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1ac23aa18b1d6d1337c344b6adf9c6ad6a">blpapi_Element_getValueAsHighPrecisionDatetime</link> (
+const blpapi_Element_t * element, <link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_t</link> * buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1ab641ca9c9a6cc4ba54e81ba89933b356">blpapi_Element_getValueAsElement</link> (
+const blpapi_Element_t * element, blpapi_Element_t ** buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1adb7b1e2b8263da442c6c519862ce2347">blpapi_Element_getValueAsName</link> (
+const blpapi_Element_t * element, blpapi_Name_t ** buffer, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1aac18497a5e4227a8773fbe8a8be4aad1">blpapi_Element_getChoice</link> (
+const blpapi_Element_t * element, blpapi_Element_t ** result)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a7a4ce9ca4fd611af73252034e9906bae">blpapi_Element_setValueBool</link> (
+blpapi_Element_t * element, blpapi_Bool_t value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a6b6c83dde0a1a07ea229fc34dd07b8d3">blpapi_Element_setValueChar</link> (
+blpapi_Element_t * element, blpapi_Char_t value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a433e5ce0b4463afa838608ad7681d309">blpapi_Element_setValueInt32</link> (
+blpapi_Element_t * element, blpapi_Int32_t value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1aa0286e2052d37e1abb272dfcc673a69b">blpapi_Element_setValueInt64</link> (
+blpapi_Element_t * element, blpapi_Int64_t value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a55d4e6e34edbf47378541a45e08a8502">blpapi_Element_setValueFloat32</link> (
+blpapi_Element_t * element, blpapi_Float32_t value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1ae76b4488d93f4e20bd1646f7f7b4184a">blpapi_Element_setValueFloat64</link> (
+blpapi_Element_t * element, blpapi_Float64_t value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a35823a4a024d5e194245edd74b89dbd6">blpapi_Element_setValueString</link> (
+blpapi_Element_t * element, const char * value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1af8f1d516f80d33493aaf6523c47a2eed">blpapi_Element_setValueDatetime</link> (
+blpapi_Element_t * element, const <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> * value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a089fd7fd622efefe15cf0f71b61f71ed">blpapi_Element_setValueHighPrecisionDatetime</link> (
+blpapi_Element_t * element, const <link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_t</link> * value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a220ea8d4727361459e5b4091e47852ae">blpapi_Element_setValueFromElement</link> (
+blpapi_Element_t * element, blpapi_Element_t * value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a124128f915edb41fdb7e349b8c200e9d">blpapi_Element_setValueFromName</link> (
+blpapi_Element_t * element, const blpapi_Name_t * value, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a9c9dc678c0f259431327186feb0490df">blpapi_Element_setElementBool</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, blpapi_Bool_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a5364551f8d2dc677c255fc1bff4e55e1">blpapi_Element_setElementChar</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, blpapi_Char_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a3b6f8d15ce9f5a11f980d83fb450345f">blpapi_Element_setElementInt32</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, blpapi_Int32_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a8add50a438b49d58065f00ffae690270">blpapi_Element_setElementInt64</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, blpapi_Int64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1aee4d11bbb634c9bd4d41d7879aabd907">blpapi_Element_setElementFloat32</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, blpapi_Float32_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1aad78c0424dd94c7819e4e64ec6e181c6">blpapi_Element_setElementFloat64</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, blpapi_Float64_t value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a7940cd156c7fd207a20bb447fc539330">blpapi_Element_setElementString</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, const char * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1aaf527ebfcef0093021db76a1f2879066">blpapi_Element_setElementDatetime</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, const <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a18dfe79f511d673fb087087baa013867">blpapi_Element_setElementHighPrecisionDatetime</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, const <link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_t</link> * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a296400f42804fa0097e46e65e48c2ede">blpapi_Element_setElementFromField</link> (
+blpapi_Element_t * element, const char * nameString, const blpapi_Name_t * name, blpapi_Element_t * sourcebuffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a2b7858fca7ddeef7ae6710d3f78a2e21">blpapi_Element_setElementFromName</link> (
+blpapi_Element_t * element, const char * elementName, const blpapi_Name_t * name, const blpapi_Name_t * buffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1a3011b9a5b2bb09cf3291dca9d3336b5e">blpapi_Element_appendElement</link> (
+blpapi_Element_t * element, blpapi_Element_t ** appendedElement)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="df/de1/blpapi__element_8h_1ae55569ba24fd21b47c28fcceb0668d38">blpapi_Element_setChoice</link> (
+blpapi_Element_t * element, blpapi_Element_t ** resultElement, const char * nameCstr, const blpapi_Name_t * name, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_element.h</para>
+    </simplesect>
+</section>

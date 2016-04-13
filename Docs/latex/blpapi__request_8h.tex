@@ -1,0 +1,56 @@
+\hypertarget{blpapi__request_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+request.h File Reference}
+\label{blpapi__request_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+request.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+request.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+correlationid.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+element.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+exception.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct blpapi\+\_\+\+Request \hyperlink{blpapi__request_8h_ac57a51635403fb6a46d0edd375735ef4}{blpapi\+\_\+\+Request\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__request_8h_a5bae29a64af53d8d0df434bd5a878171}{blpapi\+\_\+\+Request\+\_\+destroy} (\hyperlink{blpapi__request_8h_ac57a51635403fb6a46d0edd375735ef4}{blpapi\+\_\+\+Request\+\_\+t} $\ast$request)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_abb8d9b21981346c8c927e878794299ca}{blpapi\+\_\+\+Element\+\_\+t} $\ast$ \hyperlink{blpapi__request_8h_a644b3d67e6a41d6c1ae6a88c28aa701f}{blpapi\+\_\+\+Request\+\_\+elements} (\hyperlink{blpapi__request_8h_ac57a51635403fb6a46d0edd375735ef4}{blpapi\+\_\+\+Request\+\_\+t} $\ast$request)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__request_8h_a34313c4dbb7372cec046a4727725094a}{blpapi\+\_\+\+Request\+\_\+set\+Preferred\+Route} (\hyperlink{blpapi__request_8h_ac57a51635403fb6a46d0edd375735ef4}{blpapi\+\_\+\+Request\+\_\+t} $\ast$request, \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$correlation\+Id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{blpapi\+\_\+request.\+h@{blpapi\+\_\+request.\+h}!blpapi\+\_\+\+Request\+\_\+t@{blpapi\+\_\+\+Request\+\_\+t}}
+\index{blpapi\+\_\+\+Request\+\_\+t@{blpapi\+\_\+\+Request\+\_\+t}!blpapi\+\_\+request.\+h@{blpapi\+\_\+request.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Request\+\_\+t}{blpapi_Request_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct blpapi\+\_\+\+Request {\bf blpapi\+\_\+\+Request\+\_\+t}}\hypertarget{blpapi__request_8h_ac57a51635403fb6a46d0edd375735ef4}{}\label{blpapi__request_8h_ac57a51635403fb6a46d0edd375735ef4}
+
+
+Definition at line 54 of file blpapi\+\_\+request.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+request.\+h@{blpapi\+\_\+request.\+h}!blpapi\+\_\+\+Request\+\_\+destroy@{blpapi\+\_\+\+Request\+\_\+destroy}}
+\index{blpapi\+\_\+\+Request\+\_\+destroy@{blpapi\+\_\+\+Request\+\_\+destroy}!blpapi\+\_\+request.\+h@{blpapi\+\_\+request.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Request\+\_\+destroy(blpapi\+\_\+\+Request\+\_\+t $\ast$request)}{blpapi_Request_destroy(blpapi_Request_t *request)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Request\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Request\+\_\+t} $\ast$}]{request}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__request_8h_a5bae29a64af53d8d0df434bd5a878171}{}\label{blpapi__request_8h_a5bae29a64af53d8d0df434bd5a878171}
+\index{blpapi\+\_\+request.\+h@{blpapi\+\_\+request.\+h}!blpapi\+\_\+\+Request\+\_\+elements@{blpapi\+\_\+\+Request\+\_\+elements}}
+\index{blpapi\+\_\+\+Request\+\_\+elements@{blpapi\+\_\+\+Request\+\_\+elements}!blpapi\+\_\+request.\+h@{blpapi\+\_\+request.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Request\+\_\+elements(blpapi\+\_\+\+Request\+\_\+t $\ast$request)}{blpapi_Request_elements(blpapi_Request_t *request)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Element\+\_\+t}$\ast$ blpapi\+\_\+\+Request\+\_\+elements (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Request\+\_\+t} $\ast$}]{request}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__request_8h_a644b3d67e6a41d6c1ae6a88c28aa701f}{}\label{blpapi__request_8h_a644b3d67e6a41d6c1ae6a88c28aa701f}
+\index{blpapi\+\_\+request.\+h@{blpapi\+\_\+request.\+h}!blpapi\+\_\+\+Request\+\_\+set\+Preferred\+Route@{blpapi\+\_\+\+Request\+\_\+set\+Preferred\+Route}}
+\index{blpapi\+\_\+\+Request\+\_\+set\+Preferred\+Route@{blpapi\+\_\+\+Request\+\_\+set\+Preferred\+Route}!blpapi\+\_\+request.\+h@{blpapi\+\_\+request.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Request\+\_\+set\+Preferred\+Route(blpapi\+\_\+\+Request\+\_\+t $\ast$request, blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$correlation\+Id)}{blpapi_Request_setPreferredRoute(blpapi_Request_t *request, blpapi_CorrelationId_t *correlationId)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Request\+\_\+set\+Preferred\+Route (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Request\+\_\+t} $\ast$}]{request, }
+\item[{{\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{correlation\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__request_8h_a34313c4dbb7372cec046a4727725094a}{}\label{blpapi__request_8h_a34313c4dbb7372cec046a4727725094a}

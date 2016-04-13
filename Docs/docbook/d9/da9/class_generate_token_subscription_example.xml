@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/da9/class_generate_token_subscription_example">
+<title>GenerateTokenSubscriptionExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_authOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_options</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Session * d_session</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Identity d_identity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/da9/class_generate_token_subscription_example_1ac8b3753df5abaa9e617293777be5f3e1">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/da9/class_generate_token_subscription_example_1aec7c91da95270b9b5377074c94ec287d">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/da9/class_generate_token_subscription_example_1a48785176977c8c9fe88137f6e333ac5c">subscribe</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/da9/class_generate_token_subscription_example_1a38c458c1ae3a7a3d62f81ebc25b0f52e">processTokenStatus</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d9/da9/class_generate_token_subscription_example_1ac0542538c5cd72a2102a79a4970b4dee">processEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/da9/class_generate_token_subscription_example_1a4243e12ca122337504046bfb32822296">GenerateTokenSubscriptionExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/da9/class_generate_token_subscription_example_1a7beab79e0a1fd0251104847b7fbd1b9f">~GenerateTokenSubscriptionExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/da9/class_generate_token_subscription_example_1a040f90bde148752a7c33a81801bba017">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/da9/class_generate_token_subscription_example_1ac8b3753df5abaa9e617293777be5f3e1">
+                <title>void GenerateTokenSubscriptionExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/da9/class_generate_token_subscription_example_1aec7c91da95270b9b5377074c94ec287d">
+                <title>bool GenerateTokenSubscriptionExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/da9/class_generate_token_subscription_example_1a48785176977c8c9fe88137f6e333ac5c">
+                <title>void GenerateTokenSubscriptionExample::subscribe ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/da9/class_generate_token_subscription_example_1a38c458c1ae3a7a3d62f81ebc25b0f52e">
+                <title>bool GenerateTokenSubscriptionExample::processTokenStatus (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/da9/class_generate_token_subscription_example_1ac0542538c5cd72a2102a79a4970b4dee">
+                <title>bool GenerateTokenSubscriptionExample::processEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/da9/class_generate_token_subscription_example_1a4243e12ca122337504046bfb32822296">
+                <title>GenerateTokenSubscriptionExample::GenerateTokenSubscriptionExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/da9/class_generate_token_subscription_example_1a7beab79e0a1fd0251104847b7fbd1b9f">
+                <title>GenerateTokenSubscriptionExample::~GenerateTokenSubscriptionExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/da9/class_generate_token_subscription_example_1a040f90bde148752a7c33a81801bba017">
+                <title>void GenerateTokenSubscriptionExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d10/class_my_provider_event_handler">
+<title>MyProviderEventHandler class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string d_serviceName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d10/class_my_provider_event_handler_1a32e30d95719355ef1e2891a674e369f6">MyProviderEventHandler</link> (
+const std::string &amp; serviceName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/d10/class_my_provider_event_handler_1a681d93678bdc3a574df6f6ecf9b6dae3">processEvent</link> (
+const Event &amp; event, ProviderSession * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/d10/class_my_provider_event_handler_1a32e30d95719355ef1e2891a674e369f6">
+                <title>MyProviderEventHandler::MyProviderEventHandler (const std::string &amp;serviceName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d10/class_my_provider_event_handler_1a681d93678bdc3a574df6f6ecf9b6dae3">
+                <title>bool MyProviderEventHandler::processEvent (const Event &amp;event, ProviderSession *session)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

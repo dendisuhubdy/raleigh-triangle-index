@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d7c/class_entitlements_verification_token_example">
+<title>EntitlementsVerificationTokenExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Identity &gt; d_identities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_tokens</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d7c/class_entitlements_verification_token_example_1adce45231f11349163dd21656a3c482ca">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d7c/class_entitlements_verification_token_example_1ae6c1658f0cc53615a345c23b27e10184">openServices</link> (
+Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d7c/class_entitlements_verification_token_example_1ad63b895658e6ae95fc2c9be9cfcf76c4">authorizeUsers</link> (
+EventQueue * authQueue, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d7c/class_entitlements_verification_token_example_1a2ea65dc27881c558b416449fbca33d79">sendRefDataRequest</link> (
+Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d7c/class_entitlements_verification_token_example_1ab001c4f44a9de732dac12526eef096f9">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d7c/class_entitlements_verification_token_example_1aa2df75da211a8b07cece6851f24be20f">EntitlementsVerificationTokenExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d7c/class_entitlements_verification_token_example_1a1cb918ca0adafb1b81b91d0f1a304cec">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/d7c/class_entitlements_verification_token_example_1adce45231f11349163dd21656a3c482ca">
+                <title>void EntitlementsVerificationTokenExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d7c/class_entitlements_verification_token_example_1ae6c1658f0cc53615a345c23b27e10184">
+                <title>void EntitlementsVerificationTokenExample::openServices (Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d7c/class_entitlements_verification_token_example_1ad63b895658e6ae95fc2c9be9cfcf76c4">
+                <title>bool EntitlementsVerificationTokenExample::authorizeUsers (EventQueue *authQueue, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d7c/class_entitlements_verification_token_example_1a2ea65dc27881c558b416449fbca33d79">
+                <title>void EntitlementsVerificationTokenExample::sendRefDataRequest (Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d7c/class_entitlements_verification_token_example_1ab001c4f44a9de732dac12526eef096f9">
+                <title>bool EntitlementsVerificationTokenExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d7c/class_entitlements_verification_token_example_1aa2df75da211a8b07cece6851f24be20f">
+                <title>EntitlementsVerificationTokenExample::EntitlementsVerificationTokenExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d7c/class_entitlements_verification_token_example_1a1cb918ca0adafb1b81b91d0f1a304cec">
+                <title>void EntitlementsVerificationTokenExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

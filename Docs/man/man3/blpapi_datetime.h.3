@@ -1,0 +1,85 @@
+.TH "raleigh-triangle-index/include/blpapi_datetime.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_datetime.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_call\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_exception\&.h>\fP
+.br
+\fC#include <blpapi_streamproxy\&.h>\fP
+.br
+\fC#include <blpapi_timepoint\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBblpapi_Datetime_tag\fP"
+.br
+.ti -1c
+.RI "struct \fBblpapi_HighPrecisionDatetime_tag\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBblpapi_Datetime_tag\fP \fBblpapi_Datetime_t\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBblpapi_HighPrecisionDatetime_tag\fP \fBblpapi_HighPrecisionDatetime_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Datetime_compare\fP (\fBblpapi_Datetime_t\fP lhs, \fBblpapi_Datetime_t\fP rhs)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Datetime_print\fP (const \fBblpapi_Datetime_t\fP *datetime, \fBblpapi_StreamWriter_t\fP streamWriter, void *stream, int level, int spacesPerLevel)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_HighPrecisionDatetime_compare\fP (const \fBblpapi_HighPrecisionDatetime_t\fP *lhs, const \fBblpapi_HighPrecisionDatetime_t\fP *rhs)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_HighPrecisionDatetime_print\fP (const \fBblpapi_HighPrecisionDatetime_t\fP *datetime, \fBblpapi_StreamWriter_t\fP streamWriter, void *stream, int level, int spacesPerLevel)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_HighPrecisionDatetime_fromTimePoint\fP (\fBblpapi_HighPrecisionDatetime_t\fP *datetime, const \fBblpapi_TimePoint_t\fP *timePoint, short offset)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBblpapi_Datetime_tag\fP \fBblpapi_Datetime_t\fP"
+
+.PP
+Definition at line 75 of file blpapi_datetime\&.h\&.
+.SS "typedef struct \fBblpapi_HighPrecisionDatetime_tag\fP \fBblpapi_HighPrecisionDatetime_t\fP"
+
+.PP
+Definition at line 85 of file blpapi_datetime\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Datetime_compare (\fBblpapi_Datetime_t\fP lhs, \fBblpapi_Datetime_t\fP rhs)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Datetime_print (const \fBblpapi_Datetime_t\fP * datetime, \fBblpapi_StreamWriter_t\fP streamWriter, void * stream, int level, int spacesPerLevel)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_HighPrecisionDatetime_compare (const \fBblpapi_HighPrecisionDatetime_t\fP * lhs, const \fBblpapi_HighPrecisionDatetime_t\fP * rhs)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_HighPrecisionDatetime_fromTimePoint (\fBblpapi_HighPrecisionDatetime_t\fP * datetime, const \fBblpapi_TimePoint_t\fP * timePoint, short offset)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_HighPrecisionDatetime_print (const \fBblpapi_HighPrecisionDatetime_t\fP * datetime, \fBblpapi_StreamWriter_t\fP streamWriter, void * stream, int level, int spacesPerLevel)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

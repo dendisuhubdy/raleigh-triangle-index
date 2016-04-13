@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d86/class_correlation_example_1_1_window">
+<title>CorrelationExample::Window class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d86/class_correlation_example_1_1_window_1a162d88dedba9f5d64fc17d9e5887d426">Window</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d86/class_correlation_example_1_1_window_1a151e316868c012bcec4374476adea3c6">displaySecurityInfo</link> (
+Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>A helper class to simulate a GUI window. </para>
+                <para>Definition at line 48 of file CorrelationExample.cpp</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>CorrelationExample.cpp</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/d86/class_correlation_example_1_1_window_1a162d88dedba9f5d64fc17d9e5887d426">
+                <title>CorrelationExample::Window::Window (const char *name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d86/class_correlation_example_1_1_window_1a151e316868c012bcec4374476adea3c6">
+                <title>void CorrelationExample::Window::displaySecurityInfo (Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

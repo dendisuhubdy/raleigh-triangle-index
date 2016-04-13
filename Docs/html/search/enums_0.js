@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['authorizationstatus',['AuthorizationStatus',['../_contributions_mktdata_example_8cpp.html#ad72ddd2e6f9813e9b5b75b9c3057365e',1,'AuthorizationStatus():&#160;ContributionsMktdataExample.cpp'],['../_contributions_page_example_8cpp.html#ad72ddd2e6f9813e9b5b75b9c3057365e',1,'AuthorizationStatus():&#160;ContributionsPageExample.cpp'],['../_mktdata_broadcast_publisher_example_8cpp.html#ad72ddd2e6f9813e9b5b75b9c3057365e',1,'AuthorizationStatus():&#160;MktdataBroadcastPublisherExample.cpp'],['../_mktdata_publisher_8cpp.html#ad72ddd2e6f9813e9b5b75b9c3057365e',1,'AuthorizationStatus():&#160;MktdataPublisher.cpp'],['../_page_publisher_example_8cpp.html#ad72ddd2e6f9813e9b5b75b9c3057365e',1,'AuthorizationStatus():&#160;PagePublisherExample.cpp'],['../_request_service_example_8cpp.html#ad72ddd2e6f9813e9b5b75b9c3057365e',1,'AuthorizationStatus():&#160;RequestServiceExample.cpp']]]
+];

@@ -1,0 +1,306 @@
+.TH "raleigh-triangle-index/include/blpapi_types.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_types.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef int \fBblpapi_Bool_t\fP"
+.br
+.ti -1c
+.RI "typedef char \fBblpapi_Char_t\fP"
+.br
+.ti -1c
+.RI "typedef unsigned char \fBblpapi_UChar_t\fP"
+.br
+.ti -1c
+.RI "typedef short \fBblpapi_Int16_t\fP"
+.br
+.ti -1c
+.RI "typedef unsigned short \fBblpapi_UInt16_t\fP"
+.br
+.ti -1c
+.RI "typedef int \fBblpapi_Int32_t\fP"
+.br
+.ti -1c
+.RI "typedef unsigned int \fBblpapi_UInt32_t\fP"
+.br
+.ti -1c
+.RI "typedef long long \fBblpapi_Int64_t\fP"
+.br
+.ti -1c
+.RI "typedef unsigned long long \fBblpapi_UInt64_t\fP"
+.br
+.ti -1c
+.RI "typedef float \fBblpapi_Float32_t\fP"
+.br
+.ti -1c
+.RI "typedef double \fBblpapi_Float64_t\fP"
+.br
+.ti -1c
+.RI "typedef enum \fBblpapi_Logging_Severity_t\fP \fBblpapi_Logging_Severity_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_AbstractSession \fBblpapi_AbstractSession_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Constant \fBblpapi_Constant_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_ConstantList \fBblpapi_ConstantList_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Element \fBblpapi_Element_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Event \fBblpapi_Event_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_EventDispatcher \fBblpapi_EventDispatcher_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_EventFormatter \fBblpapi_EventFormatter_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_EventQueue \fBblpapi_EventQueue_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_MessageIterator \fBblpapi_MessageIterator_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Name \fBblpapi_Name_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Operation \fBblpapi_Operation_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_ProviderSession \fBblpapi_ProviderSession_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Service \fBblpapi_Service_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Session \fBblpapi_Session_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_SessionOptions \fBblpapi_SessionOptions_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_SubscriptionItrerator \fBblpapi_SubscriptionIterator_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Identity \fBblpapi_UserHandle\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Identity \fBblpapi_UserHandle_t\fP"
+.br
+.ti -1c
+.RI "typedef struct blpapi_Identity \fBblpapi_Identity_t\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBblpapi_DataType_t\fP { \fBBLPAPI_DATATYPE_BOOL\fP = 1, \fBBLPAPI_DATATYPE_CHAR\fP = 2, \fBBLPAPI_DATATYPE_BYTE\fP = 3, \fBBLPAPI_DATATYPE_INT32\fP = 4, \fBBLPAPI_DATATYPE_INT64\fP = 5, \fBBLPAPI_DATATYPE_FLOAT32\fP = 6, \fBBLPAPI_DATATYPE_FLOAT64\fP = 7, \fBBLPAPI_DATATYPE_STRING\fP = 8, \fBBLPAPI_DATATYPE_BYTEARRAY\fP = 9, \fBBLPAPI_DATATYPE_DATE\fP = 10, \fBBLPAPI_DATATYPE_TIME\fP = 11, \fBBLPAPI_DATATYPE_DECIMAL\fP = 12, \fBBLPAPI_DATATYPE_DATETIME\fP = 13, \fBBLPAPI_DATATYPE_ENUMERATION\fP = 14, \fBBLPAPI_DATATYPE_SEQUENCE\fP = 15, \fBBLPAPI_DATATYPE_CHOICE\fP = 16, \fBBLPAPI_DATATYPE_CORRELATION_ID\fP = 17 }"
+.br
+.ti -1c
+.RI "enum \fBblpapi_Logging_Severity_t\fP { \fBblpapi_Logging_SEVERITY_OFF\fP = 0, \fBblpapi_Logging_SEVERITY_FATAL\fP = 1, \fBblpapi_Logging_SEVERITY_ERROR\fP = 2, \fBblpapi_Logging_SEVERITY_WARN\fP = 3, \fBblpapi_Logging_SEVERITY_INFO\fP = 4, \fBblpapi_Logging_SEVERITY_DEBUG\fP = 5, \fBblpapi_Logging_SEVERITY_TRACE\fP = 6 }"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct blpapi_AbstractSession \fBblpapi_AbstractSession_t\fP"
+
+.PP
+Definition at line 76 of file blpapi_types\&.h\&.
+.SS "typedef int \fBblpapi_Bool_t\fP"
+
+.PP
+Definition at line 31 of file blpapi_types\&.h\&.
+.SS "typedef char \fBblpapi_Char_t\fP"
+
+.PP
+Definition at line 32 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Constant \fBblpapi_Constant_t\fP"
+
+.PP
+Definition at line 79 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_ConstantList \fBblpapi_ConstantList_t\fP"
+
+.PP
+Definition at line 82 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Element \fBblpapi_Element_t\fP"
+
+.PP
+Definition at line 85 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Event \fBblpapi_Event_t\fP"
+
+.PP
+Definition at line 88 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_EventDispatcher \fBblpapi_EventDispatcher_t\fP"
+
+.PP
+Definition at line 91 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_EventFormatter \fBblpapi_EventFormatter_t\fP"
+
+.PP
+Definition at line 94 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_EventQueue \fBblpapi_EventQueue_t\fP"
+
+.PP
+Definition at line 97 of file blpapi_types\&.h\&.
+.SS "typedef float \fBblpapi_Float32_t\fP"
+
+.PP
+Definition at line 40 of file blpapi_types\&.h\&.
+.SS "typedef double \fBblpapi_Float64_t\fP"
+
+.PP
+Definition at line 41 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Identity \fBblpapi_Identity_t\fP"
+
+.PP
+Definition at line 128 of file blpapi_types\&.h\&.
+.SS "typedef short \fBblpapi_Int16_t\fP"
+
+.PP
+Definition at line 34 of file blpapi_types\&.h\&.
+.SS "typedef int \fBblpapi_Int32_t\fP"
+
+.PP
+Definition at line 36 of file blpapi_types\&.h\&.
+.SS "typedef long long \fBblpapi_Int64_t\fP"
+
+.PP
+Definition at line 38 of file blpapi_types\&.h\&.
+.SS "typedef enum \fBblpapi_Logging_Severity_t\fP  \fBblpapi_Logging_Severity_t\fP"
+
+.SS "typedef struct blpapi_MessageIterator \fBblpapi_MessageIterator_t\fP"
+
+.PP
+Definition at line 100 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Name \fBblpapi_Name_t\fP"
+
+.PP
+Definition at line 103 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Operation \fBblpapi_Operation_t\fP"
+
+.PP
+Definition at line 106 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_ProviderSession \fBblpapi_ProviderSession_t\fP"
+
+.PP
+Definition at line 109 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Service \fBblpapi_Service_t\fP"
+
+.PP
+Definition at line 112 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Session \fBblpapi_Session_t\fP"
+
+.PP
+Definition at line 115 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_SessionOptions \fBblpapi_SessionOptions_t\fP"
+
+.PP
+Definition at line 118 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_SubscriptionItrerator \fBblpapi_SubscriptionIterator_t\fP"
+
+.PP
+Definition at line 121 of file blpapi_types\&.h\&.
+.SS "typedef unsigned char \fBblpapi_UChar_t\fP"
+
+.PP
+Definition at line 33 of file blpapi_types\&.h\&.
+.SS "typedef unsigned short \fBblpapi_UInt16_t\fP"
+
+.PP
+Definition at line 35 of file blpapi_types\&.h\&.
+.SS "typedef unsigned int \fBblpapi_UInt32_t\fP"
+
+.PP
+Definition at line 37 of file blpapi_types\&.h\&.
+.SS "typedef unsigned long long \fBblpapi_UInt64_t\fP"
+
+.PP
+Definition at line 39 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Identity \fBblpapi_UserHandle\fP"
+
+.PP
+Definition at line 124 of file blpapi_types\&.h\&.
+.SS "typedef struct blpapi_Identity \fBblpapi_UserHandle_t\fP"
+
+.PP
+Definition at line 125 of file blpapi_types\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBblpapi_DataType_t\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBLPAPI_DATATYPE_BOOL \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_CHAR \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_BYTE \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_INT32 \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_INT64 \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_FLOAT32 \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_FLOAT64 \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_STRING \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_BYTEARRAY \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_DATE \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_TIME \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_DECIMAL \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_DATETIME \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_ENUMERATION \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_SEQUENCE \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_CHOICE \fP\fP
+.TP
+\fB\fIBLPAPI_DATATYPE_CORRELATION_ID \fP\fP
+.PP
+Definition at line 44 of file blpapi_types\&.h\&.
+.SS "enum \fBblpapi_Logging_Severity_t\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIblpapi_Logging_SEVERITY_OFF \fP\fP
+.TP
+\fB\fIblpapi_Logging_SEVERITY_FATAL \fP\fP
+.TP
+\fB\fIblpapi_Logging_SEVERITY_ERROR \fP\fP
+.TP
+\fB\fIblpapi_Logging_SEVERITY_WARN \fP\fP
+.TP
+\fB\fIblpapi_Logging_SEVERITY_INFO \fP\fP
+.TP
+\fB\fIblpapi_Logging_SEVERITY_DEBUG \fP\fP
+.TP
+\fB\fIblpapi_Logging_SEVERITY_TRACE \fP\fP
+.PP
+Definition at line 65 of file blpapi_types\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

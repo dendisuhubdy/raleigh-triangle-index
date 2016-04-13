@@ -1,0 +1,103 @@
+.TH "raleigh-triangle-index/include/blpapi_message.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_message.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_call\&.h>\fP
+.br
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_element\&.h>\fP
+.br
+\fC#include <blpapi_service\&.h>\fP
+.br
+\fC#include <blpapi_timepoint\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct blpapi_Message \fBblpapi_Message_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_Message_messageType\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Message_typeString\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Message_topicName\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Service_t\fP * \fBblpapi_Message_service\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Message_numCorrelationIds\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_CorrelationId_t\fP \fBblpapi_Message_correlationId\fP (const \fBblpapi_Message_t\fP *message, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Element_t\fP * \fBblpapi_Message_elements\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Message_privateData\fP (const \fBblpapi_Message_t\fP *message, size_t *size)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Message_fragmentType\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Message_addRef\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Message_release\fP (const \fBblpapi_Message_t\fP *message)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Message_timeReceived\fP (const \fBblpapi_Message_t\fP *message, \fBblpapi_TimePoint_t\fP *timeReceived)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct blpapi_Message \fBblpapi_Message_t\fP"
+
+.PP
+Definition at line 59 of file blpapi_message\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Message_addRef (const \fBblpapi_Message_t\fP * message)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_CorrelationId_t\fP blpapi_Message_correlationId (const \fBblpapi_Message_t\fP * message, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Element_t\fP* blpapi_Message_elements (const \fBblpapi_Message_t\fP * message)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Message_fragmentType (const \fBblpapi_Message_t\fP * message)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_Message_messageType (const \fBblpapi_Message_t\fP * message)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Message_numCorrelationIds (const \fBblpapi_Message_t\fP * message)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Message_privateData (const \fBblpapi_Message_t\fP * message, size_t * size)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Message_release (const \fBblpapi_Message_t\fP * message)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Service_t\fP* blpapi_Message_service (const \fBblpapi_Message_t\fP * message)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Message_timeReceived (const \fBblpapi_Message_t\fP * message, \fBblpapi_TimePoint_t\fP * timeReceived)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Message_topicName (const \fBblpapi_Message_t\fP * message)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Message_typeString (const \fBblpapi_Message_t\fP * message)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

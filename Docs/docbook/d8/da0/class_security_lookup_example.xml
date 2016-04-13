@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/da0/class_security_lookup_example">
+<title>SecurityLookupExample class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::map&lt; std::string, std::string &gt;  <link linkend="d8/da0/class_security_lookup_example_1aa5e3f86da957ef316a01c6629313e0e6">FiltersMap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Identity d_identity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_authOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SessionOptions d_sessionOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_maxResults</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Name d_requestType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FiltersMap d_filters</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_query</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool d_partialMatch</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1aa9ffcb0856fca73e09fc9801efbe092e">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1a8c51849f470b27a62029a63b61d235fe">printErrorInfo</link> (
+const char * leadingStr, const Element &amp; errorInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1aaee4e9328bd4bdb888cd56a2e2719ad3">processResponseEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1a89188022255ec990cc676bb728a9ab88">eventLoop</link> (
+Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1a36bfcc1600b2fe6f32143aeb9f5955d9">initializeSessionOptions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/da0/class_security_lookup_example_1a17792963b829aa577175c08f2a45bf06">authorize</link> (
+const Service &amp; authService, Session * session, const CorrelationId &amp; cid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1a9bf339ebdd52ff7ce25c424cf7aa9a57">dumpInstrumentResults</link> (
+const std::string &amp; msgPrefix, const Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1a7638d9bee959934cd092de80a2d5666c">dumpGovtResults</link> (
+const std::string &amp; msgPrefix, const Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1ac8be3993e2fae05a202a31367ed2a06d">dumpCurveResults</link> (
+const std::string &amp; msgPrefix, const Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/da0/class_security_lookup_example_1a844fbdcad581b1d2dd4fad5cd8bc2eee">sendRequest</link> (
+Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/da0/class_security_lookup_example_1ae7aec75263b93d2d6fe9785a19baf585">SecurityLookupExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/da0/class_security_lookup_example_1af7a74a7740205051c3b93b9be334cd70">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/da0/class_security_lookup_example_1a142338f4caa64ddeaaa805776c969554">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1aa5e3f86da957ef316a01c6629313e0e6">
+                <title>typedef std::map&lt;std::string, std::string&gt; SecurityLookupExample::FiltersMap</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1aa9ffcb0856fca73e09fc9801efbe092e">
+                <title>void SecurityLookupExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1a8c51849f470b27a62029a63b61d235fe">
+                <title>void SecurityLookupExample::printErrorInfo (const char *leadingStr, const Element &amp;errorInfo)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1aaee4e9328bd4bdb888cd56a2e2719ad3">
+                <title>void SecurityLookupExample::processResponseEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1a89188022255ec990cc676bb728a9ab88">
+                <title>void SecurityLookupExample::eventLoop (Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1a36bfcc1600b2fe6f32143aeb9f5955d9">
+                <title>void SecurityLookupExample::initializeSessionOptions ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1a17792963b829aa577175c08f2a45bf06">
+                <title>bool SecurityLookupExample::authorize (const Service &amp;authService, Session *session, const CorrelationId &amp;cid)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1a9bf339ebdd52ff7ce25c424cf7aa9a57">
+                <title>void SecurityLookupExample::dumpInstrumentResults (const std::string &amp;msgPrefix, const Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1a7638d9bee959934cd092de80a2d5666c">
+                <title>void SecurityLookupExample::dumpGovtResults (const std::string &amp;msgPrefix, const Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1ac8be3993e2fae05a202a31367ed2a06d">
+                <title>void SecurityLookupExample::dumpCurveResults (const std::string &amp;msgPrefix, const Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1a844fbdcad581b1d2dd4fad5cd8bc2eee">
+                <title>bool SecurityLookupExample::sendRequest (Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1ae7aec75263b93d2d6fe9785a19baf585">
+                <title>SecurityLookupExample::SecurityLookupExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1af7a74a7740205051c3b93b9be334cd70">
+                <title>bool SecurityLookupExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/da0/class_security_lookup_example_1a142338f4caa64ddeaaa805776c969554">
+                <title>void SecurityLookupExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

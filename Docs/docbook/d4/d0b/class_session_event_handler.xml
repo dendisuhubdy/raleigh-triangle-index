@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d0b/class_session_event_handler">
+<title>SessionEventHandler class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Identity &gt; &amp; d_identities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; int &gt; &amp; d_uuids</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; &amp; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Name d_fieldName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; &amp; d_tokens</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1a814001cb1761e0696ef1cdfffc7af237">printFailedEntitlements</link> (
+std::vector&lt; int &gt; &amp; failedEntitlements, int numFailedEntitlements)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1addffa35089458f2bc6c7053d72ce3f68">distributeMessage</link> (
+Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1a28c96170de4f67f3b00180f00af18374">processResponseEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1ae5ef4742769c0f1cc017cf99b5009d6c">processSubscriptionDataEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1ae5ef4742769c0f1cc017cf99b5009d6c">processSubscriptionDataEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1a814001cb1761e0696ef1cdfffc7af237">printFailedEntitlements</link> (
+std::vector&lt; int &gt; &amp; failedEntitlements, int numFailedEntitlements)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1addffa35089458f2bc6c7053d72ce3f68">distributeMessage</link> (
+Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1a28c96170de4f67f3b00180f00af18374">processResponseEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d0b/class_session_event_handler_1a28c96170de4f67f3b00180f00af18374">processResponseEvent</link> (
+const Event &amp; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d0b/class_session_event_handler_1ae31656c34c31f44dc456b23ee2ad7887">SessionEventHandler</link> (
+std::vector&lt; Identity &gt; &amp; identities, std::vector&lt; int &gt; &amp; uuids)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">processEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d0b/class_session_event_handler_1a12e1d80c3612273172d6d4c0e1776901">SessionEventHandler</link> (
+std::vector&lt; Identity &gt; &amp; identities, std::vector&lt; int &gt; &amp; uuids, std::vector&lt; std::string &gt; &amp; securities, const std::string &amp; field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">processEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d0b/class_session_event_handler_1ab949db928e8f10779e46cb76bcb0ce7e">SessionEventHandler</link> (
+std::vector&lt; Identity &gt; &amp; identities, std::vector&lt; std::string &gt; &amp; tokens, std::vector&lt; std::string &gt; &amp; securities, const std::string &amp; field)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">processEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d0b/class_session_event_handler_1a5b53b782cee510f58ff8d5e79864cabe">SessionEventHandler</link> (
+std::vector&lt; Identity &gt; &amp; identities, std::vector&lt; std::string &gt; &amp; tokens)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">processEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d0b/class_session_event_handler_1ae31656c34c31f44dc456b23ee2ad7887">SessionEventHandler</link> (
+std::vector&lt; Identity &gt; &amp; identities, std::vector&lt; int &gt; &amp; uuids)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">processEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a814001cb1761e0696ef1cdfffc7af237">
+                <title>void SessionEventHandler::printFailedEntitlements (std::vector&lt; int &gt; &amp;failedEntitlements, int numFailedEntitlements)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1addffa35089458f2bc6c7053d72ce3f68">
+                <title>void SessionEventHandler::distributeMessage (Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a28c96170de4f67f3b00180f00af18374">
+                <title>void SessionEventHandler::processResponseEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1ae5ef4742769c0f1cc017cf99b5009d6c">
+                <title>void SessionEventHandler::processSubscriptionDataEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1ae5ef4742769c0f1cc017cf99b5009d6c">
+                <title>void SessionEventHandler::processSubscriptionDataEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a814001cb1761e0696ef1cdfffc7af237">
+                <title>void SessionEventHandler::printFailedEntitlements (std::vector&lt; int &gt; &amp;failedEntitlements, int numFailedEntitlements)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1addffa35089458f2bc6c7053d72ce3f68">
+                <title>void SessionEventHandler::distributeMessage (Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a28c96170de4f67f3b00180f00af18374">
+                <title>void SessionEventHandler::processResponseEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a28c96170de4f67f3b00180f00af18374">
+                <title>void SessionEventHandler::processResponseEvent (const Event &amp;event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1ae31656c34c31f44dc456b23ee2ad7887">
+                <title>SessionEventHandler::SessionEventHandler (std::vector&lt; Identity &gt; &amp;identities, std::vector&lt; int &gt; &amp;uuids)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">
+                <title>bool SessionEventHandler::processEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a12e1d80c3612273172d6d4c0e1776901">
+                <title>SessionEventHandler::SessionEventHandler (std::vector&lt; Identity &gt; &amp;identities, std::vector&lt; int &gt; &amp;uuids, std::vector&lt; std::string &gt; &amp;securities, const std::string &amp;field)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">
+                <title>bool SessionEventHandler::processEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1ab949db928e8f10779e46cb76bcb0ce7e">
+                <title>SessionEventHandler::SessionEventHandler (std::vector&lt; Identity &gt; &amp;identities, std::vector&lt; std::string &gt; &amp;tokens, std::vector&lt; std::string &gt; &amp;securities, const std::string &amp;field)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">
+                <title>bool SessionEventHandler::processEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a5b53b782cee510f58ff8d5e79864cabe">
+                <title>SessionEventHandler::SessionEventHandler (std::vector&lt; Identity &gt; &amp;identities, std::vector&lt; std::string &gt; &amp;tokens)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">
+                <title>bool SessionEventHandler::processEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1ae31656c34c31f44dc456b23ee2ad7887">
+                <title>SessionEventHandler::SessionEventHandler (std::vector&lt; Identity &gt; &amp;identities, std::vector&lt; int &gt; &amp;uuids)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d0b/class_session_event_handler_1a084fa03586ec047c78600cea54a91355">
+                <title>bool SessionEventHandler::processEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

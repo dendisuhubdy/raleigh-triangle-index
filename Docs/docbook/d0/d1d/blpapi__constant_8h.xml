@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d1d/blpapi__constant_8h">
+    <title>blpapi_constant.h File Reference</title>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_name.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_datetime.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_exception.h&gt;</programlisting>
+    <programlisting>#include &lt;stddef.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d0/d1d/blpapi__constant_8h_1a11475688726db20384e61697beafe9bd">blpapi_Constant_setUserData</link> (
+blpapi_Constant_t * constant, void * userdata)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="d0/d1d/blpapi__constant_8h_1adf8478b2ff3e9d8f8680ccbb19c95d37">blpapi_Constant_name</link> (
+const blpapi_Constant_t * constant)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="d0/d1d/blpapi__constant_8h_1a9c213ace5bdb6fc5a46689330961998a">blpapi_Constant_description</link> (
+const blpapi_Constant_t * constant)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1a7aa287537650a9b75c9bf24e89596cb7">blpapi_Constant_status</link> (
+const blpapi_Constant_t * constant)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1a65cf1986bda3682341a30c958b6baa5f">blpapi_Constant_datatype</link> (
+const blpapi_Constant_t * constant)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1a6fe54e760247e4b7e008f6f1cbb3c6bb">blpapi_Constant_getValueAsChar</link> (
+const blpapi_Constant_t * constant, blpapi_Char_t * buffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1a4ec5b3bf43166cecba450beb2e24ad6e">blpapi_Constant_getValueAsInt32</link> (
+const blpapi_Constant_t * constant, blpapi_Int32_t * buffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1a7ec6d0f073115efb4a02ed58693b77be">blpapi_Constant_getValueAsInt64</link> (
+const blpapi_Constant_t * constant, blpapi_Int64_t * buffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1a0c09b4c26aadcd28e5a8e2370cd2defd">blpapi_Constant_getValueAsFloat32</link> (
+const blpapi_Constant_t * constant, blpapi_Float32_t * buffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1aad22550baae304fe5b734f2307782585">blpapi_Constant_getValueAsFloat64</link> (
+const blpapi_Constant_t * constant, blpapi_Float64_t * buffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1a5a1abd3d0a65d4b86b0de1f8430ea235">blpapi_Constant_getValueAsDatetime</link> (
+const blpapi_Constant_t * constant, <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> * buffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1a8f6d423677bb227c757cb058be8fe955">blpapi_Constant_getValueAsString</link> (
+const blpapi_Constant_t * constant, const char ** buffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void * <link linkend="d0/d1d/blpapi__constant_8h_1a5ea178c3e2a910523ded3b513da8c495">blpapi_Constant_userData</link> (
+const blpapi_Constant_t * constant)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d0/d1d/blpapi__constant_8h_1a14bd529cf271945894453342585aa6b2">blpapi_ConstantList_setUserData</link> (
+blpapi_ConstantList_t * constant, void * userdata)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="d0/d1d/blpapi__constant_8h_1a6bd177ec11fcf772522035e9a9aa0157">blpapi_ConstantList_name</link> (
+const blpapi_ConstantList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="d0/d1d/blpapi__constant_8h_1a73bc8cca69f4a928a56b4067228ce76f">blpapi_ConstantList_description</link> (
+const blpapi_ConstantList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1aaa2489fcd8b16a746c5149f90a792481">blpapi_ConstantList_numConstants</link> (
+const blpapi_ConstantList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1af5c50b866544020bd6052670213bef20">blpapi_ConstantList_datatype</link> (
+const blpapi_ConstantList_t * constant)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d0/d1d/blpapi__constant_8h_1aec743e91253b04edffc715dad4d79fd7">blpapi_ConstantList_status</link> (
+const blpapi_ConstantList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Constant_t * <link linkend="d0/d1d/blpapi__constant_8h_1aaec9dc88d03b0c21b7b8a17abf00567a">blpapi_ConstantList_getConstant</link> (
+const blpapi_ConstantList_t * constant, const char * nameString, const blpapi_Name_t * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Constant_t * <link linkend="d0/d1d/blpapi__constant_8h_1a9b1aa59ceea1c57a80f7c1ab07d99158">blpapi_ConstantList_getConstantAt</link> (
+const blpapi_ConstantList_t * constant, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void * <link linkend="d0/d1d/blpapi__constant_8h_1ab46bd73038fa0499509f2e091bee2a16">blpapi_ConstantList_userData</link> (
+const blpapi_ConstantList_t * constant)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_constant.h</para>
+    </simplesect>
+</section>

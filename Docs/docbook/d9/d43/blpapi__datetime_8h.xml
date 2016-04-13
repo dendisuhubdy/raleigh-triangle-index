@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d43/blpapi__datetime_8h">
+    <title>blpapi_datetime.h File Reference</title>
+    <programlisting>#include &lt;blpapi_call.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_exception.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_streamproxy.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_timepoint.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_tag</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_tag</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_tag</link>  <link linkend="d9/d43/blpapi__datetime_8h_1aa182a01a276451f8c8aa7c425c9f1552">blpapi_Datetime_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_tag</link>  <link linkend="d9/d43/blpapi__datetime_8h_1ad3b02146c54f4b56669eb39d17532592">blpapi_HighPrecisionDatetime_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d43/blpapi__datetime_8h_1a2f23987000e060251b5b3dcef4dec3c5">blpapi_Datetime_compare</link> (
+<link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> lhs, <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d43/blpapi__datetime_8h_1aeba2d9a882c89410fdcc6f543885850b">blpapi_Datetime_print</link> (
+const <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> * datetime, blpapi_StreamWriter_t streamWriter, void * stream, int level, int spacesPerLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d43/blpapi__datetime_8h_1a1fb5a39f3f2380f423aa57240cfbd162">blpapi_HighPrecisionDatetime_compare</link> (
+const <link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_t</link> * lhs, const <link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_t</link> * rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d43/blpapi__datetime_8h_1ace1ffa6e2072cb9b2f3ff0d1dfd1ec1f">blpapi_HighPrecisionDatetime_print</link> (
+const <link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_t</link> * datetime, blpapi_StreamWriter_t streamWriter, void * stream, int level, int spacesPerLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d43/blpapi__datetime_8h_1a255fc0676270510de1e3ae89536b2001">blpapi_HighPrecisionDatetime_fromTimePoint</link> (
+<link linkend="d0/d50/structblpapi___high_precision_datetime__tag">blpapi_HighPrecisionDatetime_t</link> * datetime, const <link linkend="d4/de5/structblpapi___time_point">blpapi_TimePoint_t</link> * timePoint, short offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_datetime.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d75/class_correlation_example">
+<title>CorrelationExample class Reference</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d86/class_correlation_example_1_1_window">CorrelationExample::Window</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Window d_secInfoWindow</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>CorrelationId d_cid</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d75/class_correlation_example_1af6613023c855ea7c372b0049fcb4a9ce">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d75/class_correlation_example_1a263530f59f697f7c39dcd3b884838cc1">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d75/class_correlation_example_1a6b8de04220db4dbf5be5f1466516d2d0">startSession</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d75/class_correlation_example_1a4ee971028e136d8dbfa8bb06b599d52a">CorrelationExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d75/class_correlation_example_1a638ae011e77998f07bc9e0c744e1df6d">~CorrelationExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d75/class_correlation_example_1a04b7d8395553eefac3a5e22b375ccac0">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>An example to demonstrate use of CorrelationID. </para>
+                <para>Definition at line 44 of file CorrelationExample.cpp</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>CorrelationExample.cpp</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/d75/class_correlation_example_1af6613023c855ea7c372b0049fcb4a9ce">
+                <title>void CorrelationExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d75/class_correlation_example_1a263530f59f697f7c39dcd3b884838cc1">
+                <title>bool CorrelationExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d75/class_correlation_example_1a6b8de04220db4dbf5be5f1466516d2d0">
+                <title>bool CorrelationExample::startSession (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d75/class_correlation_example_1a4ee971028e136d8dbfa8bb06b599d52a">
+                <title>CorrelationExample::CorrelationExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d75/class_correlation_example_1a638ae011e77998f07bc9e0c744e1df6d">
+                <title>CorrelationExample::~CorrelationExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d75/class_correlation_example_1a04b7d8395553eefac3a5e22b375ccac0">
+                <title>void CorrelationExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

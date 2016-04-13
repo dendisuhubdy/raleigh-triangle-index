@@ -1,0 +1,93 @@
+.TH "raleigh-triangle-index/include/blpapi_subscriptionlist.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_subscriptionlist.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_call\&.h>\fP
+.br
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_exception\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct blpapi_SubscriptionList \fBblpapi_SubscriptionList_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_SubscriptionList_t\fP * \fBblpapi_SubscriptionList_create\fP (void)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SubscriptionList_destroy\fP (\fBblpapi_SubscriptionList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionList_add\fP (\fBblpapi_SubscriptionList_t\fP *list, const char *subscriptionString, const \fBblpapi_CorrelationId_t\fP *correlationId, const char **fields, const char **options, size_t numfields, size_t numOptions)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionList_addResolved\fP (\fBblpapi_SubscriptionList_t\fP *list, const char *subscriptionString, const \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionList_clear\fP (\fBblpapi_SubscriptionList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionList_append\fP (\fBblpapi_SubscriptionList_t\fP *dest, const \fBblpapi_SubscriptionList_t\fP *src)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionList_size\fP (const \fBblpapi_SubscriptionList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionList_correlationIdAt\fP (const \fBblpapi_SubscriptionList_t\fP *list, \fBblpapi_CorrelationId_t\fP *result, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionList_topicStringAt\fP (\fBblpapi_SubscriptionList_t\fP *list, const char **result, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionList_isResolvedAt\fP (\fBblpapi_SubscriptionList_t\fP *list, int *result, size_t index)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct blpapi_SubscriptionList \fBblpapi_SubscriptionList_t\fP"
+
+.PP
+Definition at line 129 of file blpapi_subscriptionlist\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionList_add (\fBblpapi_SubscriptionList_t\fP * list, const char * subscriptionString, const \fBblpapi_CorrelationId_t\fP * correlationId, const char ** fields, const char ** options, size_t numfields, size_t numOptions)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionList_addResolved (\fBblpapi_SubscriptionList_t\fP * list, const char * subscriptionString, const \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionList_append (\fBblpapi_SubscriptionList_t\fP * dest, const \fBblpapi_SubscriptionList_t\fP * src)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionList_clear (\fBblpapi_SubscriptionList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionList_correlationIdAt (const \fBblpapi_SubscriptionList_t\fP * list, \fBblpapi_CorrelationId_t\fP * result, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_SubscriptionList_t\fP* blpapi_SubscriptionList_create (void)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SubscriptionList_destroy (\fBblpapi_SubscriptionList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionList_isResolvedAt (\fBblpapi_SubscriptionList_t\fP * list, int * result, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionList_size (const \fBblpapi_SubscriptionList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionList_topicStringAt (\fBblpapi_SubscriptionList_t\fP * list, const char ** result, size_t index)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

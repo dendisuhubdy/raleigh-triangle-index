@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d0d/class_simple_subscription_interval_example">
+<title>SimpleSubscriptionIntervalExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_maxEvents</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_eventCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d0d/class_simple_subscription_interval_example_1ab1798445b9e3c376b2328c9d83353f32">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/d0d/class_simple_subscription_interval_example_1aade19fcfec15625361dd55dc60125f96">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d0d/class_simple_subscription_interval_example_1a3087a2c52eb1f29d970dcc42c11d81ae">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d0d/class_simple_subscription_interval_example_1ab1798445b9e3c376b2328c9d83353f32">
+                <title>void SimpleSubscriptionIntervalExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d0d/class_simple_subscription_interval_example_1aade19fcfec15625361dd55dc60125f96">
+                <title>bool SimpleSubscriptionIntervalExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d0d/class_simple_subscription_interval_example_1a3087a2c52eb1f29d970dcc42c11d81ae">
+                <title>void SimpleSubscriptionIntervalExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

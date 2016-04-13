@@ -1,0 +1,200 @@
+\hypertarget{blpapi__resolutionlist_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+resolutionlist.h File Reference}
+\label{blpapi__resolutionlist_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+resolutionlist.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+resolutionlist.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+correlationid.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+element.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+name.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+message.\+h$>$}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct blpapi\+\_\+\+Resolution\+List \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__types_8h_abb8d9b21981346c8c927e878794299ca}{blpapi\+\_\+\+Element\+\_\+t} $\ast$ \hyperlink{blpapi__resolutionlist_8h_a261b03fa6c95d1179c63773880d82088}{blpapi\+\_\+\+Resolution\+List\+\_\+extract\+Attribute\+From\+Resolution\+Success} (const \hyperlink{blpapi__message_8h_a98691b7f64ed66628256601660a711eb}{blpapi\+\_\+\+Message\+\_\+t} $\ast$message, const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$attribute)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$ \hyperlink{blpapi__resolutionlist_8h_a2e78bae135f806a88804b8568c5a7511}{blpapi\+\_\+\+Resolution\+List\+\_\+create} (\hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$from)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__resolutionlist_8h_a62c61029c7cfd0a0e7488127bc815a4a}{blpapi\+\_\+\+Resolution\+List\+\_\+destroy} (\hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_ad0de88dc712cd6f509652f9ba39bc62c}{blpapi\+\_\+\+Resolution\+List\+\_\+add} (\hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, const char $\ast$topic, const \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$correlation\+Id)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_afd9d97adb18a550c0cf631fe4cbb418b}{blpapi\+\_\+\+Resolution\+List\+\_\+add\+From\+Message} (\hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, const \hyperlink{blpapi__message_8h_a98691b7f64ed66628256601660a711eb}{blpapi\+\_\+\+Message\+\_\+t} $\ast$topic, const \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$correlation\+Id)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_a6ff1554e6abbb1eb58f391858eb543a6}{blpapi\+\_\+\+Resolution\+List\+\_\+add\+Attribute} (\hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_aa5fa26ee51a078102c76e7446172796a}{blpapi\+\_\+\+Resolution\+List\+\_\+correlation\+Id\+At} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$result, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_ae416722d971042a5682320c28d2b05fd}{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, const char $\ast$$\ast$topic, const \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$id)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_ab63bb4d44f6fb7a29d48f7ddb5565c76}{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String\+At} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, const char $\ast$$\ast$topic, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_a7842666d772e152c35863a74012c5b40}{blpapi\+\_\+\+Resolution\+List\+\_\+status} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, int $\ast$status, const \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$id)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_ab7fc2f492e3209e9e26631b5e988d68c}{blpapi\+\_\+\+Resolution\+List\+\_\+status\+At} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, int $\ast$status, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_aff7b9a1285d996aae494df13a10fa311}{blpapi\+\_\+\+Resolution\+List\+\_\+attribute} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, \hyperlink{blpapi__types_8h_abb8d9b21981346c8c927e878794299ca}{blpapi\+\_\+\+Element\+\_\+t} $\ast$$\ast$element, const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$attribute, const \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$id)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_ae42e06232471cf69c22a05e0f17aa7b7}{blpapi\+\_\+\+Resolution\+List\+\_\+attribute\+At} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, \hyperlink{blpapi__types_8h_abb8d9b21981346c8c927e878794299ca}{blpapi\+\_\+\+Element\+\_\+t} $\ast$$\ast$element, const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$attribute, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_aa4c5605a5efed76a11e3c4fb9fd7acb1}{blpapi\+\_\+\+Resolution\+List\+\_\+message} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, \hyperlink{blpapi__message_8h_a98691b7f64ed66628256601660a711eb}{blpapi\+\_\+\+Message\+\_\+t} $\ast$$\ast$element, const \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$id)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_a6cfa2a052a198f4db8b229acb0798158}{blpapi\+\_\+\+Resolution\+List\+\_\+message\+At} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list, \hyperlink{blpapi__message_8h_a98691b7f64ed66628256601660a711eb}{blpapi\+\_\+\+Message\+\_\+t} $\ast$$\ast$element, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__resolutionlist_8h_afd19c931f5cfa130c7bcb711822e454c}{blpapi\+\_\+\+Resolution\+List\+\_\+size} (const \hyperlink{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$list)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+t@{blpapi\+\_\+\+Resolution\+List\+\_\+t}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+t@{blpapi\+\_\+\+Resolution\+List\+\_\+t}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+t}{blpapi_ResolutionList_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct blpapi\+\_\+\+Resolution\+List {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t}}\hypertarget{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}{}\label{blpapi__resolutionlist_8h_a8e9bf4b674ee6461c82d75108ee66a08}
+
+
+Definition at line 61 of file blpapi\+\_\+resolutionlist.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+add@{blpapi\+\_\+\+Resolution\+List\+\_\+add}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+add@{blpapi\+\_\+\+Resolution\+List\+\_\+add}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+add(blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, const char $\ast$topic, const blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$correlation\+Id)}{blpapi_ResolutionList_add(blpapi_ResolutionList_t *list, const char *topic, const blpapi_CorrelationId_t *correlationId)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{const char $\ast$}]{topic, }
+\item[{const {\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{correlation\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_ad0de88dc712cd6f509652f9ba39bc62c}{}\label{blpapi__resolutionlist_8h_ad0de88dc712cd6f509652f9ba39bc62c}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+add\+Attribute@{blpapi\+\_\+\+Resolution\+List\+\_\+add\+Attribute}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+add\+Attribute@{blpapi\+\_\+\+Resolution\+List\+\_\+add\+Attribute}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+add\+Attribute(blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, const blpapi\+\_\+\+Name\+\_\+t $\ast$name)}{blpapi_ResolutionList_addAttribute(blpapi_ResolutionList_t *list, const blpapi_Name_t *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+add\+Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_a6ff1554e6abbb1eb58f391858eb543a6}{}\label{blpapi__resolutionlist_8h_a6ff1554e6abbb1eb58f391858eb543a6}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+add\+From\+Message@{blpapi\+\_\+\+Resolution\+List\+\_\+add\+From\+Message}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+add\+From\+Message@{blpapi\+\_\+\+Resolution\+List\+\_\+add\+From\+Message}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+add\+From\+Message(blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, const blpapi\+\_\+\+Message\+\_\+t $\ast$topic, const blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$correlation\+Id)}{blpapi_ResolutionList_addFromMessage(blpapi_ResolutionList_t *list, const blpapi_Message_t *topic, const blpapi_CorrelationId_t *correlationId)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+add\+From\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{const {\bf blpapi\+\_\+\+Message\+\_\+t} $\ast$}]{topic, }
+\item[{const {\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{correlation\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_afd9d97adb18a550c0cf631fe4cbb418b}{}\label{blpapi__resolutionlist_8h_afd9d97adb18a550c0cf631fe4cbb418b}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+attribute@{blpapi\+\_\+\+Resolution\+List\+\_\+attribute}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+attribute@{blpapi\+\_\+\+Resolution\+List\+\_\+attribute}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+attribute(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, blpapi\+\_\+\+Element\+\_\+t $\ast$$\ast$element, const blpapi\+\_\+\+Name\+\_\+t $\ast$attribute, const blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$id)}{blpapi_ResolutionList_attribute(const blpapi_ResolutionList_t *list, blpapi_Element_t **element, const blpapi_Name_t *attribute, const blpapi_CorrelationId_t *id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+attribute (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{{\bf blpapi\+\_\+\+Element\+\_\+t} $\ast$$\ast$}]{element, }
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{attribute, }
+\item[{const {\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_aff7b9a1285d996aae494df13a10fa311}{}\label{blpapi__resolutionlist_8h_aff7b9a1285d996aae494df13a10fa311}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+attribute\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+attribute\+At}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+attribute\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+attribute\+At}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+attribute\+At(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, blpapi\+\_\+\+Element\+\_\+t $\ast$$\ast$element, const blpapi\+\_\+\+Name\+\_\+t $\ast$attribute, size\+\_\+t index)}{blpapi_ResolutionList_attributeAt(const blpapi_ResolutionList_t *list, blpapi_Element_t **element, const blpapi_Name_t *attribute, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+attribute\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{{\bf blpapi\+\_\+\+Element\+\_\+t} $\ast$$\ast$}]{element, }
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{attribute, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_ae42e06232471cf69c22a05e0f17aa7b7}{}\label{blpapi__resolutionlist_8h_ae42e06232471cf69c22a05e0f17aa7b7}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+correlation\+Id\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+correlation\+Id\+At}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+correlation\+Id\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+correlation\+Id\+At}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+correlation\+Id\+At(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$result, size\+\_\+t index)}{blpapi_ResolutionList_correlationIdAt(const blpapi_ResolutionList_t *list, blpapi_CorrelationId_t *result, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+correlation\+Id\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{{\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{result, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_aa5fa26ee51a078102c76e7446172796a}{}\label{blpapi__resolutionlist_8h_aa5fa26ee51a078102c76e7446172796a}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+create@{blpapi\+\_\+\+Resolution\+List\+\_\+create}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+create@{blpapi\+\_\+\+Resolution\+List\+\_\+create}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+create(blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$from)}{blpapi_ResolutionList_create(blpapi_ResolutionList_t *from)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t}$\ast$ blpapi\+\_\+\+Resolution\+List\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{from}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_a2e78bae135f806a88804b8568c5a7511}{}\label{blpapi__resolutionlist_8h_a2e78bae135f806a88804b8568c5a7511}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+destroy@{blpapi\+\_\+\+Resolution\+List\+\_\+destroy}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+destroy@{blpapi\+\_\+\+Resolution\+List\+\_\+destroy}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+destroy(blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list)}{blpapi_ResolutionList_destroy(blpapi_ResolutionList_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Resolution\+List\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_a62c61029c7cfd0a0e7488127bc815a4a}{}\label{blpapi__resolutionlist_8h_a62c61029c7cfd0a0e7488127bc815a4a}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+extract\+Attribute\+From\+Resolution\+Success@{blpapi\+\_\+\+Resolution\+List\+\_\+extract\+Attribute\+From\+Resolution\+Success}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+extract\+Attribute\+From\+Resolution\+Success@{blpapi\+\_\+\+Resolution\+List\+\_\+extract\+Attribute\+From\+Resolution\+Success}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+extract\+Attribute\+From\+Resolution\+Success(const blpapi\+\_\+\+Message\+\_\+t $\ast$message, const blpapi\+\_\+\+Name\+\_\+t $\ast$attribute)}{blpapi_ResolutionList_extractAttributeFromResolutionSuccess(const blpapi_Message_t *message, const blpapi_Name_t *attribute)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} {\bf blpapi\+\_\+\+Element\+\_\+t}$\ast$ blpapi\+\_\+\+Resolution\+List\+\_\+extract\+Attribute\+From\+Resolution\+Success (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Message\+\_\+t} $\ast$}]{message, }
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{attribute}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_a261b03fa6c95d1179c63773880d82088}{}\label{blpapi__resolutionlist_8h_a261b03fa6c95d1179c63773880d82088}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+message@{blpapi\+\_\+\+Resolution\+List\+\_\+message}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+message@{blpapi\+\_\+\+Resolution\+List\+\_\+message}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+message(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, blpapi\+\_\+\+Message\+\_\+t $\ast$$\ast$element, const blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$id)}{blpapi_ResolutionList_message(const blpapi_ResolutionList_t *list, blpapi_Message_t **element, const blpapi_CorrelationId_t *id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{{\bf blpapi\+\_\+\+Message\+\_\+t} $\ast$$\ast$}]{element, }
+\item[{const {\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_aa4c5605a5efed76a11e3c4fb9fd7acb1}{}\label{blpapi__resolutionlist_8h_aa4c5605a5efed76a11e3c4fb9fd7acb1}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+message\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+message\+At}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+message\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+message\+At}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+message\+At(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, blpapi\+\_\+\+Message\+\_\+t $\ast$$\ast$element, size\+\_\+t index)}{blpapi_ResolutionList_messageAt(const blpapi_ResolutionList_t *list, blpapi_Message_t **element, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+message\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{{\bf blpapi\+\_\+\+Message\+\_\+t} $\ast$$\ast$}]{element, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_a6cfa2a052a198f4db8b229acb0798158}{}\label{blpapi__resolutionlist_8h_a6cfa2a052a198f4db8b229acb0798158}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+size@{blpapi\+\_\+\+Resolution\+List\+\_\+size}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+size@{blpapi\+\_\+\+Resolution\+List\+\_\+size}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+size(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list)}{blpapi_ResolutionList_size(const blpapi_ResolutionList_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_afd19c931f5cfa130c7bcb711822e454c}{}\label{blpapi__resolutionlist_8h_afd19c931f5cfa130c7bcb711822e454c}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+status@{blpapi\+\_\+\+Resolution\+List\+\_\+status}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+status@{blpapi\+\_\+\+Resolution\+List\+\_\+status}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+status(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, int $\ast$status, const blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$id)}{blpapi_ResolutionList_status(const blpapi_ResolutionList_t *list, int *status, const blpapi_CorrelationId_t *id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{int $\ast$}]{status, }
+\item[{const {\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_a7842666d772e152c35863a74012c5b40}{}\label{blpapi__resolutionlist_8h_a7842666d772e152c35863a74012c5b40}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+status\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+status\+At}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+status\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+status\+At}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+status\+At(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, int $\ast$status, size\+\_\+t index)}{blpapi_ResolutionList_statusAt(const blpapi_ResolutionList_t *list, int *status, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+status\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{int $\ast$}]{status, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_ab7fc2f492e3209e9e26631b5e988d68c}{}\label{blpapi__resolutionlist_8h_ab7fc2f492e3209e9e26631b5e988d68c}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String@{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String@{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, const char $\ast$$\ast$topic, const blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$id)}{blpapi_ResolutionList_topicString(const blpapi_ResolutionList_t *list, const char **topic, const blpapi_CorrelationId_t *id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{const char $\ast$$\ast$}]{topic, }
+\item[{const {\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_ae416722d971042a5682320c28d2b05fd}{}\label{blpapi__resolutionlist_8h_ae416722d971042a5682320c28d2b05fd}
+\index{blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}!blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String\+At}}
+\index{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String\+At@{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String\+At}!blpapi\+\_\+resolutionlist.\+h@{blpapi\+\_\+resolutionlist.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String\+At(const blpapi\+\_\+\+Resolution\+List\+\_\+t $\ast$list, const char $\ast$$\ast$topic, size\+\_\+t index)}{blpapi_ResolutionList_topicStringAt(const blpapi_ResolutionList_t *list, const char **topic, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Resolution\+List\+\_\+topic\+String\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Resolution\+List\+\_\+t} $\ast$}]{list, }
+\item[{const char $\ast$$\ast$}]{topic, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__resolutionlist_8h_ab63bb4d44f6fb7a29d48f7ddb5565c76}{}\label{blpapi__resolutionlist_8h_ab63bb4d44f6fb7a29d48f7ddb5565c76}

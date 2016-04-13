@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dc1/class_contributions_page_example">
+<title>ContributionsPageExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_hosts</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_service</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_topic</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_authOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_contributorId</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dc1/class_contributions_page_example_1a3347799a0188ce9ce3316f4205ba9ace">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/dc1/class_contributions_page_example_1aba477c9c841ee62e2699da647711595e">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dc1/class_contributions_page_example_1ac3090bae264400f96c046ea33fa300b4">ContributionsPageExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/dc1/class_contributions_page_example_1a7f5dfa971f3c7d3072a8131608374ec4">authorize</link> (
+const Service &amp; authService, Identity * providerIdentity, ProviderSession * session, const CorrelationId &amp; cid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dc1/class_contributions_page_example_1adc1d4a5c7fd8ca1e0bae306b343d2007">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/dc1/class_contributions_page_example_1a3347799a0188ce9ce3316f4205ba9ace">
+                <title>void ContributionsPageExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dc1/class_contributions_page_example_1aba477c9c841ee62e2699da647711595e">
+                <title>bool ContributionsPageExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dc1/class_contributions_page_example_1ac3090bae264400f96c046ea33fa300b4">
+                <title>ContributionsPageExample::ContributionsPageExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dc1/class_contributions_page_example_1a7f5dfa971f3c7d3072a8131608374ec4">
+                <title>bool ContributionsPageExample::authorize (const Service &amp;authService, Identity *providerIdentity, ProviderSession *session, const CorrelationId &amp;cid)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dc1/class_contributions_page_example_1adc1d4a5c7fd8ca1e0bae306b343d2007">
+                <title>void ContributionsPageExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

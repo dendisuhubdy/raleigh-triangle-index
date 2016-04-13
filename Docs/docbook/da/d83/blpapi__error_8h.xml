@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d83/blpapi__error_8h">
+    <title>blpapi_error.h File Reference</title>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a32e5d4d0c22dde57b82a799b3c0a2caa">BLPAPI_RESULTCODE</link> ((res) &amp; 0xffff)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a4c14e4f55611a101ac6f11d6efdf8928">BLPAPI_RESULTCLASS</link> ((res) &amp; 0xff0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a3a460c3871118fccf63bf5019fe93759">BLPAPI_UNKNOWN_CLASS</link> 0x00000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a6cdaea568c04e0824003ddce789dd9a3">BLPAPI_INVALIDSTATE_CLASS</link> 0x10000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a6bf9beca4479f093f231dd03273cfd74">BLPAPI_INVALIDARG_CLASS</link> 0x20000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1ae9c8280e3bb9139bde83a8ad87d7e829">BLPAPI_IOERROR_CLASS</link> 0x30000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1aa21bf2b141a4719090a7ce8f821474ae">BLPAPI_CNVERROR_CLASS</link> 0x40000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a50a73c9303f1db6688318814bf18e26c">BLPAPI_BOUNDSERROR_CLASS</link> 0x50000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1acc825bb49b46ae09206e6392f4915d09">BLPAPI_NOTFOUND_CLASS</link> 0x60000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1abacf4a0d47e39a1921e2d2dc7b027ff7">BLPAPI_FLDNOTFOUND_CLASS</link> 0x70000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a58505c08564e382cde9efd12a062bcd6">BLPAPI_UNSUPPORTED_CLASS</link> 0x80000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a3d8d68ff1fed93568289fc9b422f8511">BLPAPI_ERROR_UNKNOWN</link> (BLPAPI_UNKNOWN_CLASS | 1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a954471617469bec31008b53b66ff6dbf">BLPAPI_ERROR_ILLEGAL_ARG</link> (BLPAPI_INVALIDARG_CLASS | 2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a6d95e1206b70fe1fb8506840b5d805cb">BLPAPI_ERROR_ILLEGAL_ACCESS</link> (BLPAPI_UNKNOWN_CLASS | 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1ad3dbcb60ca215739fbc1ac7262260001">BLPAPI_ERROR_INVALID_SESSION</link> (BLPAPI_INVALIDARG_CLASS | 4)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a74a5529989613a545c44af2a79637833">BLPAPI_ERROR_DUPLICATE_CORRELATIONID</link> (BLPAPI_INVALIDARG_CLASS | 5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1adc90597c958901bb375c748e9ec62fa4">BLPAPI_ERROR_INTERNAL_ERROR</link> (BLPAPI_UNKNOWN_CLASS | 6)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a2b0d88cea7be5780cd573a171228bff3">BLPAPI_ERROR_RESOLVE_FAILED</link> (BLPAPI_IOERROR_CLASS | 7)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a25c55b607cfb58ce9637340f56ff45fb">BLPAPI_ERROR_CONNECT_FAILED</link> (BLPAPI_IOERROR_CLASS | 8)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1adb1fbd6e1a28f09790337cfe486b4932">BLPAPI_ERROR_ILLEGAL_STATE</link> (BLPAPI_INVALIDSTATE_CLASS| 9)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1ae32a68b1336f0972d535af7bdd8a7583">BLPAPI_ERROR_CODEC_FAILURE</link> (BLPAPI_UNKNOWN_CLASS | 10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1ab35ffa3283be5e2843187256ea3f2b02">BLPAPI_ERROR_INDEX_OUT_OF_RANGE</link> (BLPAPI_BOUNDSERROR_CLASS | 11)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1ac8b064cd4c590c27868d7058d3a7ae7d">BLPAPI_ERROR_INVALID_CONVERSION</link> (BLPAPI_CNVERROR_CLASS | 12)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a6afb465e4f6bfb3f8d76f0d190c2953b">BLPAPI_ERROR_ITEM_NOT_FOUND</link> (BLPAPI_NOTFOUND_CLASS | 13)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a5136b65003cdc4c41ed293753a6bfe1d">BLPAPI_ERROR_IO_ERROR</link> (BLPAPI_IOERROR_CLASS | 14)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a7decdaf8017f51bb3ffa60d3bb175605">BLPAPI_ERROR_CORRELATION_NOT_FOUND</link> (BLPAPI_NOTFOUND_CLASS | 15)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1ae060ad550cbac5e5ca8f7cb66c13b0e3">BLPAPI_ERROR_SERVICE_NOT_FOUND</link> (BLPAPI_NOTFOUND_CLASS | 16)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1aceb8e3dbdac1b8317d1b854009f88984">BLPAPI_ERROR_LOGON_LOOKUP_FAILED</link> (BLPAPI_UNKNOWN_CLASS | 17)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1aa89496d82a818dc8fdc3c58fc6e121c9">BLPAPI_ERROR_DS_LOOKUP_FAILED</link> (BLPAPI_UNKNOWN_CLASS | 18)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1ad1ca64ee7e5f234a1e95fa91834d01c4">BLPAPI_ERROR_UNSUPPORTED_OPERATION</link> (BLPAPI_UNSUPPORTED_CLASS | 19)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d83/blpapi__error_8h_1a2ee23e0acf8dbf6151b808ebd7b42462">BLPAPI_ERROR_DS_PROPERTY_NOT_FOUND</link> (BLPAPI_NOTFOUND_CLASS | 20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="da/d83/blpapi__error_8h_1a836eb04d882b004843c2731878616298">blpapi_getLastErrorDescription</link> (
+int resultCode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_error.h</para>
+    </simplesect>
+</section>

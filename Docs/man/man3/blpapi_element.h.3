@@ -1,0 +1,294 @@
+.TH "raleigh-triangle-index/include/blpapi_element.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_element.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_call\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <blpapi_schema\&.h>\fP
+.br
+\fC#include <blpapi_datetime\&.h>\fP
+.br
+\fC#include <blpapi_name\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_streamproxy\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_Element_name\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_Element_nameString\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_SchemaElementDefinition_t\fP * \fBblpapi_Element_definition\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_datatype\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_isComplexType\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_isArray\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_isReadOnly\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP size_t \fBblpapi_Element_numValues\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP size_t \fBblpapi_Element_numElements\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_isNullValue\fP (const \fBblpapi_Element_t\fP *element, size_t position)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_isNull\fP (const \fBblpapi_Element_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_print\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_StreamWriter_t\fP streamWriter, void *stream, int level, int spacesPerLevel)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getElementAt\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Element_t\fP **result, size_t position)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getElement\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Element_t\fP **result, const char *nameString, const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_hasElement\fP (const \fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_hasElementEx\fP (const \fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, int excludeNullElements, int reserved)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsBool\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Bool_t\fP *buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsChar\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Char_t\fP *buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsInt32\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Int32_t\fP *buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsInt64\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Int64_t\fP *buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsFloat32\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Float32_t\fP *buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsFloat64\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Float64_t\fP *buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsString\fP (const \fBblpapi_Element_t\fP *element, const char **buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsDatetime\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Datetime_t\fP *buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsHighPrecisionDatetime\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_HighPrecisionDatetime_t\fP *buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsElement\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Element_t\fP **buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getValueAsName\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Name_t\fP **buffer, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_getChoice\fP (const \fBblpapi_Element_t\fP *element, \fBblpapi_Element_t\fP **result)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueBool\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Bool_t\fP value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueChar\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Char_t\fP value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueInt32\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Int32_t\fP value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueInt64\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Int64_t\fP value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueFloat32\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Float32_t\fP value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueFloat64\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Float64_t\fP value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueString\fP (\fBblpapi_Element_t\fP *element, const char *value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueDatetime\fP (\fBblpapi_Element_t\fP *element, const \fBblpapi_Datetime_t\fP *value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueHighPrecisionDatetime\fP (\fBblpapi_Element_t\fP *element, const \fBblpapi_HighPrecisionDatetime_t\fP *value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueFromElement\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Element_t\fP *value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setValueFromName\fP (\fBblpapi_Element_t\fP *element, const \fBblpapi_Name_t\fP *value, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementBool\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, \fBblpapi_Bool_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementChar\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, \fBblpapi_Char_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementInt32\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, \fBblpapi_Int32_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementInt64\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, \fBblpapi_Int64_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementFloat32\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, \fBblpapi_Float32_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementFloat64\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, \fBblpapi_Float64_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementString\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, const char *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementDatetime\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, const \fBblpapi_Datetime_t\fP *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementHighPrecisionDatetime\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, const \fBblpapi_HighPrecisionDatetime_t\fP *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementFromField\fP (\fBblpapi_Element_t\fP *element, const char *nameString, const \fBblpapi_Name_t\fP *name, \fBblpapi_Element_t\fP *sourcebuffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setElementFromName\fP (\fBblpapi_Element_t\fP *element, const char *elementName, const \fBblpapi_Name_t\fP *name, const \fBblpapi_Name_t\fP *buffer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_appendElement\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Element_t\fP **appendedElement)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Element_setChoice\fP (\fBblpapi_Element_t\fP *element, \fBblpapi_Element_t\fP **resultElement, const char *nameCstr, const \fBblpapi_Name_t\fP *name, size_t index)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_appendElement (\fBblpapi_Element_t\fP * element, \fBblpapi_Element_t\fP ** appendedElement)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_datatype (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_SchemaElementDefinition_t\fP* blpapi_Element_definition (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getChoice (const \fBblpapi_Element_t\fP * element, \fBblpapi_Element_t\fP ** result)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getElement (const \fBblpapi_Element_t\fP * element, \fBblpapi_Element_t\fP ** result, const char * nameString, const \fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getElementAt (const \fBblpapi_Element_t\fP * element, \fBblpapi_Element_t\fP ** result, size_t position)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsBool (const \fBblpapi_Element_t\fP * element, \fBblpapi_Bool_t\fP * buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsChar (const \fBblpapi_Element_t\fP * element, \fBblpapi_Char_t\fP * buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsDatetime (const \fBblpapi_Element_t\fP * element, \fBblpapi_Datetime_t\fP * buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsElement (const \fBblpapi_Element_t\fP * element, \fBblpapi_Element_t\fP ** buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsFloat32 (const \fBblpapi_Element_t\fP * element, \fBblpapi_Float32_t\fP * buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsFloat64 (const \fBblpapi_Element_t\fP * element, \fBblpapi_Float64_t\fP * buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsHighPrecisionDatetime (const \fBblpapi_Element_t\fP * element, \fBblpapi_HighPrecisionDatetime_t\fP * buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsInt32 (const \fBblpapi_Element_t\fP * element, \fBblpapi_Int32_t\fP * buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsInt64 (const \fBblpapi_Element_t\fP * element, \fBblpapi_Int64_t\fP * buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsName (const \fBblpapi_Element_t\fP * element, \fBblpapi_Name_t\fP ** buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_getValueAsString (const \fBblpapi_Element_t\fP * element, const char ** buffer, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_hasElement (const \fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_hasElementEx (const \fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, int excludeNullElements, int reserved)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_isArray (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_isComplexType (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_isNull (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_isNullValue (const \fBblpapi_Element_t\fP * element, size_t position)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_isReadOnly (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_Element_name (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_Element_nameString (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP size_t blpapi_Element_numElements (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP size_t blpapi_Element_numValues (const \fBblpapi_Element_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_print (const \fBblpapi_Element_t\fP * element, \fBblpapi_StreamWriter_t\fP streamWriter, void * stream, int level, int spacesPerLevel)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setChoice (\fBblpapi_Element_t\fP * element, \fBblpapi_Element_t\fP ** resultElement, const char * nameCstr, const \fBblpapi_Name_t\fP * name, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementBool (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, \fBblpapi_Bool_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementChar (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, \fBblpapi_Char_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementDatetime (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, const \fBblpapi_Datetime_t\fP * value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementFloat32 (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, \fBblpapi_Float32_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementFloat64 (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, \fBblpapi_Float64_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementFromField (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, \fBblpapi_Element_t\fP * sourcebuffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementFromName (\fBblpapi_Element_t\fP * element, const char * elementName, const \fBblpapi_Name_t\fP * name, const \fBblpapi_Name_t\fP * buffer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementHighPrecisionDatetime (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, const \fBblpapi_HighPrecisionDatetime_t\fP * value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementInt32 (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, \fBblpapi_Int32_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementInt64 (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, \fBblpapi_Int64_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setElementString (\fBblpapi_Element_t\fP * element, const char * nameString, const \fBblpapi_Name_t\fP * name, const char * value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueBool (\fBblpapi_Element_t\fP * element, \fBblpapi_Bool_t\fP value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueChar (\fBblpapi_Element_t\fP * element, \fBblpapi_Char_t\fP value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueDatetime (\fBblpapi_Element_t\fP * element, const \fBblpapi_Datetime_t\fP * value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueFloat32 (\fBblpapi_Element_t\fP * element, \fBblpapi_Float32_t\fP value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueFloat64 (\fBblpapi_Element_t\fP * element, \fBblpapi_Float64_t\fP value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueFromElement (\fBblpapi_Element_t\fP * element, \fBblpapi_Element_t\fP * value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueFromName (\fBblpapi_Element_t\fP * element, const \fBblpapi_Name_t\fP * value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueHighPrecisionDatetime (\fBblpapi_Element_t\fP * element, const \fBblpapi_HighPrecisionDatetime_t\fP * value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueInt32 (\fBblpapi_Element_t\fP * element, \fBblpapi_Int32_t\fP value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueInt64 (\fBblpapi_Element_t\fP * element, \fBblpapi_Int64_t\fP value, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Element_setValueString (\fBblpapi_Element_t\fP * element, const char * value, size_t index)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d99/blpapi__versionmacros_8h">
+    <title>blpapi_versionmacros.h File Reference</title>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d99/blpapi__versionmacros_8h_1a22e5f4faeb554543fe968fe3728dedb2">BLPAPI_VERSION_MAJOR</link> 3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d99/blpapi__versionmacros_8h_1a129d18c38154f73a78b7917068d2a4b0">BLPAPI_VERSION_MINOR</link> 8</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d99/blpapi__versionmacros_8h_1aba07cc06abca6a1c5b743c04db678f90">BLPAPI_VERSION_PATCH</link> 18</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d99/blpapi__versionmacros_8h_1afd9a3880d22300191973cfeb92f6f60b">BLPAPI_VERSION_BUILD</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d99/blpapi__versionmacros_8h_1a7d0167b54b4f7757ab533929c2d83461">BLPAPI_MAKE_VERSION</link> ((MAJOR) * 65536 + \
+                                                  (MINOR) * 256 + \
+                                                  (PATCH))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d99/blpapi__versionmacros_8h_1aa7163a55e198536a6b3810a1db87ed41">BLPAPI_SDK_VERSION</link> BLPAPI_MAKE_VERSION(BLPAPI_VERSION_MAJOR, \
+                                               BLPAPI_VERSION_MINOR, \
+                                               BLPAPI_VERSION_PATCH)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_versionmacros.h</para>
+    </simplesect>
+</section>

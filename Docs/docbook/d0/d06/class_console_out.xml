@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d06/class_console_out">
+<title>ConsoleOut class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ostringstream d_buffer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Mutex * d_consoleLock</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ostream &amp; d_stream</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d06/class_console_out_1a6ac10665c3475e75e5081afd3748e04d">ConsoleOut</link> (
+const <link linkend="d0/d06/class_console_out">ConsoleOut</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d0/d06/class_console_out">ConsoleOut</link> &amp; <link linkend="d0/d06/class_console_out_1aed1e952e7bcfb4b8afcfdd22c30d5dc5">operator=</link> (
+const <link linkend="d0/d06/class_console_out">ConsoleOut</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d06/class_console_out_1adeb3aa189b0df86bcaaecd2a072b39c2">ConsoleOut</link> (
+<link linkend="d5/def/class_bloomberg_l_p_1_1_mutex">Mutex</link> * consoleLock, std::ostream &amp; stream)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d06/class_console_out_1a10a88206c0ac514a4c847fc3f357d732">~ConsoleOut</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ostream &amp; <link linkend="d0/d06/class_console_out_1aa4ac063dd36d8b73a745e822e6eb7f13">operator&lt;&lt;</link> (
+const T &amp; value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ostream &amp; <link linkend="d0/d06/class_console_out_1ad151a7152784c5d476c459fce84d6ee9">stream</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/d06/class_console_out_1a6ac10665c3475e75e5081afd3748e04d">
+                <title>ConsoleOut::ConsoleOut (const ConsoleOut &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d06/class_console_out_1aed1e952e7bcfb4b8afcfdd22c30d5dc5">
+                <title>ConsoleOut&amp; ConsoleOut::operator= (const ConsoleOut &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d06/class_console_out_1adeb3aa189b0df86bcaaecd2a072b39c2">
+                <title>ConsoleOut::ConsoleOut (Mutex *consoleLock, std::ostream &amp;stream=std::cout)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d06/class_console_out_1a10a88206c0ac514a4c847fc3f357d732">
+                <title>ConsoleOut::~ConsoleOut ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d06/class_console_out_1aa4ac063dd36d8b73a745e822e6eb7f13">
+                <title>std::ostream&amp; ConsoleOut::operator&lt;&lt; (const T &amp;value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d06/class_console_out_1ad151a7152784c5d476c459fce84d6ee9">
+                <title>std::ostream&amp; ConsoleOut::stream ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

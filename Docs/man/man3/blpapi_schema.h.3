@@ -1,0 +1,190 @@
+.TH "raleigh-triangle-index/include/blpapi_schema.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_schema.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_constant\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_exception\&.h>\fP
+.br
+\fC#include <blpapi_name\&.h>\fP
+.br
+\fC#include <blpapi_streamproxy\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef void * \fBblpapi_SchemaElementDefinition_t\fP"
+.br
+.ti -1c
+.RI "typedef void * \fBblpapi_SchemaTypeDefinition_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_SchemaElementDefinition_name\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_SchemaElementDefinition_description\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaElementDefinition_status\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_SchemaTypeDefinition_t\fP * \fBblpapi_SchemaElementDefinition_type\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP size_t \fBblpapi_SchemaElementDefinition_numAlternateNames\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_SchemaElementDefinition_getAlternateName\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP size_t \fBblpapi_SchemaElementDefinition_minValues\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP size_t \fBblpapi_SchemaElementDefinition_maxValues\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaElementDefinition_print\fP (const \fBblpapi_SchemaElementDefinition_t\fP *element, \fBblpapi_StreamWriter_t\fP streamWriter, void *userStream, int level, int spacesPerLevel)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SchemaElementDefinition_setUserData\fP (\fBblpapi_SchemaElementDefinition_t\fP *field, void *userdata)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void * \fBblpapi_SchemaElementDefinition_userData\fP (const \fBblpapi_SchemaElementDefinition_t\fP *field)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP * \fBblpapi_SchemaTypeDefinition_name\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP const char * \fBblpapi_SchemaTypeDefinition_description\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_status\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_datatype\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_isComplexType\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_isSimpleType\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_isEnumerationType\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_isComplex\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_isSimple\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_isEnumeration\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP size_t \fBblpapi_SchemaTypeDefinition_numElementDefinitions\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_SchemaElementDefinition_t\fP * \fBblpapi_SchemaTypeDefinition_getElementDefinition\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type, const char *nameString, const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_SchemaElementDefinition_t\fP * \fBblpapi_SchemaTypeDefinition_getElementDefinitionAt\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *type, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SchemaTypeDefinition_print\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *element, \fBblpapi_StreamWriter_t\fP streamWriter, void *userStream, int level, int spacesPerLevel)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SchemaTypeDefinition_setUserData\fP (\fBblpapi_SchemaTypeDefinition_t\fP *element, void *userdata)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void * \fBblpapi_SchemaTypeDefinition_userData\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *element)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_ConstantList_t\fP * \fBblpapi_SchemaTypeDefinition_enumeration\fP (const \fBblpapi_SchemaTypeDefinition_t\fP *element)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef void* \fBblpapi_SchemaElementDefinition_t\fP"
+
+.PP
+Definition at line 63 of file blpapi_schema\&.h\&.
+.SS "typedef void* \fBblpapi_SchemaTypeDefinition_t\fP"
+
+.PP
+Definition at line 64 of file blpapi_schema\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_SchemaElementDefinition_description (const \fBblpapi_SchemaElementDefinition_t\fP * field)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_SchemaElementDefinition_getAlternateName (const \fBblpapi_SchemaElementDefinition_t\fP * field, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP size_t blpapi_SchemaElementDefinition_maxValues (const \fBblpapi_SchemaElementDefinition_t\fP * field)"
+
+.SS "\fBBLPAPI_EXPORT\fP size_t blpapi_SchemaElementDefinition_minValues (const \fBblpapi_SchemaElementDefinition_t\fP * field)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_SchemaElementDefinition_name (const \fBblpapi_SchemaElementDefinition_t\fP * field)"
+
+.SS "\fBBLPAPI_EXPORT\fP size_t blpapi_SchemaElementDefinition_numAlternateNames (const \fBblpapi_SchemaElementDefinition_t\fP * field)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaElementDefinition_print (const \fBblpapi_SchemaElementDefinition_t\fP * element, \fBblpapi_StreamWriter_t\fP streamWriter, void * userStream, int level, int spacesPerLevel)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SchemaElementDefinition_setUserData (\fBblpapi_SchemaElementDefinition_t\fP * field, void * userdata)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaElementDefinition_status (const \fBblpapi_SchemaElementDefinition_t\fP * field)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_SchemaTypeDefinition_t\fP* blpapi_SchemaElementDefinition_type (const \fBblpapi_SchemaElementDefinition_t\fP * field)"
+
+.SS "\fBBLPAPI_EXPORT\fP void* blpapi_SchemaElementDefinition_userData (const \fBblpapi_SchemaElementDefinition_t\fP * field)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_datatype (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP const char* blpapi_SchemaTypeDefinition_description (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_ConstantList_t\fP* blpapi_SchemaTypeDefinition_enumeration (const \fBblpapi_SchemaTypeDefinition_t\fP * element)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_SchemaElementDefinition_t\fP* blpapi_SchemaTypeDefinition_getElementDefinition (const \fBblpapi_SchemaTypeDefinition_t\fP * type, const char * nameString, const \fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_SchemaElementDefinition_t\fP* blpapi_SchemaTypeDefinition_getElementDefinitionAt (const \fBblpapi_SchemaTypeDefinition_t\fP * type, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_isComplex (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_isComplexType (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_isEnumeration (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_isEnumerationType (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_isSimple (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_isSimpleType (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Name_t\fP* blpapi_SchemaTypeDefinition_name (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP size_t blpapi_SchemaTypeDefinition_numElementDefinitions (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_print (const \fBblpapi_SchemaTypeDefinition_t\fP * element, \fBblpapi_StreamWriter_t\fP streamWriter, void * userStream, int level, int spacesPerLevel)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SchemaTypeDefinition_setUserData (\fBblpapi_SchemaTypeDefinition_t\fP * element, void * userdata)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SchemaTypeDefinition_status (const \fBblpapi_SchemaTypeDefinition_t\fP * type)"
+
+.SS "\fBBLPAPI_EXPORT\fP void* blpapi_SchemaTypeDefinition_userData (const \fBblpapi_SchemaTypeDefinition_t\fP * element)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

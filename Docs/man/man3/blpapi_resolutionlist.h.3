@@ -1,0 +1,125 @@
+.TH "raleigh-triangle-index/include/blpapi_resolutionlist.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_resolutionlist.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_element\&.h>\fP
+.br
+\fC#include <blpapi_name\&.h>\fP
+.br
+\fC#include <blpapi_message\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct blpapi_ResolutionList \fBblpapi_ResolutionList_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Element_t\fP * \fBblpapi_ResolutionList_extractAttributeFromResolutionSuccess\fP (const \fBblpapi_Message_t\fP *message, const \fBblpapi_Name_t\fP *attribute)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_ResolutionList_t\fP * \fBblpapi_ResolutionList_create\fP (\fBblpapi_ResolutionList_t\fP *from)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_ResolutionList_destroy\fP (\fBblpapi_ResolutionList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_add\fP (\fBblpapi_ResolutionList_t\fP *list, const char *topic, const \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_addFromMessage\fP (\fBblpapi_ResolutionList_t\fP *list, const \fBblpapi_Message_t\fP *topic, const \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_addAttribute\fP (\fBblpapi_ResolutionList_t\fP *list, const \fBblpapi_Name_t\fP *name)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_correlationIdAt\fP (const \fBblpapi_ResolutionList_t\fP *list, \fBblpapi_CorrelationId_t\fP *result, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_topicString\fP (const \fBblpapi_ResolutionList_t\fP *list, const char **topic, const \fBblpapi_CorrelationId_t\fP *id)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_topicStringAt\fP (const \fBblpapi_ResolutionList_t\fP *list, const char **topic, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_status\fP (const \fBblpapi_ResolutionList_t\fP *list, int *status, const \fBblpapi_CorrelationId_t\fP *id)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_statusAt\fP (const \fBblpapi_ResolutionList_t\fP *list, int *status, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_attribute\fP (const \fBblpapi_ResolutionList_t\fP *list, \fBblpapi_Element_t\fP **element, const \fBblpapi_Name_t\fP *attribute, const \fBblpapi_CorrelationId_t\fP *id)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_attributeAt\fP (const \fBblpapi_ResolutionList_t\fP *list, \fBblpapi_Element_t\fP **element, const \fBblpapi_Name_t\fP *attribute, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_message\fP (const \fBblpapi_ResolutionList_t\fP *list, \fBblpapi_Message_t\fP **element, const \fBblpapi_CorrelationId_t\fP *id)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_messageAt\fP (const \fBblpapi_ResolutionList_t\fP *list, \fBblpapi_Message_t\fP **element, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ResolutionList_size\fP (const \fBblpapi_ResolutionList_t\fP *list)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct blpapi_ResolutionList \fBblpapi_ResolutionList_t\fP"
+
+.PP
+Definition at line 61 of file blpapi_resolutionlist\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_add (\fBblpapi_ResolutionList_t\fP * list, const char * topic, const \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_addAttribute (\fBblpapi_ResolutionList_t\fP * list, const \fBblpapi_Name_t\fP * name)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_addFromMessage (\fBblpapi_ResolutionList_t\fP * list, const \fBblpapi_Message_t\fP * topic, const \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_attribute (const \fBblpapi_ResolutionList_t\fP * list, \fBblpapi_Element_t\fP ** element, const \fBblpapi_Name_t\fP * attribute, const \fBblpapi_CorrelationId_t\fP * id)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_attributeAt (const \fBblpapi_ResolutionList_t\fP * list, \fBblpapi_Element_t\fP ** element, const \fBblpapi_Name_t\fP * attribute, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_correlationIdAt (const \fBblpapi_ResolutionList_t\fP * list, \fBblpapi_CorrelationId_t\fP * result, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_ResolutionList_t\fP* blpapi_ResolutionList_create (\fBblpapi_ResolutionList_t\fP * from)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_ResolutionList_destroy (\fBblpapi_ResolutionList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Element_t\fP* blpapi_ResolutionList_extractAttributeFromResolutionSuccess (const \fBblpapi_Message_t\fP * message, const \fBblpapi_Name_t\fP * attribute)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_message (const \fBblpapi_ResolutionList_t\fP * list, \fBblpapi_Message_t\fP ** element, const \fBblpapi_CorrelationId_t\fP * id)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_messageAt (const \fBblpapi_ResolutionList_t\fP * list, \fBblpapi_Message_t\fP ** element, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_size (const \fBblpapi_ResolutionList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_status (const \fBblpapi_ResolutionList_t\fP * list, int * status, const \fBblpapi_CorrelationId_t\fP * id)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_statusAt (const \fBblpapi_ResolutionList_t\fP * list, int * status, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_topicString (const \fBblpapi_ResolutionList_t\fP * list, const char ** topic, const \fBblpapi_CorrelationId_t\fP * id)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ResolutionList_topicStringAt (const \fBblpapi_ResolutionList_t\fP * list, const char ** topic, size_t index)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

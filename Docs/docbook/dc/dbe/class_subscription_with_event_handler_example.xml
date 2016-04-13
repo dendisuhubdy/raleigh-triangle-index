@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dbe/class_subscription_with_event_handler_example">
+<title>SubscriptionWithEventHandlerExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string d_service</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SessionOptions d_sessionOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Session * d_session</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SubscriptionEventHandler * d_eventHandler</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_topics</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_options</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SessionContext d_context</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/dbe/class_subscription_with_event_handler_example_1a7df87da233fd4c02a19842b97defc75a">createSession</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/dbe/class_subscription_with_event_handler_example_1a6978185df591f845e2cee9dbf57ac581">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dbe/class_subscription_with_event_handler_example_1afd91b0f7850f85368e7d84297b0df7c1">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dbe/class_subscription_with_event_handler_example_1a1fffdee38837773040ab391bba37b212">SubscriptionWithEventHandlerExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dbe/class_subscription_with_event_handler_example_1a294062af8612f59f88fc070797ca87dc">~SubscriptionWithEventHandlerExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/dbe/class_subscription_with_event_handler_example_1a4ad0728f9c4e635299021685c751510e">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/dbe/class_subscription_with_event_handler_example_1a7df87da233fd4c02a19842b97defc75a">
+                <title>bool SubscriptionWithEventHandlerExample::createSession ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dbe/class_subscription_with_event_handler_example_1a6978185df591f845e2cee9dbf57ac581">
+                <title>bool SubscriptionWithEventHandlerExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dbe/class_subscription_with_event_handler_example_1afd91b0f7850f85368e7d84297b0df7c1">
+                <title>void SubscriptionWithEventHandlerExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dbe/class_subscription_with_event_handler_example_1a1fffdee38837773040ab391bba37b212">
+                <title>SubscriptionWithEventHandlerExample::SubscriptionWithEventHandlerExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dbe/class_subscription_with_event_handler_example_1a294062af8612f59f88fc070797ca87dc">
+                <title>SubscriptionWithEventHandlerExample::~SubscriptionWithEventHandlerExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/dbe/class_subscription_with_event_handler_example_1a4ad0728f9c4e635299021685c751510e">
+                <title>void SubscriptionWithEventHandlerExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

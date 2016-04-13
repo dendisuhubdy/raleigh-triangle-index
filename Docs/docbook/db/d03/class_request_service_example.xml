@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d03/class_request_service_example">
+<title>RequestServiceExample class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="db/d03/class_request_service_example_1a8b994943a96f90a3b271bc636ea7d23e">Role</link> {
+<link linkend="db/d03/class_request_service_example_1a8b994943a96f90a3b271bc636ea7d23ea8cf305c33d65f4d6c8d94eb0554ddfe9">SERVER</link>,
+<link linkend="db/d03/class_request_service_example_1a8b994943a96f90a3b271bc636ea7d23ea9eb9ec75eaae5db1545c2191a7071bff">CLIENT</link>,
+<link linkend="db/d03/class_request_service_example_1a8b994943a96f90a3b271bc636ea7d23ea3bd0658d92a1d5bc799015e0a04be5d0">BOTH</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_hosts</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_service</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_authOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Role d_role</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d03/class_request_service_example_1a9a08ffb22cafbdcc505a865e318ff000">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="db/d03/class_request_service_example_1a5878783fbbbe7513341df8c023a998fe">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d03/class_request_service_example_1a7d46463ec27eb531e5959a9e20b7c3a5">RequestServiceExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="db/d03/class_request_service_example_1ab3321b04782e405059622ef54bf6b5c7">authorize</link> (
+const Service &amp; authService, Identity * providerIdentity, AbstractSession * session, const CorrelationId &amp; cid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d03/class_request_service_example_1a1d73dcbadba2511f22eb33eadf7fd63c">serverRun</link> (
+ProviderSession * providerSession)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d03/class_request_service_example_1a65ed1a66052721ba7d426ae523c518ab">clientRun</link> (
+Session * requesterSession)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d03/class_request_service_example_1ad1591ad6c3b5c25d533c59ac09bcc5fb">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="db/d03/class_request_service_example_1a8b994943a96f90a3b271bc636ea7d23e">
+               <title>enum Role </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="db/d03/class_request_service_example_1a8b994943a96f90a3b271bc636ea7d23ea8cf305c33d65f4d6c8d94eb0554ddfe9">
+                            <term>SERVER</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="db/d03/class_request_service_example_1a8b994943a96f90a3b271bc636ea7d23ea9eb9ec75eaae5db1545c2191a7071bff">
+                            <term>CLIENT</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="db/d03/class_request_service_example_1a8b994943a96f90a3b271bc636ea7d23ea3bd0658d92a1d5bc799015e0a04be5d0">
+                            <term>BOTH</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 231 of file RequestServiceExample.cpp
+                    <computeroutput><literallayout>
+{
+SERVER, 
+CLIENT, 
+BOTH, 
+}Role;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/d03/class_request_service_example_1a9a08ffb22cafbdcc505a865e318ff000">
+                <title>void RequestServiceExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d03/class_request_service_example_1a5878783fbbbe7513341df8c023a998fe">
+                <title>bool RequestServiceExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d03/class_request_service_example_1a7d46463ec27eb531e5959a9e20b7c3a5">
+                <title>RequestServiceExample::RequestServiceExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d03/class_request_service_example_1ab3321b04782e405059622ef54bf6b5c7">
+                <title>bool RequestServiceExample::authorize (const Service &amp;authService, Identity *providerIdentity, AbstractSession *session, const CorrelationId &amp;cid)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d03/class_request_service_example_1a1d73dcbadba2511f22eb33eadf7fd63c">
+                <title>void RequestServiceExample::serverRun (ProviderSession *providerSession)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d03/class_request_service_example_1a65ed1a66052721ba7d426ae523c518ab">
+                <title>void RequestServiceExample::clientRun (Session *requesterSession)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d03/class_request_service_example_1ad1591ad6c3b5c25d533c59ac09bcc5fb">
+                <title>void RequestServiceExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

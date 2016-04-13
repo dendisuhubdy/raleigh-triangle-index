@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d8c/input_8cpp">
+    <title>input.cpp File Reference</title>
+    <programlisting>#include &quot;stdafx.h&quot;</programlisting>
+    <programlisting>#include &quot;input.h&quot;</programlisting>
+        <simplesect>
+            <title> Namespaces </title>
+        </simplesect>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d8c/input_8cpp_1a7983f7ccb62938da955d039ac1acc1b6">loggingCallback</link> (
+blpapi_UInt64_t threadId, int severity, <link linkend="de/d14/structblpapi___datetime__tag">blpapi_Datetime_t</link> timestamp, const char * category, const char * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/input.cpp</para>
+    </simplesect>
+</section>

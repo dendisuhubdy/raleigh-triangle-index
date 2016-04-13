@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/def/class_bloomberg_l_p_1_1_mutex">
+<title>BloombergLP::Mutex class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>pthread_mutex_t d_lock</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex_1a1eb37db38101219cbda158ce5d386d34">Mutex</link> (
+const <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex">Mutex</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d5/def/class_bloomberg_l_p_1_1_mutex">Mutex</link> &amp; <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex_1aa049d7d433882fc441d38fdd2bcc9649">operator=</link> (
+const <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex">Mutex</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex_1abc248206346dee9ba8898a532bbd6d97">Mutex</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex_1a15648715242362063b63243e3f9574ba">~Mutex</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex_1a7c1417e9eac9f69e93c9ed44b6329c03">lock</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/def/class_bloomberg_l_p_1_1_mutex_1a4db729dc654f8fc20158db191b5c8dd7">unlock</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/def/class_bloomberg_l_p_1_1_mutex_1a1eb37db38101219cbda158ce5d386d34">
+                <title>BloombergLP::Mutex::Mutex (const Mutex &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/def/class_bloomberg_l_p_1_1_mutex_1aa049d7d433882fc441d38fdd2bcc9649">
+                <title>Mutex&amp; BloombergLP::Mutex::operator= (const Mutex &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/def/class_bloomberg_l_p_1_1_mutex_1abc248206346dee9ba8898a532bbd6d97">
+                <title>BloombergLP::Mutex::Mutex ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/def/class_bloomberg_l_p_1_1_mutex_1a15648715242362063b63243e3f9574ba">
+                <title>BloombergLP::Mutex::~Mutex ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/def/class_bloomberg_l_p_1_1_mutex_1a7c1417e9eac9f69e93c9ed44b6329c03">
+                <title>void BloombergLP::Mutex::lock ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/def/class_bloomberg_l_p_1_1_mutex_1a4db729dc654f8fc20158db191b5c8dd7">
+                <title>void BloombergLP::Mutex::unlock ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

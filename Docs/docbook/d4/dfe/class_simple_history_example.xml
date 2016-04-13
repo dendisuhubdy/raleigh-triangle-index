@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dfe/class_simple_history_example">
+<title>SimpleHistoryExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dfe/class_simple_history_example_1a72153c6c22dc096c3a08546f91d5ba63">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/dfe/class_simple_history_example_1a0e73f115ecb7240ebc81e1d3c4403bed">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dfe/class_simple_history_example_1a35f4d8df6e0a73d723c6bcb1d780215e">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/dfe/class_simple_history_example_1a72153c6c22dc096c3a08546f91d5ba63">
+                <title>void SimpleHistoryExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dfe/class_simple_history_example_1a0e73f115ecb7240ebc81e1d3c4403bed">
+                <title>bool SimpleHistoryExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dfe/class_simple_history_example_1a35f4d8df6e0a73d723c6bcb1d780215e">
+                <title>void SimpleHistoryExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

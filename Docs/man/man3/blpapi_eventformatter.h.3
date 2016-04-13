@@ -1,0 +1,173 @@
+.TH "raleigh-triangle-index/include/blpapi_eventformatter.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_eventformatter.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_call\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_event\&.h>\fP
+.br
+\fC#include <blpapi_topic\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_EventFormatter_t\fP * \fBblpapi_EventFormatter_create\fP (\fBblpapi_Event_t\fP *event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_EventFormatter_destroy\fP (\fBblpapi_EventFormatter_t\fP *victim)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendMessage\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, \fBblpapi_Name_t\fP *typeName, const \fBblpapi_Topic_t\fP *topic)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendMessageSeq\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, \fBblpapi_Name_t\fP *typeName, const \fBblpapi_Topic_t\fP *topic, unsigned int sequenceNumber, unsigned int)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendResponse\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, \fBblpapi_Name_t\fP *typeName)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendRecapMessage\fP (\fBblpapi_EventFormatter_t\fP *formatter, const \fBblpapi_Topic_t\fP *topic, const \fBblpapi_CorrelationId_t\fP *cid)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendRecapMessageSeq\fP (\fBblpapi_EventFormatter_t\fP *formatter, const \fBblpapi_Topic_t\fP *topic, const \fBblpapi_CorrelationId_t\fP *cid, unsigned int sequenceNumber, unsigned int)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueBool\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, \fBblpapi_Bool_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueChar\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, char value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueInt32\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, \fBblpapi_Int32_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueInt64\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, \fBblpapi_Int64_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueFloat32\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, \fBblpapi_Float32_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueFloat64\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, \fBblpapi_Float64_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueDatetime\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, const \fBblpapi_Datetime_t\fP *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueString\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, const char *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueFromName\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName, const \fBblpapi_Name_t\fP *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_setValueNull\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_pushElement\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *typeString, const \fBblpapi_Name_t\fP *typeName)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_popElement\fP (\fBblpapi_EventFormatter_t\fP *formatter)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueBool\fP (\fBblpapi_EventFormatter_t\fP *formatter, \fBblpapi_Bool_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueChar\fP (\fBblpapi_EventFormatter_t\fP *formatter, char value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueInt32\fP (\fBblpapi_EventFormatter_t\fP *formatter, \fBblpapi_Int32_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueInt64\fP (\fBblpapi_EventFormatter_t\fP *formatter, \fBblpapi_Int64_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueFloat32\fP (\fBblpapi_EventFormatter_t\fP *formatter, \fBblpapi_Float32_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueFloat64\fP (\fBblpapi_EventFormatter_t\fP *formatter, \fBblpapi_Float64_t\fP value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueDatetime\fP (\fBblpapi_EventFormatter_t\fP *formatter, const \fBblpapi_Datetime_t\fP *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueString\fP (\fBblpapi_EventFormatter_t\fP *formatter, const char *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendValueFromName\fP (\fBblpapi_EventFormatter_t\fP *formatter, const \fBblpapi_Name_t\fP *value)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_EventFormatter_appendElement\fP (\fBblpapi_EventFormatter_t\fP *formatter)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendElement (\fBblpapi_EventFormatter_t\fP * formatter)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendMessage (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, \fBblpapi_Name_t\fP * typeName, const \fBblpapi_Topic_t\fP * topic)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendMessageSeq (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, \fBblpapi_Name_t\fP * typeName, const \fBblpapi_Topic_t\fP * topic, unsigned int sequenceNumber, unsigned int)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendRecapMessage (\fBblpapi_EventFormatter_t\fP * formatter, const \fBblpapi_Topic_t\fP * topic, const \fBblpapi_CorrelationId_t\fP * cid)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendRecapMessageSeq (\fBblpapi_EventFormatter_t\fP * formatter, const \fBblpapi_Topic_t\fP * topic, const \fBblpapi_CorrelationId_t\fP * cid, unsigned int sequenceNumber, unsigned int)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendResponse (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, \fBblpapi_Name_t\fP * typeName)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueBool (\fBblpapi_EventFormatter_t\fP * formatter, \fBblpapi_Bool_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueChar (\fBblpapi_EventFormatter_t\fP * formatter, char value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueDatetime (\fBblpapi_EventFormatter_t\fP * formatter, const \fBblpapi_Datetime_t\fP * value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueFloat32 (\fBblpapi_EventFormatter_t\fP * formatter, \fBblpapi_Float32_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueFloat64 (\fBblpapi_EventFormatter_t\fP * formatter, \fBblpapi_Float64_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueFromName (\fBblpapi_EventFormatter_t\fP * formatter, const \fBblpapi_Name_t\fP * value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueInt32 (\fBblpapi_EventFormatter_t\fP * formatter, \fBblpapi_Int32_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueInt64 (\fBblpapi_EventFormatter_t\fP * formatter, \fBblpapi_Int64_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_appendValueString (\fBblpapi_EventFormatter_t\fP * formatter, const char * value)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_EventFormatter_t\fP* blpapi_EventFormatter_create (\fBblpapi_Event_t\fP * event)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_EventFormatter_destroy (\fBblpapi_EventFormatter_t\fP * victim)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_popElement (\fBblpapi_EventFormatter_t\fP * formatter)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_pushElement (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueBool (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, \fBblpapi_Bool_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueChar (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, char value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueDatetime (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, const \fBblpapi_Datetime_t\fP * value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueFloat32 (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, \fBblpapi_Float32_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueFloat64 (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, \fBblpapi_Float64_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueFromName (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, const \fBblpapi_Name_t\fP * value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueInt32 (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, \fBblpapi_Int32_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueInt64 (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, \fBblpapi_Int64_t\fP value)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueNull (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_EventFormatter_setValueString (\fBblpapi_EventFormatter_t\fP * formatter, const char * typeString, const \fBblpapi_Name_t\fP * typeName, const char * value)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

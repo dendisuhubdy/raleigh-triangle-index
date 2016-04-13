@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/dba/blpapi__identity_8h">
+    <title>blpapi_identity.h File Reference</title>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_exception.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_service.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d8/dba/blpapi__identity_8h_1a8e993c3fcddbc9719ed39829c32cda2b">blpapi_Identity_release</link> (
+blpapi_Identity_t * handle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/dba/blpapi__identity_8h_1ab59b45e5c69272d8919abbb573167f86">blpapi_Identity_addRef</link> (
+blpapi_Identity_t * handle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/dba/blpapi__identity_8h_1a309894e98ec26a9e7d659311e2b7a79b">blpapi_Identity_hasEntitlements</link> (
+const blpapi_Identity_t * handle, const blpapi_Service_t * service, const blpapi_Element_t * eidElement, const int * entitlementIds, size_t numEntitlements, int * failedEntitlements, int * failedEntitlementsCount)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/dba/blpapi__identity_8h_1a618c8bb396307e65261c69c112bea8b9">blpapi_Identity_isAuthorized</link> (
+const blpapi_Identity_t * handle, const blpapi_Service_t * service)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d8/dba/blpapi__identity_8h_1a5e1bc0ec653e17f132836bfe2ea7c5dc">blpapi_Identity_getSeatType</link> (
+const blpapi_Identity_t * handle, int * seatType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_identity.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/df6/class_intraday_bar_example">
+<title>IntradayBarExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_security</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_eventType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_barInterval</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool d_gapFillInitialBar</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_startDateTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_endDateTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/df6/class_intraday_bar_example_1a09501d94d2a66add98fa01fbeae7b31a">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/df6/class_intraday_bar_example_1a20d4c746cb321e71a29011a56e0e363e">printErrorInfo</link> (
+const char * leadingStr, const Element &amp; errorInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d0/df6/class_intraday_bar_example_1abea1dc66e68cf486b29a4c65e3ab6e77">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/df6/class_intraday_bar_example_1af69925e442b9a8ff639a57e3bb62284a">processMessage</link> (
+Message &amp; msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/df6/class_intraday_bar_example_1a44186956bf4a8e19aeec5b12799e90fa">processResponseEvent</link> (
+Event &amp; event, Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/df6/class_intraday_bar_example_1a23425f3aa23740619fe9d0ed88b37c11">sendIntradayBarRequest</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/df6/class_intraday_bar_example_1aca2d2625901a62b435161f6b4fb1a28b">eventLoop</link> (
+Session &amp; session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d0/df6/class_intraday_bar_example_1a59be451d32b308b13c8ec284911779d1">getTradingDateRange</link> (
+Datetime * startDate_p, Datetime * endDate_p)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/df6/class_intraday_bar_example_1a8870a91669e599a94bbf8ff5e4522013">IntradayBarExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/df6/class_intraday_bar_example_1a9fd795686ff04f3d1eeadb098383f642">~IntradayBarExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/df6/class_intraday_bar_example_1ab7242eaa7aac9a2745b4516c5019ed97">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1a09501d94d2a66add98fa01fbeae7b31a">
+                <title>void IntradayBarExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1a20d4c746cb321e71a29011a56e0e363e">
+                <title>void IntradayBarExample::printErrorInfo (const char *leadingStr, const Element &amp;errorInfo)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1abea1dc66e68cf486b29a4c65e3ab6e77">
+                <title>bool IntradayBarExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1af69925e442b9a8ff639a57e3bb62284a">
+                <title>void IntradayBarExample::processMessage (Message &amp;msg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1a44186956bf4a8e19aeec5b12799e90fa">
+                <title>void IntradayBarExample::processResponseEvent (Event &amp;event, Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1a23425f3aa23740619fe9d0ed88b37c11">
+                <title>void IntradayBarExample::sendIntradayBarRequest (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1aca2d2625901a62b435161f6b4fb1a28b">
+                <title>void IntradayBarExample::eventLoop (Session &amp;session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1a59be451d32b308b13c8ec284911779d1">
+                <title>int IntradayBarExample::getTradingDateRange (Datetime *startDate_p, Datetime *endDate_p)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1a8870a91669e599a94bbf8ff5e4522013">
+                <title>IntradayBarExample::IntradayBarExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1a9fd795686ff04f3d1eeadb098383f642">
+                <title>IntradayBarExample::~IntradayBarExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/df6/class_intraday_bar_example_1ab7242eaa7aac9a2745b4516c5019ed97">
+                <title>void IntradayBarExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,238 @@
+\hypertarget{blpapi__service_8h}{}\section{raleigh-\/triangle-\/index/include/blpapi\+\_\+service.h File Reference}
+\label{blpapi__service_8h}\index{raleigh-\/triangle-\/index/include/blpapi\+\_\+service.\+h@{raleigh-\/triangle-\/index/include/blpapi\+\_\+service.\+h}}
+{\ttfamily \#include $<$blpapi\+\_\+defs.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+types.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+schema.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+request.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+correlationid.\+h$>$}\\*
+{\ttfamily \#include $<$blpapi\+\_\+streamproxy.\+h$>$}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__service_8h_aa46cb196a4723ecb8a99efab5302f4bb}{blpapi\+\_\+\+Operation\+\_\+name} (\hyperlink{blpapi__types_8h_a37231adac31d57137633022173b82e61}{blpapi\+\_\+\+Operation\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__service_8h_a7cd38083a54c29385872c3f96e338ba9}{blpapi\+\_\+\+Operation\+\_\+description} (\hyperlink{blpapi__types_8h_a37231adac31d57137633022173b82e61}{blpapi\+\_\+\+Operation\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a6f4831d29cef485f0d5e0be5c0f1255d}{blpapi\+\_\+\+Operation\+\_\+request\+Definition} (\hyperlink{blpapi__types_8h_a37231adac31d57137633022173b82e61}{blpapi\+\_\+\+Operation\+\_\+t} $\ast$service, \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$$\ast$request\+Definition)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a3ec354109bcc4dd8826b3ed3c2510caa}{blpapi\+\_\+\+Operation\+\_\+num\+Response\+Definitions} (\hyperlink{blpapi__types_8h_a37231adac31d57137633022173b82e61}{blpapi\+\_\+\+Operation\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a02b50805a8095eb6ee0358b100f5df9a}{blpapi\+\_\+\+Operation\+\_\+response\+Definition} (\hyperlink{blpapi__types_8h_a37231adac31d57137633022173b82e61}{blpapi\+\_\+\+Operation\+\_\+t} $\ast$service, \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$$\ast$response\+Definition, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__service_8h_a4fdbaed3d90e1de34519694deeb0085a}{blpapi\+\_\+\+Service\+\_\+name} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__service_8h_a18b49aa9ae518c5736811e82bf713482}{blpapi\+\_\+\+Service\+\_\+description} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_ac4677b5232beac2f0471ec008f43a4b5}{blpapi\+\_\+\+Service\+\_\+num\+Operations} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a9f84ae3201aaf8700eb03997f64e288b}{blpapi\+\_\+\+Service\+\_\+num\+Event\+Definitions} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_ae564dfb3d6d126ac8ecc7f8dd8119438}{blpapi\+\_\+\+Service\+\_\+add\+Ref} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void \hyperlink{blpapi__service_8h_aa7ef4da4c2f734453ec06449438197ba}{blpapi\+\_\+\+Service\+\_\+release} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{blpapi__service_8h_a7bcb1596339a3f44b0d2d4da8f39036f}{blpapi\+\_\+\+Service\+\_\+authorization\+Service\+Name} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a603f83fb9d6a41d4a9d8f039db141c6d}{blpapi\+\_\+\+Service\+\_\+get\+Operation} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__types_8h_a37231adac31d57137633022173b82e61}{blpapi\+\_\+\+Operation\+\_\+t} $\ast$$\ast$operation, const char $\ast$name\+String, const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a2fe5f4c06f81fed4c54851d79abea63f}{blpapi\+\_\+\+Service\+\_\+get\+Operation\+At} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__types_8h_a37231adac31d57137633022173b82e61}{blpapi\+\_\+\+Operation\+\_\+t} $\ast$$\ast$operation, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a59e1af9048c28e5bbc838517053a5990}{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$$\ast$result, const char $\ast$name\+String, const \hyperlink{blpapi__types_8h_a7284c243e151a47e396cfefb1168347f}{blpapi\+\_\+\+Name\+\_\+t} $\ast$name)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a7f97e8759dcbd64598aa1516460f59b0}{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition\+At} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__schema_8h_a5b459ec650a5fa600e769dec7e695164}{blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$$\ast$result, size\+\_\+t index)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a5ae9e7a9a74f0226aef2c60c073d12a2}{blpapi\+\_\+\+Service\+\_\+create\+Request} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__request_8h_ac57a51635403fb6a46d0edd375735ef4}{blpapi\+\_\+\+Request\+\_\+t} $\ast$$\ast$request, const char $\ast$operation)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a7587a07600eb696ea542a41ee294b052}{blpapi\+\_\+\+Service\+\_\+create\+Authorization\+Request} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__request_8h_ac57a51635403fb6a46d0edd375735ef4}{blpapi\+\_\+\+Request\+\_\+t} $\ast$$\ast$request, const char $\ast$operation)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a7c792603ba026ee923e89ada2878be66}{blpapi\+\_\+\+Service\+\_\+create\+Publish\+Event} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__types_8h_a30bfd6b43ae20d0c8b1baf6f700450c6}{blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$event)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a3c94d04681a10876dde5daa5f9b6e884}{blpapi\+\_\+\+Service\+\_\+create\+Admin\+Event} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__types_8h_a30bfd6b43ae20d0c8b1baf6f700450c6}{blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$event)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_a6896eaf3824d272f674a2a32a3f6b5b4}{blpapi\+\_\+\+Service\+\_\+create\+Response\+Event} (\hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, const \hyperlink{blpapi__correlationid_8h_a85756ad39e154c9380d184bc3151fcaa}{blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$correlation\+Id, \hyperlink{blpapi__types_8h_a30bfd6b43ae20d0c8b1baf6f700450c6}{blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$event)
+\item 
+\hyperlink{blpapi__defs_8h_ab1eb8803dbc875b6b02e341daf8772ec}{B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{blpapi__service_8h_aa8cc7d04a69085c864fa2fc8c78f47ac}{blpapi\+\_\+\+Service\+\_\+print} (const \hyperlink{blpapi__types_8h_a042e6011945369dd408169b541888113}{blpapi\+\_\+\+Service\+\_\+t} $\ast$service, \hyperlink{blpapi__streamproxy_8h_a41f11193f44e5d7b5f5f5238ceba9cfa}{blpapi\+\_\+\+Stream\+Writer\+\_\+t} stream\+Writer, void $\ast$stream, int level, int spaces\+Per\+Level)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Operation\+\_\+description@{blpapi\+\_\+\+Operation\+\_\+description}}
+\index{blpapi\+\_\+\+Operation\+\_\+description@{blpapi\+\_\+\+Operation\+\_\+description}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Operation\+\_\+description(blpapi\+\_\+\+Operation\+\_\+t $\ast$service)}{blpapi_Operation_description(blpapi_Operation_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Operation\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Operation\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a7cd38083a54c29385872c3f96e338ba9}{}\label{blpapi__service_8h_a7cd38083a54c29385872c3f96e338ba9}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Operation\+\_\+name@{blpapi\+\_\+\+Operation\+\_\+name}}
+\index{blpapi\+\_\+\+Operation\+\_\+name@{blpapi\+\_\+\+Operation\+\_\+name}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Operation\+\_\+name(blpapi\+\_\+\+Operation\+\_\+t $\ast$service)}{blpapi_Operation_name(blpapi_Operation_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Operation\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Operation\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_aa46cb196a4723ecb8a99efab5302f4bb}{}\label{blpapi__service_8h_aa46cb196a4723ecb8a99efab5302f4bb}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Operation\+\_\+num\+Response\+Definitions@{blpapi\+\_\+\+Operation\+\_\+num\+Response\+Definitions}}
+\index{blpapi\+\_\+\+Operation\+\_\+num\+Response\+Definitions@{blpapi\+\_\+\+Operation\+\_\+num\+Response\+Definitions}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Operation\+\_\+num\+Response\+Definitions(blpapi\+\_\+\+Operation\+\_\+t $\ast$service)}{blpapi_Operation_numResponseDefinitions(blpapi_Operation_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Operation\+\_\+num\+Response\+Definitions (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Operation\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a3ec354109bcc4dd8826b3ed3c2510caa}{}\label{blpapi__service_8h_a3ec354109bcc4dd8826b3ed3c2510caa}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Operation\+\_\+request\+Definition@{blpapi\+\_\+\+Operation\+\_\+request\+Definition}}
+\index{blpapi\+\_\+\+Operation\+\_\+request\+Definition@{blpapi\+\_\+\+Operation\+\_\+request\+Definition}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Operation\+\_\+request\+Definition(blpapi\+\_\+\+Operation\+\_\+t $\ast$service, blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$$\ast$request\+Definition)}{blpapi_Operation_requestDefinition(blpapi_Operation_t *service, blpapi_SchemaElementDefinition_t **requestDefinition)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Operation\+\_\+request\+Definition (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Operation\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$$\ast$}]{request\+Definition}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a6f4831d29cef485f0d5e0be5c0f1255d}{}\label{blpapi__service_8h_a6f4831d29cef485f0d5e0be5c0f1255d}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Operation\+\_\+response\+Definition@{blpapi\+\_\+\+Operation\+\_\+response\+Definition}}
+\index{blpapi\+\_\+\+Operation\+\_\+response\+Definition@{blpapi\+\_\+\+Operation\+\_\+response\+Definition}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Operation\+\_\+response\+Definition(blpapi\+\_\+\+Operation\+\_\+t $\ast$service, blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$$\ast$response\+Definition, size\+\_\+t index)}{blpapi_Operation_responseDefinition(blpapi_Operation_t *service, blpapi_SchemaElementDefinition_t **responseDefinition, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Operation\+\_\+response\+Definition (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Operation\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$$\ast$}]{response\+Definition, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a02b50805a8095eb6ee0358b100f5df9a}{}\label{blpapi__service_8h_a02b50805a8095eb6ee0358b100f5df9a}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+add\+Ref@{blpapi\+\_\+\+Service\+\_\+add\+Ref}}
+\index{blpapi\+\_\+\+Service\+\_\+add\+Ref@{blpapi\+\_\+\+Service\+\_\+add\+Ref}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+add\+Ref(blpapi\+\_\+\+Service\+\_\+t $\ast$service)}{blpapi_Service_addRef(blpapi_Service_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+add\+Ref (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_ae564dfb3d6d126ac8ecc7f8dd8119438}{}\label{blpapi__service_8h_ae564dfb3d6d126ac8ecc7f8dd8119438}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+authorization\+Service\+Name@{blpapi\+\_\+\+Service\+\_\+authorization\+Service\+Name}}
+\index{blpapi\+\_\+\+Service\+\_\+authorization\+Service\+Name@{blpapi\+\_\+\+Service\+\_\+authorization\+Service\+Name}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+authorization\+Service\+Name(blpapi\+\_\+\+Service\+\_\+t $\ast$service)}{blpapi_Service_authorizationServiceName(blpapi_Service_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Service\+\_\+authorization\+Service\+Name (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a7bcb1596339a3f44b0d2d4da8f39036f}{}\label{blpapi__service_8h_a7bcb1596339a3f44b0d2d4da8f39036f}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+create\+Admin\+Event@{blpapi\+\_\+\+Service\+\_\+create\+Admin\+Event}}
+\index{blpapi\+\_\+\+Service\+\_\+create\+Admin\+Event@{blpapi\+\_\+\+Service\+\_\+create\+Admin\+Event}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+create\+Admin\+Event(blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Event\+\_\+t $\ast$$\ast$event)}{blpapi_Service_createAdminEvent(blpapi_Service_t *service, blpapi_Event_t **event)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+create\+Admin\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a3c94d04681a10876dde5daa5f9b6e884}{}\label{blpapi__service_8h_a3c94d04681a10876dde5daa5f9b6e884}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+create\+Authorization\+Request@{blpapi\+\_\+\+Service\+\_\+create\+Authorization\+Request}}
+\index{blpapi\+\_\+\+Service\+\_\+create\+Authorization\+Request@{blpapi\+\_\+\+Service\+\_\+create\+Authorization\+Request}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+create\+Authorization\+Request(blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Request\+\_\+t $\ast$$\ast$request, const char $\ast$operation)}{blpapi_Service_createAuthorizationRequest(blpapi_Service_t *service, blpapi_Request_t **request, const char *operation)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+create\+Authorization\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Request\+\_\+t} $\ast$$\ast$}]{request, }
+\item[{const char $\ast$}]{operation}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a7587a07600eb696ea542a41ee294b052}{}\label{blpapi__service_8h_a7587a07600eb696ea542a41ee294b052}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+create\+Publish\+Event@{blpapi\+\_\+\+Service\+\_\+create\+Publish\+Event}}
+\index{blpapi\+\_\+\+Service\+\_\+create\+Publish\+Event@{blpapi\+\_\+\+Service\+\_\+create\+Publish\+Event}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+create\+Publish\+Event(blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Event\+\_\+t $\ast$$\ast$event)}{blpapi_Service_createPublishEvent(blpapi_Service_t *service, blpapi_Event_t **event)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+create\+Publish\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a7c792603ba026ee923e89ada2878be66}{}\label{blpapi__service_8h_a7c792603ba026ee923e89ada2878be66}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+create\+Request@{blpapi\+\_\+\+Service\+\_\+create\+Request}}
+\index{blpapi\+\_\+\+Service\+\_\+create\+Request@{blpapi\+\_\+\+Service\+\_\+create\+Request}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+create\+Request(blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Request\+\_\+t $\ast$$\ast$request, const char $\ast$operation)}{blpapi_Service_createRequest(blpapi_Service_t *service, blpapi_Request_t **request, const char *operation)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+create\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Request\+\_\+t} $\ast$$\ast$}]{request, }
+\item[{const char $\ast$}]{operation}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a5ae9e7a9a74f0226aef2c60c073d12a2}{}\label{blpapi__service_8h_a5ae9e7a9a74f0226aef2c60c073d12a2}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+create\+Response\+Event@{blpapi\+\_\+\+Service\+\_\+create\+Response\+Event}}
+\index{blpapi\+\_\+\+Service\+\_\+create\+Response\+Event@{blpapi\+\_\+\+Service\+\_\+create\+Response\+Event}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+create\+Response\+Event(blpapi\+\_\+\+Service\+\_\+t $\ast$service, const blpapi\+\_\+\+Correlation\+Id\+\_\+t $\ast$correlation\+Id, blpapi\+\_\+\+Event\+\_\+t $\ast$$\ast$event)}{blpapi_Service_createResponseEvent(blpapi_Service_t *service, const blpapi_CorrelationId_t *correlationId, blpapi_Event_t **event)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+create\+Response\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{const {\bf blpapi\+\_\+\+Correlation\+Id\+\_\+t} $\ast$}]{correlation\+Id, }
+\item[{{\bf blpapi\+\_\+\+Event\+\_\+t} $\ast$$\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a6896eaf3824d272f674a2a32a3f6b5b4}{}\label{blpapi__service_8h_a6896eaf3824d272f674a2a32a3f6b5b4}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+description@{blpapi\+\_\+\+Service\+\_\+description}}
+\index{blpapi\+\_\+\+Service\+\_\+description@{blpapi\+\_\+\+Service\+\_\+description}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+description(blpapi\+\_\+\+Service\+\_\+t $\ast$service)}{blpapi_Service_description(blpapi_Service_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Service\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a18b49aa9ae518c5736811e82bf713482}{}\label{blpapi__service_8h_a18b49aa9ae518c5736811e82bf713482}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition@{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition}}
+\index{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition@{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition(blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$$\ast$result, const char $\ast$name\+String, const blpapi\+\_\+\+Name\+\_\+t $\ast$name)}{blpapi_Service_getEventDefinition(blpapi_Service_t *service, blpapi_SchemaElementDefinition_t **result, const char *nameString, const blpapi_Name_t *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$$\ast$}]{result, }
+\item[{const char $\ast$}]{name\+String, }
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a59e1af9048c28e5bbc838517053a5990}{}\label{blpapi__service_8h_a59e1af9048c28e5bbc838517053a5990}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition\+At@{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition\+At}}
+\index{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition\+At@{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition\+At}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition\+At(blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t $\ast$$\ast$result, size\+\_\+t index)}{blpapi_Service_getEventDefinitionAt(blpapi_Service_t *service, blpapi_SchemaElementDefinition_t **result, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+get\+Event\+Definition\+At (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Schema\+Element\+Definition\+\_\+t} $\ast$$\ast$}]{result, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a7f97e8759dcbd64598aa1516460f59b0}{}\label{blpapi__service_8h_a7f97e8759dcbd64598aa1516460f59b0}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+get\+Operation@{blpapi\+\_\+\+Service\+\_\+get\+Operation}}
+\index{blpapi\+\_\+\+Service\+\_\+get\+Operation@{blpapi\+\_\+\+Service\+\_\+get\+Operation}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+get\+Operation(blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Operation\+\_\+t $\ast$$\ast$operation, const char $\ast$name\+String, const blpapi\+\_\+\+Name\+\_\+t $\ast$name)}{blpapi_Service_getOperation(blpapi_Service_t *service, blpapi_Operation_t **operation, const char *nameString, const blpapi_Name_t *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+get\+Operation (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Operation\+\_\+t} $\ast$$\ast$}]{operation, }
+\item[{const char $\ast$}]{name\+String, }
+\item[{const {\bf blpapi\+\_\+\+Name\+\_\+t} $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a603f83fb9d6a41d4a9d8f039db141c6d}{}\label{blpapi__service_8h_a603f83fb9d6a41d4a9d8f039db141c6d}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+get\+Operation\+At@{blpapi\+\_\+\+Service\+\_\+get\+Operation\+At}}
+\index{blpapi\+\_\+\+Service\+\_\+get\+Operation\+At@{blpapi\+\_\+\+Service\+\_\+get\+Operation\+At}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+get\+Operation\+At(blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Operation\+\_\+t $\ast$$\ast$operation, size\+\_\+t index)}{blpapi_Service_getOperationAt(blpapi_Service_t *service, blpapi_Operation_t **operation, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+get\+Operation\+At (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Operation\+\_\+t} $\ast$$\ast$}]{operation, }
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a2fe5f4c06f81fed4c54851d79abea63f}{}\label{blpapi__service_8h_a2fe5f4c06f81fed4c54851d79abea63f}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+name@{blpapi\+\_\+\+Service\+\_\+name}}
+\index{blpapi\+\_\+\+Service\+\_\+name@{blpapi\+\_\+\+Service\+\_\+name}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+name(blpapi\+\_\+\+Service\+\_\+t $\ast$service)}{blpapi_Service_name(blpapi_Service_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} const char$\ast$ blpapi\+\_\+\+Service\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a4fdbaed3d90e1de34519694deeb0085a}{}\label{blpapi__service_8h_a4fdbaed3d90e1de34519694deeb0085a}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+num\+Event\+Definitions@{blpapi\+\_\+\+Service\+\_\+num\+Event\+Definitions}}
+\index{blpapi\+\_\+\+Service\+\_\+num\+Event\+Definitions@{blpapi\+\_\+\+Service\+\_\+num\+Event\+Definitions}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+num\+Event\+Definitions(blpapi\+\_\+\+Service\+\_\+t $\ast$service)}{blpapi_Service_numEventDefinitions(blpapi_Service_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+num\+Event\+Definitions (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_a9f84ae3201aaf8700eb03997f64e288b}{}\label{blpapi__service_8h_a9f84ae3201aaf8700eb03997f64e288b}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+num\+Operations@{blpapi\+\_\+\+Service\+\_\+num\+Operations}}
+\index{blpapi\+\_\+\+Service\+\_\+num\+Operations@{blpapi\+\_\+\+Service\+\_\+num\+Operations}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+num\+Operations(blpapi\+\_\+\+Service\+\_\+t $\ast$service)}{blpapi_Service_numOperations(blpapi_Service_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+num\+Operations (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_ac4677b5232beac2f0471ec008f43a4b5}{}\label{blpapi__service_8h_ac4677b5232beac2f0471ec008f43a4b5}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+print@{blpapi\+\_\+\+Service\+\_\+print}}
+\index{blpapi\+\_\+\+Service\+\_\+print@{blpapi\+\_\+\+Service\+\_\+print}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+print(const blpapi\+\_\+\+Service\+\_\+t $\ast$service, blpapi\+\_\+\+Stream\+Writer\+\_\+t stream\+Writer, void $\ast$stream, int level, int spaces\+Per\+Level)}{blpapi_Service_print(const blpapi_Service_t *service, blpapi_StreamWriter_t streamWriter, void *stream, int level, int spacesPerLevel)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} int blpapi\+\_\+\+Service\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{const {\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service, }
+\item[{{\bf blpapi\+\_\+\+Stream\+Writer\+\_\+t}}]{stream\+Writer, }
+\item[{void $\ast$}]{stream, }
+\item[{int}]{level, }
+\item[{int}]{spaces\+Per\+Level}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_aa8cc7d04a69085c864fa2fc8c78f47ac}{}\label{blpapi__service_8h_aa8cc7d04a69085c864fa2fc8c78f47ac}
+\index{blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}!blpapi\+\_\+\+Service\+\_\+release@{blpapi\+\_\+\+Service\+\_\+release}}
+\index{blpapi\+\_\+\+Service\+\_\+release@{blpapi\+\_\+\+Service\+\_\+release}!blpapi\+\_\+service.\+h@{blpapi\+\_\+service.\+h}}
+\subsubsection[{\texorpdfstring{blpapi\+\_\+\+Service\+\_\+release(blpapi\+\_\+\+Service\+\_\+t $\ast$service)}{blpapi_Service_release(blpapi_Service_t *service)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+P\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT} void blpapi\+\_\+\+Service\+\_\+release (
+\begin{DoxyParamCaption}
+\item[{{\bf blpapi\+\_\+\+Service\+\_\+t} $\ast$}]{service}
+\end{DoxyParamCaption}
+)}\hypertarget{blpapi__service_8h_aa7ef4da4c2f734453ec06449438197ba}{}\label{blpapi__service_8h_aa7ef4da4c2f734453ec06449438197ba}

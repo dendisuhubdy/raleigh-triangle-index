@@ -1,0 +1,105 @@
+.TH "raleigh-triangle-index/include/blpapi_topiclist.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_topiclist.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_element\&.h>\fP
+.br
+\fC#include <blpapi_name\&.h>\fP
+.br
+\fC#include <blpapi_message\&.h>\fP
+.br
+\fC#include <blpapi_resolutionlist\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct blpapi_TopicList \fBblpapi_TopicList_t\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_TopicList_t\fP * \fBblpapi_TopicList_create\fP (\fBblpapi_TopicList_t\fP *from)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_TopicList_destroy\fP (\fBblpapi_TopicList_t\fP *list)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_add\fP (\fBblpapi_TopicList_t\fP *list, const char *topic, const \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_addFromMessage\fP (\fBblpapi_TopicList_t\fP *list, const \fBblpapi_Message_t\fP *topic, const \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_correlationIdAt\fP (const \fBblpapi_TopicList_t\fP *list, \fBblpapi_CorrelationId_t\fP *result, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_topicString\fP (const \fBblpapi_TopicList_t\fP *list, const char **topic, const \fBblpapi_CorrelationId_t\fP *id)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_topicStringAt\fP (const \fBblpapi_TopicList_t\fP *list, const char **topic, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_status\fP (const \fBblpapi_TopicList_t\fP *list, int *status, const \fBblpapi_CorrelationId_t\fP *id)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_statusAt\fP (const \fBblpapi_TopicList_t\fP *list, int *status, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_message\fP (const \fBblpapi_TopicList_t\fP *list, \fBblpapi_Message_t\fP **element, const \fBblpapi_CorrelationId_t\fP *id)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_messageAt\fP (const \fBblpapi_TopicList_t\fP *list, \fBblpapi_Message_t\fP **element, size_t index)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_TopicList_size\fP (const \fBblpapi_TopicList_t\fP *list)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct blpapi_TopicList \fBblpapi_TopicList_t\fP"
+
+.PP
+Definition at line 61 of file blpapi_topiclist\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_add (\fBblpapi_TopicList_t\fP * list, const char * topic, const \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_addFromMessage (\fBblpapi_TopicList_t\fP * list, const \fBblpapi_Message_t\fP * topic, const \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_correlationIdAt (const \fBblpapi_TopicList_t\fP * list, \fBblpapi_CorrelationId_t\fP * result, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_TopicList_t\fP* blpapi_TopicList_create (\fBblpapi_TopicList_t\fP * from)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_TopicList_destroy (\fBblpapi_TopicList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_message (const \fBblpapi_TopicList_t\fP * list, \fBblpapi_Message_t\fP ** element, const \fBblpapi_CorrelationId_t\fP * id)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_messageAt (const \fBblpapi_TopicList_t\fP * list, \fBblpapi_Message_t\fP ** element, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_size (const \fBblpapi_TopicList_t\fP * list)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_status (const \fBblpapi_TopicList_t\fP * list, int * status, const \fBblpapi_CorrelationId_t\fP * id)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_statusAt (const \fBblpapi_TopicList_t\fP * list, int * status, size_t index)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_topicString (const \fBblpapi_TopicList_t\fP * list, const char ** topic, const \fBblpapi_CorrelationId_t\fP * id)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_TopicList_topicStringAt (const \fBblpapi_TopicList_t\fP * list, const char ** topic, size_t index)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

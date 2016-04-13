@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/db1/class_contributions_mktdata_example">
+<title>ContributionsMktdataExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_hosts</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_service</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_topic</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_authOptions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/db1/class_contributions_mktdata_example_1a464202b1e57a547b3057bebb4779d5df">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/db1/class_contributions_mktdata_example_1a9e7e71324c224d6b5456ecd55e69c47c">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/db1/class_contributions_mktdata_example_1a3e11dcebbfa979f2364a649749dc8dd5">ContributionsMktdataExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/db1/class_contributions_mktdata_example_1a65a88ec3eefd1a5e872764c3c48c5bd4">authorize</link> (
+const Service &amp; authService, Identity * providerIdentity, ProviderSession * session, const CorrelationId &amp; cid)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/db1/class_contributions_mktdata_example_1a29a49618b7a011afeb674c978011240b">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/db1/class_contributions_mktdata_example_1a464202b1e57a547b3057bebb4779d5df">
+                <title>void ContributionsMktdataExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/db1/class_contributions_mktdata_example_1a9e7e71324c224d6b5456ecd55e69c47c">
+                <title>bool ContributionsMktdataExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/db1/class_contributions_mktdata_example_1a3e11dcebbfa979f2364a649749dc8dd5">
+                <title>ContributionsMktdataExample::ContributionsMktdataExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/db1/class_contributions_mktdata_example_1a65a88ec3eefd1a5e872764c3c48c5bd4">
+                <title>bool ContributionsMktdataExample::authorize (const Service &amp;authService, Identity *providerIdentity, ProviderSession *session, const CorrelationId &amp;cid)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/db1/class_contributions_mktdata_example_1a29a49618b7a011afeb674c978011240b">
+                <title>void ContributionsMktdataExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

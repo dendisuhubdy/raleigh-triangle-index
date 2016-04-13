@@ -1,0 +1,190 @@
+.TH "raleigh-triangle-index/include/blpapi_session.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_session.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_abstractsession\&.h>\fP
+.br
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_event\&.h>\fP
+.br
+\fC#include <blpapi_eventdispatcher\&.h>\fP
+.br
+\fC#include <blpapi_identity\&.h>\fP
+.br
+\fC#include <blpapi_request\&.h>\fP
+.br
+\fC#include <blpapi_service\&.h>\fP
+.br
+\fC#include <blpapi_sessionoptions\&.h>\fP
+.br
+\fC#include <blpapi_subscriptionlist\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef void(* \fBblpapi_EventHandler_t\fP) (\fBblpapi_Event_t\fP *event, \fBblpapi_Session_t\fP *session, void *userData)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Session_t\fP * \fBblpapi_Session_create\fP (\fBblpapi_SessionOptions_t\fP *parameters, \fBblpapi_EventHandler_t\fP handler, \fBblpapi_EventDispatcher_t\fP *dispatcher, void *userData)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_Session_destroy\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_start\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_startAsync\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_stop\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_stopAsync\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_nextEvent\fP (\fBblpapi_Session_t\fP *session, \fBblpapi_Event_t\fP **eventPointer, unsigned int timeoutInMilliseconds)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_tryNextEvent\fP (\fBblpapi_Session_t\fP *session, \fBblpapi_Event_t\fP **eventPointer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_subscribe\fP (\fBblpapi_Session_t\fP *session, const \fBblpapi_SubscriptionList_t\fP *subscriptionList, const \fBblpapi_Identity_t\fP *handle, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_resubscribe\fP (\fBblpapi_Session_t\fP *session, const \fBblpapi_SubscriptionList_t\fP *resubscriptionList, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_resubscribeWithId\fP (\fBblpapi_Session_t\fP *session, const \fBblpapi_SubscriptionList_t\fP *resubscriptionList, int resubscriptionId, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_unsubscribe\fP (\fBblpapi_Session_t\fP *session, const \fBblpapi_SubscriptionList_t\fP *unsubscriptionList, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_cancel\fP (\fBblpapi_Session_t\fP *session, const \fBblpapi_CorrelationId_t\fP *correlationIds, size_t numCorrelationIds, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_setStatusCorrelationId\fP (\fBblpapi_Session_t\fP *session, const \fBblpapi_Service_t\fP *service, const \fBblpapi_Identity_t\fP *identity, const \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_sendRequest\fP (\fBblpapi_Session_t\fP *session, const \fBblpapi_Request_t\fP *request, \fBblpapi_CorrelationId_t\fP *correlationId, \fBblpapi_Identity_t\fP *identity, \fBblpapi_EventQueue_t\fP *eventQueue, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_sendAuthorizationRequest\fP (\fBblpapi_Session_t\fP *session, const \fBblpapi_Request_t\fP *request, \fBblpapi_Identity_t\fP *identity, \fBblpapi_CorrelationId_t\fP *correlationId, \fBblpapi_EventQueue_t\fP *eventQueue, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_openService\fP (\fBblpapi_Session_t\fP *session, const char *serviceName)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_openServiceAsync\fP (\fBblpapi_Session_t\fP *session, const char *serviceName, \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_generateToken\fP (\fBblpapi_Session_t\fP *session, \fBblpapi_CorrelationId_t\fP *correlationId, \fBblpapi_EventQueue_t\fP *eventQueue)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_Session_getService\fP (\fBblpapi_Session_t\fP *session, \fBblpapi_Service_t\fP **service, const char *serviceName)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_UserHandle_t\fP * \fBblpapi_Session_createUserHandle\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Identity_t\fP * \fBblpapi_Session_createIdentity\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_AbstractSession_t\fP * \fBblpapi_Session_getAbstractSession\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_SubscriptionIterator_t\fP * \fBblpapi_SubscriptionItr_create\fP (\fBblpapi_Session_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_SubscriptionItr_destroy\fP (\fBblpapi_SubscriptionIterator_t\fP *iterator)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionItr_next\fP (\fBblpapi_SubscriptionIterator_t\fP *iterator, const char **subscriptionString, \fBblpapi_CorrelationId_t\fP *correlationId, int *status)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_SubscriptionItr_isValid\fP (const \fBblpapi_SubscriptionIterator_t\fP *iterator)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef void(* blpapi_EventHandler_t) (\fBblpapi_Event_t\fP *event, \fBblpapi_Session_t\fP *session, void *userData)"
+
+.PP
+Definition at line 82 of file blpapi_session\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_cancel (\fBblpapi_Session_t\fP * session, const \fBblpapi_CorrelationId_t\fP * correlationIds, size_t numCorrelationIds, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Session_t\fP* blpapi_Session_create (\fBblpapi_SessionOptions_t\fP * parameters, \fBblpapi_EventHandler_t\fP handler, \fBblpapi_EventDispatcher_t\fP * dispatcher, void * userData)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Identity_t\fP* blpapi_Session_createIdentity (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_UserHandle_t\fP* blpapi_Session_createUserHandle (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_Session_destroy (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_generateToken (\fBblpapi_Session_t\fP * session, \fBblpapi_CorrelationId_t\fP * correlationId, \fBblpapi_EventQueue_t\fP * eventQueue)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_AbstractSession_t\fP* blpapi_Session_getAbstractSession (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_getService (\fBblpapi_Session_t\fP * session, \fBblpapi_Service_t\fP ** service, const char * serviceName)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_nextEvent (\fBblpapi_Session_t\fP * session, \fBblpapi_Event_t\fP ** eventPointer, unsigned int timeoutInMilliseconds)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_openService (\fBblpapi_Session_t\fP * session, const char * serviceName)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_openServiceAsync (\fBblpapi_Session_t\fP * session, const char * serviceName, \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_resubscribe (\fBblpapi_Session_t\fP * session, const \fBblpapi_SubscriptionList_t\fP * resubscriptionList, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_resubscribeWithId (\fBblpapi_Session_t\fP * session, const \fBblpapi_SubscriptionList_t\fP * resubscriptionList, int resubscriptionId, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_sendAuthorizationRequest (\fBblpapi_Session_t\fP * session, const \fBblpapi_Request_t\fP * request, \fBblpapi_Identity_t\fP * identity, \fBblpapi_CorrelationId_t\fP * correlationId, \fBblpapi_EventQueue_t\fP * eventQueue, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_sendRequest (\fBblpapi_Session_t\fP * session, const \fBblpapi_Request_t\fP * request, \fBblpapi_CorrelationId_t\fP * correlationId, \fBblpapi_Identity_t\fP * identity, \fBblpapi_EventQueue_t\fP * eventQueue, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_setStatusCorrelationId (\fBblpapi_Session_t\fP * session, const \fBblpapi_Service_t\fP * service, const \fBblpapi_Identity_t\fP * identity, const \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_start (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_startAsync (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_stop (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_stopAsync (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_subscribe (\fBblpapi_Session_t\fP * session, const \fBblpapi_SubscriptionList_t\fP * subscriptionList, const \fBblpapi_Identity_t\fP * handle, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_tryNextEvent (\fBblpapi_Session_t\fP * session, \fBblpapi_Event_t\fP ** eventPointer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_Session_unsubscribe (\fBblpapi_Session_t\fP * session, const \fBblpapi_SubscriptionList_t\fP * unsubscriptionList, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_SubscriptionIterator_t\fP* blpapi_SubscriptionItr_create (\fBblpapi_Session_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_SubscriptionItr_destroy (\fBblpapi_SubscriptionIterator_t\fP * iterator)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionItr_isValid (const \fBblpapi_SubscriptionIterator_t\fP * iterator)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_SubscriptionItr_next (\fBblpapi_SubscriptionIterator_t\fP * iterator, const char ** subscriptionString, \fBblpapi_CorrelationId_t\fP * correlationId, int * status)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

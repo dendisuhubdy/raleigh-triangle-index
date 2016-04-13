@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d2c/blpapi__resolutionlist_8h">
+    <title>blpapi_resolutionlist.h File Reference</title>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_correlationid.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_element.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_name.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_message.h&gt;</programlisting>
+    <programlisting>#include &lt;stddef.h&gt;</programlisting>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct blpapi_ResolutionList  <link linkend="d9/d2c/blpapi__resolutionlist_8h_1a8e9bf4b674ee6461c82d75108ee66a08">blpapi_ResolutionList_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Element_t * <link linkend="d9/d2c/blpapi__resolutionlist_8h_1a261b03fa6c95d1179c63773880d82088">blpapi_ResolutionList_extractAttributeFromResolutionSuccess</link> (
+const blpapi_Message_t * message, const blpapi_Name_t * attribute)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_ResolutionList_t * <link linkend="d9/d2c/blpapi__resolutionlist_8h_1a2e78bae135f806a88804b8568c5a7511">blpapi_ResolutionList_create</link> (
+blpapi_ResolutionList_t * from)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="d9/d2c/blpapi__resolutionlist_8h_1a62c61029c7cfd0a0e7488127bc815a4a">blpapi_ResolutionList_destroy</link> (
+blpapi_ResolutionList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1ad0de88dc712cd6f509652f9ba39bc62c">blpapi_ResolutionList_add</link> (
+blpapi_ResolutionList_t * list, const char * topic, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1afd9d97adb18a550c0cf631fe4cbb418b">blpapi_ResolutionList_addFromMessage</link> (
+blpapi_ResolutionList_t * list, const blpapi_Message_t * topic, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * correlationId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1a6ff1554e6abbb1eb58f391858eb543a6">blpapi_ResolutionList_addAttribute</link> (
+blpapi_ResolutionList_t * list, const blpapi_Name_t * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1aa5fa26ee51a078102c76e7446172796a">blpapi_ResolutionList_correlationIdAt</link> (
+const blpapi_ResolutionList_t * list, <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * result, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1ae416722d971042a5682320c28d2b05fd">blpapi_ResolutionList_topicString</link> (
+const blpapi_ResolutionList_t * list, const char ** topic, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1ab63bb4d44f6fb7a29d48f7ddb5565c76">blpapi_ResolutionList_topicStringAt</link> (
+const blpapi_ResolutionList_t * list, const char ** topic, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1a7842666d772e152c35863a74012c5b40">blpapi_ResolutionList_status</link> (
+const blpapi_ResolutionList_t * list, int * status, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1ab7fc2f492e3209e9e26631b5e988d68c">blpapi_ResolutionList_statusAt</link> (
+const blpapi_ResolutionList_t * list, int * status, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1aff7b9a1285d996aae494df13a10fa311">blpapi_ResolutionList_attribute</link> (
+const blpapi_ResolutionList_t * list, blpapi_Element_t ** element, const blpapi_Name_t * attribute, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1ae42e06232471cf69c22a05e0f17aa7b7">blpapi_ResolutionList_attributeAt</link> (
+const blpapi_ResolutionList_t * list, blpapi_Element_t ** element, const blpapi_Name_t * attribute, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1aa4c5605a5efed76a11e3c4fb9fd7acb1">blpapi_ResolutionList_message</link> (
+const blpapi_ResolutionList_t * list, blpapi_Message_t ** element, const <link linkend="d1/dd4/structblpapi___correlation_id__t__">blpapi_CorrelationId_t</link> * id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1a6cfa2a052a198f4db8b229acb0798158">blpapi_ResolutionList_messageAt</link> (
+const blpapi_ResolutionList_t * list, blpapi_Message_t ** element, size_t index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="d9/d2c/blpapi__resolutionlist_8h_1afd19c931f5cfa130c7bcb711822e454c">blpapi_ResolutionList_size</link> (
+const blpapi_ResolutionList_t * list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_resolutionlist.h</para>
+    </simplesect>
+</section>

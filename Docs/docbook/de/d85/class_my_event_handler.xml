@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d85/class_my_event_handler">
+<title>MyEventHandler class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string d_serviceName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Name d_messageType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::vector&lt; Name &gt; d_fields</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::vector&lt; int &gt; d_eids</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_resolveSubServiceCode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">processEvent</link> (
+const Event &amp; event, ProviderSession * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">processEvent</link> (
+const Event &amp; event, ProviderSession * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">processEvent</link> (
+const Event &amp; event, ProviderSession * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d85/class_my_event_handler_1aee336603e96d800244bedf1522b4c453">MyEventHandler</link> (
+const std::string &amp; serviceName, const Name &amp; messageType, const std::vector&lt; Name &gt; &amp; fields, const std::vector&lt; int &gt; &amp; eids, int resolveSubServiceCode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">processEvent</link> (
+const Event &amp; event, ProviderSession * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d85/class_my_event_handler_1a96e1d640a9e70e1f52aa06762dbf136a">MyEventHandler</link> (
+const std::string &amp; serviceName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">processEvent</link> (
+const Event &amp; event, ProviderSession * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/d85/class_my_event_handler_1afff2c0ef504e5c73cd98215024ce51c7">processEvent</link> (
+const Event &amp; event, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">
+                <title>bool MyEventHandler::processEvent (const Event &amp;event, ProviderSession *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">
+                <title>bool MyEventHandler::processEvent (const Event &amp;event, ProviderSession *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">
+                <title>bool MyEventHandler::processEvent (const Event &amp;event, ProviderSession *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d85/class_my_event_handler_1aee336603e96d800244bedf1522b4c453">
+                <title>MyEventHandler::MyEventHandler (const std::string &amp;serviceName, const Name &amp;messageType, const std::vector&lt; Name &gt; &amp;fields, const std::vector&lt; int &gt; &amp;eids, int resolveSubServiceCode)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">
+                <title>bool MyEventHandler::processEvent (const Event &amp;event, ProviderSession *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d85/class_my_event_handler_1a96e1d640a9e70e1f52aa06762dbf136a">
+                <title>MyEventHandler::MyEventHandler (const std::string &amp;serviceName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d85/class_my_event_handler_1a723ee0f5f887ae0bb61356d4b39a7a96">
+                <title>bool MyEventHandler::processEvent (const Event &amp;event, ProviderSession *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/d85/class_my_event_handler_1afff2c0ef504e5c73cd98215024ce51c7">
+                <title>bool MyEventHandler::processEvent (const Event &amp;event, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

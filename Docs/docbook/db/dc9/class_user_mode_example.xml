@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dc9/class_user_mode_example">
+<title>UserModeExample class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string d_host</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int d_port</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_securities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; int &gt; d_uuids</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Identity &gt; d_identities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; d_programAddresses</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc9/class_user_mode_example_1ae210a396d2aa0c977837ba985b13723f">printUsage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc9/class_user_mode_example_1ab54e734519be83d77acb598c1b024322">openServices</link> (
+Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="db/dc9/class_user_mode_example_1a09e821c31572695097809d8b55c0f4bc">authorizeUsers</link> (
+EventQueue * authQueue, Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc9/class_user_mode_example_1a6853ff3d76f5fed7da5c745ce6e1760a">sendRefDataRequest</link> (
+Session * session)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="db/dc9/class_user_mode_example_1affa9f8a3cad9007986b4e7830050229a">parseCommandLine</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dc9/class_user_mode_example_1a371332f9dd984fc4a4f5842d52c86e5b">UserModeExample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc9/class_user_mode_example_1a1751753176aafee8fa7692e9c0fd0a49">run</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/dc9/class_user_mode_example_1ae210a396d2aa0c977837ba985b13723f">
+                <title>void UserModeExample::printUsage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dc9/class_user_mode_example_1ab54e734519be83d77acb598c1b024322">
+                <title>void UserModeExample::openServices (Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dc9/class_user_mode_example_1a09e821c31572695097809d8b55c0f4bc">
+                <title>bool UserModeExample::authorizeUsers (EventQueue *authQueue, Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dc9/class_user_mode_example_1a6853ff3d76f5fed7da5c745ce6e1760a">
+                <title>void UserModeExample::sendRefDataRequest (Session *session)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dc9/class_user_mode_example_1affa9f8a3cad9007986b4e7830050229a">
+                <title>bool UserModeExample::parseCommandLine (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dc9/class_user_mode_example_1a371332f9dd984fc4a4f5842d52c86e5b">
+                <title>UserModeExample::UserModeExample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/dc9/class_user_mode_example_1a1751753176aafee8fa7692e9c0fd0a49">
+                <title>void UserModeExample::run (int argc, char **argv)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

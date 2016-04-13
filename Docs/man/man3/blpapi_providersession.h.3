@@ -1,0 +1,248 @@
+.TH "raleigh-triangle-index/include/blpapi_providersession.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_providersession.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_abstractsession\&.h>\fP
+.br
+\fC#include <blpapi_call\&.h>\fP
+.br
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_event\&.h>\fP
+.br
+\fC#include <blpapi_eventdispatcher\&.h>\fP
+.br
+\fC#include <blpapi_identity\&.h>\fP
+.br
+\fC#include <blpapi_request\&.h>\fP
+.br
+\fC#include <blpapi_resolutionlist\&.h>\fP
+.br
+\fC#include <blpapi_service\&.h>\fP
+.br
+\fC#include <blpapi_sessionoptions\&.h>\fP
+.br
+\fC#include <blpapi_subscriptionlist\&.h>\fP
+.br
+\fC#include <blpapi_topic\&.h>\fP
+.br
+\fC#include <blpapi_topiclist\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct blpapi_ServiceRegistrationOptions \fBblpapi_ServiceRegistrationOptions_t\fP"
+.br
+.ti -1c
+.RI "typedef void(* \fBblpapi_ProviderEventHandler_t\fP) (\fBblpapi_Event_t\fP *event, \fBblpapi_ProviderSession_t\fP *session, void *userData)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_ProviderSession_t\fP * \fBblpapi_ProviderSession_create\fP (\fBblpapi_SessionOptions_t\fP *parameters, \fBblpapi_ProviderEventHandler_t\fP handler, \fBblpapi_EventDispatcher_t\fP *dispatcher, void *userData)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_ProviderSession_destroy\fP (\fBblpapi_ProviderSession_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_start\fP (\fBblpapi_ProviderSession_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_startAsync\fP (\fBblpapi_ProviderSession_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_stop\fP (\fBblpapi_ProviderSession_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_stopAsync\fP (\fBblpapi_ProviderSession_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_nextEvent\fP (\fBblpapi_ProviderSession_t\fP *session, \fBblpapi_Event_t\fP **eventPointer, unsigned int timeoutInMilliseconds)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_tryNextEvent\fP (\fBblpapi_ProviderSession_t\fP *session, \fBblpapi_Event_t\fP **eventPointer)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_registerService\fP (\fBblpapi_ProviderSession_t\fP *session, const char *serviceName, const \fBblpapi_Identity_t\fP *identity, \fBblpapi_ServiceRegistrationOptions_t\fP *registrationOptions)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_activateSubServiceCodeRange\fP (\fBblpapi_ProviderSession_t\fP *session, const char *serviceName, int begin, int end, int priority)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_deactivateSubServiceCodeRange\fP (\fBblpapi_ProviderSession_t\fP *session, const char *serviceName, int begin, int end)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_registerServiceAsync\fP (\fBblpapi_ProviderSession_t\fP *session, const char *serviceName, const \fBblpapi_Identity_t\fP *identity, \fBblpapi_CorrelationId_t\fP *correlationId, \fBblpapi_ServiceRegistrationOptions_t\fP *registrationOptions)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_deregisterService\fP (\fBblpapi_ProviderSession_t\fP *session, const char *serviceName)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_resolve\fP (\fBblpapi_ProviderSession_t\fP *session, \fBblpapi_ResolutionList_t\fP *resolutionList, int resolveMode, const \fBblpapi_Identity_t\fP *identity)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_resolveAsync\fP (\fBblpapi_ProviderSession_t\fP *session, const \fBblpapi_ResolutionList_t\fP *resolutionList, int resolveMode, const \fBblpapi_Identity_t\fP *identity)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_createTopics\fP (\fBblpapi_ProviderSession_t\fP *session, \fBblpapi_TopicList_t\fP *topicList, int resolveMode, const \fBblpapi_Identity_t\fP *identity)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_createTopicsAsync\fP (\fBblpapi_ProviderSession_t\fP *session, const \fBblpapi_TopicList_t\fP *topicList, int resolveMode, const \fBblpapi_Identity_t\fP *identity)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_getTopic\fP (\fBblpapi_ProviderSession_t\fP *session, const \fBblpapi_Message_t\fP *message, \fBblpapi_Topic_t\fP **topic)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_createTopic\fP (\fBblpapi_ProviderSession_t\fP *session, const \fBblpapi_Message_t\fP *message, \fBblpapi_Topic_t\fP **topic)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_createServiceStatusTopic\fP (\fBblpapi_ProviderSession_t\fP *session, const \fBblpapi_Service_t\fP *service, \fBblpapi_Topic_t\fP **topic)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_deleteTopics\fP (\fBblpapi_ProviderSession_t\fP *session, const \fBblpapi_Topic_t\fP **topics, size_t numTopics)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_publish\fP (\fBblpapi_ProviderSession_t\fP *session, \fBblpapi_Event_t\fP *event)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ProviderSession_sendResponse\fP (\fBblpapi_ProviderSession_t\fP *session, \fBblpapi_Event_t\fP *event, int isPartialResponse)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_AbstractSession_t\fP * \fBblpapi_ProviderSession_getAbstractSession\fP (\fBblpapi_ProviderSession_t\fP *session)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_ServiceRegistrationOptions_t\fP * \fBblpapi_ServiceRegistrationOptions_create\fP (void)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_ServiceRegistrationOptions_t\fP * \fBblpapi_ServiceRegistrationOptions_duplicate\fP (const \fBblpapi_ServiceRegistrationOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_ServiceRegistrationOptions_destroy\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_ServiceRegistrationOptions_copy\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *lhs, const \fBblpapi_ServiceRegistrationOptions_t\fP *rhs)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ServiceRegistrationOptions_addActiveSubServiceCodeRange\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters, int start, int end, int priority)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_ServiceRegistrationOptions_removeAllActiveSubServiceCodeRanges\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_ServiceRegistrationOptions_setGroupId\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters, const char *groupId, unsigned int groupIdLength)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ServiceRegistrationOptions_setServicePriority\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters, int priority)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_ServiceRegistrationOptions_setPartsToRegister\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters, int parts)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ServiceRegistrationOptions_getGroupId\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters, char *groupdIdBuffer, int *groupIdLength)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ServiceRegistrationOptions_getServicePriority\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_ServiceRegistrationOptions_getPartsToRegister\fP (\fBblpapi_ServiceRegistrationOptions_t\fP *parameters)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef void(* blpapi_ProviderEventHandler_t) (\fBblpapi_Event_t\fP *event, \fBblpapi_ProviderSession_t\fP *session, void *userData)"
+
+.PP
+Definition at line 156 of file blpapi_providersession\&.h\&.
+.SS "typedef struct blpapi_ServiceRegistrationOptions \fBblpapi_ServiceRegistrationOptions_t\fP"
+
+.PP
+Definition at line 153 of file blpapi_providersession\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_activateSubServiceCodeRange (\fBblpapi_ProviderSession_t\fP * session, const char * serviceName, int begin, int end, int priority)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_ProviderSession_t\fP* blpapi_ProviderSession_create (\fBblpapi_SessionOptions_t\fP * parameters, \fBblpapi_ProviderEventHandler_t\fP handler, \fBblpapi_EventDispatcher_t\fP * dispatcher, void * userData)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_createServiceStatusTopic (\fBblpapi_ProviderSession_t\fP * session, const \fBblpapi_Service_t\fP * service, \fBblpapi_Topic_t\fP ** topic)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_createTopic (\fBblpapi_ProviderSession_t\fP * session, const \fBblpapi_Message_t\fP * message, \fBblpapi_Topic_t\fP ** topic)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_createTopics (\fBblpapi_ProviderSession_t\fP * session, \fBblpapi_TopicList_t\fP * topicList, int resolveMode, const \fBblpapi_Identity_t\fP * identity)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_createTopicsAsync (\fBblpapi_ProviderSession_t\fP * session, const \fBblpapi_TopicList_t\fP * topicList, int resolveMode, const \fBblpapi_Identity_t\fP * identity)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_deactivateSubServiceCodeRange (\fBblpapi_ProviderSession_t\fP * session, const char * serviceName, int begin, int end)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_deleteTopics (\fBblpapi_ProviderSession_t\fP * session, const \fBblpapi_Topic_t\fP ** topics, size_t numTopics)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_deregisterService (\fBblpapi_ProviderSession_t\fP * session, const char * serviceName)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_ProviderSession_destroy (\fBblpapi_ProviderSession_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_AbstractSession_t\fP* blpapi_ProviderSession_getAbstractSession (\fBblpapi_ProviderSession_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_getTopic (\fBblpapi_ProviderSession_t\fP * session, const \fBblpapi_Message_t\fP * message, \fBblpapi_Topic_t\fP ** topic)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_nextEvent (\fBblpapi_ProviderSession_t\fP * session, \fBblpapi_Event_t\fP ** eventPointer, unsigned int timeoutInMilliseconds)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_publish (\fBblpapi_ProviderSession_t\fP * session, \fBblpapi_Event_t\fP * event)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_registerService (\fBblpapi_ProviderSession_t\fP * session, const char * serviceName, const \fBblpapi_Identity_t\fP * identity, \fBblpapi_ServiceRegistrationOptions_t\fP * registrationOptions)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_registerServiceAsync (\fBblpapi_ProviderSession_t\fP * session, const char * serviceName, const \fBblpapi_Identity_t\fP * identity, \fBblpapi_CorrelationId_t\fP * correlationId, \fBblpapi_ServiceRegistrationOptions_t\fP * registrationOptions)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_resolve (\fBblpapi_ProviderSession_t\fP * session, \fBblpapi_ResolutionList_t\fP * resolutionList, int resolveMode, const \fBblpapi_Identity_t\fP * identity)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_resolveAsync (\fBblpapi_ProviderSession_t\fP * session, const \fBblpapi_ResolutionList_t\fP * resolutionList, int resolveMode, const \fBblpapi_Identity_t\fP * identity)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_sendResponse (\fBblpapi_ProviderSession_t\fP * session, \fBblpapi_Event_t\fP * event, int isPartialResponse)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_start (\fBblpapi_ProviderSession_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_startAsync (\fBblpapi_ProviderSession_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_stop (\fBblpapi_ProviderSession_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_stopAsync (\fBblpapi_ProviderSession_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ProviderSession_tryNextEvent (\fBblpapi_ProviderSession_t\fP * session, \fBblpapi_Event_t\fP ** eventPointer)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ServiceRegistrationOptions_addActiveSubServiceCodeRange (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters, int start, int end, int priority)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_ServiceRegistrationOptions_copy (\fBblpapi_ServiceRegistrationOptions_t\fP * lhs, const \fBblpapi_ServiceRegistrationOptions_t\fP * rhs)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_ServiceRegistrationOptions_t\fP* blpapi_ServiceRegistrationOptions_create (void)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_ServiceRegistrationOptions_destroy (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_ServiceRegistrationOptions_t\fP* blpapi_ServiceRegistrationOptions_duplicate (const \fBblpapi_ServiceRegistrationOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ServiceRegistrationOptions_getGroupId (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters, char * groupdIdBuffer, int * groupIdLength)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ServiceRegistrationOptions_getPartsToRegister (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ServiceRegistrationOptions_getServicePriority (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_ServiceRegistrationOptions_removeAllActiveSubServiceCodeRanges (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_ServiceRegistrationOptions_setGroupId (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters, const char * groupId, unsigned int groupIdLength)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_ServiceRegistrationOptions_setPartsToRegister (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters, int parts)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_ServiceRegistrationOptions_setServicePriority (\fBblpapi_ServiceRegistrationOptions_t\fP * parameters, int priority)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

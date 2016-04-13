@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d12/blpapi__name_8h">
+    <title>blpapi_name.h File Reference</title>
+    <programlisting>#include &lt;blpapi_types.h&gt;</programlisting>
+    <programlisting>#include &lt;blpapi_defs.h&gt;</programlisting>
+    <programlisting>#include &lt;stddef.h&gt;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="dd/d12/blpapi__name_8h_1a1ba816e3fd877b9e198ed76d953983d3">blpapi_Name_create</link> (
+const char * nameString)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT void <link linkend="dd/d12/blpapi__name_8h_1ac83e8b37f6033cdd895fda0e5d41b7c9">blpapi_Name_destroy</link> (
+blpapi_Name_t * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="dd/d12/blpapi__name_8h_1aff201902c431378aee6098c4892d6837">blpapi_Name_duplicate</link> (
+const blpapi_Name_t * src)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT int <link linkend="dd/d12/blpapi__name_8h_1a49a411fde17b819aef34b67723fcae58">blpapi_Name_equalsStr</link> (
+const blpapi_Name_t * name, const char * string)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT const char * <link linkend="dd/d12/blpapi__name_8h_1a3caee5bda61559369c27297e93260e13">blpapi_Name_string</link> (
+const blpapi_Name_t * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT size_t <link linkend="dd/d12/blpapi__name_8h_1ab4a5c9f3830e28a818b52784e6a013ea">blpapi_Name_length</link> (
+const blpapi_Name_t * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BLPAPI_EXPORT blpapi_Name_t * <link linkend="dd/d12/blpapi__name_8h_1ad119557a533925b5ef3dd04d6075d4c0">blpapi_Name_findName</link> (
+const char * nameString)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Mathematics/Source/Repos/raleigh-triangle-index/raleigh-triangle-index/include/blpapi_name.h</para>
+    </simplesect>
+</section>

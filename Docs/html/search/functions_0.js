@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['activate',['activate',['../class_mktdata_publisher_example.html#a3c33e6fc115dff9b00de844e0015b296',1,'MktdataPublisherExample']]],
+  ['authorize',['authorize',['../class_contributions_mktdata_example.html#a65a88ec3eefd1a5e872764c3c48c5bd4',1,'ContributionsMktdataExample::authorize()'],['../class_contributions_page_example.html#a7f5dfa971f3c7d3072a8131608374ec4',1,'ContributionsPageExample::authorize()'],['../class_local_page_subscription_example.html#a6b1b4eed6008e042bc9cb8c75b187270',1,'LocalPageSubscriptionExample::authorize()'],['../class_mktdata_broadcast_publisher_example.html#ab975f7fbb326a9a5e2fce38728f4ad8a',1,'MktdataBroadcastPublisherExample::authorize()'],['../class_mktdata_publisher_example.html#ad3f815d8bc73381f8b7d279fc7df0924',1,'MktdataPublisherExample::authorize()'],['../class_page_publisher_example.html#a2cacdd5e03294ec486515e8d96102c84',1,'PagePublisherExample::authorize()'],['../class_request_service_example.html#ab3321b04782e405059622ef54bf6b5c7',1,'RequestServiceExample::authorize()']]]
+];

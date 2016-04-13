@@ -1,0 +1,84 @@
+.TH "raleigh-triangle-index/include/blpapi_abstractsession.h" 3 "Wed Apr 13 2016" "Version 1.0.0" "Raleigh Triangle Index" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+raleigh-triangle-index/include/blpapi_abstractsession.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <blpapi_correlationid\&.h>\fP
+.br
+\fC#include <blpapi_defs\&.h>\fP
+.br
+\fC#include <blpapi_event\&.h>\fP
+.br
+\fC#include <blpapi_eventdispatcher\&.h>\fP
+.br
+\fC#include <blpapi_identity\&.h>\fP
+.br
+\fC#include <blpapi_request\&.h>\fP
+.br
+\fC#include <blpapi_service\&.h>\fP
+.br
+\fC#include <blpapi_types\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP void \fBblpapi_UserHandle_release\fP (\fBblpapi_UserHandle_t\fP *handle)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_UserHandle_addRef\fP (\fBblpapi_UserHandle_t\fP *handle)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_UserHandle_hasEntitlements\fP (const \fBblpapi_UserHandle_t\fP *handle, const \fBblpapi_Service_t\fP *service, const \fBblpapi_Element_t\fP *eidElement, const int *entitlementIds, size_t numEntitlements, int *failedEntitlements, int *failedEntitlementsCount)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_AbstractSession_cancel\fP (\fBblpapi_AbstractSession_t\fP *session, const \fBblpapi_CorrelationId_t\fP *correlationIds, size_t numCorrelationIds, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_AbstractSession_sendAuthorizationRequest\fP (\fBblpapi_AbstractSession_t\fP *session, const \fBblpapi_Request_t\fP *request, \fBblpapi_Identity_t\fP *identity, \fBblpapi_CorrelationId_t\fP *correlationId, \fBblpapi_EventQueue_t\fP *eventQueue, const char *requestLabel, int requestLabelLen)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_AbstractSession_openService\fP (\fBblpapi_AbstractSession_t\fP *session, const char *serviceIdentifier)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_AbstractSession_openServiceAsync\fP (\fBblpapi_AbstractSession_t\fP *session, const char *serviceIdentifier, \fBblpapi_CorrelationId_t\fP *correlationId)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_AbstractSession_generateToken\fP (\fBblpapi_AbstractSession_t\fP *session, \fBblpapi_CorrelationId_t\fP *correlationId, \fBblpapi_EventQueue_t\fP *eventQueue)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP int \fBblpapi_AbstractSession_getService\fP (\fBblpapi_AbstractSession_t\fP *session, \fBblpapi_Service_t\fP **service, const char *serviceIdentifier)"
+.br
+.ti -1c
+.RI "\fBBLPAPI_EXPORT\fP \fBblpapi_Identity_t\fP * \fBblpapi_AbstractSession_createIdentity\fP (\fBblpapi_AbstractSession_t\fP *session)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_AbstractSession_cancel (\fBblpapi_AbstractSession_t\fP * session, const \fBblpapi_CorrelationId_t\fP * correlationIds, size_t numCorrelationIds, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP \fBblpapi_Identity_t\fP* blpapi_AbstractSession_createIdentity (\fBblpapi_AbstractSession_t\fP * session)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_AbstractSession_generateToken (\fBblpapi_AbstractSession_t\fP * session, \fBblpapi_CorrelationId_t\fP * correlationId, \fBblpapi_EventQueue_t\fP * eventQueue)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_AbstractSession_getService (\fBblpapi_AbstractSession_t\fP * session, \fBblpapi_Service_t\fP ** service, const char * serviceIdentifier)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_AbstractSession_openService (\fBblpapi_AbstractSession_t\fP * session, const char * serviceIdentifier)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_AbstractSession_openServiceAsync (\fBblpapi_AbstractSession_t\fP * session, const char * serviceIdentifier, \fBblpapi_CorrelationId_t\fP * correlationId)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_AbstractSession_sendAuthorizationRequest (\fBblpapi_AbstractSession_t\fP * session, const \fBblpapi_Request_t\fP * request, \fBblpapi_Identity_t\fP * identity, \fBblpapi_CorrelationId_t\fP * correlationId, \fBblpapi_EventQueue_t\fP * eventQueue, const char * requestLabel, int requestLabelLen)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_UserHandle_addRef (\fBblpapi_UserHandle_t\fP * handle)"
+
+.SS "\fBBLPAPI_EXPORT\fP int blpapi_UserHandle_hasEntitlements (const \fBblpapi_UserHandle_t\fP * handle, const \fBblpapi_Service_t\fP * service, const \fBblpapi_Element_t\fP * eidElement, const int * entitlementIds, size_t numEntitlements, int * failedEntitlements, int * failedEntitlementsCount)"
+
+.SS "\fBBLPAPI_EXPORT\fP void blpapi_UserHandle_release (\fBblpapi_UserHandle_t\fP * handle)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Raleigh Triangle Index from the source code\&.

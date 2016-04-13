@@ -90,9 +90,12 @@ input::~input()
 {
 }
 
-bool input::parseCommandLine(int argc, char **argv)
+/*
+bool input::parseCommandLine()
 {
 	int verbosityCount = 0;
+
+	
 	for (int i = 1; i < argc; ++i) {
 		if (!std::strcmp(argv[i], "-s") && i + 1 < argc) {
 			d_securities.push_back(argv[++i]);
@@ -115,43 +118,17 @@ bool input::parseCommandLine(int argc, char **argv)
 			return false;
 		}
 	}
+
+
 	if (verbosityCount) {
 		registerCallback(verbosityCount);
 	}
 	// handle default arguments
-	if (d_securities.size() == 0) {
-		// 
-		d_securities.push_back("RHT US Equity");
-		d_securities.push_back("MLM US Equity");
-		d_securities.push_back("Q US Equity");
-		d_securities.push_back("HIW US Equity");
-		d_securities.push_back("CREE US Equity");
-		d_securities.push_back("FCNCA US Equity");
-		d_securities.push_back("PRAH US Equity");
-		d_securities.push_back("INCR US Equity");
-		d_securities.push_back("PGEM US Equity");
-		d_securities.push_back("TCAP US Equity");
-		d_securities.push_back("TRXC US Equity");
-		d_securities.push_back("SQI US Equity");
-		d_securities.push_back("ECOM US Equity");
-		d_securities.push_back("POWR US Equity");
-		d_securities.push_back("BDSI US Equity");
-		d_securities.push_back("CMRX US Equity");
-		d_securities.push_back("BCRX US Equity");
-		d_securities.push_back("UNB US Equity");
-		d_securities.push_back("XRM US Equity");
-	}
-
-	if (d_fields.size() == 0) {
-		d_fields.push_back("PX_LAST");
-		d_fields.push_back("EQY_FREE_FLOAT_PCT");
-		d_fields.push_back("EQY_SH_OUT");
-	}
 
 	return true;
-}
+}*/
 
-// [romtomge errpr 
+// 
 void input::printErrorInfo(const char *leadingStr, const Element &errorInfo)
 {
 	std::cout << leadingStr
@@ -161,6 +138,7 @@ void input::printErrorInfo(const char *leadingStr, const Element &errorInfo)
 		<< ")" << std::endl;
 }
 
+/*
 void input::printUsage()
 {
 	std::cout << "Usage:" << std::endl
@@ -172,7 +150,7 @@ void input::printUsage()
 		<< "        [-v         increase verbosity"
 		<< " (can be specified more than once)"
 		<< std::endl;
-}
+}*/
 
 
 void input::registerCallback(int verbosityCount)
@@ -199,9 +177,38 @@ void input::sendRefDataRequest(Session &session)
 	Request request = refDataService.createRequest("ReferenceDataRequest");
 
 	// Add securities to request
+	if (d_securities.size() == 0) {
+		// the securities given for each date
+		d_securities.push_back("RHT US Equity");
+		d_securities.push_back("MLM US Equity");
+		d_securities.push_back("Q US Equity");
+		d_securities.push_back("HIW US Equity");
+		d_securities.push_back("CREE US Equity");
+		d_securities.push_back("FCNCA US Equity");
+		d_securities.push_back("PRAH US Equity");
+		d_securities.push_back("INCR US Equity");
+		d_securities.push_back("PGEM US Equity");
+		d_securities.push_back("TCAP US Equity");
+		d_securities.push_back("TRXC US Equity");
+		d_securities.push_back("SQI US Equity");
+		d_securities.push_back("ECOM US Equity");
+		d_securities.push_back("POWR US Equity");
+		d_securities.push_back("BDSI US Equity");
+		d_securities.push_back("CMRX US Equity");
+		d_securities.push_back("BCRX US Equity");
+		d_securities.push_back("UNB US Equity");
+		d_securities.push_back("XRM US Equity");
+	}
+
 	Element securities = request.getElement("securities");
 	for (size_t i = 0; i < d_securities.size(); ++i) {
 		securities.appendValue(d_securities[i].c_str());
+	}
+
+	if (d_fields.size() == 0) {
+		d_fields.push_back("PX_LAST");
+		d_fields.push_back("EQY_FREE_FLOAT_PCT");
+		d_fields.push_back("EQY_SH_OUT");
 	}
 
 	// Add fields to request
@@ -316,6 +323,11 @@ void input::processResponseEvent(Event event)
 	}
 }
 
+/*
+This function is the main Bloomberg loop. It is a Bloomberg API function to call
+specific data with multithreading from Bloomberg
+*/
+
 void input::eventLoop(Session &session)
 {
 	bool done = false;
@@ -349,9 +361,9 @@ void input::eventLoop(Session &session)
 	}
 }
 
-void input::run(int argc, char **argv)
+void input::run()
 {
-	if (!parseCommandLine(argc, argv)) return;
+	//if (!parseCommandLine(argc, argv)) return;
 
 	SessionOptions sessionOptions;
 	sessionOptions.setServerHost(d_host.c_str());
